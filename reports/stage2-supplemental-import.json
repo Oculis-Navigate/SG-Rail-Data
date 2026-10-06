@@ -1,0 +1,3755 @@
+{
+  "schema_version": 1,
+  "kind": "stage2_supplemental_import_audit",
+  "candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+  "decisions": [
+    {
+      "station_id": "bangkit",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 22,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.77259057420869,
+        1.3798533467645455
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 22,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.77259057420869,
+                1.3798533467645455
+              ]
+            },
+            "properties": {
+              "station_id": "bangkit",
+              "station_name": "Bangkit",
+              "codes": [
+                "BP9"
+              ],
+              "station_codes": [
+                "BP9"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21188",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 308,
+                "source_updated_at": "20251202172807",
+                "source_crc": "B7DF61CC7C6C3B13",
+                "source_station_name": "BANGKIT LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "bugis",
+      "exit_id": "MRT:E",
+      "selected_candidate_feature_index": 110,
+      "selected_source": "osm",
+      "selected_coordinates": [
+        103.8574894,
+        1.2992995
+      ],
+      "note": "Owner accepted the saved OSM entrance with the matching exit ref. Not individually pin-reviewed. LTA independently lists a position 9.1 m away; OSM's tagged entrance is retained.",
+      "candidates": [
+        {
+          "candidate_feature_index": 109,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.85740802281678,
+                1.2993046168253164
+              ]
+            },
+            "properties": {
+              "station_id": "bugis",
+              "station_name": "Bugis",
+              "codes": [
+                "DT14",
+                "EW12"
+              ],
+              "station_codes": [
+                "DT14",
+                "EW12"
+              ],
+              "exit_id": "MRT:E",
+              "label": "E",
+              "scope": "MRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21283",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 2,
+              "provenance": {
+                "source_feature_index": 403,
+                "source_updated_at": "20260717145318",
+                "source_crc": "0F6A77BE42683D50",
+                "source_station_name": "BUGIS MRT STATION",
+                "source_exit_code": "E"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 2,
+              "sources_for_exit": [
+                "lta_geojson",
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 110,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8574894,
+                1.2992995
+              ]
+            },
+            "properties": {
+              "station_id": "bugis",
+              "station_name": "Bugis",
+              "codes": [
+                "DT14",
+                "EW12"
+              ],
+              "station_codes": [
+                "DT14",
+                "EW12"
+              ],
+              "exit_id": "MRT:E",
+              "label": "E",
+              "scope": "MRT",
+              "classification": "unique_lta",
+              "candidate_source": "osm",
+              "source": "osm",
+              "source_record_id": "node/6898222161",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 1,
+              "candidate_count": 2,
+              "provenance": {
+                "source_timestamp": "2024-12-30T10:51:25Z",
+                "source_url": "https://www.openstreetmap.org/node/6898222161",
+                "source_tags": {
+                  "railway": "subway_entrance",
+                  "ref": "E"
+                },
+                "association": [
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/9752512"
+                  }
+                ],
+                "label_evidence": "ref"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 2,
+              "sources_for_exit": [
+                "lta_geojson",
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "bugis",
+      "exit_id": "MRT:F",
+      "selected_candidate_feature_index": 111,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.85714752525624,
+        1.299638234031808
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 111,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.85714752525624,
+                1.299638234031808
+              ]
+            },
+            "properties": {
+              "station_id": "bugis",
+              "station_name": "Bugis",
+              "codes": [
+                "DT14",
+                "EW12"
+              ],
+              "station_codes": [
+                "DT14",
+                "EW12"
+              ],
+              "exit_id": "MRT:F",
+              "label": "F",
+              "scope": "MRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21284",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 404,
+                "source_updated_at": "20260717145318",
+                "source_crc": "24FD523CC84E0039",
+                "source_station_name": "BUGIS MRT STATION",
+                "source_exit_code": "F"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "bugis",
+      "exit_id": "MRT:G",
+      "selected_candidate_feature_index": 113,
+      "selected_source": "osm",
+      "selected_coordinates": [
+        103.8570204,
+        1.2988371
+      ],
+      "note": "Owner accepted the saved OSM entrance with the matching exit ref. Not individually pin-reviewed. LTA independently lists a position 14.3 m away; OSM's tagged entrance is retained.",
+      "candidates": [
+        {
+          "candidate_feature_index": 112,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8570674271026,
+                1.298956504761158
+              ]
+            },
+            "properties": {
+              "station_id": "bugis",
+              "station_name": "Bugis",
+              "codes": [
+                "DT14",
+                "EW12"
+              ],
+              "station_codes": [
+                "DT14",
+                "EW12"
+              ],
+              "exit_id": "MRT:G",
+              "label": "G",
+              "scope": "MRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21282",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 2,
+              "provenance": {
+                "source_feature_index": 402,
+                "source_updated_at": "20260717145318",
+                "source_crc": "4E3E76668266DD13",
+                "source_station_name": "BUGIS MRT STATION",
+                "source_exit_code": "G"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 2,
+              "sources_for_exit": [
+                "lta_geojson",
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 113,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8570204,
+                1.2988371
+              ]
+            },
+            "properties": {
+              "station_id": "bugis",
+              "station_name": "Bugis",
+              "codes": [
+                "DT14",
+                "EW12"
+              ],
+              "station_codes": [
+                "DT14",
+                "EW12"
+              ],
+              "exit_id": "MRT:G",
+              "label": "G",
+              "scope": "MRT",
+              "classification": "unique_lta",
+              "candidate_source": "osm",
+              "source": "osm",
+              "source_record_id": "node/13415193362",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 1,
+              "candidate_count": 2,
+              "provenance": {
+                "source_timestamp": "2025-12-29T08:25:03Z",
+                "source_url": "https://www.openstreetmap.org/node/13415193362",
+                "source_tags": {
+                  "level": "-1",
+                  "railway": "subway_entrance",
+                  "ref": "G",
+                  "wheelchair": "limited"
+                },
+                "association": [
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/7982392"
+                  },
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/9752512"
+                  }
+                ],
+                "label_evidence": "ref"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 2,
+              "sources_for_exit": [
+                "lta_geojson",
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "coral-edge",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 218,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.91265223396981,
+        1.3936846522216244
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 218,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.91265223396981,
+                1.3936846522216244
+              ]
+            },
+            "properties": {
+              "station_id": "coral-edge",
+              "station_name": "Coral Edge",
+              "codes": [
+                "PE3"
+              ],
+              "station_codes": [
+                "PE3"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21597",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 193,
+                "source_updated_at": "20251202172807",
+                "source_crc": "D4CB376FFBED3D8A",
+                "source_station_name": "CORAL EDGE LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "coral-edge",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 219,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.91270874436744,
+        1.3939708071108299
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 219,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.91270874436744,
+                1.3939708071108299
+              ]
+            },
+            "properties": {
+              "station_id": "coral-edge",
+              "station_name": "Coral Edge",
+              "codes": [
+                "PE3"
+              ],
+              "station_codes": [
+                "PE3"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21596",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 192,
+                "source_updated_at": "20251202172807",
+                "source_crc": "E7718F39AA487D8B",
+                "source_station_name": "CORAL EDGE LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "cove",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 220,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90592873577582,
+        1.3991243935090023
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 220,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90592873577582,
+                1.3991243935090023
+              ]
+            },
+            "properties": {
+              "station_id": "cove",
+              "station_name": "Cove",
+              "codes": [
+                "PE1"
+              ],
+              "station_codes": [
+                "PE1"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21426",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 22,
+                "source_updated_at": "20251202172807",
+                "source_crc": "C06D10E6EBF83EA6",
+                "source_station_name": "COVE LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "cove",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 221,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90617601360019,
+        1.3993026566088154
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 221,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90617601360019,
+                1.3993026566088154
+              ]
+            },
+            "properties": {
+              "station_id": "cove",
+              "station_name": "Cove",
+              "codes": [
+                "PE1"
+              ],
+              "station_codes": [
+                "PE1"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21598",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 194,
+                "source_updated_at": "20251202172807",
+                "source_crc": "8007BDF5105E0800",
+                "source_station_name": "COVE LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "damai",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 226,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90879222699208,
+        1.4052846134337436
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 226,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90879222699208,
+                1.4052846134337436
+              ]
+            },
+            "properties": {
+              "station_id": "damai",
+              "station_name": "Damai",
+              "codes": [
+                "PE7"
+              ],
+              "station_codes": [
+                "PE7"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21421",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 17,
+                "source_updated_at": "20251202172807",
+                "source_crc": "D50CD0EB8DF1A6AD",
+                "source_station_name": "DAMAI LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "damai",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 227,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90861385602817,
+        1.4050460283087411
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 227,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90861385602817,
+                1.4050460283087411
+              ]
+            },
+            "properties": {
+              "station_id": "damai",
+              "station_name": "Damai",
+              "codes": [
+                "PE7"
+              ],
+              "station_codes": [
+                "PE7"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21591",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 187,
+                "source_updated_at": "20251202172807",
+                "source_crc": "C9AD817C66E8F720",
+                "source_station_name": "DAMAI LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "expo",
+      "exit_id": "MRT:A",
+      "selected_candidate_feature_index": 268,
+      "selected_source": "onemap",
+      "selected_coordinates": [
+        103.9619429582246,
+        1.335321724253238
+      ],
+      "note": "Assistant selected the southern/eastern OneMap candidate using saved source corroboration and visual inspection of the saved SBS locality map. It is 2.8 m from the tagged OSM entrance and 0.0 m from the nearest LTA candidate. The alternative is 19.8 m from the OSM entrance. The live review app could not be rendered: local server binding was denied by the sandbox. The illustrated operator map supports the general entrance area, not exact coordinates. This is a plausible saved candidate selection, not an on-site verification or human pin edit.",
+      "candidates": [
+        {
+          "candidate_feature_index": 266,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.96183679508403,
+                1.3354828221659554
+              ]
+            },
+            "properties": {
+              "station_id": "expo",
+              "station_name": "Expo",
+              "codes": [
+                "CG1",
+                "DT35"
+              ],
+              "station_codes": [
+                "CG1",
+                "DT35"
+              ],
+              "exit_id": "MRT:A",
+              "label": "A",
+              "scope": "MRT",
+              "classification": "duplicate_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21392",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 7,
+              "provenance": {
+                "source_feature_index": 512,
+                "source_updated_at": "20251202172807",
+                "source_crc": "8F171DDEC2A3C476",
+                "source_station_name": "EXPO MRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "duplicate",
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 267,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.96194295822608,
+                1.3353217243389148
+              ]
+            },
+            "properties": {
+              "station_id": "expo",
+              "station_name": "Expo",
+              "codes": [
+                "CG1",
+                "DT35"
+              ],
+              "station_codes": [
+                "CG1",
+                "DT35"
+              ],
+              "exit_id": "MRT:A",
+              "label": "A",
+              "scope": "MRT",
+              "classification": "duplicate_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21671",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 1,
+              "candidate_count": 7,
+              "provenance": {
+                "source_feature_index": 550,
+                "source_updated_at": "20251202172807",
+                "source_crc": "FD3508562E82B730",
+                "source_station_name": "EXPO MRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "duplicate",
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 268,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.9619429582246,
+                1.335321724253238
+              ]
+            },
+            "properties": {
+              "station_id": "expo",
+              "station_name": "Expo",
+              "station_codes": [
+                "CG1",
+                "DT35"
+              ],
+              "exit_id": "MRT:A",
+              "label": "A",
+              "scope": "MRT",
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "unresolved",
+              "approved": false,
+              "review_reasons": [
+                {
+                  "reason": "duplicate_onemap_exit_points",
+                  "candidate_count": 2
+                }
+              ],
+              "source": "onemap",
+              "candidate_index": 0,
+              "selected": false,
+              "candidate_id": "MRT:0",
+              "title": null,
+              "description": null,
+              "building": "EXPO MRT STATION EXIT A",
+              "accuracy_metres": null,
+              "position_kind": null,
+              "provenance": {
+                "query_scope": "MRT",
+                "response_files": [
+                  {
+                    "file": "sources/expo/onemap-mrt/page-1.json",
+                    "sha256": "ac6972f61693b92cec590cbd28a1a5f197bc0d8d086e6cb199e0810e04733b7d",
+                    "fetched_at": "2026-10-01T05:22:12.080536+00:00"
+                  }
+                ]
+              },
+              "primary_status": "duplicate",
+              "candidate_count": 7,
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 269,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.9618322304379,
+                1.335492099372065
+              ]
+            },
+            "properties": {
+              "station_id": "expo",
+              "station_name": "Expo",
+              "station_codes": [
+                "CG1",
+                "DT35"
+              ],
+              "exit_id": "MRT:A",
+              "label": "A",
+              "scope": "MRT",
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "unresolved",
+              "approved": false,
+              "review_reasons": [
+                {
+                  "reason": "duplicate_onemap_exit_points",
+                  "candidate_count": 2
+                }
+              ],
+              "source": "onemap",
+              "candidate_index": 1,
+              "selected": false,
+              "candidate_id": "MRT:1",
+              "title": null,
+              "description": null,
+              "building": "EXPO MRT STATION EXIT A",
+              "accuracy_metres": null,
+              "position_kind": null,
+              "provenance": {
+                "query_scope": "MRT",
+                "response_files": [
+                  {
+                    "file": "sources/expo/onemap-mrt/page-1.json",
+                    "sha256": "ac6972f61693b92cec590cbd28a1a5f197bc0d8d086e6cb199e0810e04733b7d",
+                    "fetched_at": "2026-10-01T05:22:12.080536+00:00"
+                  }
+                ]
+              },
+              "primary_status": "duplicate",
+              "candidate_count": 7,
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 270,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.9619429582246,
+                1.335321724253238
+              ]
+            },
+            "properties": {
+              "station_id": "expo",
+              "station_name": "Expo",
+              "codes": [
+                "CG1",
+                "DT35"
+              ],
+              "station_codes": [
+                "CG1",
+                "DT35"
+              ],
+              "exit_id": "MRT:A",
+              "label": "A",
+              "scope": "MRT",
+              "classification": "duplicate_lta",
+              "candidate_source": "onemap",
+              "source": "onemap",
+              "source_record_id": "expo:MRT:0",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 2,
+              "candidate_count": 7,
+              "provenance": {
+                "building": "EXPO MRT STATION EXIT A",
+                "provenance": {
+                  "query_scope": "MRT",
+                  "response_files": [
+                    {
+                      "file": "sources/expo/onemap-mrt/page-1.json",
+                      "sha256": "ac6972f61693b92cec590cbd28a1a5f197bc0d8d086e6cb199e0810e04733b7d",
+                      "fetched_at": "2026-10-01T05:22:12.080536+00:00"
+                    }
+                  ]
+                }
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "duplicate",
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 271,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.9618322304379,
+                1.335492099372065
+              ]
+            },
+            "properties": {
+              "station_id": "expo",
+              "station_name": "Expo",
+              "codes": [
+                "CG1",
+                "DT35"
+              ],
+              "station_codes": [
+                "CG1",
+                "DT35"
+              ],
+              "exit_id": "MRT:A",
+              "label": "A",
+              "scope": "MRT",
+              "classification": "duplicate_lta",
+              "candidate_source": "onemap",
+              "source": "onemap",
+              "source_record_id": "expo:MRT:1",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 3,
+              "candidate_count": 7,
+              "provenance": {
+                "building": "EXPO MRT STATION EXIT A",
+                "provenance": {
+                  "query_scope": "MRT",
+                  "response_files": [
+                    {
+                      "file": "sources/expo/onemap-mrt/page-1.json",
+                      "sha256": "ac6972f61693b92cec590cbd28a1a5f197bc0d8d086e6cb199e0810e04733b7d",
+                      "fetched_at": "2026-10-01T05:22:12.080536+00:00"
+                    }
+                  ]
+                }
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "duplicate",
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 272,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.9619331,
+                1.335345
+              ]
+            },
+            "properties": {
+              "station_id": "expo",
+              "station_name": "Expo",
+              "codes": [
+                "CG1",
+                "DT35"
+              ],
+              "station_codes": [
+                "CG1",
+                "DT35"
+              ],
+              "exit_id": "MRT:A",
+              "label": "A",
+              "scope": "MRT",
+              "classification": "duplicate_lta",
+              "candidate_source": "osm",
+              "source": "osm",
+              "source_record_id": "node/5168796839",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 4,
+              "candidate_count": 7,
+              "provenance": {
+                "source_timestamp": "2023-06-09T07:41:15Z",
+                "source_url": "https://www.openstreetmap.org/node/5168796839",
+                "source_tags": {
+                  "name": "Expo (DTL)",
+                  "railway": "subway_entrance",
+                  "ref": "A",
+                  "wheelchair": "yes"
+                },
+                "association": [
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/9748731"
+                  },
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/9750063"
+                  },
+                  {
+                    "scope": "MRT",
+                    "name": "Expo (DTL)"
+                  }
+                ],
+                "label_evidence": "ref"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "fajar",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 279,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.77067551844488,
+        1.3844650711796456
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 279,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.77067551844488,
+                1.3844650711796456
+              ]
+            },
+            "properties": {
+              "station_id": "fajar",
+              "station_name": "Fajar",
+              "codes": [
+                "BP10"
+              ],
+              "station_codes": [
+                "BP10"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21189",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 309,
+                "source_updated_at": "20251202172807",
+                "source_crc": "A324402CF624723A",
+                "source_station_name": "FAJAR LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "farrer-park",
+      "exit_id": "MRT:E",
+      "selected_candidate_feature_index": 287,
+      "selected_source": "onemap",
+      "selected_coordinates": [
+        103.8526350747985,
+        1.311863732195899
+      ],
+      "note": "Assistant selected the eastern OneMap candidate using saved source corroboration and visual inspection of the saved SBS locality map. It is 9.8 m from the tagged OSM entrance and 2.8 m from the nearest LTA candidate. The alternative is 57.2 m from the OSM entrance. The live review app could not be rendered: local server binding was denied by the sandbox. The illustrated operator map supports the general entrance area, not exact coordinates. This is a plausible saved candidate selection, not an on-site verification or human pin edit.",
+      "candidates": [
+        {
+          "candidate_feature_index": 286,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.85265097067983,
+                1.3118835372381634
+              ]
+            },
+            "properties": {
+              "station_id": "farrer-park",
+              "station_name": "Farrer Park",
+              "codes": [
+                "NE8"
+              ],
+              "station_codes": [
+                "NE8"
+              ],
+              "exit_id": "MRT:E",
+              "label": "E",
+              "scope": "MRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21483",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 6,
+              "provenance": {
+                "source_feature_index": 79,
+                "source_updated_at": "20251202172807",
+                "source_crc": "6F1834F3D5171B51",
+                "source_station_name": "FARRER PARK MRT STATION",
+                "source_exit_code": "Exit E"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 287,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8526350747985,
+                1.311863732195899
+              ]
+            },
+            "properties": {
+              "station_id": "farrer-park",
+              "station_name": "Farrer Park",
+              "station_codes": [
+                "NE8"
+              ],
+              "exit_id": "MRT:E",
+              "label": "E",
+              "scope": "MRT",
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "unresolved",
+              "approved": false,
+              "review_reasons": [
+                {
+                  "reason": "duplicate_onemap_exit_points",
+                  "candidate_count": 2
+                }
+              ],
+              "source": "onemap",
+              "candidate_index": 0,
+              "selected": false,
+              "candidate_id": "MRT:4",
+              "title": null,
+              "description": null,
+              "building": "FARRER PARK MRT STATION EXIT E",
+              "accuracy_metres": null,
+              "position_kind": null,
+              "provenance": {
+                "query_scope": "MRT",
+                "response_files": [
+                  {
+                    "file": "sources/farrer-park/onemap-mrt/page-1.json",
+                    "sha256": "c000da28c39da66ad259eaf2e3f091895c641a6d9a75aee3ea13400876368eb7",
+                    "fetched_at": "2026-10-01T06:48:40.650397+00:00"
+                  }
+                ]
+              },
+              "primary_status": "duplicate",
+              "candidate_count": 6,
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 288,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8522142815803,
+                1.311788491165836
+              ]
+            },
+            "properties": {
+              "station_id": "farrer-park",
+              "station_name": "Farrer Park",
+              "station_codes": [
+                "NE8"
+              ],
+              "exit_id": "MRT:E",
+              "label": "E",
+              "scope": "MRT",
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "unresolved",
+              "approved": false,
+              "review_reasons": [
+                {
+                  "reason": "duplicate_onemap_exit_points",
+                  "candidate_count": 2
+                }
+              ],
+              "source": "onemap",
+              "candidate_index": 1,
+              "selected": false,
+              "candidate_id": "MRT:5",
+              "title": null,
+              "description": null,
+              "building": "FARRER PARK MRT STATION EXIT E",
+              "accuracy_metres": null,
+              "position_kind": null,
+              "provenance": {
+                "query_scope": "MRT",
+                "response_files": [
+                  {
+                    "file": "sources/farrer-park/onemap-mrt/page-1.json",
+                    "sha256": "c000da28c39da66ad259eaf2e3f091895c641a6d9a75aee3ea13400876368eb7",
+                    "fetched_at": "2026-10-01T06:48:40.650397+00:00"
+                  }
+                ]
+              },
+              "primary_status": "duplicate",
+              "candidate_count": 6,
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 289,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8526350747985,
+                1.311863732195899
+              ]
+            },
+            "properties": {
+              "station_id": "farrer-park",
+              "station_name": "Farrer Park",
+              "codes": [
+                "NE8"
+              ],
+              "station_codes": [
+                "NE8"
+              ],
+              "exit_id": "MRT:E",
+              "label": "E",
+              "scope": "MRT",
+              "classification": "unique_lta",
+              "candidate_source": "onemap",
+              "source": "onemap",
+              "source_record_id": "farrer-park:MRT:4",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 1,
+              "candidate_count": 6,
+              "provenance": {
+                "building": "FARRER PARK MRT STATION EXIT E",
+                "provenance": {
+                  "query_scope": "MRT",
+                  "response_files": [
+                    {
+                      "file": "sources/farrer-park/onemap-mrt/page-1.json",
+                      "sha256": "c000da28c39da66ad259eaf2e3f091895c641a6d9a75aee3ea13400876368eb7",
+                      "fetched_at": "2026-10-01T06:48:40.650397+00:00"
+                    }
+                  ]
+                }
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "duplicate",
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 290,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8522142815803,
+                1.311788491165836
+              ]
+            },
+            "properties": {
+              "station_id": "farrer-park",
+              "station_name": "Farrer Park",
+              "codes": [
+                "NE8"
+              ],
+              "station_codes": [
+                "NE8"
+              ],
+              "exit_id": "MRT:E",
+              "label": "E",
+              "scope": "MRT",
+              "classification": "unique_lta",
+              "candidate_source": "onemap",
+              "source": "onemap",
+              "source_record_id": "farrer-park:MRT:5",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 2,
+              "candidate_count": 6,
+              "provenance": {
+                "building": "FARRER PARK MRT STATION EXIT E",
+                "provenance": {
+                  "query_scope": "MRT",
+                  "response_files": [
+                    {
+                      "file": "sources/farrer-park/onemap-mrt/page-1.json",
+                      "sha256": "c000da28c39da66ad259eaf2e3f091895c641a6d9a75aee3ea13400876368eb7",
+                      "fetched_at": "2026-10-01T06:48:40.650397+00:00"
+                    }
+                  ]
+                }
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "duplicate",
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": true,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        },
+        {
+          "candidate_feature_index": 291,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8527189,
+                1.3118907
+              ]
+            },
+            "properties": {
+              "station_id": "farrer-park",
+              "station_name": "Farrer Park",
+              "codes": [
+                "NE8"
+              ],
+              "station_codes": [
+                "NE8"
+              ],
+              "exit_id": "MRT:E",
+              "label": "E",
+              "scope": "MRT",
+              "classification": "unique_lta",
+              "candidate_source": "osm",
+              "source": "osm",
+              "source_record_id": "node/2402426984",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 3,
+              "candidate_count": 6,
+              "provenance": {
+                "source_timestamp": "2023-06-09T03:51:29Z",
+                "source_url": "https://www.openstreetmap.org/node/2402426984",
+                "source_tags": {
+                  "colour": "purple",
+                  "level": "-1;1",
+                  "name": "Exit E",
+                  "railway": "subway_entrance",
+                  "ref": "E"
+                },
+                "association": [
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/7981605"
+                  }
+                ],
+                "label_evidence": "ref"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 3,
+              "sources_for_exit": [
+                "lta_geojson",
+                "onemap",
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": true,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "kadaloor",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 361,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.91638745848152,
+        1.3998092631501848
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 361,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.91638745848152,
+                1.3998092631501848
+              ]
+            },
+            "properties": {
+              "station_id": "kadaloor",
+              "station_name": "Kadaloor",
+              "codes": [
+                "PE5"
+              ],
+              "station_codes": [
+                "PE5"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21423",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 19,
+                "source_updated_at": "20251202172807",
+                "source_crc": "8F348D1DC2C6DCD9",
+                "source_station_name": "KADALOOR LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "kadaloor",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 362,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.91651713032786,
+        1.399411467180394
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 362,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.91651713032786,
+                1.399411467180394
+              ]
+            },
+            "properties": {
+              "station_id": "kadaloor",
+              "station_name": "Kadaloor",
+              "codes": [
+                "PE5"
+              ],
+              "station_codes": [
+                "PE5"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21593",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 189,
+                "source_updated_at": "20251202172807",
+                "source_crc": "F84C17D9498B88F1",
+                "source_station_name": "KADALOOR LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "keat-hong",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 371,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.74922684160637,
+        1.3784649670168292
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 371,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.74922684160637,
+                1.3784649670168292
+              ]
+            },
+            "properties": {
+              "station_id": "keat-hong",
+              "station_name": "Keat Hong",
+              "codes": [
+                "BP3"
+              ],
+              "station_codes": [
+                "BP3"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21182",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 302,
+                "source_updated_at": "20251202172807",
+                "source_crc": "C7644F242A74A168",
+                "source_station_name": "KEAT HONG LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "nibong",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 528,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90007380805265,
+        1.4117727733571026
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 528,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90007380805265,
+                1.4117727733571026
+              ]
+            },
+            "properties": {
+              "station_id": "nibong",
+              "station_name": "Nibong",
+              "codes": [
+                "PW5"
+              ],
+              "station_codes": [
+                "PW5"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21652",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 531,
+                "source_updated_at": "20251202172807",
+                "source_crc": "853F2A40C64D662F",
+                "source_station_name": "NIBONG LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "nibong",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 529,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90053155420699,
+        1.4119103237022979
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 529,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90053155420699,
+                1.4119103237022979
+              ]
+            },
+            "properties": {
+              "station_id": "nibong",
+              "station_name": "Nibong",
+              "codes": [
+                "PW5"
+              ],
+              "station_codes": [
+                "PW5"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21653",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 532,
+                "source_updated_at": "20251202172807",
+                "source_crc": "BDB536DD4D5059E3",
+                "source_station_name": "NIBONG LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "oasis",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 536,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.91264613306079,
+        1.4025071314475719
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 536,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.91264613306079,
+                1.4025071314475719
+              ]
+            },
+            "properties": {
+              "station_id": "oasis",
+              "station_name": "Oasis",
+              "codes": [
+                "PE6"
+              ],
+              "station_codes": [
+                "PE6"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21422",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 18,
+                "source_updated_at": "20251202172807",
+                "source_crc": "0BEB37C242EBF30C",
+                "source_station_name": "OASIS LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "oasis",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 537,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.91275457379543,
+        1.4021037193748016
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 537,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.91275457379543,
+                1.4021037193748016
+              ]
+            },
+            "properties": {
+              "station_id": "oasis",
+              "station_name": "Oasis",
+              "codes": [
+                "PE6"
+              ],
+              "station_codes": [
+                "PE6"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21592",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 188,
+                "source_updated_at": "20251202172807",
+                "source_crc": "9B8770AEDF254A19",
+                "source_station_name": "OASIS LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "petir",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 582,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.76679301496294,
+        1.37760322809516
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 582,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.76679301496294,
+                1.37760322809516
+              ]
+            },
+            "properties": {
+              "station_id": "petir",
+              "station_name": "Petir",
+              "codes": [
+                "BP7"
+              ],
+              "station_codes": [
+                "BP7"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21186",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 306,
+                "source_updated_at": "20251202172807",
+                "source_crc": "B0600A1212F651AE",
+                "source_station_name": "PETIR LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "punggol-point",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 607,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90681779233337,
+        1.4169147679142875
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 607,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90681779233337,
+                1.4169147679142875
+              ]
+            },
+            "properties": {
+              "station_id": "punggol-point",
+              "station_name": "Punggol Point",
+              "codes": [
+                "PW3"
+              ],
+              "station_codes": [
+                "PW3"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21651",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 530,
+                "source_updated_at": "20251202172807",
+                "source_crc": "A61E18152335BFC3",
+                "source_station_name": "PUNGGOL POINT LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "punggol-point",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 608,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.9066933049236,
+        1.4166640679409692
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 608,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.9066933049236,
+                1.4166640679409692
+              ]
+            },
+            "properties": {
+              "station_id": "punggol-point",
+              "station_name": "Punggol Point",
+              "codes": [
+                "PW3"
+              ],
+              "station_codes": [
+                "PW3"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21650",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 529,
+                "source_updated_at": "20251202172807",
+                "source_crc": "45E35F4903E99C73",
+                "source_station_name": "PUNGGOL POINT LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "raffles-place",
+      "exit_id": "MRT:K",
+      "selected_candidate_feature_index": 623,
+      "selected_source": "osm",
+      "selected_coordinates": [
+        103.8512137,
+        1.2838314
+      ],
+      "note": "Owner accepted the saved OSM entrance with the matching exit ref. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 623,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8512137,
+                1.2838314
+              ]
+            },
+            "properties": {
+              "station_id": "raffles-place",
+              "station_name": "Raffles Place",
+              "codes": [
+                "EW14",
+                "NS26"
+              ],
+              "station_codes": [
+                "EW14",
+                "NS26"
+              ],
+              "exit_id": "MRT:K",
+              "label": "K",
+              "scope": "MRT",
+              "classification": "osm_only",
+              "candidate_source": "osm",
+              "source": "osm",
+              "source_record_id": "node/10277858575",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_timestamp": "2022-12-21T11:48:50Z",
+                "source_url": "https://www.openstreetmap.org/node/10277858575",
+                "source_tags": {
+                  "railway": "subway_entrance",
+                  "ref": "K"
+                },
+                "association": [
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/7695965"
+                  }
+                ],
+                "label_evidence": "ref"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "raffles-place",
+      "exit_id": "MRT:L",
+      "selected_candidate_feature_index": 624,
+      "selected_source": "osm",
+      "selected_coordinates": [
+        103.8512662,
+        1.2844449
+      ],
+      "note": "Owner accepted the saved OSM entrance with the matching exit ref. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 624,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8512662,
+                1.2844449
+              ]
+            },
+            "properties": {
+              "station_id": "raffles-place",
+              "station_name": "Raffles Place",
+              "codes": [
+                "EW14",
+                "NS26"
+              ],
+              "station_codes": [
+                "EW14",
+                "NS26"
+              ],
+              "exit_id": "MRT:L",
+              "label": "L",
+              "scope": "MRT",
+              "classification": "osm_only",
+              "candidate_source": "osm",
+              "source": "osm",
+              "source_record_id": "node/10277858574",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_timestamp": "2022-12-21T11:48:50Z",
+                "source_url": "https://www.openstreetmap.org/node/10277858574",
+                "source_tags": {
+                  "railway": "subway_entrance",
+                  "ref": "L"
+                },
+                "association": [
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/7695965"
+                  }
+                ],
+                "label_evidence": "ref"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "raffles-place",
+      "exit_id": "MRT:M",
+      "selected_candidate_feature_index": 625,
+      "selected_source": "osm",
+      "selected_coordinates": [
+        103.8517468,
+        1.2843245
+      ],
+      "note": "Owner accepted the saved OSM entrance with the matching exit ref. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 625,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8517468,
+                1.2843245
+              ]
+            },
+            "properties": {
+              "station_id": "raffles-place",
+              "station_name": "Raffles Place",
+              "codes": [
+                "EW14",
+                "NS26"
+              ],
+              "station_codes": [
+                "EW14",
+                "NS26"
+              ],
+              "exit_id": "MRT:M",
+              "label": "M",
+              "scope": "MRT",
+              "classification": "osm_only",
+              "candidate_source": "osm",
+              "source": "osm",
+              "source_record_id": "node/10277858573",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_timestamp": "2022-12-21T11:48:50Z",
+                "source_url": "https://www.openstreetmap.org/node/10277858573",
+                "source_tags": {
+                  "railway": "subway_entrance",
+                  "ref": "M"
+                },
+                "association": [
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/7695965"
+                  }
+                ],
+                "label_evidence": "ref"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "riviera",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 632,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.91626309852711,
+        1.3943256111183955
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 632,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.91626309852711,
+                1.3943256111183955
+              ]
+            },
+            "properties": {
+              "station_id": "riviera",
+              "station_name": "Riviera",
+              "codes": [
+                "PE4"
+              ],
+              "station_codes": [
+                "PE4"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21595",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 191,
+                "source_updated_at": "20251202172807",
+                "source_crc": "720E105DE8EACE66",
+                "source_station_name": "RIVIERA LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "riviera",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 633,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.91593547052074,
+        1.3945590659696856
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 633,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.91593547052074,
+                1.3945590659696856
+              ]
+            },
+            "properties": {
+              "station_id": "riviera",
+              "station_name": "Riviera",
+              "codes": [
+                "PE4"
+              ],
+              "station_codes": [
+                "PE4"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21594",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 190,
+                "source_updated_at": "20251202172807",
+                "source_crc": "B302D78A0F102EF5",
+                "source_station_name": "RIVIERA LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "samudera",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 641,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90191150962721,
+        1.4158653604828477
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 641,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90191150962721,
+                1.4158653604828477
+              ]
+            },
+            "properties": {
+              "station_id": "samudera",
+              "station_name": "Samudera",
+              "codes": [
+                "PW4"
+              ],
+              "station_codes": [
+                "PW4"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21585",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 181,
+                "source_updated_at": "20251202172807",
+                "source_crc": "5773D3B5DB9A561F",
+                "source_station_name": "SAMUDERA LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "samudera",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 642,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90236156011096,
+        1.41590585709171
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 642,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90236156011096,
+                1.41590585709171
+              ]
+            },
+            "properties": {
+              "station_id": "samudera",
+              "station_name": "Samudera",
+              "codes": [
+                "PW4"
+              ],
+              "station_codes": [
+                "PW4"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21586",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 182,
+                "source_updated_at": "20251202172807",
+                "source_crc": "4D74C24533C50685",
+                "source_station_name": "SAMUDERA LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "segar",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 643,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.76940991480218,
+        1.3878115559952267
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 643,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.76940991480218,
+                1.3878115559952267
+              ]
+            },
+            "properties": {
+              "station_id": "segar",
+              "station_name": "Segar",
+              "codes": [
+                "BP11"
+              ],
+              "station_codes": [
+                "BP11"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21190",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 310,
+                "source_updated_at": "20251202172807",
+                "source_crc": "54BFE6EB924CBA6F",
+                "source_station_name": "SEGAR LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "soo-teck",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 696,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.897029921817,
+        1.4050149248670734
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 696,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.897029921817,
+                1.4050149248670734
+              ]
+            },
+            "properties": {
+              "station_id": "soo-teck",
+              "station_name": "Soo Teck",
+              "codes": [
+                "PW7"
+              ],
+              "station_codes": [
+                "PW7"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21419",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 15,
+                "source_updated_at": "20251202172807",
+                "source_crc": "5C840B0088A042B7",
+                "source_station_name": "SOO TECK LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "soo-teck",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 697,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.89740857212135,
+        1.4052448994991427
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 697,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.89740857212135,
+                1.4052448994991427
+              ]
+            },
+            "properties": {
+              "station_id": "soo-teck",
+              "station_name": "Soo Teck",
+              "codes": [
+                "PW7"
+              ],
+              "station_codes": [
+                "PW7"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21420",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 16,
+                "source_updated_at": "20251202172807",
+                "source_crc": "7CDEC183A92283AA",
+                "source_station_name": "SOO TECK LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "south-view",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 698,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.74510113107972,
+        1.3803176569910298
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 698,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.74510113107972,
+                1.3803176569910298
+              ]
+            },
+            "properties": {
+              "station_id": "south-view",
+              "station_name": "South View",
+              "codes": [
+                "BP2"
+              ],
+              "station_codes": [
+                "BP2"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21427",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 23,
+                "source_updated_at": "20251202172807",
+                "source_crc": "335EFAECE777F0ED",
+                "source_station_name": "SOUTH VIEW LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "sumang",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 719,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.89833568007762,
+        1.4083684310204716
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 719,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.89833568007762,
+                1.4083684310204716
+              ]
+            },
+            "properties": {
+              "station_id": "sumang",
+              "station_name": "Sumang",
+              "codes": [
+                "PW6"
+              ],
+              "station_codes": [
+                "PW6"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21572",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 168,
+                "source_updated_at": "20251202172807",
+                "source_crc": "DE121A01C547F972",
+                "source_station_name": "SUMANG LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "sumang",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 720,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.8987571239555,
+        1.4084879018383736
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 720,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8987571239555,
+                1.4084879018383736
+              ]
+            },
+            "properties": {
+              "station_id": "sumang",
+              "station_name": "Sumang",
+              "codes": [
+                "PW6"
+              ],
+              "station_codes": [
+                "PW6"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21573",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 169,
+                "source_updated_at": "20251202172807",
+                "source_crc": "5B2417A2FAFF4D06",
+                "source_station_name": "SUMANG LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "tanjong-pagar",
+      "exit_id": "MRT:J",
+      "selected_candidate_feature_index": 759,
+      "selected_source": "osm",
+      "selected_coordinates": [
+        103.845666,
+        1.2767182
+      ],
+      "note": "Owner accepted the saved OSM entrance with the matching exit ref. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 759,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.845666,
+                1.2767182
+              ]
+            },
+            "properties": {
+              "station_id": "tanjong-pagar",
+              "station_name": "Tanjong Pagar",
+              "codes": [
+                "EW15"
+              ],
+              "station_codes": [
+                "EW15"
+              ],
+              "exit_id": "MRT:J",
+              "label": "J",
+              "scope": "MRT",
+              "classification": "osm_only",
+              "candidate_source": "osm",
+              "source": "osm",
+              "source_record_id": "node/6033450179",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_timestamp": "2025-01-11T16:44:50Z",
+                "source_url": "https://www.openstreetmap.org/node/6033450179",
+                "source_tags": {
+                  "colour": "green",
+                  "name": "Tanjong Pagar (EWL)",
+                  "railway": "subway_entrance",
+                  "ref": "J",
+                  "wheelchair": "no"
+                },
+                "association": [
+                  {
+                    "scope": "MRT",
+                    "name": "Tanjong Pagar (EWL)"
+                  }
+                ],
+                "label_evidence": "ref"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "tanjong-pagar",
+      "exit_id": "MRT:K",
+      "selected_candidate_feature_index": 760,
+      "selected_source": "osm",
+      "selected_coordinates": [
+        103.8473892,
+        1.2785677
+      ],
+      "note": "Owner accepted the saved OSM entrance with the matching exit ref. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 760,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8473892,
+                1.2785677
+              ]
+            },
+            "properties": {
+              "station_id": "tanjong-pagar",
+              "station_name": "Tanjong Pagar",
+              "codes": [
+                "EW15"
+              ],
+              "station_codes": [
+                "EW15"
+              ],
+              "exit_id": "MRT:K",
+              "label": "K",
+              "scope": "MRT",
+              "classification": "osm_only",
+              "candidate_source": "osm",
+              "source": "osm",
+              "source_record_id": "node/1839626477",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_timestamp": "2025-01-11T16:43:07Z",
+                "source_url": "https://www.openstreetmap.org/node/1839626477",
+                "source_tags": {
+                  "colour": "green",
+                  "name": "Tanjong Pagar (EWL)",
+                  "railway": "subway_entrance",
+                  "ref": "K",
+                  "wheelchair": "yes"
+                },
+                "association": [
+                  {
+                    "scope": "MRT",
+                    "parent": "relation/7981574"
+                  },
+                  {
+                    "scope": "MRT",
+                    "name": "Tanjong Pagar (EWL)"
+                  }
+                ],
+                "label_evidence": "ref"
+              },
+              "scopes": [
+                "MRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "osm"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "teck-lee",
+      "exit_id": "LRT:A",
+      "selected_candidate_feature_index": 765,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90678152950578,
+        1.4128757347357002
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 765,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90678152950578,
+                1.4128757347357002
+              ]
+            },
+            "properties": {
+              "station_id": "teck-lee",
+              "station_name": "Teck Lee",
+              "codes": [
+                "PW2"
+              ],
+              "station_codes": [
+                "PW2"
+              ],
+              "exit_id": "LRT:A",
+              "label": "A",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21587",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 183,
+                "source_updated_at": "20251202172807",
+                "source_crc": "3025BE9395030FE0",
+                "source_station_name": "TECK LEE LRT STATION",
+                "source_exit_code": "Exit A"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "station_id": "teck-lee",
+      "exit_id": "LRT:B",
+      "selected_candidate_feature_index": 766,
+      "selected_source": "lta_geojson",
+      "selected_coordinates": [
+        103.90651078993365,
+        1.41292900309077
+      ],
+      "note": "Owner accepted the sole saved LTA candidate for this Stage 1 exit. Not individually pin-reviewed.",
+      "candidates": [
+        {
+          "candidate_feature_index": 766,
+          "feature": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90651078993365,
+                1.41292900309077
+              ]
+            },
+            "properties": {
+              "station_id": "teck-lee",
+              "station_name": "Teck Lee",
+              "codes": [
+                "PW2"
+              ],
+              "station_codes": [
+                "PW2"
+              ],
+              "exit_id": "LRT:B",
+              "label": "B",
+              "scope": "LRT",
+              "classification": "unique_lta",
+              "candidate_source": "lta_geojson",
+              "source": "lta_geojson",
+              "source_record_id": "OBJECTID:21588",
+              "review_status": "pending_human_review",
+              "approved": false,
+              "position_kind": null,
+              "accuracy_metres": null,
+              "candidate_index": 0,
+              "candidate_count": 1,
+              "provenance": {
+                "source_feature_index": 184,
+                "source_updated_at": "20251202172807",
+                "source_crc": "B648DCD0478F77B3",
+                "source_station_name": "TECK LEE LRT STATION",
+                "source_exit_code": "Exit B"
+              },
+              "scopes": [
+                "LRT"
+              ],
+              "selection_status": "bootstrap_candidate",
+              "selected": false,
+              "review_reasons": [],
+              "primary_status": "needs_review",
+              "source_count": 1,
+              "sources_for_exit": [
+                "lta_geojson"
+              ],
+              "duplicate_within_source": false,
+              "multiple_candidates": false,
+              "needs_review": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Local review app server binding denied by sandbox. No live app inspection performed.",
+    "SBS maps are saved images; new web OSM access failed. Decisions use saved evidence."
+  ]
+}

@@ -1,0 +1,1239 @@
+{
+  "schema_version": 1,
+  "kind": "stage2_coordinate_migration_report",
+  "status": "complete_requires_review",
+  "inputs": {
+    "stage1_baseline": {
+      "path": "config/stage1-approved-baseline.json",
+      "sha256": "eea8d4777906c28c9d46b8733a14e98edec82a621840688a1674cc571b523528"
+    },
+    "reviewed_coordinates": {
+      "path": "config/stage2-reviewed-coordinates.geojson",
+      "sha256": "585179147c222c67b5a5f9c88450c2c487386271037cb5a3555512bd5f57ceb3"
+    },
+    "original_ledger": {
+      "path": "config/stage2-coordinate-ledger.json",
+      "sha256": "15756d3dff61b88c0f9bbc7092e2d6e1bbdff7b1d1cf15ca313937178748c570"
+    },
+    "v2_candidate_bundle": {
+      "path": "../mrt-data-v2/review_app/data/candidates.geojson",
+      "sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d"
+    }
+  },
+  "summary": {
+    "stage1_exit_identity_count": 614,
+    "v2_kartographer_candidate_record_count": 279,
+    "v2_kartographer_distinct_raw_feature_count": 278,
+    "mapped_kartographer_candidate_record_count": 279,
+    "unmapped_kartographer_candidate_record_count": 0,
+    "current_kartographer_identity_count": 278,
+    "reviewed_gap_fill_count": 28,
+    "reviewed_kartographer_overlap_count": 0,
+    "currently_resolved_identity_count": 306,
+    "currently_unresolved_identity_count": 308,
+    "station_count_with_unresolved_exits": 90
+  },
+  "identity_migrations": [
+    {
+      "old_identity": [
+        "cantonment",
+        "UNSCOPED:1"
+      ],
+      "current_identity": [
+        "cantonment",
+        "MRT:1"
+      ],
+      "coordinates": [
+        103.83568,
+        1.27209
+      ]
+    },
+    {
+      "old_identity": [
+        "cantonment",
+        "UNSCOPED:3"
+      ],
+      "current_identity": [
+        "cantonment",
+        "MRT:3"
+      ],
+      "coordinates": [
+        103.83817,
+        1.2736
+      ]
+    },
+    {
+      "old_identity": [
+        "cantonment",
+        "UNSCOPED:4"
+      ],
+      "current_identity": [
+        "cantonment",
+        "MRT:4"
+      ],
+      "coordinates": [
+        103.83746,
+        1.27267
+      ]
+    },
+    {
+      "old_identity": [
+        "choa-chu-kang",
+        "LRT:E"
+      ],
+      "current_identity": [
+        "choa-chu-kang",
+        "SHARED:E"
+      ],
+      "coordinates": [
+        103.74462,
+        1.38474
+      ]
+    },
+    {
+      "old_identity": [
+        "choa-chu-kang",
+        "MRT:E"
+      ],
+      "current_identity": [
+        "choa-chu-kang",
+        "SHARED:E"
+      ],
+      "coordinates": [
+        103.74462,
+        1.38474
+      ]
+    },
+    {
+      "old_identity": [
+        "keppel",
+        "UNSCOPED:2"
+      ],
+      "current_identity": [
+        "keppel",
+        "MRT:2"
+      ],
+      "coordinates": [
+        103.82978,
+        1.27067
+      ]
+    },
+    {
+      "old_identity": [
+        "keppel",
+        "UNSCOPED:3"
+      ],
+      "current_identity": [
+        "keppel",
+        "MRT:3"
+      ],
+      "coordinates": [
+        103.83105,
+        1.27095
+      ]
+    },
+    {
+      "old_identity": [
+        "prince-edward-road",
+        "UNSCOPED:1"
+      ],
+      "current_identity": [
+        "prince-edward-road",
+        "MRT:1"
+      ],
+      "coordinates": [
+        103.8455,
+        1.27298
+      ]
+    },
+    {
+      "old_identity": [
+        "prince-edward-road",
+        "UNSCOPED:2"
+      ],
+      "current_identity": [
+        "prince-edward-road",
+        "MRT:2"
+      ],
+      "coordinates": [
+        103.84688,
+        1.27342
+      ]
+    }
+  ],
+  "duplicate_migrations": [
+    {
+      "current_identity": [
+        "choa-chu-kang",
+        "SHARED:E"
+      ],
+      "source_records": [
+        {
+          "old_identity": [
+            "choa-chu-kang",
+            "LRT:E"
+          ],
+          "current_identity": [
+            "choa-chu-kang",
+            "SHARED:E"
+          ],
+          "coordinates": [
+            103.74462,
+            1.38474
+          ]
+        },
+        {
+          "old_identity": [
+            "choa-chu-kang",
+            "MRT:E"
+          ],
+          "current_identity": [
+            "choa-chu-kang",
+            "SHARED:E"
+          ],
+          "coordinates": [
+            103.74462,
+            1.38474
+          ]
+        }
+      ],
+      "identical_coordinates": true
+    }
+  ],
+  "unresolved_stations": [
+    {
+      "station_id": "bangkit",
+      "station_name": "Bangkit",
+      "exit_ids": [
+        "LRT:A"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Bangkit_station"
+    },
+    {
+      "station_id": "bayfront",
+      "station_name": "Bayfront",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E"
+      ],
+      "count": 5,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Bayfront_station"
+    },
+    {
+      "station_id": "bayshore",
+      "station_name": "Bayshore",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3",
+        "MRT:4",
+        "MRT:5"
+      ],
+      "count": 5,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Bayshore_station"
+    },
+    {
+      "station_id": "bedok",
+      "station_name": "Bedok",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Bedok_station"
+    },
+    {
+      "station_id": "bedok-reservoir",
+      "station_name": "Bedok Reservoir",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Bedok_Reservoir_station"
+    },
+    {
+      "station_id": "bencoolen",
+      "station_name": "Bencoolen",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Bencoolen_station"
+    },
+    {
+      "station_id": "bendemeer",
+      "station_name": "Bendemeer",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Bendemeer_station"
+    },
+    {
+      "station_id": "boon-keng",
+      "station_name": "Boon Keng",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Boon_Keng_station"
+    },
+    {
+      "station_id": "boon-lay",
+      "station_name": "Boon Lay",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E",
+        "MRT:F"
+      ],
+      "count": 6,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Boon_Lay_station"
+    },
+    {
+      "station_id": "braddell",
+      "station_name": "Braddell",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Braddell_station"
+    },
+    {
+      "station_id": "buangkok",
+      "station_name": "Buangkok",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Buangkok_station"
+    },
+    {
+      "station_id": "bugis",
+      "station_name": "Bugis",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E",
+        "MRT:F",
+        "MRT:G"
+      ],
+      "count": 7,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Bugis_station"
+    },
+    {
+      "station_id": "cantonment",
+      "station_name": "Cantonment",
+      "exit_ids": [
+        "MRT:2"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Cantonment_station"
+    },
+    {
+      "station_id": "chinatown",
+      "station_name": "Chinatown",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E",
+        "MRT:F",
+        "MRT:G",
+        "MRT:H"
+      ],
+      "count": 7,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Chinatown_station"
+    },
+    {
+      "station_id": "chinese-garden",
+      "station_name": "Chinese Garden",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Chinese_Garden_station"
+    },
+    {
+      "station_id": "city-hall",
+      "station_name": "City Hall",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/City_Hall_station"
+    },
+    {
+      "station_id": "clarke-quay",
+      "station_name": "Clarke Quay",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:E",
+        "MRT:F",
+        "MRT:G"
+      ],
+      "count": 6,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Clarke_Quay_station"
+    },
+    {
+      "station_id": "clementi",
+      "station_name": "Clementi",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Clementi_station"
+    },
+    {
+      "station_id": "commonwealth",
+      "station_name": "Commonwealth",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Commonwealth_station"
+    },
+    {
+      "station_id": "coral-edge",
+      "station_name": "Coral Edge",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Coral_Edge_station"
+    },
+    {
+      "station_id": "cove",
+      "station_name": "Cove",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Cove_station"
+    },
+    {
+      "station_id": "damai",
+      "station_name": "Damai",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Damai_station"
+    },
+    {
+      "station_id": "dhoby-ghaut",
+      "station_name": "Dhoby Ghaut",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E",
+        "MRT:G",
+        "MRT:F"
+      ],
+      "count": 7,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Dhoby_Ghaut_station"
+    },
+    {
+      "station_id": "downtown",
+      "station_name": "Downtown",
+      "exit_ids": [
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Downtown_station"
+    },
+    {
+      "station_id": "expo",
+      "station_name": "Expo",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:C",
+        "MRT:B",
+        "MRT:D",
+        "MRT:E",
+        "MRT:F",
+        "MRT:G"
+      ],
+      "count": 7,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Expo_station"
+    },
+    {
+      "station_id": "fajar",
+      "station_name": "Fajar",
+      "exit_ids": [
+        "LRT:A"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Fajar_station"
+    },
+    {
+      "station_id": "farrer-park",
+      "station_name": "Farrer Park",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E",
+        "MRT:F",
+        "MRT:G",
+        "MRT:H",
+        "MRT:I"
+      ],
+      "count": 9,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Farrer_Park_station"
+    },
+    {
+      "station_id": "fort-canning",
+      "station_name": "Fort Canning",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Fort_Canning_station"
+    },
+    {
+      "station_id": "gardens-by-the-bay",
+      "station_name": "Gardens by the Bay",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:3"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Gardens_by_the_Bay_station"
+    },
+    {
+      "station_id": "geylang-bahru",
+      "station_name": "Geylang Bahru",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Geylang_Bahru_station"
+    },
+    {
+      "station_id": "great-world",
+      "station_name": "Great World",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3",
+        "MRT:4",
+        "MRT:5",
+        "MRT:6"
+      ],
+      "count": 6,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Great_World_station"
+    },
+    {
+      "station_id": "gul-circle",
+      "station_name": "Gul Circle",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Gul_Circle_station"
+    },
+    {
+      "station_id": "harbourfront",
+      "station_name": "HarbourFront",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E"
+      ],
+      "count": 5,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/HarbourFront_station"
+    },
+    {
+      "station_id": "havelock",
+      "station_name": "Havelock",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3",
+        "MRT:4",
+        "MRT:5"
+      ],
+      "count": 5,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Havelock_station"
+    },
+    {
+      "station_id": "haw-par-villa",
+      "station_name": "Haw Par Villa",
+      "exit_ids": [
+        "MRT:A"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Haw_Par_Villa_station"
+    },
+    {
+      "station_id": "jalan-besar",
+      "station_name": "Jalan Besar",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Jalan_Besar_station"
+    },
+    {
+      "station_id": "joo-koon",
+      "station_name": "Joo Koon",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Joo_Koon_station"
+    },
+    {
+      "station_id": "kadaloor",
+      "station_name": "Kadaloor",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Kadaloor_station"
+    },
+    {
+      "station_id": "kaki-bukit",
+      "station_name": "Kaki Bukit",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Kaki_Bukit_station"
+    },
+    {
+      "station_id": "kallang",
+      "station_name": "Kallang",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Kallang_station"
+    },
+    {
+      "station_id": "katong-park",
+      "station_name": "Katong Park",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Katong_Park_station"
+    },
+    {
+      "station_id": "keat-hong",
+      "station_name": "Keat Hong",
+      "exit_ids": [
+        "LRT:A"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Keat_Hong_station"
+    },
+    {
+      "station_id": "kembangan",
+      "station_name": "Kembangan",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Kembangan_station"
+    },
+    {
+      "station_id": "kent-ridge",
+      "station_name": "Kent Ridge",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Kent_Ridge_station"
+    },
+    {
+      "station_id": "keppel",
+      "station_name": "Keppel",
+      "exit_ids": [
+        "MRT:1"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Keppel_station"
+    },
+    {
+      "station_id": "kovan",
+      "station_name": "Kovan",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Kovan_station"
+    },
+    {
+      "station_id": "lakeside",
+      "station_name": "Lakeside",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Lakeside_station"
+    },
+    {
+      "station_id": "marine-parade",
+      "station_name": "Marine Parade",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3",
+        "MRT:4",
+        "MRT:5",
+        "MRT:6"
+      ],
+      "count": 6,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Marine_Parade_station"
+    },
+    {
+      "station_id": "marine-terrace",
+      "station_name": "Marine Terrace",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3",
+        "MRT:4",
+        "MRT:5",
+        "MRT:6"
+      ],
+      "count": 6,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Marine_Terrace_station"
+    },
+    {
+      "station_id": "mattar",
+      "station_name": "Mattar",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Mattar_station"
+    },
+    {
+      "station_id": "maxwell",
+      "station_name": "Maxwell",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Maxwell_station"
+    },
+    {
+      "station_id": "nibong",
+      "station_name": "Nibong",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Nibong_station"
+    },
+    {
+      "station_id": "novena",
+      "station_name": "Novena",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Novena_station"
+    },
+    {
+      "station_id": "oasis",
+      "station_name": "Oasis",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Oasis_station"
+    },
+    {
+      "station_id": "orchard",
+      "station_name": "Orchard",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3",
+        "MRT:4",
+        "MRT:5",
+        "MRT:6",
+        "MRT:7",
+        "MRT:8",
+        "MRT:9",
+        "MRT:10",
+        "MRT:11",
+        "MRT:12",
+        "MRT:13"
+      ],
+      "count": 13,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Orchard_station"
+    },
+    {
+      "station_id": "outram-park",
+      "station_name": "Outram Park",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3",
+        "MRT:4",
+        "MRT:5",
+        "MRT:6",
+        "MRT:7",
+        "MRT:8"
+      ],
+      "count": 8,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Outram_Park_station"
+    },
+    {
+      "station_id": "petir",
+      "station_name": "Petir",
+      "exit_ids": [
+        "LRT:A"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Petir_station"
+    },
+    {
+      "station_id": "pioneer",
+      "station_name": "Pioneer",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Pioneer_station"
+    },
+    {
+      "station_id": "potong-pasir",
+      "station_name": "Potong Pasir",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Potong_Pasir_station"
+    },
+    {
+      "station_id": "punggol",
+      "station_name": "Punggol",
+      "exit_ids": [
+        "SHARED:A",
+        "SHARED:B",
+        "SHARED:C",
+        "SHARED:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Punggol_station"
+    },
+    {
+      "station_id": "punggol-point",
+      "station_name": "Punggol Point",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Punggol_Point_station"
+    },
+    {
+      "station_id": "queenstown",
+      "station_name": "Queenstown",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Queenstown_station"
+    },
+    {
+      "station_id": "raffles-place",
+      "station_name": "Raffles Place",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E",
+        "MRT:F",
+        "MRT:G",
+        "MRT:H",
+        "MRT:I",
+        "MRT:J",
+        "MRT:K",
+        "MRT:L",
+        "MRT:M"
+      ],
+      "count": 13,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Raffles_Place_station"
+    },
+    {
+      "station_id": "redhill",
+      "station_name": "Redhill",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Redhill_station"
+    },
+    {
+      "station_id": "riviera",
+      "station_name": "Riviera",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Riviera_station"
+    },
+    {
+      "station_id": "rochor",
+      "station_name": "Rochor",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Rochor_station"
+    },
+    {
+      "station_id": "samudera",
+      "station_name": "Samudera",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Samudera_station"
+    },
+    {
+      "station_id": "segar",
+      "station_name": "Segar",
+      "exit_ids": [
+        "LRT:A"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Segar_station"
+    },
+    {
+      "station_id": "sengkang",
+      "station_name": "Sengkang",
+      "exit_ids": [
+        "SHARED:A",
+        "SHARED:B",
+        "SHARED:C",
+        "SHARED:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Sengkang_station"
+    },
+    {
+      "station_id": "shenton-way",
+      "station_name": "Shenton Way",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3",
+        "MRT:4",
+        "MRT:5",
+        "MRT:6"
+      ],
+      "count": 6,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Shenton_Way_station"
+    },
+    {
+      "station_id": "simei",
+      "station_name": "Simei",
+      "exit_ids": [
+        "MRT:A"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Simei_station"
+    },
+    {
+      "station_id": "somerset",
+      "station_name": "Somerset",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Somerset_station"
+    },
+    {
+      "station_id": "soo-teck",
+      "station_name": "Soo Teck",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Soo_Teck_station"
+    },
+    {
+      "station_id": "south-view",
+      "station_name": "South View",
+      "exit_ids": [
+        "LRT:A"
+      ],
+      "count": 1,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/South_View_station"
+    },
+    {
+      "station_id": "sumang",
+      "station_name": "Sumang",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Sumang_station"
+    },
+    {
+      "station_id": "tampines",
+      "station_name": "Tampines",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E",
+        "MRT:F",
+        "MRT:G"
+      ],
+      "count": 7,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Tampines_station"
+    },
+    {
+      "station_id": "tampines-east",
+      "station_name": "Tampines East",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Tampines_East_station"
+    },
+    {
+      "station_id": "tampines-west",
+      "station_name": "Tampines West",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Tampines_West_station"
+    },
+    {
+      "station_id": "tanjong-katong",
+      "station_name": "Tanjong Katong",
+      "exit_ids": [
+        "MRT:1",
+        "MRT:2",
+        "MRT:3"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Tanjong_Katong_station"
+    },
+    {
+      "station_id": "tanjong-pagar",
+      "station_name": "Tanjong Pagar",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D",
+        "MRT:E",
+        "MRT:F",
+        "MRT:G",
+        "MRT:H",
+        "MRT:J",
+        "MRT:K"
+      ],
+      "count": 10,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Tanjong_Pagar_station"
+    },
+    {
+      "station_id": "teck-lee",
+      "station_name": "Teck Lee",
+      "exit_ids": [
+        "LRT:A",
+        "LRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Teck_Lee_station"
+    },
+    {
+      "station_id": "telok-ayer",
+      "station_name": "Telok Ayer",
+      "exit_ids": [
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Telok_Ayer_station"
+    },
+    {
+      "station_id": "tiong-bahru",
+      "station_name": "Tiong Bahru",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Tiong_Bahru_station"
+    },
+    {
+      "station_id": "toa-payoh",
+      "station_name": "Toa Payoh",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Toa_Payoh_station"
+    },
+    {
+      "station_id": "tuas-crescent",
+      "station_name": "Tuas Crescent",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Tuas_Crescent_station"
+    },
+    {
+      "station_id": "tuas-link",
+      "station_name": "Tuas Link",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Tuas_Link_station"
+    },
+    {
+      "station_id": "tuas-west-road",
+      "station_name": "Tuas West Road",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Tuas_West_Road_station"
+    },
+    {
+      "station_id": "ubi",
+      "station_name": "Ubi",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B"
+      ],
+      "count": 2,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Ubi_station"
+    },
+    {
+      "station_id": "upper-changi",
+      "station_name": "Upper Changi",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C",
+        "MRT:D"
+      ],
+      "count": 4,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Upper_Changi_station"
+    },
+    {
+      "station_id": "woodleigh",
+      "station_name": "Woodleigh",
+      "exit_ids": [
+        "MRT:A",
+        "MRT:B",
+        "MRT:C"
+      ],
+      "count": 3,
+      "sgwiki_url": "https://sgwiki.miraheze.org/wiki/Woodleigh_station"
+    }
+  ],
+  "notes": [
+    "The two legacy Choa Chu Kang Exit E records have identical coordinates and collapse to one SHARED:E identity.",
+    "All 28 reviewed coordinates map exactly to current Stage 1 identities and are gap fills.",
+    "No OneMap, LTA GeoJSON, OSM or manual proposal was promoted automatically.",
+    "Kartographer counts are an audit of the saved mrt-data-v2 bundle; live Phase 2 collection remains authoritative for each run."
+  ]
+}

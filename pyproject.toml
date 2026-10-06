@@ -1,7 +1,16 @@
 [project]
 name = "mrt-wayfinding"
 version = "0.1.0"
-description = "Add your description here"
+description = "Deterministic Singapore MRT/LRT wayfinding data pipeline"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "beautifulsoup4==4.14.3",
+]
+
+[project.scripts]
+mrt-wayfinding = "mrt_wayfinding.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.8.3,<0.9.0"]
+build-backend = "uv_build"

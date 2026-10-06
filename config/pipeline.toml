@@ -1,0 +1,52 @@
+[project]
+name = "mrt-wayfinding"
+schema_version = 1
+
+[paths]
+runs_dir = "runs"
+station_catalog = "config/stations.json"
+stage1_reviewed_decisions = "config/stage1-reviewed-decisions.json"
+stage1_approved_baseline = "config/stage1-approved-baseline.json"
+stage2_reviewed_coordinates = "config/stage2-reviewed-coordinates.geojson"
+stage2_coordinate_ledger = "config/stage2-coordinate-ledger.json"
+stage2_trusted_onemap_baseline = "config/stage2-trusted-onemap-baseline.geojson"
+stage2_trusted_supplemental_baseline = "config/stage2-trusted-supplemental-baseline.geojson"
+
+[locale]
+timezone = "Asia/Singapore"
+
+[inventory]
+expected_station_count = 184
+
+[sources.lta_gtfs]
+endpoint = "https://datamall2.mytransport.sg/ltaodataservice/GTFSScheduleTrain"
+allowed_hosts = ["datamall2.mytransport.sg"]
+
+[sources.lta_bus_stops]
+endpoint = "https://datamall2.mytransport.sg/ltaodataservice/BusStops"
+allowed_hosts = ["datamall2.mytransport.sg"]
+
+[sources.sgwiki_api]
+endpoint = "https://sgwiki.miraheze.org/w/api.php"
+allowed_hosts = ["sgwiki.miraheze.org"]
+
+[sources.sgwiki_mapdata]
+endpoint = "https://sgwiki.miraheze.org/w/api.php"
+allowed_hosts = ["sgwiki.miraheze.org"]
+
+[network]
+timeout_seconds = 30.0
+max_attempts = 4
+initial_backoff_seconds = 2.0
+maximum_backoff_seconds = 60.0
+minimum_interval_seconds = 1.0
+
+[release]
+warnings_require_review = true
+errors_block_release = true
+criticals_abort_run = true
+max_station_count_delta = 0
+max_unmatched_operational_stations = 0
+max_missing_sgwiki_pages = 0
+max_unresolved_exit_coordinates = 0
+coordinate_movement_review_metres = 25.0

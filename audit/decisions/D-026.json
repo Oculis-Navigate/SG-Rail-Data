@@ -1,0 +1,91 @@
+{
+  "change_type": "semantic_clarification",
+  "evidence": [
+    {
+      "description": "Direct project-owner inventory approvals and Dhoby Ghaut interpretation.",
+      "path": "audit/evidence/2026-10-06-station-signoffs.json",
+      "sha256": "39d188696d02c60f2dbaed1fe57ec2b3784fcf0141bc511a412e38757833eac0"
+    }
+  ],
+  "id": "D-026",
+  "kind": "audit_decision",
+  "limitations": [
+    "This changes explanatory evidence only. The parser already emits separate MRT:E, MRT:F and MRT:G records."
+  ],
+  "reason": "State explicitly that E, F and G are separate exits. Only repeated source mentions of G share evidence across the two destination rows.",
+  "schema_version": 2,
+  "source_revisions": [
+    "SgWiki Dhoby Ghaut revision 37293"
+  ],
+  "targets": [
+    {
+      "after": {
+        "codes": [
+          "CC1",
+          "NE6",
+          "NS24"
+        ],
+        "evidence": [
+          "SgWiki lists separate Exits E and G for The Atrium@Orchard, and separate Exits F and G for Macdonald House",
+          "mrt-data-v2 operator comparison: SBS and SMRT each list one physical Exit G for Dhoby Ghaut",
+          "Human-reviewed interpretation: MRT:E, MRT:F and MRT:G are three separate physical exit identities",
+          "Deterministic rule: de-duplicate only the repeated MRT:G identity; keep MRT:E and MRT:F separate and attach both destination rows to MRT:G",
+          "Human-reviewed decision: accept the NEL scope cell's trailing rowspan, pinned to revision 37293"
+        ],
+        "findings": [
+          {
+            "count": 1,
+            "reason": "repeated_exit_identity_in_source_table"
+          },
+          {
+            "count": 1,
+            "reason": "repeated_exit_evidence_merged"
+          },
+          {
+            "count": 1,
+            "reason": "line_scope_rowspan_overruns_table"
+          }
+        ],
+        "page_id": 119,
+        "revision_id": 37293,
+        "station": "Dhoby Ghaut"
+      },
+      "after_sha256": "361294e821064f806c7501e7d284e71022339734557a0a48b5202e0234652057",
+      "before": {
+        "codes": [
+          "CC1",
+          "NE6",
+          "NS24"
+        ],
+        "evidence": [
+          "SgWiki groups the same Exit G with Exit E for The Atrium@Orchard and with Exit F for Macdonald House",
+          "mrt-data-v2 operator comparison: SBS and SMRT each list one physical Exit G for Dhoby Ghaut",
+          "Human-reviewed rule: merge both SgWiki rows into one Exit G and retain both destination evidence strings",
+          "Human-reviewed decision: accept the NEL scope cell's trailing rowspan, pinned to revision 37293"
+        ],
+        "findings": [
+          {
+            "count": 1,
+            "reason": "repeated_exit_identity_in_source_table"
+          },
+          {
+            "count": 1,
+            "reason": "repeated_exit_evidence_merged"
+          },
+          {
+            "count": 1,
+            "reason": "line_scope_rowspan_overruns_table"
+          }
+        ],
+        "page_id": 119,
+        "revision_id": 37293,
+        "station": "Dhoby Ghaut"
+      },
+      "before_sha256": "7ee026c460890f6e87d5e17567b3c8a85913b644ee3563c7b334aaa9e183cd1b",
+      "identity": "Dhoby Ghaut:review_acceptance",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/4"
+    }
+  ],
+  "title": "Dhoby Ghaut: clarify repeated Exit G evidence"
+}

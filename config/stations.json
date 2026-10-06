@@ -1,0 +1,1518 @@
+{
+  "schema_version": 1,
+  "source": {
+    "derived_from": "mrt-data-v2/data/exit-presence-stations.json",
+    "kind": "reviewed_station_page_registry",
+    "reviewed_on": "2026-10-04"
+  },
+  "stations": [
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS10"
+      ],
+      "name": "Admiralty",
+      "sgwiki_title": "Admiralty station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW9"
+      ],
+      "name": "Aljunied",
+      "sgwiki_title": "Aljunied station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CR11",
+        "NS16"
+      ],
+      "name": "Ang Mo Kio",
+      "sgwiki_title": "Ang Mo Kio station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SE3"
+      ],
+      "name": "Bakau",
+      "sgwiki_title": "Bakau station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP9"
+      ],
+      "name": "Bangkit",
+      "sgwiki_title": "Bangkit station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC12"
+      ],
+      "name": "Bartley",
+      "sgwiki_title": "Bartley station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CE1",
+        "DT16"
+      ],
+      "name": "Bayfront",
+      "sgwiki_title": "Bayfront station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE29"
+      ],
+      "name": "Bayshore",
+      "sgwiki_title": "Bayshore station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT5"
+      ],
+      "name": "Beauty World",
+      "sgwiki_title": "Beauty World station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW5"
+      ],
+      "name": "Bedok",
+      "sgwiki_title": "Bedok station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT29"
+      ],
+      "name": "Bedok North",
+      "sgwiki_title": "Bedok North  station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT30"
+      ],
+      "name": "Bedok Reservoir",
+      "sgwiki_title": "Bedok Reservoir station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT21"
+      ],
+      "name": "Bencoolen",
+      "sgwiki_title": "Bencoolen station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT23"
+      ],
+      "name": "Bendemeer",
+      "sgwiki_title": "Bendemeer station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC15",
+        "NS17"
+      ],
+      "name": "Bishan",
+      "sgwiki_title": "Bishan station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE9"
+      ],
+      "name": "Boon Keng",
+      "sgwiki_title": "Boon Keng station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW27",
+        "JS8"
+      ],
+      "name": "Boon Lay",
+      "sgwiki_title": "Boon Lay station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC19",
+        "DT9"
+      ],
+      "name": "Botanic Gardens",
+      "sgwiki_title": "Botanic Gardens station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS18"
+      ],
+      "name": "Braddell",
+      "sgwiki_title": "Braddell station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC2"
+      ],
+      "name": "Bras Basah",
+      "sgwiki_title": "Bras Basah station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE7"
+      ],
+      "name": "Bright Hill",
+      "sgwiki_title": "Bright Hill station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE15"
+      ],
+      "name": "Buangkok",
+      "sgwiki_title": "Buangkok station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT14",
+        "EW12"
+      ],
+      "name": "Bugis",
+      "sgwiki_title": "Bugis station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS2"
+      ],
+      "name": "Bukit Batok",
+      "sgwiki_title": "Bukit Batok station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS3"
+      ],
+      "name": "Bukit Gombak",
+      "sgwiki_title": "Bukit Gombak station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP6",
+        "DT1"
+      ],
+      "name": "Bukit Panjang",
+      "sgwiki_title": "Bukit Panjang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC22",
+        "EW21"
+      ],
+      "name": "Buona Vista",
+      "sgwiki_title": "Buona Vista station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC17",
+        "TE9"
+      ],
+      "name": "Caldecott",
+      "sgwiki_title": "Caldecott station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS12"
+      ],
+      "name": "Canberra",
+      "sgwiki_title": "Canberra station"
+    },
+    {
+      "catalog_status": "operator_addition_requires_review",
+      "codes": [
+        "CC31"
+      ],
+      "name": "Cantonment",
+      "sgwiki_title": "Cantonment station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT2"
+      ],
+      "name": "Cashew",
+      "sgwiki_title": "Cashew station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CG2"
+      ],
+      "name": "Changi Airport",
+      "sgwiki_title": "Changi Airport station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SW1"
+      ],
+      "name": "Cheng Lim",
+      "sgwiki_title": "Cheng Lim station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT19",
+        "NE4"
+      ],
+      "name": "Chinatown",
+      "sgwiki_title": "Chinatown station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW25"
+      ],
+      "name": "Chinese Garden",
+      "sgwiki_title": "Chinese Garden station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP1",
+        "JS1",
+        "NS4"
+      ],
+      "name": "Choa Chu Kang",
+      "sgwiki_title": "Choa Chu Kang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW13",
+        "NS25"
+      ],
+      "name": "City Hall",
+      "sgwiki_title": "City Hall station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE5"
+      ],
+      "name": "Clarke Quay",
+      "sgwiki_title": "Clarke Quay station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW23"
+      ],
+      "name": "Clementi",
+      "sgwiki_title": "Clementi station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW20"
+      ],
+      "name": "Commonwealth",
+      "sgwiki_title": "Commonwealth station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SE1"
+      ],
+      "name": "Compassvale",
+      "sgwiki_title": "Compassvale station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PE3"
+      ],
+      "name": "Coral Edge",
+      "sgwiki_title": "Coral Edge station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PE1"
+      ],
+      "name": "Cove",
+      "sgwiki_title": "Cove station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC8"
+      ],
+      "name": "Dakota",
+      "sgwiki_title": "Dakota station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PE7"
+      ],
+      "name": "Damai",
+      "sgwiki_title": "Damai station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC1",
+        "NE6",
+        "NS24"
+      ],
+      "name": "Dhoby Ghaut",
+      "sgwiki_title": "Dhoby Ghaut station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW22"
+      ],
+      "name": "Dover",
+      "sgwiki_title": "Dover station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT17"
+      ],
+      "name": "Downtown",
+      "sgwiki_title": "Downtown station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC3"
+      ],
+      "name": "Esplanade",
+      "sgwiki_title": "Esplanade station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW7"
+      ],
+      "name": "Eunos",
+      "sgwiki_title": "Eunos station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CG1",
+        "DT35"
+      ],
+      "name": "Expo",
+      "sgwiki_title": "Expo station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP10"
+      ],
+      "name": "Fajar",
+      "sgwiki_title": "Fajar station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SW2"
+      ],
+      "name": "Farmway",
+      "sgwiki_title": "Farmway station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE8"
+      ],
+      "name": "Farrer Park",
+      "sgwiki_title": "Farrer Park station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC20"
+      ],
+      "name": "Farrer Road",
+      "sgwiki_title": "Farrer Road station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SW5"
+      ],
+      "name": "Fernvale",
+      "sgwiki_title": "Fernvale station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT20"
+      ],
+      "name": "Fort Canning",
+      "sgwiki_title": "Fort Canning station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE22"
+      ],
+      "name": "Gardens by the Bay",
+      "sgwiki_title": "Gardens by the Bay station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT24"
+      ],
+      "name": "Geylang Bahru",
+      "sgwiki_title": "Geylang Bahru station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE15"
+      ],
+      "name": "Great World",
+      "sgwiki_title": "Great World station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW30"
+      ],
+      "name": "Gul Circle",
+      "sgwiki_title": "Gul Circle station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC29",
+        "NE1"
+      ],
+      "name": "HarbourFront",
+      "sgwiki_title": "HarbourFront station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE16"
+      ],
+      "name": "Havelock",
+      "sgwiki_title": "Havelock station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC25"
+      ],
+      "name": "Haw Par Villa",
+      "sgwiki_title": "Haw Par Villa station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT3"
+      ],
+      "name": "Hillview",
+      "sgwiki_title": "Hillview station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC21"
+      ],
+      "name": "Holland Village",
+      "sgwiki_title": "Holland Village station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE14"
+      ],
+      "name": "Hougang",
+      "sgwiki_title": "Hougang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT4"
+      ],
+      "name": "Hume",
+      "sgwiki_title": "Hume station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT22"
+      ],
+      "name": "Jalan Besar",
+      "sgwiki_title": "Jalan Besar station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP12"
+      ],
+      "name": "Jelapang",
+      "sgwiki_title": "Jelapang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW29"
+      ],
+      "name": "Joo Koon",
+      "sgwiki_title": "Joo Koon station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW24",
+        "JE5",
+        "NS1"
+      ],
+      "name": "Jurong East",
+      "sgwiki_title": "Jurong East station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PE5"
+      ],
+      "name": "Kadaloor",
+      "sgwiki_title": "Kadaloor station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT28"
+      ],
+      "name": "Kaki Bukit",
+      "sgwiki_title": "Kaki Bukit station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW10"
+      ],
+      "name": "Kallang",
+      "sgwiki_title": "Kallang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SE4"
+      ],
+      "name": "Kangkar",
+      "sgwiki_title": "Kangkar station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE24"
+      ],
+      "name": "Katong Park",
+      "sgwiki_title": "Katong Park station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP3"
+      ],
+      "name": "Keat Hong",
+      "sgwiki_title": "Keat Hong station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW6"
+      ],
+      "name": "Kembangan",
+      "sgwiki_title": "Kembangan station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC24"
+      ],
+      "name": "Kent Ridge",
+      "sgwiki_title": "Kent Ridge station"
+    },
+    {
+      "catalog_status": "operator_addition_requires_review",
+      "codes": [
+        "CC30"
+      ],
+      "name": "Keppel",
+      "sgwiki_title": "Keppel station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS14"
+      ],
+      "name": "Khatib",
+      "sgwiki_title": "Khatib station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT6"
+      ],
+      "name": "King Albert Park",
+      "sgwiki_title": "King Albert Park station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE13"
+      ],
+      "name": "Kovan",
+      "sgwiki_title": "Kovan station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS7"
+      ],
+      "name": "Kranji",
+      "sgwiki_title": "Kranji station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SW3"
+      ],
+      "name": "Kupang",
+      "sgwiki_title": "Kupang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC27"
+      ],
+      "name": "Labrador Park",
+      "sgwiki_title": "Labrador Park station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW26"
+      ],
+      "name": "Lakeside",
+      "sgwiki_title": "Lakeside station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW11"
+      ],
+      "name": "Lavender",
+      "sgwiki_title": "Lavender station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SW6"
+      ],
+      "name": "Layar",
+      "sgwiki_title": "Layar station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE5"
+      ],
+      "name": "Lentor",
+      "sgwiki_title": "Lentor station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT12",
+        "NE7"
+      ],
+      "name": "Little India",
+      "sgwiki_title": "Little India station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC14"
+      ],
+      "name": "Lorong Chuan",
+      "sgwiki_title": "Lorong Chuan station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC10",
+        "DT26"
+      ],
+      "name": "MacPherson",
+      "sgwiki_title": "MacPherson station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CE2",
+        "NS27",
+        "TE20"
+      ],
+      "name": "Marina Bay",
+      "sgwiki_title": "Marina Bay station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS28"
+      ],
+      "name": "Marina South Pier",
+      "sgwiki_title": "Marina South Pier station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE26"
+      ],
+      "name": "Marine Parade",
+      "sgwiki_title": "Marine Parade station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE27"
+      ],
+      "name": "Marine Terrace",
+      "sgwiki_title": "Marine Terrace station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS8"
+      ],
+      "name": "Marsiling",
+      "sgwiki_title": "Marsiling station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC16"
+      ],
+      "name": "Marymount",
+      "sgwiki_title": "Marymount station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT25"
+      ],
+      "name": "Mattar",
+      "sgwiki_title": "Mattar station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE18"
+      ],
+      "name": "Maxwell",
+      "sgwiki_title": "Maxwell station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE6"
+      ],
+      "name": "Mayflower",
+      "sgwiki_title": "Mayflower station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PE2"
+      ],
+      "name": "Meridian",
+      "sgwiki_title": "Meridian station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC7"
+      ],
+      "name": "Mountbatten",
+      "sgwiki_title": "Mountbatten station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE12"
+      ],
+      "name": "Napier",
+      "sgwiki_title": "Napier station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT11",
+        "NS21"
+      ],
+      "name": "Newton",
+      "sgwiki_title": "Newton station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PW5"
+      ],
+      "name": "Nibong",
+      "sgwiki_title": "Nibong station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC5"
+      ],
+      "name": "Nicoll Highway",
+      "sgwiki_title": "Nicoll Highway station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS20"
+      ],
+      "name": "Novena",
+      "sgwiki_title": "Novena station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PE6"
+      ],
+      "name": "Oasis",
+      "sgwiki_title": "Oasis station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC23"
+      ],
+      "name": "one-north",
+      "sgwiki_title": "one-north station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS22",
+        "TE14"
+      ],
+      "name": "Orchard",
+      "sgwiki_title": "Orchard station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE13"
+      ],
+      "name": "Orchard Boulevard",
+      "sgwiki_title": "Orchard Boulevard station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW16",
+        "NE3",
+        "TE17"
+      ],
+      "name": "Outram Park",
+      "sgwiki_title": "Outram Park station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC26"
+      ],
+      "name": "Pasir Panjang",
+      "sgwiki_title": "Pasir Panjang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW1"
+      ],
+      "name": "Pasir Ris",
+      "sgwiki_title": "Pasir Ris station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC9",
+        "EW8"
+      ],
+      "name": "Paya Lebar",
+      "sgwiki_title": "Paya Lebar station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP8"
+      ],
+      "name": "Pending",
+      "sgwiki_title": "Pending station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP7"
+      ],
+      "name": "Petir",
+      "sgwiki_title": "Petir station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP5"
+      ],
+      "name": "Phoenix",
+      "sgwiki_title": "Phoenix station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW28"
+      ],
+      "name": "Pioneer",
+      "sgwiki_title": "Pioneer station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE10"
+      ],
+      "name": "Potong Pasir",
+      "sgwiki_title": "Potong Pasir station"
+    },
+    {
+      "catalog_status": "operator_addition_requires_review",
+      "codes": [
+        "CC32"
+      ],
+      "name": "Prince Edward Road",
+      "sgwiki_title": "Prince Edward Road station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC4",
+        "DT15"
+      ],
+      "name": "Promenade",
+      "sgwiki_title": "Promenade station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE17",
+        "PTC"
+      ],
+      "name": "Punggol",
+      "sgwiki_title": "Punggol station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE18"
+      ],
+      "name": "Punggol Coast",
+      "sgwiki_title": "Punggol Coast station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PW3"
+      ],
+      "name": "Punggol Point",
+      "sgwiki_title": "Punggol Point station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW19"
+      ],
+      "name": "Queenstown",
+      "sgwiki_title": "Queenstown station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW14",
+        "NS26"
+      ],
+      "name": "Raffles Place",
+      "sgwiki_title": "Raffles Place station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SE5"
+      ],
+      "name": "Ranggung",
+      "sgwiki_title": "Ranggung station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW18"
+      ],
+      "name": "Redhill",
+      "sgwiki_title": "Redhill station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SW8"
+      ],
+      "name": "Renjong",
+      "sgwiki_title": "Renjong station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PE4"
+      ],
+      "name": "Riviera",
+      "sgwiki_title": "Riviera station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT13"
+      ],
+      "name": "Rochor",
+      "sgwiki_title": "Rochor station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SE2"
+      ],
+      "name": "Rumbia",
+      "sgwiki_title": "Rumbia station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PW1"
+      ],
+      "name": "Sam Kee",
+      "sgwiki_title": "Sam Kee station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PW4"
+      ],
+      "name": "Samudera",
+      "sgwiki_title": "Samudera station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP11"
+      ],
+      "name": "Segar",
+      "sgwiki_title": "Segar station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS11"
+      ],
+      "name": "Sembawang",
+      "sgwiki_title": "Sembawang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE16",
+        "STC"
+      ],
+      "name": "Sengkang",
+      "sgwiki_title": "Sengkang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP13"
+      ],
+      "name": "Senja",
+      "sgwiki_title": "Senja station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC13",
+        "NE12"
+      ],
+      "name": "Serangoon",
+      "sgwiki_title": "Serangoon station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE19"
+      ],
+      "name": "Shenton Way",
+      "sgwiki_title": "Shenton Way station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE28"
+      ],
+      "name": "Siglap",
+      "sgwiki_title": "Siglap station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW3"
+      ],
+      "name": "Simei",
+      "sgwiki_title": "Simei station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT7"
+      ],
+      "name": "Sixth Avenue",
+      "sgwiki_title": "Sixth Avenue station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS23"
+      ],
+      "name": "Somerset",
+      "sgwiki_title": "Somerset station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PW7"
+      ],
+      "name": "Soo Teck",
+      "sgwiki_title": "Soo Teck station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP2"
+      ],
+      "name": "South View",
+      "sgwiki_title": "South View station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE4"
+      ],
+      "name": "Springleaf",
+      "sgwiki_title": "Springleaf station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC6"
+      ],
+      "name": "Stadium",
+      "sgwiki_title": "Stadium station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT10",
+        "TE11"
+      ],
+      "name": "Stevens",
+      "sgwiki_title": "Stevens station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PW6"
+      ],
+      "name": "Sumang",
+      "sgwiki_title": "Sumang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC11"
+      ],
+      "name": "Tai Seng",
+      "sgwiki_title": "Tai Seng station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT32",
+        "EW2"
+      ],
+      "name": "Tampines",
+      "sgwiki_title": "Tampines station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT33"
+      ],
+      "name": "Tampines East",
+      "sgwiki_title": "Tampines East station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT31"
+      ],
+      "name": "Tampines West",
+      "sgwiki_title": "Tampines West station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT8"
+      ],
+      "name": "Tan Kah Kee",
+      "sgwiki_title": "Tan Kah Kee station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW4"
+      ],
+      "name": "Tanah Merah",
+      "sgwiki_title": "Tanah Merah station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE25"
+      ],
+      "name": "Tanjong Katong",
+      "sgwiki_title": "Tanjong Katong station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW15"
+      ],
+      "name": "Tanjong Pagar",
+      "sgwiki_title": "Tanjong Pagar station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE23"
+      ],
+      "name": "Tanjong Rhu",
+      "sgwiki_title": "Tanjong Rhu station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "PW2"
+      ],
+      "name": "Teck Lee",
+      "sgwiki_title": "Teck Lee station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "BP4"
+      ],
+      "name": "Teck Whye",
+      "sgwiki_title": "Teck Whye station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT18"
+      ],
+      "name": "Telok Ayer",
+      "sgwiki_title": "Telok Ayer station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "CC28"
+      ],
+      "name": "Telok Blangah",
+      "sgwiki_title": "Telok Blangah station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SW4"
+      ],
+      "name": "Thanggam",
+      "sgwiki_title": "Thanggam station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW17"
+      ],
+      "name": "Tiong Bahru",
+      "sgwiki_title": "Tiong Bahru station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS19"
+      ],
+      "name": "Toa Payoh",
+      "sgwiki_title": "Toa Payoh station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "SW7"
+      ],
+      "name": "Tongkang",
+      "sgwiki_title": "Tongkang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW31"
+      ],
+      "name": "Tuas Crescent",
+      "sgwiki_title": "Tuas Crescent station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW33"
+      ],
+      "name": "Tuas Link",
+      "sgwiki_title": "Tuas Link station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "EW32"
+      ],
+      "name": "Tuas West Road",
+      "sgwiki_title": "Tuas West Road station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT27"
+      ],
+      "name": "Ubi",
+      "sgwiki_title": "Ubi station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "DT34"
+      ],
+      "name": "Upper Changi",
+      "sgwiki_title": "Upper Changi station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE8"
+      ],
+      "name": "Upper Thomson",
+      "sgwiki_title": "Upper Thomson station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS9",
+        "TE2"
+      ],
+      "name": "Woodlands",
+      "sgwiki_title": "Woodlands station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE1"
+      ],
+      "name": "Woodlands North",
+      "sgwiki_title": "Woodlands North station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "TE3"
+      ],
+      "name": "Woodlands South",
+      "sgwiki_title": "Woodlands South station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NE11"
+      ],
+      "name": "Woodleigh",
+      "sgwiki_title": "Woodleigh station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS5"
+      ],
+      "name": "Yew Tee",
+      "sgwiki_title": "Yew Tee station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS15"
+      ],
+      "name": "Yio Chu Kang",
+      "sgwiki_title": "Yio Chu Kang station"
+    },
+    {
+      "catalog_status": "v1_baseline",
+      "codes": [
+        "NS13"
+      ],
+      "name": "Yishun",
+      "sgwiki_title": "Yishun station"
+    }
+  ]
+}

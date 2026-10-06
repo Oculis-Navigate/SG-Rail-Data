@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "kind": "conversation_excerpts",
+  "limitations": [
+    "Selected user statements transcribed from the available conversation; no message IDs or original message timestamps are available.",
+    "Recorded by Codex, not cryptographically signed by the user. These excerpts establish instruction scope, not independently verified geography."
+  ],
+  "statements": [
+    {
+      "id": "A-SHARED",
+      "speaker": "project_owner",
+      "quote": "can we modify the three stations to use the shared terminology first? then for bukit panjang, lets discuss. which items from sgwiki is still ambiguous after the fandomo clarification? we can \"overide\" the stage 1 daata just like our deterministic geojson source planned for stage 2. then when sgwiki overides bukit panjang data, it should have the same behavior of error",
+      "scope": "Shared-scope decisions for Choa Chu Kang, Punggol and Sengkang."
+    },
+    {
+      "id": "A-BKP",
+      "speaker": "project_owner",
+      "quote": "44029 should be A1 and A2 (since they are close to one another anyway)\n\n44251 is MRT:C\n\n44031, 44859 should be  LRT:A\n\nremove 44259, 44909",
+      "scope": "Explicit Bukit Panjang mappings and exclusions; earlier Fandom interpretation retained in the configuration evidence."
+    },
+    {
+      "id": "A-CONCOURSE",
+      "speaker": "project_owner",
+      "quote": "does mrt-data-v2 answer the duplicates? if not just ask them here directly in  prose and ill answer. bukit panjang multiple concourse should be accepted (concourse on two floors for lrt)",
+      "scope": "Explicit acceptance of Bukit Panjang multiple concourse levels; does not explicitly accept Dhoby Ghaut duplicate merging."
+    },
+    {
+      "id": "A-SEMANTICS",
+      "speaker": "project_owner",
+      "quote": "yep. accept source_reported_close. they are legitimate and should be part of the pipeline\n\nyep individual platforms insteaad of merging them together. we should mention they are together in source tthough (likek the source_graph_label)\n\nsure store it as structured operating hours\n\naccept it while keeping the revision pins\n\nsure lets retain it and create a new way of represeneting interchange inside the station complex",
+      "scope": "Source-reported closures, individual platforms preserving source groups, structured hours, revision-pinned table exceptions and station-complex interchange."
+    },
+    {
+      "id": "A-PINS",
+      "speaker": "project_owner",
+      "quote": "looks good. anything else remaining (i updated). if not can we save this as the ssot?",
+      "scope": "Legacy reviewed-pin SSOT request; exact per-edit rationale and historical approval timestamps unavailable."
+    },
+    {
+      "id": "A-ONEMAP",
+      "speaker": "project_owner",
+      "quote": "for the unreviewed onemap ones, can we just add them as the hardcoded source as well (as trusted but separate them from human reviewed ones where we drag the pin and the one map one. just keep the provenance somewhere)",
+      "scope": "Trust the historical unreviewed OneMap selections separately from human-reviewed pins."
+    },
+    {
+      "id": "A-SUPPLEMENTAL",
+      "speaker": "project_owner",
+      "quote": "lets accept them in. for the two onemap conflicts, can you look at the web application and see which one looks more realistic as the exit",
+      "scope": "Accept remaining candidates; delegate selection of the two OneMap conflicts. App access failed and the agent used saved source evidence instead; no claim of a live UI inspection or human inspection of the chosen points."
+    }
+  ]
+}

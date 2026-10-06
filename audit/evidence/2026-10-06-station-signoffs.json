@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "kind": "conversation_excerpts",
+  "limitations": [
+    "The project owner supplied these decisions in the active conversation. No platform message ID or original message timestamp is available.",
+    "The statements approve the named inventories and clarify how to interpret the pinned Dhoby Ghaut source table. They do not approve a new pipeline release."
+  ],
+  "statements": [
+    {
+      "id": "A-2026-10-06-STATION-INVENTORIES",
+      "speaker": "project_owner",
+      "quote": "cantontment 1-4 agree. keppel agree 1-3. prince edward agree 1-2.",
+      "scope": "Direct approval of the configured Cantonment MRT Exits 1-4, Keppel MRT Exits 1-3 and Prince Edward Road MRT Exits 1-2 inventories."
+    },
+    {
+      "id": "A-2026-10-06-DHOBY-GHAUT",
+      "speaker": "project_owner",
+      "quote": "dhoby ghaut exit G should be separate and not merged with exit E and F the sgwiki page is just saying the nearby places of interest for G is the same as E and G (can we make sure this confusion doesnt happen for subsequent runs as well)",
+      "scope": "Direct approval of separate Dhoby Ghaut MRT:E, MRT:F and MRT:G identities. The repeated G labels share destination evidence with the E and F rows; only repeated mentions of MRT:G may be combined."
+    }
+  ]
+}

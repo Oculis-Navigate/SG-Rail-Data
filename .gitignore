@@ -8,3 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Pipeline runs and local configuration
+runs/
+.uv-cache/
+.env
+.DS_Store

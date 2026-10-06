@@ -1,0 +1,728 @@
+{
+  "schema_version": 1,
+  "kind": "exit_coordinate_edit_ledger",
+  "revision": 30,
+  "candidate_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+  "entries": [
+    {
+      "sequence": 1,
+      "edit_id": "84dc41c9-94d5-4bf8-848a-a397c36b61e9",
+      "saved_at": "2026-10-03T09:52:20.183543+00:00",
+      "station_id": "bukit-panjang",
+      "station_name": "Bukit Panjang",
+      "exit_id": "MRT:A2",
+      "label": "A2",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.7620398891427,
+          1.378770620413552
+        ],
+        "candidate_index": 135
+      },
+      "to_coordinates": [
+        103.76210868358613,
+        1.3787288867542289
+      ],
+      "note": "",
+      "previous_entry_hash": null,
+      "entry_hash": "db4f0b6cb99ebba5218464b05622ad1d1c59f4acb8f56e2b746604133a990358"
+    },
+    {
+      "sequence": 2,
+      "edit_id": "f3b71ef3-3731-4e0b-b750-b3a7b2cd7682",
+      "saved_at": "2026-10-03T09:52:32.096354+00:00",
+      "station_id": "bukit-panjang",
+      "station_name": "Bukit Panjang",
+      "exit_id": "MRT:A1",
+      "label": "A1",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.7619210078377,
+          1.379015878774792
+        ],
+        "candidate_index": 134
+      },
+      "to_coordinates": [
+        103.76203894615173,
+        1.3789112241567258
+      ],
+      "note": "",
+      "previous_entry_hash": "db4f0b6cb99ebba5218464b05622ad1d1c59f4acb8f56e2b746604133a990358",
+      "entry_hash": "b13ba6c80fb083c260b8f7b27073a256bb2bc9321c79499c06d153902f2e1eac"
+    },
+    {
+      "sequence": 3,
+      "edit_id": "46a46cdf-b46c-4ebc-bb70-a6bd9662a214",
+      "saved_at": "2026-10-03T09:52:45.183157+00:00",
+      "station_id": "bukit-panjang",
+      "station_name": "Bukit Panjang",
+      "exit_id": "MRT:D",
+      "label": "D",
+      "from": {
+        "source": "reviewed_manual",
+        "coordinates": [
+          103.762041,
+          1.378357
+        ],
+        "candidate_index": 139
+      },
+      "to_coordinates": [
+        103.76218110322955,
+        1.3785787265299367
+      ],
+      "note": "",
+      "previous_entry_hash": "b13ba6c80fb083c260b8f7b27073a256bb2bc9321c79499c06d153902f2e1eac",
+      "entry_hash": "d00c40f346b47b6e8f41debc98ebb7329a8876059d766481fbc7bfacf16847cc"
+    },
+    {
+      "sequence": 4,
+      "edit_id": "13263fe0-1d6a-4143-beeb-d0cd8a4e6b3f",
+      "saved_at": "2026-10-03T09:52:54.852029+00:00",
+      "station_id": "bukit-panjang",
+      "station_name": "Bukit Panjang",
+      "exit_id": "MRT:B",
+      "label": "B",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.7613523508897,
+          1.378632104861951
+        ],
+        "candidate_index": 136
+      },
+      "to_coordinates": [
+        103.76141667366029,
+        1.3786216294521227
+      ],
+      "note": "",
+      "previous_entry_hash": "d00c40f346b47b6e8f41debc98ebb7329a8876059d766481fbc7bfacf16847cc",
+      "entry_hash": "5b99633b213eaacbc50b8ca85aa7a964097f29f8da55120e6428b4680d0fbeca"
+    },
+    {
+      "sequence": 5,
+      "edit_id": "bfa941f5-cde1-4a96-824d-aaf5406e07e6",
+      "saved_at": "2026-10-03T09:53:03.665072+00:00",
+      "station_id": "bukit-panjang",
+      "station_name": "Bukit Panjang",
+      "exit_id": "MRT:C",
+      "label": "C",
+      "from": {
+        "source": "osm",
+        "coordinates": [
+          103.7618295,
+          1.3801748
+        ],
+        "candidate_index": 137
+      },
+      "to_coordinates": [
+        103.7617599964142,
+        1.3802438956300738
+      ],
+      "note": "",
+      "previous_entry_hash": "5b99633b213eaacbc50b8ca85aa7a964097f29f8da55120e6428b4680d0fbeca",
+      "entry_hash": "24cd60b5c14d7812c13285b44ece96b04203ade828d62136d7bd74d851a86b31"
+    },
+    {
+      "sequence": 6,
+      "edit_id": "c063af76-f9dc-4eae-8a5f-a6129634b5f6",
+      "saved_at": "2026-10-03T09:54:07.519463+00:00",
+      "station_id": "bukit-panjang",
+      "station_name": "Bukit Panjang",
+      "exit_id": "LRT:A",
+      "label": "A",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.76306355524726,
+          1.378020383749656
+        ],
+        "candidate_index": 130
+      },
+      "to_coordinates": [
+        103.76306757330894,
+        1.3779767448213691
+      ],
+      "note": "",
+      "previous_entry_hash": "24cd60b5c14d7812c13285b44ece96b04203ade828d62136d7bd74d851a86b31",
+      "entry_hash": "14990a846339dc7bc04f882bf2cd4a6dbf77044dcfe15aa35c5f33e8496d21e3"
+    },
+    {
+      "sequence": 7,
+      "edit_id": "362770de-332c-4c4b-9216-c95a99253eb0",
+      "saved_at": "2026-10-03T09:54:12.942247+00:00",
+      "station_id": "bukit-panjang",
+      "station_name": "Bukit Panjang",
+      "exit_id": "LRT:C",
+      "label": "C",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.76272252355642,
+          1.3779279277525465
+        ],
+        "candidate_index": 132
+      },
+      "to_coordinates": [
+        103.76291334629059,
+        1.3779459083377739
+      ],
+      "note": "",
+      "previous_entry_hash": "14990a846339dc7bc04f882bf2cd4a6dbf77044dcfe15aa35c5f33e8496d21e3",
+      "entry_hash": "708301d2057c8389bac3b37c1a62411fe58be777f42a2eeba95b41731e9ca2b6"
+    },
+    {
+      "sequence": 8,
+      "edit_id": "8e6ad289-bd11-4518-856b-a4508d4fb2ad",
+      "saved_at": "2026-10-03T09:54:17.213028+00:00",
+      "station_id": "bukit-panjang",
+      "station_name": "Bukit Panjang",
+      "exit_id": "LRT:D",
+      "label": "D",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.76325185195583,
+          1.378024102648342
+        ],
+        "candidate_index": 133
+      },
+      "to_coordinates": [
+        103.7632030248642,
+        1.3780048998712688
+      ],
+      "note": "",
+      "previous_entry_hash": "708301d2057c8389bac3b37c1a62411fe58be777f42a2eeba95b41731e9ca2b6",
+      "entry_hash": "74539d3791f9092f64b9b21f09310b05bb7970f6ae5a204f6841b129245e37f9"
+    },
+    {
+      "sequence": 9,
+      "edit_id": "e80d25fc-e425-496b-a902-b338d2a3f243",
+      "saved_at": "2026-10-03T09:54:30.643840+00:00",
+      "station_id": "bukit-panjang",
+      "station_name": "Bukit Panjang",
+      "exit_id": "LRT:B",
+      "label": "B",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.76317852054554,
+          1.3778632485675977
+        ],
+        "candidate_index": 131
+      },
+      "to_coordinates": [
+        103.76305684447289,
+        1.377823903116131
+      ],
+      "note": "",
+      "previous_entry_hash": "74539d3791f9092f64b9b21f09310b05bb7970f6ae5a204f6841b129245e37f9",
+      "entry_hash": "48ad21f52257ef93eb2e1fede6fe2a27bfdd43f344ac80e1b806771778b18dc2"
+    },
+    {
+      "sequence": 10,
+      "edit_id": "7a20ce41-b694-466f-b003-bb623f8905df",
+      "saved_at": "2026-10-03T09:54:44.963243+00:00",
+      "station_id": "phoenix",
+      "station_name": "Phoenix",
+      "exit_id": "LRT:A",
+      "label": "A",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.75825247510643,
+          1.378614068213967
+        ],
+        "candidate_index": 583
+      },
+      "to_coordinates": [
+        103.758030384779,
+        1.3785693415156022
+      ],
+      "note": "",
+      "previous_entry_hash": "48ad21f52257ef93eb2e1fede6fe2a27bfdd43f344ac80e1b806771778b18dc2",
+      "entry_hash": "148c12f7fa2ef3edddbdc4c2a820983d37f1a00fd6d0f2fff99aeb3da39d5dce"
+    },
+    {
+      "sequence": 11,
+      "edit_id": "39162f97-a9a8-4f15-9088-e54c51e8497e",
+      "saved_at": "2026-10-03T09:54:51.937606+00:00",
+      "station_id": "teck-whye",
+      "station_name": "Teck Whye",
+      "exit_id": "LRT:A",
+      "label": "A",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.75382610234246,
+          1.3765641949369936
+        ],
+        "candidate_index": 767
+      },
+      "to_coordinates": [
+        103.7536557018757,
+        1.3766212798828716
+      ],
+      "note": "",
+      "previous_entry_hash": "148c12f7fa2ef3edddbdc4c2a820983d37f1a00fd6d0f2fff99aeb3da39d5dce",
+      "entry_hash": "d52d03d3f3cfb07e12181fa5264eae9bcc32eeb60a337ba8adeb47da46f1376d"
+    },
+    {
+      "sequence": 12,
+      "edit_id": "421b881f-e293-4851-8226-c1a60b445796",
+      "saved_at": "2026-10-03T09:58:50.572352+00:00",
+      "station_id": "sam-kee",
+      "station_name": "Sam Kee",
+      "exit_id": "LRT:B",
+      "label": "B",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.9047922799363,
+          1.4098276724417222
+        ],
+        "candidate_index": 639
+      },
+      "to_coordinates": [
+        103.9049255847931,
+        1.409841343121721
+      ],
+      "note": "",
+      "previous_entry_hash": "d52d03d3f3cfb07e12181fa5264eae9bcc32eeb60a337ba8adeb47da46f1376d",
+      "entry_hash": "c26a8a1f76874776bb06621e3ba36209e96a94f13ccd52e75b7fabc9fb7dadcc"
+    },
+    {
+      "sequence": 13,
+      "edit_id": "f54a9191-919e-4ae7-93db-01f75d456738",
+      "saved_at": "2026-10-03T09:59:00.206418+00:00",
+      "station_id": "sam-kee",
+      "station_name": "Sam Kee",
+      "exit_id": "LRT:A",
+      "label": "A",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.90503857100495,
+          1.4097025000417631
+        ],
+        "candidate_index": 638
+      },
+      "to_coordinates": [
+        103.90497386455537,
+        1.409811847753955
+      ],
+      "note": "",
+      "previous_entry_hash": "c26a8a1f76874776bb06621e3ba36209e96a94f13ccd52e75b7fabc9fb7dadcc",
+      "entry_hash": "6cb177adc7cf1c55bbd3b4d4634f1a229b5776d382a5dd795517b2b8028de798"
+    },
+    {
+      "sequence": 14,
+      "edit_id": "7b8b199a-5dda-4c39-be26-f06c8ba832cb",
+      "saved_at": "2026-10-03T09:59:34.676698+00:00",
+      "station_id": "sam-kee",
+      "station_name": "Sam Kee",
+      "exit_id": "LRT:D",
+      "label": "D",
+      "from": {
+        "source": "reviewed_manual",
+        "coordinates": [
+          103.905212,
+          1.409536
+        ],
+        "candidate_index": 640
+      },
+      "to_coordinates": [
+        103.905083835125,
+        1.4094820358889606
+      ],
+      "note": "",
+      "previous_entry_hash": "6cb177adc7cf1c55bbd3b4d4634f1a229b5776d382a5dd795517b2b8028de798",
+      "entry_hash": "f932ff26c36a5346d9dbbf4886c86301f21c4a8471efcc083a6cb5a73b097268"
+    },
+    {
+      "sequence": 15,
+      "edit_id": "db8db900-f235-4a65-8fc5-49e63b4fb5ae",
+      "saved_at": "2026-10-03T10:00:03.997067+00:00",
+      "station_id": "sam-kee",
+      "station_name": "Sam Kee",
+      "exit_id": "LRT:D",
+      "label": "D",
+      "from": {
+        "source": "human_reviewed",
+        "coordinates": [
+          103.905083835125,
+          1.4094820358889606
+        ],
+        "edit_id": "7b8b199a-5dda-4c39-be26-f06c8ba832cb"
+      },
+      "to_coordinates": [
+        103.905083835125,
+        1.4094820358889606
+      ],
+      "note": "",
+      "previous_entry_hash": "f932ff26c36a5346d9dbbf4886c86301f21c4a8471efcc083a6cb5a73b097268",
+      "entry_hash": "0b5290199551c6283bd2ff04f16f879ace91b9df1fefbab42c8e6b4cfd8cb3dd"
+    },
+    {
+      "sequence": 16,
+      "edit_id": "90dd38d8-a4a6-42b1-b365-4273163a22c4",
+      "saved_at": "2026-10-03T10:00:19.081486+00:00",
+      "station_id": "jelapang",
+      "station_name": "Jelapang",
+      "exit_id": "LRT:A",
+      "label": "A",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.76467679284494,
+          1.3868326995309255
+        ],
+        "candidate_index": 349
+      },
+      "to_coordinates": [
+        103.76451730728151,
+        1.3866873650625338
+      ],
+      "note": "",
+      "previous_entry_hash": "0b5290199551c6283bd2ff04f16f879ace91b9df1fefbab42c8e6b4cfd8cb3dd",
+      "entry_hash": "eb8f819dffb2c04dcfc0ae3bf088c5907efa9f54182f790aea8c7e108e88c715"
+    },
+    {
+      "sequence": 17,
+      "edit_id": "ecff8879-9a72-486d-bd65-9a28c9a5ec90",
+      "saved_at": "2026-10-03T10:00:26.956566+00:00",
+      "station_id": "senja",
+      "station_name": "Senja",
+      "exit_id": "LRT:A",
+      "label": "A",
+      "from": {
+        "source": "lta_geojson",
+        "coordinates": [
+          103.76232576657173,
+          1.3828754471752023
+        ],
+        "candidate_index": 656
+      },
+      "to_coordinates": [
+        103.76236349344255,
+        1.3827121513857152
+      ],
+      "note": "",
+      "previous_entry_hash": "eb8f819dffb2c04dcfc0ae3bf088c5907efa9f54182f790aea8c7e108e88c715",
+      "entry_hash": "f47c998ebd8e0e76c35350435947a7083d4d77635c16a614690f02c0f797b720"
+    },
+    {
+      "sequence": 18,
+      "edit_id": "5c7e300b-781b-4cba-a67a-f88b0c94138b",
+      "saved_at": "2026-10-03T10:01:39.788610+00:00",
+      "station_id": "gardens-by-the-bay",
+      "station_name": "Gardens by the Bay",
+      "exit_id": "MRT:2",
+      "label": "2",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.8678942029018,
+          1.278807334577349
+        ],
+        "candidate_index": 304
+      },
+      "to_coordinates": [
+        103.86845022439958,
+        1.279548726719014
+      ],
+      "note": "",
+      "previous_entry_hash": "f47c998ebd8e0e76c35350435947a7083d4d77635c16a614690f02c0f797b720",
+      "entry_hash": "facd8e8d2743497e4ff2f83d68438065b652f6771a07dadbbd10aa4b848aa060"
+    },
+    {
+      "sequence": 19,
+      "edit_id": "d3c57a21-62ac-4831-822e-d62e90db59cd",
+      "saved_at": "2026-10-03T10:02:10.709166+00:00",
+      "station_id": "downtown",
+      "station_name": "Downtown",
+      "exit_id": "MRT:F",
+      "label": "F",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.8524203120093,
+          1.279843061345666
+        ],
+        "candidate_index": 244
+      },
+      "to_coordinates": [
+        103.85244816541675,
+        1.2800247000584206
+      ],
+      "note": "",
+      "previous_entry_hash": "facd8e8d2743497e4ff2f83d68438065b652f6771a07dadbbd10aa4b848aa060",
+      "entry_hash": "049adbb6d3a64ff8639aed6e98f7c7ea63c58ac3fab257184d91ffeba0db721c"
+    },
+    {
+      "sequence": 20,
+      "edit_id": "d6802e57-3fb0-47ab-8a8c-da3547323416",
+      "saved_at": "2026-10-03T10:02:15.968496+00:00",
+      "station_id": "downtown",
+      "station_name": "Downtown",
+      "exit_id": "MRT:E",
+      "label": "E",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.8524498120832,
+          1.27952696217156
+        ],
+        "candidate_index": 243
+      },
+      "to_coordinates": [
+        103.85257959365846,
+        1.2793583373585244
+      ],
+      "note": "",
+      "previous_entry_hash": "049adbb6d3a64ff8639aed6e98f7c7ea63c58ac3fab257184d91ffeba0db721c",
+      "entry_hash": "64e426b703f3c7a561a785987e6bc314d7040b83e088e11eedf0e61276d3c16c"
+    },
+    {
+      "sequence": 21,
+      "edit_id": "acf4d947-bbca-455e-ae03-06b6e86aea36",
+      "saved_at": "2026-10-03T10:02:20.944164+00:00",
+      "station_id": "downtown",
+      "station_name": "Downtown",
+      "exit_id": "MRT:A",
+      "label": "A",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.8526443191252,
+          1.279789511183824
+        ],
+        "candidate_index": 239
+      },
+      "to_coordinates": [
+        103.85270565748216,
+        1.2798088361041773
+      ],
+      "note": "",
+      "previous_entry_hash": "64e426b703f3c7a561a785987e6bc314d7040b83e088e11eedf0e61276d3c16c",
+      "entry_hash": "2176c960e02704d814d9cb7309d6bb87db4317cc28d38bbc8e87ba631e384ff9"
+    },
+    {
+      "sequence": 22,
+      "edit_id": "99467c1e-f699-466a-af3f-adaccf56b567",
+      "saved_at": "2026-10-03T10:04:04.611698+00:00",
+      "station_id": "downtown",
+      "station_name": "Downtown",
+      "exit_id": "MRT:G",
+      "label": "G",
+      "from": {
+        "source": "reviewed_manual",
+        "coordinates": [
+          103.85215,
+          1.27981
+        ],
+        "candidate_index": 245
+      },
+      "to_coordinates": [
+        103.85223895311358,
+        1.2795634751900078
+      ],
+      "note": "",
+      "previous_entry_hash": "2176c960e02704d814d9cb7309d6bb87db4317cc28d38bbc8e87ba631e384ff9",
+      "entry_hash": "a0aed047634512b87c5181ab446cf655786a51e1fcbdcbb17d3641341eeee068"
+    },
+    {
+      "sequence": 23,
+      "edit_id": "013a9540-4179-444e-bca2-b4872e7e7e4b",
+      "saved_at": "2026-10-03T10:04:12.218466+00:00",
+      "station_id": "telok-ayer",
+      "station_name": "Telok Ayer",
+      "exit_id": "MRT:A",
+      "label": "A",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.8485128746789,
+          1.281891078707813
+        ],
+        "candidate_index": 768
+      },
+      "to_coordinates": [
+        103.84865418076517,
+        1.2818977548485146
+      ],
+      "note": "",
+      "previous_entry_hash": "a0aed047634512b87c5181ab446cf655786a51e1fcbdcbb17d3641341eeee068",
+      "entry_hash": "51748134bc63d8457572a6a66fb6cb24cded81af87c6c3d328b61435b19218fc"
+    },
+    {
+      "sequence": 24,
+      "edit_id": "a8ce5803-7c73-4e51-bdcf-51f022bc0ffe",
+      "saved_at": "2026-10-03T10:04:16.584544+00:00",
+      "station_id": "telok-ayer",
+      "station_name": "Telok Ayer",
+      "exit_id": "MRT:D",
+      "label": "D",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.8482121317728,
+          1.282769843135097
+        ],
+        "candidate_index": 771
+      },
+      "to_coordinates": [
+        103.84825587272645,
+        1.28273037217869
+      ],
+      "note": "",
+      "previous_entry_hash": "51748134bc63d8457572a6a66fb6cb24cded81af87c6c3d328b61435b19218fc",
+      "entry_hash": "b0d523dfcf58e30fb554a9bd98a29e6d7e6bb33ac3cba15aa22bdbed0f95dc81"
+    },
+    {
+      "sequence": 25,
+      "edit_id": "5ebd2d6f-8cb4-4a84-8dc9-09be1bb4836c",
+      "saved_at": "2026-10-03T10:04:21.088694+00:00",
+      "station_id": "telok-ayer",
+      "station_name": "Telok Ayer",
+      "exit_id": "MRT:E",
+      "label": "E",
+      "from": {
+        "source": "onemap",
+        "coordinates": [
+          103.8475672644882,
+          1.282649152737046
+        ],
+        "candidate_index": 772
+      },
+      "to_coordinates": [
+        103.84758666157724,
+        1.2827491429366351
+      ],
+      "note": "",
+      "previous_entry_hash": "b0d523dfcf58e30fb554a9bd98a29e6d7e6bb33ac3cba15aa22bdbed0f95dc81",
+      "entry_hash": "024a1d378c64901486dc93b892d2ff2e5e639081bef69c9da4406737c8f850a8"
+    },
+    {
+      "sequence": 26,
+      "edit_id": "9b35fd07-bbd6-48ae-925d-a7d80ae747c3",
+      "saved_at": "2026-10-03T10:04:21.160387+00:00",
+      "station_id": "telok-ayer",
+      "station_name": "Telok Ayer",
+      "exit_id": "MRT:E",
+      "label": "E",
+      "from": {
+        "source": "human_reviewed",
+        "coordinates": [
+          103.84758666157724,
+          1.2827491429366351
+        ],
+        "edit_id": "5ebd2d6f-8cb4-4a84-8dc9-09be1bb4836c"
+      },
+      "to_coordinates": [
+        103.84758666157724,
+        1.2827491429366351
+      ],
+      "note": "",
+      "previous_entry_hash": "024a1d378c64901486dc93b892d2ff2e5e639081bef69c9da4406737c8f850a8",
+      "entry_hash": "e8e525c5ede9a1daa8bc7b09dfea5d4316a4e4fa1b4c4ae229ff2a770ae1f347"
+    },
+    {
+      "sequence": 27,
+      "edit_id": "48f37e99-a7f1-453a-ae3e-1c7192140a6f",
+      "saved_at": "2026-10-03T10:08:31.100439+00:00",
+      "station_id": "kent-ridge",
+      "station_name": "Kent Ridge",
+      "exit_id": "MRT:E",
+      "label": "E",
+      "from": {
+        "source": "reviewed_manual",
+        "coordinates": [
+          103.78515,
+          1.2929
+        ],
+        "candidate_index": 378
+      },
+      "to_coordinates": [
+        103.78530979156496,
+        1.2922296988256536
+      ],
+      "note": "",
+      "previous_entry_hash": "e8e525c5ede9a1daa8bc7b09dfea5d4316a4e4fa1b4c4ae229ff2a770ae1f347",
+      "entry_hash": "72ba1f0577c2e35b4edf4b094d99aa9ce5d5e733a45df2b03983c7f512b8d28e"
+    },
+    {
+      "sequence": 28,
+      "edit_id": "d26f2dcb-56f4-40f1-95a4-de1716fb2855",
+      "saved_at": "2026-10-03T10:08:50.173065+00:00",
+      "station_id": "joo-koon",
+      "station_name": "Joo Koon",
+      "exit_id": "MRT:C",
+      "label": "C",
+      "from": {
+        "source": "reviewed_manual",
+        "coordinates": [
+          103.678842,
+          1.327126
+        ],
+        "candidate_index": 352
+      },
+      "to_coordinates": [
+        103.6788582801819,
+        1.3273279592950329
+      ],
+      "note": "",
+      "previous_entry_hash": "72ba1f0577c2e35b4edf4b094d99aa9ce5d5e733a45df2b03983c7f512b8d28e",
+      "entry_hash": "1322a31b1c31365e7f22b7cdd4a4df0e8a159abbbab347d99014666fdf0ebf3a"
+    },
+    {
+      "sequence": 29,
+      "edit_id": "89701c5b-d189-4e97-955a-ad0680e27db3",
+      "saved_at": "2026-10-03T10:20:24.244011+00:00",
+      "station_id": "upper-changi",
+      "station_name": "Upper Changi",
+      "exit_id": "MRT:E",
+      "label": "E",
+      "from": {
+        "source": "reviewed_manual",
+        "coordinates": [
+          103.96215,
+          1.3413
+        ],
+        "candidate_index": 797
+      },
+      "to_coordinates": [
+        103.96193861961366,
+        1.3407595026478307
+      ],
+      "note": "",
+      "previous_entry_hash": "1322a31b1c31365e7f22b7cdd4a4df0e8a159abbbab347d99014666fdf0ebf3a",
+      "entry_hash": "ec9d362122e911353020671c203a5368713bb1268b971a244e667275029a86d3"
+    },
+    {
+      "sequence": 30,
+      "edit_id": "7ce01e55-5971-4cf2-ae7b-0974f3227e83",
+      "saved_at": "2026-10-03T10:23:16.915862+00:00",
+      "station_id": "woodleigh",
+      "station_name": "Woodleigh",
+      "exit_id": "MRT:E",
+      "label": "E",
+      "from": {
+        "source": "reviewed_manual",
+        "coordinates": [
+          103.87118,
+          1.3387
+        ],
+        "candidate_index": 839
+      },
+      "to_coordinates": [
+        103.8712839782238,
+        1.3386411367414357
+      ],
+      "note": "",
+      "previous_entry_hash": "ec9d362122e911353020671c203a5368713bb1268b971a244e667275029a86d3",
+      "entry_hash": "2f039839e5f65a21739c2f1df691ad14bf73d0e9d5cdeb9326baccb3314d27bb"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "area_mismatch_stations": [],
+  "bus_mapping_differences_on_common_identities": [
+    {
+      "exit_id": "LRT:A",
+      "mrt_data_v2": [
+        "45009",
+        "44029",
+        "44031",
+        "44259",
+        "44909",
+        "44859"
+      ],
+      "mrt_wayfinding": [
+        "45009",
+        "44031",
+        "44859"
+      ],
+      "station": "Bukit Panjang"
+    },
+    {
+      "exit_id": "LRT:B",
+      "mrt_data_v2": [],
+      "mrt_wayfinding": [
+        "45009"
+      ],
+      "station": "Bukit Panjang"
+    },
+    {
+      "exit_id": "MRT:A1",
+      "mrt_data_v2": [],
+      "mrt_wayfinding": [
+        "44029"
+      ],
+      "station": "Bukit Panjang"
+    },
+    {
+      "exit_id": "MRT:A2",
+      "mrt_data_v2": [],
+      "mrt_wayfinding": [
+        "44029"
+      ],
+      "station": "Bukit Panjang"
+    },
+    {
+      "exit_id": "MRT:B",
+      "mrt_data_v2": [],
+      "mrt_wayfinding": [
+        "44021"
+      ],
+      "station": "Bukit Panjang"
+    },
+    {
+      "exit_id": "MRT:C",
+      "mrt_data_v2": [],
+      "mrt_wayfinding": [
+        "44251"
+      ],
+      "station": "Bukit Panjang"
+    }
+  ],
+  "common_exit_semantic_differences": [],
+  "comparison_date": "2026-10-04",
+  "exit_identity_differences": [
+    {
+      "mrt_data_v2_only": [
+        "UNSCOPED:1",
+        "UNSCOPED:3",
+        "UNSCOPED:4"
+      ],
+      "mrt_wayfinding_only": [
+        "MRT:1",
+        "MRT:3",
+        "MRT:4"
+      ],
+      "station": "Cantonment"
+    },
+    {
+      "mrt_data_v2_only": [
+        "LRT:E",
+        "MRT:E"
+      ],
+      "mrt_wayfinding_only": [
+        "SHARED:E"
+      ],
+      "station": "Choa Chu Kang"
+    },
+    {
+      "mrt_data_v2_only": [
+        "UNSCOPED:2",
+        "UNSCOPED:3"
+      ],
+      "mrt_wayfinding_only": [
+        "MRT:2",
+        "MRT:3"
+      ],
+      "station": "Keppel"
+    },
+    {
+      "mrt_data_v2_only": [
+        "UNSCOPED:1",
+        "UNSCOPED:2"
+      ],
+      "mrt_wayfinding_only": [
+        "MRT:1",
+        "MRT:2"
+      ],
+      "station": "Prince Edward Road"
+    },
+    {
+      "mrt_data_v2_only": [
+        "UNSCOPED:A",
+        "UNSCOPED:B",
+        "UNSCOPED:C",
+        "UNSCOPED:D"
+      ],
+      "mrt_wayfinding_only": [
+        "SHARED:A",
+        "SHARED:B",
+        "SHARED:C",
+        "SHARED:D"
+      ],
+      "station": "Punggol"
+    },
+    {
+      "mrt_data_v2_only": [
+        "UNSCOPED:A",
+        "UNSCOPED:B",
+        "UNSCOPED:C",
+        "UNSCOPED:D"
+      ],
+      "mrt_wayfinding_only": [
+        "SHARED:A",
+        "SHARED:B",
+        "SHARED:C",
+        "SHARED:D"
+      ],
+      "station": "Sengkang"
+    }
+  ],
+  "exit_inventory_status_mismatches": [],
+  "kind": "mrt_wayfinding_stage1_vs_mrt_data_v2",
+  "limitation": "The mrt-wayfinding run replays saved real SgWiki pages and the saved real LTA BusStops snapshot. Its GTFS inventory is a temporary 184-station catalogue mirror used only to exercise the join because the execution sandbox cannot resolve DataMall. Operational-status fields are therefore excluded from this comparison.",
+  "name_normalizations": [
+    {
+      "mrt_data_v2": "Bedok North ",
+      "mrt_wayfinding": "Bedok North"
+    }
+  ],
+  "partial_stations": {
+    "mrt_data_v2": [
+      "Cantonment",
+      "Keppel",
+      "Prince Edward Road"
+    ],
+    "mrt_wayfinding": [
+      "Cantonment",
+      "Keppel",
+      "Prince Edward Road"
+    ]
+  },
+  "platform_mismatch_stations": [],
+  "raw_bus_evidence_mismatch_stations": [],
+  "review_reason_counts": {
+    "mrt_data_v2": {
+      "bus_exit_scope_ambiguous": 5,
+      "layout_coverage_review": 1,
+      "partial_exit_inventory": 3,
+      "sgwiki_source_review": 182
+    },
+    "mrt_wayfinding": {
+      "layout_advisory": 67,
+      "layout_review": 11,
+      "normalization_applied": 1,
+      "operator_addition_requires_review": 3,
+      "partial_exit_inventory": 3,
+      "platform_with_multiple_concourse_levels": 1,
+      "sgwiki_source_review": 104
+    }
+  },
+  "schema_version": 1,
+  "source_page_revision_mismatches": [],
+  "sources": {
+    "mrt_data_v2": {
+      "path": "/Users/ryanyeo/Projects/talk/mrt-data-v2/outputs/mvp-data/mvp-full/stage1.json",
+      "sha256": "168ad5fea75fc9e8a2f6f63333770b6a57567064bf0ea136b6060924e49b2286"
+    },
+    "mrt_wayfinding": {
+      "path": "/Users/ryanyeo/Projects/talk/mrt-wayfinding/runs/saved-evidence-v2-comparison-20261004/stage1/stations.json",
+      "sha256": "bc75cf7300b34f033ccb32594b58f68a4dc125c745e6fe9b3a3e8b8974f26a06",
+      "source_mode": "saved_evidence_replay"
+    }
+  },
+  "station_code_mismatches": [],
+  "summary": {
+    "area_mismatch_station_count": 0,
+    "closed_exit_evidence_equal": true,
+    "exit_inventory_status_mismatch_count": 0,
+    "mrt_data_v2_exit_identity_count": 613,
+    "mrt_data_v2_raw_bus_row_count": 607,
+    "mrt_data_v2_review_count": 191,
+    "mrt_wayfinding_accepted_bus_row_count": 605,
+    "mrt_wayfinding_excluded_bus_row_count": 2,
+    "mrt_wayfinding_exit_identity_count": 612,
+    "mrt_wayfinding_review_count": 190,
+    "platform_mismatch_station_count": 0,
+    "raw_bus_evidence_mismatch_station_count": 0,
+    "source_page_revision_mismatch_count": 0,
+    "station_code_mismatch_count": 0,
+    "station_count": 184,
+    "station_sets_equal": true,
+    "stations_with_exit_identity_changes": 6,
+    "unchanged_exit_semantic_mismatch_count": 0
+  }
+}

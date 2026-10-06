@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MRT wayfinding review</title>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Human audit workspace</p>
+      <h1>Exit map review</h1>
+    </div>
+    <div class="run-summary" id="runSummary" aria-live="polite">Loading review data…</div>
+  </header>
+
+  <main class="workspace">
+    <aside class="filters" aria-label="Review filters">
+      <label for="search">Search</label>
+      <input id="search" type="search" placeholder="Station, code, exit, or decision">
+
+      <label for="stationFilter">Station</label>
+      <select id="stationFilter">
+        <option value="">All stations</option>
+      </select>
+
+      <label for="scopeFilter">Items</label>
+      <select id="scopeFilter">
+        <option value="review">Changes and review items</option>
+        <option value="changed">Changes only</option>
+        <option value="pending">Pending decisions</option>
+        <option value="conflict">Conflicts</option>
+        <option value="all" selected>All exits</option>
+      </select>
+
+      <fieldset class="source-fieldset">
+        <legend>Coordinates on map</legend>
+        <label class="source-toggle source-approved">
+          <input id="approvedSource" type="checkbox" value="approved" checked>
+          <span class="legend-approved" aria-hidden="true"><span>A</span></span>
+          <span>Approved</span>
+        </label>
+        <label class="source-toggle source-kartographer">
+          <input type="checkbox" value="kartographer">
+          <span class="legend-alt alt-kartographer" aria-hidden="true">K</span>
+          <span>Kartographer</span>
+        </label>
+        <label class="source-toggle source-onemap">
+          <input type="checkbox" value="onemap">
+          <span class="legend-alt alt-onemap" aria-hidden="true">1M</span>
+          <span>OneMap</span>
+        </label>
+        <label class="source-toggle source-osm">
+          <input type="checkbox" value="osm">
+          <span class="legend-alt alt-osm" aria-hidden="true">OSM</span>
+          <span>OpenStreetMap</span>
+        </label>
+        <label class="source-toggle source-lta">
+          <input type="checkbox" value="lta">
+          <span class="legend-alt alt-lta" aria-hidden="true">LTA</span>
+          <span>LTA</span>
+        </label>
+        <label class="source-toggle source-manual">
+          <input type="checkbox" value="manual">
+          <span class="legend-alt alt-manual" aria-hidden="true">M</span>
+          <span>Manual candidate</span>
+        </label>
+      </fieldset>
+      <p class="hint">Only approved coordinates appear by default. Turn on a source to compare its candidates.</p>
+
+      <label for="basemapSelect">Background map</label>
+      <select id="basemapSelect"></select>
+      <p class="context-notice">The background map gives context only. Its labels are not pipeline evidence.</p>
+
+      <div class="filter-actions">
+        <button id="fitButton" type="button">Fit visible exits</button>
+        <button id="resetButton" type="button" class="secondary">Reset filters</button>
+      </div>
+
+      <section class="run-notes" aria-labelledby="runNotesTitle">
+        <h2 id="runNotesTitle">Current run</h2>
+        <dl id="runFacts" class="facts"></dl>
+      </section>
+    </aside>
+
+    <section class="map-region" aria-label="Exit coordinates map">
+      <div id="map" tabindex="0" aria-label="Interactive map of approved exits and selected evidence sources"></div>
+      <div id="baselineWarning" class="baseline-warning" role="alert" hidden>
+        <strong>No approved baseline</strong>
+        <span>Approved pins are unavailable. You can inspect candidates, but this review cannot establish an approval.</span>
+      </div>
+      <div class="map-key" aria-hidden="true">
+        <span class="mini-approved"><span>A</span></span> Approved exit
+      </div>
+      <div id="error" class="error" role="alert" hidden></div>
+    </section>
+
+    <aside class="review-panel" aria-label="Review items and decision editor">
+      <section class="review-list-pane" id="reviewListPane">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Run findings</p>
+            <h2>Items to check</h2>
+          </div>
+          <span id="resultCount" class="count">0</span>
+        </div>
+        <div id="resultList" class="result-list"></div>
+      </section>
+
+      <section id="detailPane" class="detail-pane" hidden aria-labelledby="detailTitle">
+        <div class="panel-heading detail-heading">
+          <button id="backButton" type="button" class="back-button" aria-label="Back to review items">←</button>
+          <div>
+            <p class="eyebrow">Selected exit</p>
+            <h2 id="detailTitle"></h2>
+          </div>
+          <span id="detailStatus" class="status-badge"></span>
+        </div>
+
+        <div class="detail-content">
+          <section aria-labelledby="changeTitle">
+            <h3 id="changeTitle">Change</h3>
+            <dl id="changeFacts" class="facts detail-facts"></dl>
+            <p id="changeSummary" class="change-summary"></p>
+            <button id="useApprovedButton" type="button" class="secondary compact">Start from approved coordinate</button>
+          </section>
+
+          <section aria-labelledby="evidenceTitle">
+            <h3 id="evidenceTitle">Evidence</h3>
+            <div id="evidenceList" class="evidence-list"></div>
+            <p id="hiddenEvidenceNote" class="hint"></p>
+          </section>
+
+          <section class="draft-editor" aria-labelledby="draftTitle">
+            <div class="section-row">
+              <div>
+                <p class="eyebrow">Proposal only</p>
+                <h3 id="draftTitle">Draft a decision</h3>
+              </div>
+              <span class="not-approved">Not approved</span>
+            </div>
+            <p class="draft-policy">Saving creates a draft audit decision. It does not change an approved coordinate.</p>
+
+            <div class="coordinate-grid">
+              <label for="longitude">Longitude
+                <input id="longitude" type="number" inputmode="decimal" step="0.0000001">
+              </label>
+              <label for="latitude">Latitude
+                <input id="latitude" type="number" inputmode="decimal" step="0.0000001">
+              </label>
+            </div>
+            <p class="hint">Click the map, enter a point, or select a visible candidate. You can then drag the black proposal marker.</p>
+
+            <label for="changeCategory">Change category</label>
+            <select id="changeCategory" required>
+              <option value="">Select a category</option>
+              <option value="source_correction">Source correction</option>
+              <option value="physical_relocation">Physical relocation</option>
+              <option value="new_exit">New exit</option>
+              <option value="manual_gap_fill">Manual gap fill</option>
+              <option value="source_conflict">Source conflict</option>
+              <option value="revision_revalidation">Revision revalidation</option>
+            </select>
+
+            <label for="rationale">Rationale</label>
+            <textarea id="rationale" rows="4" maxlength="4000" required placeholder="Explain what changed and why this proposal is correct."></textarea>
+
+            <fieldset class="evidence-editor">
+              <legend>Supporting evidence</legend>
+              <label for="evidenceUrl">URL
+                <input id="evidenceUrl" type="url" placeholder="https://…">
+              </label>
+              <label for="evidenceTitleInput">Title
+                <input id="evidenceTitleInput" type="text" maxlength="240" placeholder="Operator map or source page">
+              </label>
+              <label for="evidenceNote">Evidence note
+                <textarea id="evidenceNote" rows="2" maxlength="1000" placeholder="State what this source proves."></textarea>
+              </label>
+              <button id="addEvidenceButton" type="button" class="secondary">Add evidence</button>
+              <div id="draftEvidenceList" class="draft-evidence-list"></div>
+            </fieldset>
+
+            <label for="alternativesRejected">Alternatives not selected</label>
+            <textarea id="alternativesRejected" rows="2" maxlength="2000" required placeholder="Explain why another candidate was not selected. Enter None when there were no alternatives."></textarea>
+
+            <div class="draft-actions">
+              <button id="saveDraftButton" type="button">Save draft decision</button>
+              <button id="resetDraftButton" type="button" class="secondary">Reset proposal</button>
+            </div>
+            <p id="draftStatus" class="draft-status" aria-live="polite"></p>
+          </section>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
