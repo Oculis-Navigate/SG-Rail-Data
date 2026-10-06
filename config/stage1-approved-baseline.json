@@ -12,7 +12,7 @@
     "service_date": "2026-10-05",
     "source_zip_sha256": "e39bd35048133efe554e7c78e958f38c2930bd921a018d9cb37e0d53796b82d3"
   },
-  "kind": "mrt_wayfinding_stage_1",
+  "kind": "sg_rail_station_data_stage_1",
   "normalizations": [
     {
       "kind": "repeated_exit_evidence_merged",

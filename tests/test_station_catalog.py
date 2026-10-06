@@ -3,9 +3,9 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from mrt_wayfinding.config import load_default_config
-from mrt_wayfinding.contracts import ContractError
-from mrt_wayfinding.station_catalog import load_station_catalog, station_key
+from sg_rail_station_data.config import load_default_config
+from sg_rail_station_data.contracts import ContractError
+from sg_rail_station_data.station_catalog import load_station_catalog, station_key
 
 
 class StationCatalogTests(unittest.TestCase):

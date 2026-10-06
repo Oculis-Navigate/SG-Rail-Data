@@ -3,9 +3,9 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from mrt_wayfinding.sources.sgwiki import HttpResponse, collect_sgwiki
-from mrt_wayfinding.sources.sgwiki_parser import SgWikiSourceError, parse_response
-from mrt_wayfinding.station_catalog import load_station_catalog
+from sg_rail_station_data.sources.sgwiki import HttpResponse, collect_sgwiki
+from sg_rail_station_data.sources.sgwiki_parser import SgWikiSourceError, parse_response
+from sg_rail_station_data.station_catalog import load_station_catalog
 from tests.helpers import write_test_project
 
 

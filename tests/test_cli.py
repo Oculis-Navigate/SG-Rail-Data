@@ -7,7 +7,7 @@ from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
-from mrt_wayfinding.cli import main
+from sg_rail_station_data.cli import main
 from tests.helpers import SERVICE_DATE, write_replay_bundle, write_test_project
 
 
@@ -19,7 +19,7 @@ class CliTests(unittest.TestCase):
         self.assertEqual(code, 0)
         result = json.loads(output.getvalue())
         self.assertEqual(result["status"], "valid")
-        self.assertEqual(result["project"], "mrt-wayfinding")
+        self.assertEqual(result["project"], "sg-rail-station-data")
         self.assertEqual(result["expected_station_count"], 184)
 
     def test_pipeline_command_and_duplicate_failure(self):
@@ -80,7 +80,7 @@ class CliTests(unittest.TestCase):
             with (
                 patch.dict("os.environ", {"LTA_API_KEY": "super-secret-value"}, clear=True),
                 patch(
-                    "mrt_wayfinding.cli.collect_lta_bus_stops",
+                    "sg_rail_station_data.cli.collect_lta_bus_stops",
                     return_value=fake_result,
                 ) as collector,
                 contextlib.redirect_stdout(output),
@@ -118,7 +118,7 @@ class CliTests(unittest.TestCase):
             )
             with (
                 patch(
-                    "mrt_wayfinding.cli.collect_sgwiki_mapdata",
+                    "sg_rail_station_data.cli.collect_sgwiki_mapdata",
                     return_value=fake_result,
                 ) as collector,
                 contextlib.redirect_stdout(output),

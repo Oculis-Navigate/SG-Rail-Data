@@ -5,8 +5,8 @@ import json
 from pathlib import Path
 import unittest
 
-from mrt_wayfinding.contracts import ContractError
-from mrt_wayfinding.stage2 import (
+from sg_rail_station_data.contracts import ContractError
+from sg_rail_station_data.stage2 import (
     build_stage2,
     compare_stage2,
     prepare_kartographer_exits,
@@ -50,7 +50,7 @@ def stage1(*, revision_id=REVISION_ID, exit_ids=("MRT:A", "MRT:B", "MRT:C", "MRT
         })
     return {
         "schema_version": 1,
-        "kind": "mrt_wayfinding_stage_1",
+        "kind": "sg_rail_station_data_stage_1",
         "status": "complete",
         "publication_allowed": True,
         "gtfs": {},

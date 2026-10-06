@@ -1,1 +1,1 @@
-"""Tests for mrt-wayfinding."""
+"""Tests for sg-rail-station-data."""

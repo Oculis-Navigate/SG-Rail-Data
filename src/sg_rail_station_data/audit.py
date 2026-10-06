@@ -546,7 +546,7 @@ def _append_event(root: Path, values: dict[str, object]) -> dict[str, object]:
     root = root.resolve()
     ledger_path = root / LEDGER
     root_hash = sha256(str(root).encode()).hexdigest()[:16]
-    lock_path = Path(tempfile.gettempdir()) / f"mrt-wayfinding-audit-{root_hash}.lock"
+    lock_path = Path(tempfile.gettempdir()) / f"sg-rail-station-data-audit-{root_hash}.lock"
     lock_path.touch(exist_ok=True)
     with lock_path.open("r+") as lock:
         fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
@@ -762,7 +762,7 @@ def _reviewed_override_documents(
         based_on_source = prior_from["source"]
         based_on_coordinates = list(prior_from["coordinates"])
     draft_digest = content_hash(draft)
-    edit_id = str(uuid5(NAMESPACE_URL, f"mrt-wayfinding:{decision_id}:{draft_digest}"))
+    edit_id = str(uuid5(NAMESPACE_URL, f"sg-rail-station-data:{decision_id}:{draft_digest}"))
     review_note = (
         f"{draft['rationale']} Alternatives rejected: {draft['alternatives_rejected']}"
     )
@@ -1003,7 +1003,7 @@ def apply_decision(
     recorded_by = exact_str(recorded_by, "recorded_by")
     note = exact_str(note, "note")
     lock_path = Path(tempfile.gettempdir()) / (
-        "mrt-wayfinding-config-" + sha256(str(root).encode()).hexdigest()[:16] + ".lock"
+        "sg-rail-station-data-config-" + sha256(str(root).encode()).hexdigest()[:16] + ".lock"
     )
     lock_path.touch(exist_ok=True)
     with lock_path.open("r+") as lock:
@@ -1141,10 +1141,10 @@ def render_signoffs(root: Path) -> dict[str, object]:
             )
         lines.extend([f"- Ledger head: `{audit['ledger_head']}`.", ""])
         atomic_write_text(output_dir / f"{day}.md", "\n".join(lines), overwrite=True)
-        rows.append((day, len(events), sum(event["disposition"] == "pending_review" for event in events)))
+        rows.append((day, len(events), sum(event["operation"] == "propose" for event in events)))
     index = [
         "# Sign-offs by date", "", "These pages are generated from `audit/decision-ledger.jsonl`.", "",
-        "| Date | Events | Pending events |", "|---|---:|---:|",
+        "| Date | Events | Proposal events |", "|---|---:|---:|",
     ]
     for day, count, pending in rows:
         index.append(f"| [{day}]({day}.md) | {count} | {pending} |")

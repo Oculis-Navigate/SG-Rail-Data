@@ -2,7 +2,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from mrt_wayfinding.config import ConfigError, DEFAULT_CONFIG_PATH, load_config
+from sg_rail_station_data.config import ConfigError, DEFAULT_CONFIG_PATH, load_config
 
 
 class ConfigTests(unittest.TestCase):
@@ -22,7 +22,7 @@ class ConfigTests(unittest.TestCase):
 
     def test_default_contract_loads_and_resolves_repo_owned_runs_path(self):
         config = load_config(self.write(self.original))
-        self.assertEqual(config.project.name, "mrt-wayfinding")
+        self.assertEqual(config.project.name, "sg-rail-station-data")
         self.assertEqual(config.inventory.expected_station_count, 184)
         self.assertEqual(config.locale.timezone, "Asia/Singapore")
         self.assertEqual(config.paths.runs_dir, (self.root / "runs").resolve())
@@ -37,6 +37,10 @@ class ConfigTests(unittest.TestCase):
         self.assertEqual(
             config.paths.stage1_approved_baseline,
             (self.root / "config/stage1-approved-baseline.json").resolve(),
+        )
+        self.assertEqual(
+            config.paths.stage2_approved_baseline,
+            (self.root / "config/stage2-approved-baseline.json").resolve(),
         )
         self.assertEqual(
             config.paths.stage2_reviewed_coordinates,

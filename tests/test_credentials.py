@@ -2,7 +2,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from mrt_wayfinding.credentials import CredentialError, load_lta_api_key
+from sg_rail_station_data.credentials import CredentialError, load_lta_api_key
 
 
 class CredentialTests(unittest.TestCase):

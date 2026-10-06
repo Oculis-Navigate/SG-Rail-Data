@@ -1,4 +1,4 @@
-# Initial intervention sign-off — 2026-10-05
+# Intervention and baseline sign-off
 
 **Readable ledger:** [browse sign-offs by date](signoffs/README.md), starting with
 [5 October 2026](signoffs/2026-10-05.md). Each decision includes its status,
@@ -12,7 +12,8 @@ The initial 25 decision groups cover 354 configured intervention records: 20
 Stage 1 rules and 334 coordinate entries (28 reviewed pins, 266 trusted OneMap
 points, 38 accepted LTA/OSM points and two agent-selected OneMap conflict
 points). D-026 clarifies the Dhoby Ghaut interpretation without adding an
-intervention record. All 26 decisions now have recorded approval.
+intervention record. D-027 approves the checked-in Stage 2 baseline. All 27
+decisions have recorded approval.
 
 ## Current sign-off status
 
@@ -20,7 +21,9 @@ The project owner approved Cantonment MRT Exits 1–4, Keppel MRT Exits 1–3 an
 Prince Edward Road MRT Exits 1–2 on 6 October 2026. The owner also confirmed
 that Dhoby Ghaut E, F and G are separate exits. The pipeline combines only the
 two source mentions of G so that G retains both destination strings. The rule
-remains pinned to SgWiki revision 37293.
+remains pinned to SgWiki revision 37293. The owner also approved the complete
+184-station, 614-exit Stage 2 comparison baseline. The baseline resolves all
+614 exits and has no review finding.
 
 ## Ledger index
 
@@ -52,6 +55,7 @@ remains pinned to SgWiki revision 37293.
 | D-024 | S-024 | Select Expo MRT:A OneMap candidate | 1 | Prior delegated selection |
 | D-025 | S-025 | Select Farrer Park MRT:E OneMap candidate | 1 | Prior delegated selection |
 | D-026 | S-031 | Clarify Dhoby Ghaut repeated Exit G evidence | 0 | Direct human sign-off |
+| D-027 | S-033 | Approve the initial Stage 2 coordinate baseline | 1 baseline | Direct human sign-off |
 
 ## Evidence and limitations
 
@@ -61,11 +65,12 @@ remains pinned to SgWiki revision 37293.
 - Legacy per-pin explanations remain missing: all 30 old edit notes and 28 final review notes were blank. Their original files are preserved byte-for-byte.
 - Expo A and Farrer Park E remain agent evidence selections under delegated authority. The app could not be opened; saved source evidence was used.
 - Source reports are historical evidence, not newly fetched verification. The revision-adjusted offline replay is not eligible for live baseline approval.
+- D-027 used saved source snapshots. It approves the comparison baseline and does not claim survey-grade coordinate precision.
 
 ## Validate before committing
 
 ```console
-uv run mrt-wayfinding audit validate
+uv run sg-rail-station-data audit validate
 uv run python -m unittest discover -s tests -v
 ```
 
@@ -82,9 +87,9 @@ The map saves coordinate changes as drafts. Promote one draft to a strict audit
 proposal with this command:
 
 ```console
-uv run mrt-wayfinding audit promote-coordinate-draft \
+uv run sg-rail-station-data audit promote-coordinate-draft \
   --draft-file audit/drafts/DRAFT-<id>.json \
-  --decision-id D-026 \
+  --decision-id D-<next> \
   --bundle-file <review-bundle.json> \
   --stage1-file <run>/stage1/stations.json \
   --evidence-file audit/evidence/<retained-source> \
@@ -103,7 +108,7 @@ It appends a `pending_review` event and does not grant approval.
 After a human approves the exact decision, apply it:
 
 ```console
-uv run mrt-wayfinding audit apply D-026 \
+uv run sg-rail-station-data audit apply D-<approved> \
   --recorded-by <actor> \
   --note "Applied the approved reviewed-coordinate documents."
 ```
@@ -125,5 +130,4 @@ replaced and the new decision as approved. Direct approval of overlapping strict
 decisions fails.
 
 Commit-summary CI enforcement and release promotion remain planned. A pending
-decision may be committed as pending. Do not present it as signed off. No commit
-has been made as part of creating this ledger.
+decision may be committed as pending. Do not present it as signed off.

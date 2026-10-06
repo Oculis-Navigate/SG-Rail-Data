@@ -4,11 +4,11 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from mrt_wayfinding.config import DEFAULT_CONFIG_PATH, load_config
-from mrt_wayfinding.contracts import ContractError
-from mrt_wayfinding.pipeline import run_pipeline
-from mrt_wayfinding.run import RunContext, RunLifecycleError, RunStatus
-from mrt_wayfinding.storage import OutputExistsError
+from sg_rail_station_data.config import DEFAULT_CONFIG_PATH, load_config
+from sg_rail_station_data.contracts import ContractError
+from sg_rail_station_data.pipeline import run_pipeline
+from sg_rail_station_data.run import RunContext, RunLifecycleError, RunStatus
+from sg_rail_station_data.storage import OutputExistsError
 from tests.helpers import SERVICE_DATE, write_replay_bundle, write_test_project
 from datetime import date
 

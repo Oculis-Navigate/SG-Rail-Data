@@ -160,7 +160,7 @@ def collect_sgwiki(
 
     headers = {
         "Accept": "application/json",
-        "User-Agent": f"mrt-wayfinding/{__version__} (Singapore rail wayfinding dataset)",
+        "User-Agent": f"sg-rail-station-data/{__version__} (Singapore rail station dataset)",
     }
     records: list[dict[str, object]] = []
     evidence: list[dict[str, object]] = []

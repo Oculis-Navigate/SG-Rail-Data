@@ -778,7 +778,7 @@ def build_full_stage1(
     }
     dataset = {
         "schema_version": 1,
-        "kind": "mrt_wayfinding_stage_1",
+        "kind": "sg_rail_station_data_stage_1",
         "status": "review_required" if review_items else "complete",
         "publication_allowed": not review_items,
         "gtfs": {
@@ -838,7 +838,7 @@ def compare_stage1(current: object, baseline: object | None) -> dict[str, object
     }
     for context, document in (("current", current), ("baseline", baseline)):
         root = require_fields(document, dataset_fields, f"stage1 comparison.{context}")
-        if root["schema_version"] != 1 or root["kind"] != "mrt_wayfinding_stage_1":
+        if root["schema_version"] != 1 or root["kind"] != "sg_rail_station_data_stage_1":
             fail(f"stage1 comparison.{context}", "unsupported Stage 1 document")
         if type(root["stations"]) is not list:
             fail(f"stage1 comparison.{context}.stations", "expected array")

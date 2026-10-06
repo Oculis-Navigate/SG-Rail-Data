@@ -141,7 +141,7 @@ function formatPoint(value) {
 
 function validateResponse(raw) {
   requireValue(raw && typeof raw === "object" && !Array.isArray(raw), "Review API response must be an object.");
-  requireValue(raw.schema_version === 1 && raw.kind === "mrt_wayfinding_review_state",
+  requireValue(raw.schema_version === 1 && raw.kind === "sg_rail_station_data_review_state",
     "Review API returned an unsupported schema.");
   requireValue(["editable", "read_only"].includes(raw.status), "Review API returned an invalid status.");
   requireValue(typeof raw.bundle_sha256 === "string" && raw.bundle_sha256,
@@ -152,7 +152,7 @@ function validateResponse(raw) {
 }
 
 function normalizeBundle(bundle) {
-  requireValue(bundle.schema_version === 1 && bundle.kind === "mrt_wayfinding_review_bundle",
+  requireValue(bundle.schema_version === 1 && bundle.kind === "sg_rail_station_data_review_bundle",
     "The review bundle has an unsupported schema.");
   requireValue(bundle.run && typeof bundle.run === "object" && typeof bundle.run.id === "string",
     "The review bundle has no run identity.");

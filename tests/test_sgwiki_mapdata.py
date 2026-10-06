@@ -7,8 +7,8 @@ from tempfile import TemporaryDirectory
 import unittest
 from urllib.parse import parse_qs, urlsplit
 
-from mrt_wayfinding.sources.sgwiki import HttpResponse
-from mrt_wayfinding.sources.sgwiki_mapdata import (
+from sg_rail_station_data.sources.sgwiki import HttpResponse
+from sg_rail_station_data.sources.sgwiki_mapdata import (
     SgWikiMapDataError,
     collect_sgwiki_mapdata,
     discover_embedded_map,

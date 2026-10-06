@@ -5,9 +5,9 @@ from shutil import copyfile
 from tempfile import TemporaryDirectory
 import unittest
 
-from mrt_wayfinding.contracts import ContractError
-from mrt_wayfinding.pipeline import run_pipeline
-from mrt_wayfinding.review_bundle import (
+from sg_rail_station_data.contracts import ContractError
+from sg_rail_station_data.pipeline import run_pipeline
+from sg_rail_station_data.review_bundle import (
     FROZEN_COORDINATE_EVIDENCE,
     FROZEN_COORDINATE_EVIDENCE_SHA256,
     _frozen_coordinate_candidates,
@@ -15,7 +15,7 @@ from mrt_wayfinding.review_bundle import (
     validate_review_bundle,
     write_review_bundle,
 )
-from mrt_wayfinding.review_server import (
+from sg_rail_station_data.review_server import (
     ReviewServerError,
     ReviewStore,
     StaleReviewState,

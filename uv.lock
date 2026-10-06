@@ -5,17 +5,17 @@ requires-python = ">=3.12"
 [[package]]
 name = "beautifulsoup4"
 version = "4.14.3"
-source = { registry = "../../../../../private/tmp/mrt-wayfinding-wheels" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "soupsieve" },
     { name = "typing-extensions" },
 ]
 wheels = [
-    { path = "beautifulsoup4-4.14.3-py3-none-any.whl" },
+    { url = "https://files.pythonhosted.org/packages/1a/39/47f9197bdd44df24d67ac8893641e16f386c984a0619ef2ee4c51fbbc019/beautifulsoup4-4.14.3-py3-none-any.whl", hash = "sha256:0918bfe44902e6ad8d57732ba310582e98da931428d231a5ecb9e7c703a735bb", size = 107721 },
 ]
 
 [[package]]
-name = "mrt-wayfinding"
+name = "sg-rail-station-data"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
@@ -27,16 +27,16 @@ requires-dist = [{ name = "beautifulsoup4", specifier = "==4.14.3" }]
 
 [[package]]
 name = "soupsieve"
-version = "2.8.3"
-source = { registry = "../../../../../private/tmp/mrt-wayfinding-wheels" }
+version = "2.9"
+source = { registry = "https://pypi.org/simple" }
 wheels = [
-    { path = "soupsieve-2.8.3-py3-none-any.whl" },
+    { url = "https://files.pythonhosted.org/packages/7b/d6/3185ab5ad1280319b31986898f3206dd7227cd75e293d4dba2a5e6bf27a0/soupsieve-2.9-py3-none-any.whl", hash = "sha256:a2b2c76d67df2382d245409fd71e321a571717e58463efa32ace87dcadac2c12", size = 37387 },
 ]
 
 [[package]]
 name = "typing-extensions"
 version = "4.15.0"
-source = { registry = "../../../../../private/tmp/mrt-wayfinding-wheels" }
+source = { registry = "https://pypi.org/simple" }
 wheels = [
-    { path = "typing_extensions-4.15.0-py3-none-any.whl" },
+    { url = "https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl", hash = "sha256:f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548", size = 44614 },
 ]

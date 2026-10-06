@@ -4,7 +4,7 @@ import json
 from hashlib import sha256
 from pathlib import Path
 
-from mrt_wayfinding.config import DEFAULT_CONFIG_PATH, load_config
+from sg_rail_station_data.config import DEFAULT_CONFIG_PATH, load_config
 
 
 SERVICE_DATE = "2026-10-04"

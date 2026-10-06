@@ -1,4 +1,4 @@
-"""Strict TOML configuration loading for the MRT wayfinding pipeline."""
+"""Strict TOML configuration loading for the Singapore rail station dataset."""
 
 from __future__ import annotations
 
@@ -42,6 +42,7 @@ class PathsConfig:
     station_catalog: Path
     stage1_reviewed_decisions: Path
     stage1_approved_baseline: Path
+    stage2_approved_baseline: Path
     stage2_reviewed_coordinates: Path
     stage2_coordinate_ledger: Path
     stage2_trusted_onemap_baseline: Path
@@ -176,7 +177,7 @@ def _load_config(path: str | Path) -> PipelineConfig:
         name=exact_str(project_table["name"], "project.name"),
         schema_version=exact_int(project_table["schema_version"], "project.schema_version", minimum=1),
     )
-    if project.name != "mrt-wayfinding":
+    if project.name != "sg-rail-station-data":
         raise ConfigError("project.name: unsupported project identity")
     if project.schema_version != 1:
         raise ConfigError(
@@ -190,6 +191,7 @@ def _load_config(path: str | Path) -> PipelineConfig:
             "station_catalog",
             "stage1_reviewed_decisions",
             "stage1_approved_baseline",
+            "stage2_approved_baseline",
             "stage2_reviewed_coordinates",
             "stage2_coordinate_ledger",
             "stage2_trusted_onemap_baseline",
@@ -212,6 +214,11 @@ def _load_config(path: str | Path) -> PipelineConfig:
             paths_table["stage1_approved_baseline"],
             repo_root,
             "paths.stage1_approved_baseline",
+        ),
+        stage2_approved_baseline=safe_repo_path(
+            paths_table["stage2_approved_baseline"],
+            repo_root,
+            "paths.stage2_approved_baseline",
         ),
         stage2_reviewed_coordinates=safe_repo_path(
             paths_table["stage2_reviewed_coordinates"],

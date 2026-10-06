@@ -29,14 +29,14 @@ jobs:
         run: uv sync --frozen
 
       - name: Validate configuration
-        run: uv run mrt-wayfinding config validate
+        run: uv run sg-rail-station-data config validate
 
       - name: Validate audit ledger
-        run: uv run mrt-wayfinding audit validate
+        run: uv run sg-rail-station-data audit validate
 
       - name: Check generated sign-off pages
         run: |
-          uv run mrt-wayfinding audit render
+          uv run sg-rail-station-data audit render
           git diff --exit-code -- audit/signoffs
 
       - name: Run tests

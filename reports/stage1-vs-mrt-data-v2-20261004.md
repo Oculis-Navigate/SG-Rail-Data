@@ -2,10 +2,10 @@
 
 > This historical comparison predates the final partial-inventory overrides and
 > grouped-platform normalization. See
-> [`mrt-wayfinding-vs-mrt-data-v2-20261005.md`](mrt-wayfinding-vs-mrt-data-v2-20261005.md)
+> [`sg-rail-station-data-vs-mrt-data-v2-20261005.md`](sg-rail-station-data-vs-mrt-data-v2-20261005.md)
 > for the current comparison.
 
-Compared the saved `mrt-data-v2` MVP Stage 1 artifact with the new `mrt-wayfinding` Stage 1 replay.
+Compared the saved `mrt-data-v2` MVP Stage 1 artifact with the new `sg-rail-station-data` Stage 1 replay.
 
 > The replay uses saved real SgWiki and LTA BusStops evidence. Its GTFS inventory is a temporary catalogue mirror because this sandbox cannot resolve DataMall. Operational-status fields are excluded from the comparison.
 
@@ -23,11 +23,11 @@ Compared the saved `mrt-data-v2` MVP Stage 1 artifact with the new `mrt-wayfindi
 | Common exit semantics differing | 0 exits |
 | Closed-exit evidence | identical |
 
-The semantic source data is unchanged. `mrt-wayfinding` preserves all 607 SgWiki bus rows, all 706 level/area records, all 438 platform records, and the same three partial inventories: Cantonment, Keppel and Prince Edward Road. It also trims the erroneous trailing space from `Bedok North `.
+The semantic source data is unchanged. `sg-rail-station-data` preserves all 607 SgWiki bus rows, all 706 level/area records, all 438 platform records, and the same three partial inventories: Cantonment, Keppel and Prince Edward Road. It also trims the erroneous trailing space from `Bedok North `.
 
 ## Intended exit-identity changes
 
-`mrt-data-v2` had 613 identities. `mrt-wayfinding` has 612 because Choa Chu Kang Exit E is represented once as a shared MRT/LRT physical exit instead of twice.
+`mrt-data-v2` had 613 identities. `sg-rail-station-data` has 612 because Choa Chu Kang Exit E is represented once as a shared MRT/LRT physical exit instead of twice.
 
 - **Cantonment**: `UNSCOPED:1, UNSCOPED:3, UNSCOPED:4` → `MRT:1, MRT:3, MRT:4`
 - **Choa Chu Kang**: `LRT:E, MRT:E` → `SHARED:E`
@@ -42,7 +42,7 @@ Punggol and Sengkang now use shared MRT/LRT identities. The three partial TEL st
 
 All eight original SgWiki bus rows remain in the evidence ledger. Six are accepted into wayfinding and two are explicitly excluded.
 
-| Exit | `mrt-data-v2` | `mrt-wayfinding` |
+| Exit | `mrt-data-v2` | `sg-rail-station-data` |
 |---|---|---|
 | `LRT:A` | 45009, 44029, 44031, 44259, 44909, 44859 | 45009, 44031, 44859 |
 | `LRT:B` | — | 45009 |
@@ -61,11 +61,11 @@ All eight original SgWiki bus rows remain in the evidence ledger. Six are accept
 
 ## Review ledger
 
-`mrt-data-v2` emitted 191 Stage 1 review items; `mrt-wayfinding` emits 190. The underlying SgWiki review evidence is retained. Layout reviews are now separated into 67 advisories and 11 blocking layout reviews, five previously ambiguous bus mappings are resolved by reviewed rules, three operator additions are called out explicitly, and Dhoby Ghaut Exit G records its repeated source evidence as a deterministic normalization.
+`mrt-data-v2` emitted 191 Stage 1 review items; `sg-rail-station-data` emits 190. The underlying SgWiki review evidence is retained. Layout reviews are now separated into 67 advisories and 11 blocking layout reviews, five previously ambiguous bus mappings are resolved by reviewed rules, three operator additions are called out explicitly, and Dhoby Ghaut Exit G records its repeated source evidence as a deterministic normalization.
 
 ## Artifacts
 
-- New run: `/Users/ryanyeo/Projects/talk/mrt-wayfinding/runs/saved-evidence-v2-comparison-20261004`
-- New Stage 1: `/Users/ryanyeo/Projects/talk/mrt-wayfinding/runs/saved-evidence-v2-comparison-20261004/stage1/stations.json`
+- New run: `/Users/ryanyeo/Projects/sg-rail-station-data/runs/saved-evidence-v2-comparison-20261004`
+- New Stage 1: `/Users/ryanyeo/Projects/sg-rail-station-data/runs/saved-evidence-v2-comparison-20261004/stage1/stations.json`
 - `mrt-data-v2` Stage 1: `/Users/ryanyeo/Projects/talk/mrt-data-v2/outputs/mvp-data/mvp-full/stage1.json`
-- Machine-readable comparison: `/Users/ryanyeo/Projects/talk/mrt-wayfinding/reports/stage1-vs-mrt-data-v2-20261004.json`
+- Machine-readable comparison: `/Users/ryanyeo/Projects/sg-rail-station-data/reports/stage1-vs-mrt-data-v2-20261004.json`

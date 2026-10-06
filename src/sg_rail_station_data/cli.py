@@ -1,4 +1,4 @@
-"""Command-line interface for mrt-wayfinding."""
+"""Command-line interface for sg-rail-station-data."""
 
 from __future__ import annotations
 
@@ -33,8 +33,8 @@ from .storage import atomic_write_json, read_json
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="mrt-wayfinding",
-        description="Build deterministic Singapore MRT wayfinding data.",
+        prog="sg-rail-station-data",
+        description="Build deterministic Singapore MRT and LRT station data.",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
@@ -302,7 +302,7 @@ def build_parser() -> argparse.ArgumentParser:
     run_parser.add_argument(
         "--stage2-baseline",
         type=Path,
-        help="Previously approved Stage 2 stations.json used for coordinate change detection.",
+        help="Override the configured approved Stage 2 baseline used for change detection.",
     )
     run_parser.add_argument(
         "--env-file",
@@ -712,7 +712,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         return int(arguments.handler(arguments))
     except (OSError, RuntimeError, ValueError) as error:
-        print(f"mrt-wayfinding: {type(error).__name__}: {error}", file=sys.stderr)
+        print(f"sg-rail-station-data: {type(error).__name__}: {error}", file=sys.stderr)
         return 1
 
 

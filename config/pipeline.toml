@@ -1,5 +1,5 @@
 [project]
-name = "mrt-wayfinding"
+name = "sg-rail-station-data"
 schema_version = 1
 
 [paths]
@@ -7,6 +7,7 @@ runs_dir = "runs"
 station_catalog = "config/stations.json"
 stage1_reviewed_decisions = "config/stage1-reviewed-decisions.json"
 stage1_approved_baseline = "config/stage1-approved-baseline.json"
+stage2_approved_baseline = "config/stage2-approved-baseline.json"
 stage2_reviewed_coordinates = "config/stage2-reviewed-coordinates.geojson"
 stage2_coordinate_ledger = "config/stage2-coordinate-ledger.json"
 stage2_trusted_onemap_baseline = "config/stage2-trusted-onemap-baseline.geojson"

@@ -1,7 +1,7 @@
 import io
 import unittest
 
-from mrt_wayfinding.progress import TerminalProgress
+from sg_rail_station_data.progress import TerminalProgress
 
 
 class TerminalProgressTests(unittest.TestCase):

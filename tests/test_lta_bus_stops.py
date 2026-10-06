@@ -4,14 +4,14 @@ from tempfile import TemporaryDirectory
 import unittest
 from urllib.parse import parse_qs, urlsplit
 
-from mrt_wayfinding.sources.lta_bus_stops import (
+from sg_rail_station_data.sources.lta_bus_stops import (
     BusStop,
     BusStopsSourceError,
     HttpResponse,
     collect_lta_bus_stops,
     select_required_bus_stops,
 )
-from mrt_wayfinding.storage import OutputExistsError
+from sg_rail_station_data.storage import OutputExistsError
 
 
 METADATA = "https://datamall2.mytransport.sg/ltaodataservice/$metadata#BusStops"

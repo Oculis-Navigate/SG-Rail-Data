@@ -4,12 +4,12 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from mrt_wayfinding.contracts import ContractError
-from mrt_wayfinding.sources.lta_bus_stops import BusStop
-from mrt_wayfinding.stage1 import load_reviewed_decisions
-from mrt_wayfinding.stage1_semantics import build_full_stage1, compare_stage1
-from mrt_wayfinding.stage1_layout import normalize_layout
-from mrt_wayfinding.station_catalog import load_station_catalog
+from sg_rail_station_data.contracts import ContractError
+from sg_rail_station_data.sources.lta_bus_stops import BusStop
+from sg_rail_station_data.stage1 import load_reviewed_decisions
+from sg_rail_station_data.stage1_semantics import build_full_stage1, compare_stage1
+from sg_rail_station_data.stage1_layout import normalize_layout
+from sg_rail_station_data.station_catalog import load_station_catalog
 from tests.helpers import gtfs_inventory, sgwiki_snapshot, write_test_project
 
 

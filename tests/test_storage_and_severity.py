@@ -3,13 +3,13 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from mrt_wayfinding.severity import (
+from sg_rail_station_data.severity import (
     DEFAULT_SEVERITY_POLICY,
     PipelineStatus,
     Severity,
 )
-from mrt_wayfinding.storage import OutputExistsError, StorageError, atomic_write_json
-from mrt_wayfinding.structured_logging import StructuredLogger
+from sg_rail_station_data.storage import OutputExistsError, StorageError, atomic_write_json
+from sg_rail_station_data.structured_logging import StructuredLogger
 
 
 class StorageAndSeverityTests(unittest.TestCase):

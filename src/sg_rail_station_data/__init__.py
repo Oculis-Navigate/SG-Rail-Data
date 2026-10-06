@@ -1,4 +1,4 @@
-"""Deterministic Singapore MRT wayfinding data pipeline."""
+"""Deterministic Singapore MRT and LRT station data pipeline."""
 
 from __future__ import annotations
 

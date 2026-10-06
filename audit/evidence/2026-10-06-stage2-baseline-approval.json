@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "kind": "stage2_baseline_approval_evidence",
+  "decision_id": "D-027",
+  "authorization": {
+    "speaker": "project_owner",
+    "quotes": [
+      "sure update the pckage cli and everything to reflect the name change first. then help me approve everything",
+      "for the baseline"
+    ],
+    "scope": "Approve the complete Stage 2 coordinate baseline after the package and CLI rename."
+  },
+  "candidate": {
+    "path": "config/stage2-approved-baseline.json",
+    "file_sha256": "0f59ad44e71c3a45792e6467cab03c9b643b68fc3321c26fbbb3b36dfeb8ab25",
+    "source_run_id": "20261005T072816522416Z-3952f61269c2",
+    "verification_run_id": "baseline-candidate",
+    "service_date": "2026-10-05",
+    "station_count": 184,
+    "exit_identity_count": 614,
+    "resolved_exit_count": 614,
+    "unresolved_exit_count": 0,
+    "review_finding_count": 0,
+    "coordinate_sources": {
+      "sgwiki_kartographer": 280,
+      "human_reviewed_gap_fill": 28,
+      "trusted_onemap": 266,
+      "trusted_supplemental": 40
+    },
+    "source_snapshot_sha256": {
+      "lta_gtfs": "e3a5ab2293fec7e3bcd65469cf1ca5528da6413b5522cdadaffee5fd09303f67",
+      "lta_bus_stops": "2517581d7d441474d8db3d3e2e5bb2cc8da4fd20bf7f83cd35e2ce14a18613c9",
+      "sgwiki": "1d7f13d18df688dc3d4a7300ad97b25f7426dadaa423a5f22663dce9c1cd4cb0",
+      "sgwiki_mapdata": "995841919d6d078dced797ad1e1920c675bed44a1bdac9a37ce2f8d77e3483f7"
+    }
+  },
+  "verification": {
+    "stage1_change_count": 0,
+    "stage1_review_finding_count": 0,
+    "stage2_review_finding_count": 0,
+    "only_preapproval_warning": "approved_stage2_baseline_unavailable"
+  },
+  "limitations": [
+    "The candidate was reproduced from the saved source snapshots in the named run; this was not a new live fetch.",
+    "Approval establishes the comparison baseline. It does not assert survey-grade precision for every coordinate.",
+    "Future source or coordinate changes still require a new pipeline review and audit decision."
+  ]
+}

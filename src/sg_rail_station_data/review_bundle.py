@@ -4,7 +4,7 @@ The browser contract is intentionally small and explicit::
 
     {
       "schema_version": 1,
-      "kind": "mrt_wayfinding_review_bundle",
+      "kind": "sg_rail_station_data_review_bundle",
       "run": {"id", "status", "finished_at", "manifest_sha256"},
       "approved_baseline": {"status", "sha256"},
       "inputs": {"...input name...": "<sha256>"},
@@ -623,7 +623,7 @@ def build_review_bundle(
 
     return {
         "schema_version": 1,
-        "kind": "mrt_wayfinding_review_bundle",
+        "kind": "sg_rail_station_data_review_bundle",
         "run": {
             "id": run_id,
             "status": status,
@@ -691,7 +691,7 @@ def validate_review_bundle(value: object) -> dict[str, object]:
     )
     if exact_int(root["schema_version"], "review bundle.schema_version") != 1:
         raise ContractError("review bundle.schema_version: unsupported version")
-    if exact_str(root["kind"], "review bundle.kind") != "mrt_wayfinding_review_bundle":
+    if exact_str(root["kind"], "review bundle.kind") != "sg_rail_station_data_review_bundle":
         raise ContractError("review bundle.kind: unsupported kind")
     run = require_fields(root["run"], {"id", "status", "finished_at", "manifest_sha256"}, "review bundle.run")
     for field in ("id", "status", "finished_at", "manifest_sha256"):

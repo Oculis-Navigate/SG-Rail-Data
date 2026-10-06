@@ -1,4 +1,4 @@
-"""Top-level orchestration for the production wayfinding pipeline."""
+"""Top-level orchestration for the rail station data pipeline."""
 
 from __future__ import annotations
 
@@ -155,7 +155,7 @@ def run_pipeline(
     selected_stage2_baseline = (
         Path(stage2_baseline).expanduser().resolve()
         if stage2_baseline is not None
-        else None
+        else config.paths.stage2_approved_baseline
     )
     stage2_baseline_metadata = {
         "path": str(selected_stage2_baseline)
@@ -431,7 +431,7 @@ def run_pipeline(
                 )
                 stage2_baseline_document = (
                     read_json(selected_stage2_baseline)
-                    if selected_stage2_baseline is not None
+                    if selected_stage2_baseline.is_file()
                     else None
                 )
                 stage2_changes = compare_stage2(

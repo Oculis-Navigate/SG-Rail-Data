@@ -1,8 +1,8 @@
-# mrt-wayfinding
+# sg-rail-station-data
 
-`mrt-wayfinding` builds reviewed wayfinding data for Singapore's MRT and LRT
-network. It combines operational station data, station layouts, exit details,
-bus connections, and exit coordinates in one deterministic pipeline.
+`sg-rail-station-data` builds reviewed station data for Singapore's MRT and LRT
+network. It combines operational stations, layouts, exit details, bus
+connections, and exit coordinates in one deterministic pipeline.
 
 The pipeline validates every source against
 an explicit contract and stops when it finds an unexpected field, invalid value,
@@ -45,8 +45,8 @@ cp .env.example .env
 Add the LTA DataMall key to `.env` as `LTA_API_KEY`, then run the initial checks:
 
 ```console
-uv run mrt-wayfinding config validate
-uv run mrt-wayfinding credentials validate
+uv run sg-rail-station-data config validate
+uv run sg-rail-station-data credentials validate
 uv run python -m unittest discover -s tests -v
 ```
 
@@ -57,33 +57,33 @@ The credential loader does not print or store the API key in run artifacts.
 Run a live collection with today's Singapore service date:
 
 ```console
-uv run mrt-wayfinding pipeline run
+uv run sg-rail-station-data pipeline run
 ```
 
 Use a fixed date when you need a reproducible run:
 
 ```console
-uv run mrt-wayfinding pipeline run --service-date 2026-10-05
+uv run sg-rail-station-data pipeline run --service-date 2026-10-05
 ```
 
 You can also replay the source snapshots from an earlier run without making
 network requests:
 
 ```console
-uv run mrt-wayfinding pipeline run \
+uv run sg-rail-station-data pipeline run \
   --service-date 2026-10-05 \
   --replay-sources runs/<run-id>
 ```
 
-To compare the result with an approved Stage 2 dataset, provide its
-`stations.json` file:
+The repository contains approved Stage 1 and Stage 2 baselines. To compare with
+a different approved Stage 2 dataset, provide its `stations.json` file:
 
 ```console
-uv run mrt-wayfinding pipeline run \
+uv run sg-rail-station-data pipeline run \
   --stage2-baseline runs/<approved-run>/stage2/stations.json
 ```
 
-The repository already contains the approved Stage 1 baseline.
+Without an override, the pipeline uses both checked-in approved baselines.
 
 ## Understand a run
 
@@ -133,14 +133,14 @@ Build a review bundle from one candidate run and the last approved Stage 2
 release:
 
 ```console
-uv run mrt-wayfinding review build \
+uv run sg-rail-station-data review build \
   --run-dir runs/<candidate-run> \
-  --approved-stage2 runs/<approved-run>/stage2/stations.json \
-  --output /tmp/mrt-review.json
+  --approved-stage2 config/stage2-approved-baseline.json \
+  --output /tmp/sg-rail-station-review.json
 
 mkdir -p audit/drafts
-uv run mrt-wayfinding review serve \
-  --bundle /tmp/mrt-review.json \
+uv run sg-rail-station-data review serve \
+  --bundle /tmp/sg-rail-station-review.json \
   --drafts-dir audit/drafts
 ```
 
@@ -234,7 +234,7 @@ Add a new event to approve, reject, revalidate, replace, or retire that decision
 Validate the current audit with:
 
 ```console
-uv run mrt-wayfinding audit validate
+uv run sg-rail-station-data audit validate
 ```
 
 Exit code 2 means that the records are valid but still contain pending sign-offs.

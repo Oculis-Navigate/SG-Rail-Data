@@ -6,8 +6,8 @@ from tempfile import TemporaryDirectory
 import unittest
 from zipfile import ZipFile
 
-from mrt_wayfinding.config import load_config
-from mrt_wayfinding.sources.lta_gtfs import (
+from sg_rail_station_data.config import load_config
+from sg_rail_station_data.sources.lta_gtfs import (
     GtfsSourceError,
     HttpResponse,
     _codes,
@@ -15,7 +15,7 @@ from mrt_wayfinding.sources.lta_gtfs import (
     collect_lta_gtfs,
     match_catalog_stations,
 )
-from mrt_wayfinding.station_catalog import load_station_catalog
+from sg_rail_station_data.station_catalog import load_station_catalog
 from tests.helpers import SERVICE_DATE, write_test_project
 
 

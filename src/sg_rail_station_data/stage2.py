@@ -207,7 +207,7 @@ def _stage1_identity_index(
     root = require_fields(document, STAGE1_FIELDS, "stage2.stage1")
     if exact_int(root["schema_version"], "stage2.stage1.schema_version") != 1:
         fail("stage2.stage1.schema_version", "unsupported version")
-    if exact_str(root["kind"], "stage2.stage1.kind") != "mrt_wayfinding_stage_1":
+    if exact_str(root["kind"], "stage2.stage1.kind") != "sg_rail_station_data_stage_1":
         fail("stage2.stage1.kind", "unsupported document kind")
     if exact_str(root["status"], "stage2.stage1.status") != "complete":
         fail("stage2.stage1.status", "Stage 1 must be complete before coordinate resolution")
@@ -1688,7 +1688,7 @@ def build_stage2(
     }
     dataset = {
         "schema_version": 1,
-        "kind": "mrt_wayfinding_stage_2",
+        "kind": "sg_rail_station_data_stage_2",
         "status": reviews["status"],
         "publication_allowed": publication_allowed,
         "stage1_sha256": _canonical_digest(stage1_document),
@@ -1699,7 +1699,7 @@ def build_stage2(
         "type": "FeatureCollection",
         "metadata": {
             "schema_version": 1,
-            "kind": "mrt_wayfinding_stage_2_exit_coordinates",
+            "kind": "sg_rail_station_data_stage_2_exit_coordinates",
             "status": reviews["status"],
             "feature_count": len(features),
             "stage1_sha256": dataset["stage1_sha256"],
@@ -1729,7 +1729,7 @@ def _validate_stage2_comparison_document(
     )
     if exact_int(root["schema_version"], f"{context}.schema_version") != 1:
         fail(f"{context}.schema_version", "unsupported version")
-    if exact_str(root["kind"], f"{context}.kind") != "mrt_wayfinding_stage_2":
+    if exact_str(root["kind"], f"{context}.kind") != "sg_rail_station_data_stage_2":
         fail(f"{context}.kind", "unsupported kind")
     status = exact_str(root["status"], f"{context}.status")
     if status not in {"complete", "review_required", "failed"}:

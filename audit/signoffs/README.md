@@ -2,7 +2,7 @@
 
 These pages are generated from `audit/decision-ledger.jsonl`.
 
-| Date | Events | Pending events |
+| Date | Events | Proposal events |
 |---|---:|---:|
-| [2026-10-05](2026-10-05.md) | 25 | 4 |
-| [2026-10-06](2026-10-06.md) | 6 | 1 |
+| [2026-10-05](2026-10-05.md) | 25 | 0 |
+| [2026-10-06](2026-10-06.md) | 8 | 2 |

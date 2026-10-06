@@ -682,7 +682,7 @@ def collect_lta_gtfs(
         headers={
             "Accept": "application/json",
             "AccountKey": account_key,
-            "User-Agent": f"mrt-wayfinding/{__version__}",
+            "User-Agent": f"sg-rail-station-data/{__version__}",
         },
         timeout_seconds=timeout_seconds,
         max_bytes=MAX_ENVELOPE_BYTES,
@@ -710,7 +710,7 @@ def collect_lta_gtfs(
     atomic_write_json(root / "source-envelope.redacted.json", redacted)
     download = _fetch_with_retry(
         link,
-        headers={"Accept": "application/zip", "User-Agent": f"mrt-wayfinding/{__version__}"},
+        headers={"Accept": "application/zip", "User-Agent": f"sg-rail-station-data/{__version__}"},
         timeout_seconds=timeout_seconds,
         max_bytes=MAX_ZIP_BYTES,
         max_attempts=max_attempts,

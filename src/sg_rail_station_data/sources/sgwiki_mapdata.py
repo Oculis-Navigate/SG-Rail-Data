@@ -694,7 +694,7 @@ def collect_sgwiki_mapdata(
 
     headers = {
         "Accept": "application/json",
-        "User-Agent": f"mrt-wayfinding/{__version__} (Singapore rail wayfinding dataset)",
+        "User-Agent": f"sg-rail-station-data/{__version__} (Singapore rail station dataset)",
     }
     rows: list[dict[str, object]] = []
     overlays: list[dict[str, object]] = []

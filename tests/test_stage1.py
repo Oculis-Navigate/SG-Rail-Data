@@ -5,9 +5,9 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from mrt_wayfinding.cli import main
-from mrt_wayfinding.contracts import ContractError
-from mrt_wayfinding.stage1 import build_stage1_reviewed_links, load_reviewed_decisions
+from sg_rail_station_data.cli import main
+from sg_rail_station_data.contracts import ContractError
+from sg_rail_station_data.stage1 import build_stage1_reviewed_links, load_reviewed_decisions
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]

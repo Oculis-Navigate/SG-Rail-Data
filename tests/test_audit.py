@@ -10,7 +10,7 @@ from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import patch
 
-from mrt_wayfinding.audit import (
+from sg_rail_station_data.audit import (
     apply_decision,
     audit_status,
     content_hash,
@@ -20,11 +20,11 @@ from mrt_wayfinding.audit import (
     render_signoffs,
     validate_initial_ledger,
 )
-from mrt_wayfinding.cli import main
-from mrt_wayfinding.contracts import ContractError
-from mrt_wayfinding.pipeline import run_pipeline
-from mrt_wayfinding.review_bundle import write_review_bundle
-from mrt_wayfinding.review_server import ReviewStore
+from sg_rail_station_data.cli import main
+from sg_rail_station_data.contracts import ContractError
+from sg_rail_station_data.pipeline import run_pipeline
+from sg_rail_station_data.review_bundle import write_review_bundle
+from sg_rail_station_data.review_server import ReviewStore
 from tests.helpers import SERVICE_DATE, write_replay_bundle, write_test_project
 
 
@@ -43,12 +43,12 @@ class AuditFixture:
 
 class InitialAuditTests(AuditFixture, unittest.TestCase):
 
-    def test_initial_audit_has_all_signoffs_and_covers_all_records(self):
+    def test_current_audit_has_all_signoffs_and_covers_all_records(self):
         result = validate_initial_ledger(ROOT)
         self.assertEqual(result["status"], "valid")
-        self.assertEqual(result["decision_count"], 26)
+        self.assertEqual(result["decision_count"], 27)
         self.assertEqual(result["intervention_count"], 354)
-        self.assertEqual(result["approved_count"], 26)
+        self.assertEqual(result["approved_count"], 27)
         self.assertEqual(result["pending_decision_ids"], [])
         self.assertEqual(result["release_approval"], "not_granted")
 
@@ -119,8 +119,25 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
             code = main(["audit", "validate", "--json"])
         self.assertEqual(code, 0)
         result = json.loads(output.getvalue())
-        self.assertEqual(result["approved_count"], 26)
+        self.assertEqual(result["approved_count"], 27)
         self.assertEqual(result["release_approval"], "not_granted")
+
+    def test_stage2_baseline_matches_its_exact_approval(self):
+        baseline_path = ROOT / "config/stage2-approved-baseline.json"
+        baseline = json.loads(baseline_path.read_text())
+        decision = json.loads((ROOT / "audit/decisions/D-027.json").read_text())
+        evidence = json.loads(
+            (ROOT / "audit/evidence/2026-10-06-stage2-baseline-approval.json").read_text()
+        )
+        target = decision["targets"][0]
+        self.assertEqual(target["path"], "config/stage2-approved-baseline.json")
+        self.assertEqual(target["before"], baseline)
+        self.assertEqual(target["after"], baseline)
+        self.assertEqual(target["after_sha256"], content_hash(baseline))
+        self.assertEqual(
+            evidence["candidate"]["file_sha256"],
+            sha256(baseline_path.read_bytes()).hexdigest(),
+        )
 
 
 class AuditLifecycleTests(AuditFixture, unittest.TestCase):
@@ -232,9 +249,9 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             root = Path(temp)
             self.copy_package(root)
             revalidated = self.action(root, "revalidate", "D-004")
-            self.assertEqual(revalidated["event"]["event_id"], "S-032")
+            self.assertEqual(revalidated["event"]["event_id"], "S-034")
             result = audit_status(root)
-            self.assertEqual(result["event_count"], 32)
+            self.assertEqual(result["event_count"], 34)
             self.assertEqual(result["pending_decision_ids"], [])
             self.assertIn("D-004", result["effective_states"]["approved"])
 
@@ -242,56 +259,56 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
         with TemporaryDirectory() as temp:
             root = Path(temp)
             self.copy_package(root)
-            draft = self.new_decision(root, "D-027")
+            draft = self.new_decision(root, "D-100")
             result = propose_decision(
                 root, draft, recorded_by="agent@example.test", note="Prepare this change for human review."
             )
             self.assertEqual(result["event"]["disposition"], "pending_review")
-            canonical = root / "audit/decisions/D-027.json"
+            canonical = root / "audit/decisions/D-100.json"
             expected_hash = content_hash(json.loads(canonical.read_text()))
             self.assertEqual(result["event"]["decision_sha256"], expected_hash)
-            self.action(root, "approve", "D-027")
-            self.action(root, "retire", "D-027")
+            self.action(root, "approve", "D-100")
+            self.action(root, "retire", "D-100")
             status = audit_status(root)
-            self.assertIn("D-027", status["effective_states"]["retired"])
+            self.assertIn("D-100", status["effective_states"]["retired"])
 
     def test_reject_and_replace_have_distinct_valid_transitions(self):
         with TemporaryDirectory() as temp:
             root = Path(temp)
             self.copy_package(root)
-            propose_decision(root, self.new_decision(root, "D-027"), recorded_by="agent", note="Review it.")
-            self.action(root, "reject", "D-027")
-            self.assertIn("D-027", audit_status(root)["effective_states"]["rejected"])
+            propose_decision(root, self.new_decision(root, "D-100"), recorded_by="agent", note="Review it.")
+            self.action(root, "reject", "D-100")
+            self.assertIn("D-100", audit_status(root)["effective_states"]["rejected"])
 
-            propose_decision(root, self.new_decision(root, "D-028"), recorded_by="agent", note="Review it.")
-            self.action(root, "approve", "D-028")
-            self.apply_decision_target(root, root / "audit/decisions/D-028.json")
-            propose_decision(root, self.new_decision(root, "D-029"), recorded_by="agent", note="Review it.")
-            self.action(root, "replace", "D-028", related="D-029")
+            propose_decision(root, self.new_decision(root, "D-101"), recorded_by="agent", note="Review it.")
+            self.action(root, "approve", "D-101")
+            self.apply_decision_target(root, root / "audit/decisions/D-101.json")
+            propose_decision(root, self.new_decision(root, "D-102"), recorded_by="agent", note="Review it.")
+            self.action(root, "replace", "D-101", related="D-102")
             status = audit_status(root)
-            self.assertIn("D-028", status["effective_states"]["replaced"])
-            self.assertIn("D-029", status["effective_states"]["approved"])
-            self.assertNotIn("D-029", status["pending_decision_ids"])
+            self.assertIn("D-101", status["effective_states"]["replaced"])
+            self.assertIn("D-102", status["effective_states"]["approved"])
+            self.assertNotIn("D-102", status["pending_decision_ids"])
             rendered = render_signoffs(root)
             pages = list(Path(rendered["output_directory"]).glob("*.md"))
-            self.assertTrue(any("replacement `D-029` approved atomically" in page.read_text() for page in pages))
+            self.assertTrue(any("replacement `D-102` approved atomically" in page.read_text() for page in pages))
 
     def test_replace_rejects_target_discontinuity_and_direct_overlap(self):
         with TemporaryDirectory() as temp:
             root = Path(temp)
             self.copy_package(root)
-            propose_decision(root, self.new_decision(root, "D-027"), recorded_by="agent", note="Review it.")
-            self.action(root, "approve", "D-027")
-            self.apply_decision_target(root, root / "audit/decisions/D-027.json")
-            replacement = self.new_decision(root, "D-028")
+            propose_decision(root, self.new_decision(root, "D-100"), recorded_by="agent", note="Review it.")
+            self.action(root, "approve", "D-100")
+            self.apply_decision_target(root, root / "audit/decisions/D-100.json")
+            replacement = self.new_decision(root, "D-101")
             replacement_value = json.loads(replacement.read_text())
             replacement_value["targets"][0]["identity"] += "-wrong"
             replacement.write_text(json.dumps(replacement_value))
             propose_decision(root, replacement, recorded_by="agent", note="Review it.")
             with self.assertRaisesRegex(ContractError, "overlap.*use replace"):
-                self.action(root, "approve", "D-028")
+                self.action(root, "approve", "D-101")
             with self.assertRaisesRegex(ContractError, "before value must equal|same strict targets"):
-                self.action(root, "replace", "D-027", related="D-028")
+                self.action(root, "replace", "D-100", related="D-101")
 
     def test_invalid_transition_and_missing_authorization_do_not_change_ledger(self):
         with TemporaryDirectory() as temp:
@@ -313,8 +330,8 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
         with TemporaryDirectory() as temp:
             root = Path(temp)
             self.copy_package(root)
-            propose_decision(root, self.new_decision(root, "D-027"), recorded_by="agent", note="Review it.")
-            path = root / "audit/decisions/D-027.json"
+            propose_decision(root, self.new_decision(root, "D-100"), recorded_by="agent", note="Review it.")
+            path = root / "audit/decisions/D-100.json"
             value = json.loads(path.read_text())
             value["reason"] = "Changed after the event."
             path.write_text(json.dumps(value))
@@ -329,7 +346,7 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             result = promote_coordinate_draft(
                 root,
                 draft_path,
-                "D-027",
+                "D-100",
                 bundle_file=bundle_path,
                 stage1_file=run / "stage1/stations.json",
                 recorded_by="agent",
@@ -337,7 +354,7 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
                 evidence_files=[retained],
             )
             self.assertEqual(result["event"]["disposition"], "pending_review")
-            decision = json.loads((root / "audit/decisions/D-027.json").read_text())
+            decision = json.loads((root / "audit/decisions/D-100.json").read_text())
             self.assertEqual(decision["schema_version"], 2)
             self.assertEqual(
                 {(target["path"], target["pointer"]) for target in decision["targets"]},
@@ -354,21 +371,21 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
                 evidence_path = root / evidence["path"]
                 self.assertTrue(evidence_path.is_file())
                 self.assertEqual(sha256(evidence_path.read_bytes()).hexdigest(), evidence["sha256"])
-            self.assertEqual(audit_status(root)["pending_decision_ids"][-1], "D-027")
+            self.assertEqual(audit_status(root)["pending_decision_ids"][-1], "D-100")
             original_ledger = (root / "config/stage2-coordinate-ledger.json").read_bytes()
             with self.assertRaisesRegex(ContractError, "must be approved"):
-                apply_decision(root, "D-027", recorded_by="agent", note="Too early.")
+                apply_decision(root, "D-100", recorded_by="agent", note="Too early.")
             self.assertEqual(
                 (root / "config/stage2-coordinate-ledger.json").read_bytes(),
                 original_ledger,
             )
-            self.action(root, "approve", "D-027")
+            self.action(root, "approve", "D-100")
             applied = apply_decision(
-                root, "D-027", recorded_by="maintainer", note="Applied reviewed documents."
+                root, "D-100", recorded_by="maintainer", note="Applied reviewed documents."
             )
             self.assertEqual(applied["event"]["operation"], "apply")
             self.assertEqual(applied["event"]["disposition"], "approved")
-            self.assertIn("D-027", audit_status(root)["effective_states"]["approved"])
+            self.assertIn("D-100", audit_status(root)["effective_states"]["approved"])
             reviewed = json.loads((root / "config/stage2-reviewed-coordinates.geojson").read_text())
             ledger = json.loads((root / "config/stage2-coordinate-ledger.json").read_text())
             self.assertEqual(ledger["revision"], 1)
@@ -376,7 +393,7 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             self.assertEqual(reviewed["metadata"]["migrated_from"]["release_revision"], 0)
             self.assertEqual(reviewed["features"][0]["geometry"]["coordinates"], [103.8001, 1.3001])
             self.assertEqual(ledger["entries"][0]["from"]["source"], "audit_review_draft")
-            self.assertEqual(ledger["entries"][0]["from"]["decision_id"], "D-027")
+            self.assertEqual(ledger["entries"][0]["from"]["decision_id"], "D-100")
             self.assertNotIn("candidate_index", ledger["entries"][0]["from"])
 
             rerun = run_pipeline(
@@ -396,33 +413,33 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
         with TemporaryDirectory() as temp:
             root, _, _, run, bundle_path, draft_path = self.coordinate_draft_project(temp)
             promote_coordinate_draft(
-                root, draft_path, "D-027", bundle_file=bundle_path,
+                root, draft_path, "D-100", bundle_file=bundle_path,
                 stage1_file=run / "stage1/stations.json", recorded_by="agent", note="Review."
             )
-            self.action(root, "approve", "D-027")
+            self.action(root, "approve", "D-100")
             paths = [
                 root / "config/stage2-coordinate-ledger.json",
                 root / "config/stage2-reviewed-coordinates.geojson",
             ]
             before = [path.read_bytes() for path in paths]
-            with patch("mrt_wayfinding.audit._append_event", side_effect=RuntimeError("stop")):
+            with patch("sg_rail_station_data.audit._append_event", side_effect=RuntimeError("stop")):
                 with self.assertRaisesRegex(RuntimeError, "stop"):
-                    apply_decision(root, "D-027", recorded_by="agent", note="Apply.")
+                    apply_decision(root, "D-100", recorded_by="agent", note="Apply.")
             self.assertEqual([path.read_bytes() for path in paths], before)
-            self.assertIn("D-027", audit_status(root)["effective_states"]["approved"])
+            self.assertIn("D-100", audit_status(root)["effective_states"]["approved"])
 
     def test_apply_rejects_rejected_decision_without_writing_config(self):
         with TemporaryDirectory() as temp:
             root, _, _, run, bundle_path, draft_path = self.coordinate_draft_project(temp)
             promote_coordinate_draft(
-                root, draft_path, "D-027", bundle_file=bundle_path,
+                root, draft_path, "D-100", bundle_file=bundle_path,
                 stage1_file=run / "stage1/stations.json", recorded_by="agent", note="Review."
             )
-            self.action(root, "reject", "D-027")
+            self.action(root, "reject", "D-100")
             path = root / "config/stage2-coordinate-ledger.json"
             before = path.read_bytes()
             with self.assertRaisesRegex(ContractError, "must be approved, got rejected"):
-                apply_decision(root, "D-027", recorded_by="agent", note="Must fail.")
+                apply_decision(root, "D-100", recorded_by="agent", note="Must fail.")
             self.assertEqual(path.read_bytes(), before)
 
     def test_render_builds_dated_markdown_from_ledger(self):
@@ -430,7 +447,7 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             root = Path(temp)
             self.copy_package(root)
             result = render_signoffs(root)
-            self.assertEqual(result["event_count"], 31)
+            self.assertEqual(result["event_count"], 33)
             index = (root / "audit/signoffs/README.md").read_text()
             page = (root / "audit/signoffs/2026-10-05.md").read_text()
             self.assertIn("generated from `audit/decision-ledger.jsonl`", index)

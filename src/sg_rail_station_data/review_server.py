@@ -196,7 +196,7 @@ class ReviewStore:
             drafts = self._load_drafts()
             return {
                 "schema_version": 1,
-                "kind": "mrt_wayfinding_review_state",
+                "kind": "sg_rail_station_data_review_state",
                 "status": "editable",
                 "bundle": self.bundle,
                 "bundle_content_sha256": self.bundle_content_sha256,

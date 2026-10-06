@@ -1,10 +1,10 @@
-# `mrt-wayfinding` compared with `mrt-data-v2`
+# `sg-rail-station-data` compared with `mrt-data-v2`
 
 > Historical comparison before the owner authorized the frozen OneMap import.
 > The subsequent [trusted OneMap import](stage2-trusted-onemap-import.md) adds
 > 266 trusted positions, bringing replay coverage to 574/614 with 40 unresolved.
 
-This comparison uses the approved `mrt-wayfinding` Stage 1 baseline, the full
+This comparison uses the approved `sg-rail-station-data` Stage 1 baseline, the full
 offline Stage 2 replay, and these `mrt-data-v2` artifacts:
 
 - `outputs/mvp-data/mvp-full/stage1.json`
@@ -18,7 +18,7 @@ page revisions or overlays change.
 
 ## Stage 1
 
-| Measure | `mrt-data-v2` | `mrt-wayfinding` |
+| Measure | `mrt-data-v2` | `sg-rail-station-data` |
 |---|---:|---:|
 | Stations | 184 | 184 active through LTA GTFS |
 | Exit identities | 613 | 614 |
@@ -54,7 +54,7 @@ only reviewed semantics:
 
 ## Stage 2
 
-| Measure | `mrt-data-v2` experimental Stage 2 | `mrt-wayfinding` |
+| Measure | `mrt-data-v2` experimental Stage 2 | `sg-rail-station-data` |
 |---|---:|---:|
 | Exit identities | 613 | 614 |
 | Coordinates selected/resolved | 553 | 308 |

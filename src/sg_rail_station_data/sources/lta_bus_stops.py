@@ -365,7 +365,7 @@ def collect_lta_bus_stops(
     headers = {
         "Accept": "application/json",
         "AccountKey": account_key,
-        "User-Agent": f"mrt-wayfinding/{__version__}",
+        "User-Agent": f"sg-rail-station-data/{__version__}",
     }
     records_by_code: dict[str, BusStop] = {}
     page_evidence: list[PageEvidence] = []
