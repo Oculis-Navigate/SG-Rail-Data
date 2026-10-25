@@ -1,0 +1,55 @@
+{
+  "authorization": {
+    "quote": "approve geometry baseline. update decision ledger nad then lets push",
+    "scope": "Approve the reviewed rail geometry as the initial comparison baseline and record the approval in the decision ledger.",
+    "speaker": "project_owner"
+  },
+  "candidate": {
+    "approval_scope": "comparison_baseline_not_production_release",
+    "content_sha256": "0920d86f349c93005d79a611277621edc836c7e4256f2cefdebce2a5c9ca9efa",
+    "file_sha256": "e95e79d33d1aaf3a20efdaa25a9cbff2c18fd6c48b3bc6ec7a1aeb199e32ffaf",
+    "geometry_feature_count": 283,
+    "gtfs_zip_sha256": "e39bd35048133efe554e7c78e958f38c2930bd921a018d9cb37e0d53796b82d3",
+    "line_count": 9,
+    "maximum_station_distance_metres": 181.5,
+    "osm_relation_count": 26,
+    "path": "config/stage3-approved-geometry-baseline.geojson",
+    "proximity_review_count": 0,
+    "publication_allowed": false,
+    "reviewed_osm_snapshot_timestamp": "2026-10-25T13:21:36Z",
+    "service_date": "2026-10-05",
+    "station_line_check_count": 216
+  },
+  "decision_id": "D-028",
+  "kind": "stage3_geometry_baseline_approval_evidence",
+  "limitations": [
+    "Approval establishes a comparison baseline and does not authorize production publication.",
+    "Consecutive-station graph connectivity has not yet been proven.",
+    "OSM relation stops have not yet been matched one-by-one to every GTFS service pattern.",
+    "Parallel physical tracks are retained; no surveyed or derived centreline is claimed."
+  ],
+  "retained_evidence": {
+    "contents": "Current raw OSM discovery and 26 relation responses, current generated candidate artifacts, and OSM node 14248793703 history.",
+    "path": "audit/evidence/2026-10-25-network-geometry-source-evidence.zip",
+    "sha256": "cca77bfd43734429a69b9187c872318d53589ec375c3c452b7941aa9b53c8746"
+  },
+  "reviewed_snapshot_reconstruction": {
+    "changed_after_review": {
+      "later_coordinates": [
+        103.8287517,
+        1.3194242
+      ],
+      "later_timestamp": "2026-10-25T13:44:30Z",
+      "later_version": 2,
+      "node_id": 14248793703,
+      "reviewed_coordinates": [
+        103.8287515,
+        1.3194243
+      ],
+      "reviewed_version": 1
+    },
+    "method": "All current relation elements were checked against the reviewed OSM base timestamp. This was the only later element. The baseline retains the version 1 coordinates from the retained OSM node history.",
+    "reason": "The temporary reviewed source directory was removed after review. A new collection found one OSM edit made after the reviewed snapshot."
+  },
+  "schema_version": 1
+}

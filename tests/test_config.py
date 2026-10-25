@@ -47,6 +47,10 @@ class ConfigTests(unittest.TestCase):
             (self.root / "config/stage2-reviewed-coordinates.geojson").resolve(),
         )
         self.assertEqual(
+            config.paths.stage3_approved_geometry_baseline,
+            (self.root / "config/stage3-approved-geometry-baseline.geojson").resolve(),
+        )
+        self.assertEqual(
             config.paths.stage2_coordinate_ledger,
             (self.root / "config/stage2-coordinate-ledger.json").resolve(),
         )
@@ -56,6 +60,8 @@ class ConfigTests(unittest.TestCase):
         )
         self.assertEqual(config.sources.sgwiki_api.allowed_hosts,
                          ("sgwiki.miraheze.org",))
+        self.assertEqual(config.sources.osm_overpass.allowed_hosts, ("overpass-api.de",))
+        self.assertEqual(config.sources.osm_api.allowed_hosts, ("api.openstreetmap.org",))
         self.assertRegex(config.config_sha256, r"^[0-9a-f]{64}$")
 
     def test_unknown_field_fails_loudly(self):

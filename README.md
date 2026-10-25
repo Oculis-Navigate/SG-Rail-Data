@@ -33,6 +33,12 @@ Stage 2 assigns coordinates to the Stage 1 exits. It uses this order:
 Each coordinate keeps its original provenance. The pipeline does not refresh a
 frozen source or replace approved data with a new search result automatically.
 
+The repository also contains an approved network-geometry comparison baseline
+and an unapproved preview builder. They combine LTA GTFS service topology with
+OSM physical rail ways, but they are not part of the Stage 1/2 release pipeline
+or the scheduled workflow. Baseline approval does not authorize a production
+Stage 3 release.
+
 ## Set up the project
 
 The project requires Python 3.12 and [`uv`](https://docs.astral.sh/uv/).
@@ -83,7 +89,9 @@ uv run sg-rail-station-data pipeline run \
   --stage2-baseline runs/<approved-run>/stage2/stations.json
 ```
 
-Without an override, the pipeline uses both checked-in approved baselines.
+Without an override, the pipeline uses the checked-in Stage 1 and Stage 2
+approved baselines. The separate geometry preview uses its checked-in comparison
+baseline.
 
 ## Understand a run
 
@@ -126,6 +134,34 @@ The command uses three exit codes:
 
 A failed collection is not evidence that a station or exit was removed. The
 last approved release remains in service until a later run is reviewed.
+
+## Preview rail-line geometry
+
+Build a temporary, unapproved network-geometry candidate from a retained LTA
+GTFS collection and current OpenStreetMap route relations:
+
+```console
+uv run sg-rail-station-data network build-preview \
+  --gtfs-directory runs/<run-id>/sources/lta-gtfs \
+  --output-dir /tmp/sg-rail-network-preview
+
+uv run python -m http.server 8765 \
+  --bind 127.0.0.1 \
+  --directory /tmp/sg-rail-network-preview
+```
+
+Open `http://127.0.0.1:8765`. The page shows OSM physical rail ways selected
+for lines active in the LTA GTFS service snapshot. Enable **Straight GTFS
+chords** to compare the curved geometry with direct station-to-station lines.
+
+This command is a source-review prototype, not Stage 3 release production. Its
+manifest always sets `publication_allowed` to `false`. It retains each OSM
+relation response, source hash, version and timestamp, compares the candidate
+with `config/stage3-approved-geometry-baseline.geojson`, and writes
+`changes.json`. It does not yet prove connectivity between every consecutive
+station. The quarterly workflow does not run or publish it. See the
+[maintenance plan](docs/maintenance-plan.md#network-geometry-preview) for the
+checks required before promotion.
 
 ## Inspect coordinates on the map
 

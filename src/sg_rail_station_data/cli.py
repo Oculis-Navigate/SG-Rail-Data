@@ -21,6 +21,7 @@ from .audit import (
 )
 from .config import DEFAULT_CONFIG_PATH, PipelineConfig, load_config
 from .credentials import DEFAULT_ENV_PATH, load_lta_api_key
+from .network_geometry import build_network_preview
 from .pipeline import run_pipeline
 from .progress import TerminalProgress
 from .review_bundle import write_review_bundle
@@ -201,6 +202,26 @@ def build_parser() -> argparse.ArgumentParser:
         "--no-progress", action="store_true", help="Disable terminal progress output."
     )
     mapdata_parser.set_defaults(handler=_collect_sgwiki_mapdata_command)
+
+    network_parser = commands.add_parser(
+        "network", help="Build preview rail-network geometry from LTA GTFS and OSM."
+    )
+    network_commands = network_parser.add_subparsers(dest="network_command", required=True)
+    network_preview = network_commands.add_parser(
+        "build-preview",
+        help="Create an unapproved Stage 3 candidate and a temporary local map.",
+    )
+    _add_config_argument(network_preview)
+    network_preview.add_argument(
+        "--gtfs-directory", type=Path, required=True,
+        help="Retained LTA GTFS source directory containing the ZIP and active-stations.json.",
+    )
+    network_preview.add_argument(
+        "--output-dir", type=Path, required=True,
+        help="New immutable preview directory; an existing directory is never reused.",
+    )
+    network_preview.add_argument("--json", action="store_true")
+    network_preview.set_defaults(handler=_build_network_preview_command)
 
     stage1_parser = commands.add_parser(
         "stage1", help="Build and validate Stage 1 semantic records."
@@ -494,6 +515,49 @@ def _validate_config_command(arguments: argparse.Namespace) -> int:
             f"Project {summary['project']} schema {summary['schema_version']}; "
             f"runs: {summary['runs_dir']}"
         )
+    return 0
+
+
+def _build_network_preview_command(arguments: argparse.Namespace) -> int:
+    config = load_config(arguments.config)
+    network = config.network
+    result = build_network_preview(
+        gtfs_directory=arguments.gtfs_directory,
+        output_directory=arguments.output_dir,
+        repo_root=config.paths.repo_root,
+        overpass_endpoint=config.sources.osm_overpass.endpoint,
+        api_endpoint=config.sources.osm_api.endpoint,
+        timeout_seconds=max(network.timeout_seconds, 120.0),
+        max_attempts=network.max_attempts,
+        initial_backoff_seconds=network.initial_backoff_seconds,
+        maximum_backoff_seconds=network.maximum_backoff_seconds,
+        minimum_interval_seconds=network.minimum_interval_seconds,
+        approved_baseline_path=config.paths.stage3_approved_geometry_baseline,
+    )
+    summary = {
+        "status": "review_required",
+        "publication_allowed": False,
+        "output_directory": str(result.output_directory),
+        "preview": str(result.preview_path),
+        "geometry": str(result.geojson_path),
+        "network": str(result.network_path),
+        "coverage": str(result.coverage_path),
+        "changes": str(result.changes_path),
+        "line_count": result.line_count,
+        "station_count": result.station_count,
+        "geometry_feature_count": result.feature_count,
+        "geometry_change_count": result.change_count,
+    }
+    if arguments.json:
+        print(json.dumps(summary, sort_keys=True))
+    else:
+        print(
+            f"Network geometry preview complete: {result.line_count} lines, "
+            f"{result.station_count} stations, {result.feature_count} OSM ways, "
+            f"{result.change_count} geometry changes"
+        )
+        print(f"Preview: {result.preview_path}")
+        print("Temporary review output only; publication is not allowed.")
     return 0
 
 

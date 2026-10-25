@@ -12,6 +12,7 @@ stage2_reviewed_coordinates = "config/stage2-reviewed-coordinates.geojson"
 stage2_coordinate_ledger = "config/stage2-coordinate-ledger.json"
 stage2_trusted_onemap_baseline = "config/stage2-trusted-onemap-baseline.geojson"
 stage2_trusted_supplemental_baseline = "config/stage2-trusted-supplemental-baseline.geojson"
+stage3_approved_geometry_baseline = "config/stage3-approved-geometry-baseline.geojson"
 
 [locale]
 timezone = "Asia/Singapore"
@@ -34,6 +35,14 @@ allowed_hosts = ["sgwiki.miraheze.org"]
 [sources.sgwiki_mapdata]
 endpoint = "https://sgwiki.miraheze.org/w/api.php"
 allowed_hosts = ["sgwiki.miraheze.org"]
+
+[sources.osm_overpass]
+endpoint = "https://overpass-api.de/api/interpreter"
+allowed_hosts = ["overpass-api.de"]
+
+[sources.osm_api]
+endpoint = "https://api.openstreetmap.org/api/0.6"
+allowed_hosts = ["api.openstreetmap.org"]
 
 [network]
 timeout_seconds = 30.0

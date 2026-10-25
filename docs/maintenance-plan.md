@@ -24,6 +24,7 @@ changes and evidence first. Use short active sentences and consistent terms.
 | Hardcoded rules | Stage 1 reviewed decisions and frozen OneMap/supplemental baselines | One audit mechanism covering every rule, import, renewal and removal |
 | Comparison baselines | Checked-in Stage 1 baseline; explicit Stage 2 baseline argument | Approval bound to exact artifact hashes and a durable release manifest |
 | Automation | Quarterly/manual workflow uploads evidence, retains nonzero exit status | Review package, persistent evidence archive and explicit release promotion |
+| Network geometry | Manual `network build-preview`, retained OSM evidence and approved comparison baseline D-028 | Consecutive-station connectivity, full audit application support and production release promotion |
 
 There are 30 legacy coordinate ledger events and 28 current reviewed pins. All
 their note fields are blank. Preserve that history honestly; do not invent old
@@ -141,12 +142,14 @@ that the specific data decision was approved.
 
 ## Required commit summaries
 
-Every commit must say whether it changes station/exit data or intervention
-records. Data-changing commits list counts **and exact identities** for:
+Every commit must say whether it changes station/exit data, released network
+geometry or intervention records. Data-changing commits list counts **and exact
+identities** for:
 
 - Stations added/removed, and any station identity or code changes.
 - Exits added/removed, preserving station name and MRT/LRT/shared scope.
 - Other material changes such as moved pins, closures, platforms or bus links.
+- Network line, branch or segment changes, with source relation/way identities.
 - Interventions added, amended, revalidated or retired, with decision IDs and
   corresponding sign-off event IDs.
 
@@ -169,6 +172,7 @@ Stations removed: none
 Exits added: 1 — station-x/MRT:E
 Exits removed: none
 Other data changes: station-y/MRT:B uses Kartographer; coordinates unchanged
+Network geometry changes: none
 Interventions added: D-101 — station-x/MRT:E coordinate gap fill
 Interventions amended/revalidated: none
 Interventions retired: D-042 — station-y/MRT:B; replaced by Kartographer
@@ -177,8 +181,9 @@ Audit: audit/change-sets/<change-id>.json
 Run: <run-id>
 ```
 
-A documentation/code-only commit with no data or intervention record changes
-can state `Data/intervention records: unchanged (documentation/code only)`.
+A documentation/code-only commit with no data, released network geometry or
+intervention record changes can state
+`Data/geometry/intervention records: unchanged (documentation/code only)`.
 That statement does not claim the code cannot affect a future pipeline run.
 
 CI must check that semantic changes and intervention deltas match the commit
@@ -262,6 +267,59 @@ original run; never edit old logs to make a failed run look successful.
 | Source contract failure or partial evidence | Inspect retained raw response. Add support and a regression fixture for a valid new format. Partial information must remain visibly partial or have an exact evidenced override. |
 | Sources disagree | Retain all candidates and say why one was selected. Source agreement is useful evidence but may reflect shared upstream data. Do not average coordinates or silently replace provenance. |
 | No wiki edit but a hardcoded point may be stale | Review due dates still apply. Recheck supporting operator/other evidence; unchanged wiki content cannot prove the real-world entrance is unchanged. |
+| GTFS route or trip pattern changes | Rebuild the network preview. Confirm active line identity, station order, branches and effective service date. A new GTFS pattern does not approve new geometry automatically. |
+| OSM relation membership or rail way changes | Retain old and new responses, relation and way versions, timestamps and hashes. Show affected segments and a visual/numerical diff. Review connectivity and operational tags before selection. |
+| New OSM construction or planned geometry | Keep it out of the operational product. OSM presence does not establish opening; require active LTA GTFS service and applicable operator evidence. |
+
+## Network geometry preview
+
+`network build-preview` is a manual source-review tool. It uses LTA GTFS to
+select active line identities, station points and trip patterns. It uses OSM
+route-relation member ways for physical geometry. It writes `rail-network.json`,
+`rail-lines.geojson`, station points, coverage checks, raw OSM responses and a
+static map. Every output has `publication_allowed: false`.
+
+The preview is deliberately outside the current Stage 1/2 run and quarterly
+workflow. D-028 approves its initial geometry for future comparison and the
+builder reports changes against that baseline. It does not approve a production
+Stage 3 release. Do not copy preview GeoJSON into a release or treat a successful
+proximity check as release approval. The current check
+only measures each GTFS station's distance from same-line OSM ways. Selecting an
+OSM relation by line identity can still include an extra branch or omit a valid
+service segment.
+
+Before network geometry can become a released stage, implement and review all of
+these controls:
+
+1. Normalize GTFS routes, parent-station coordinates and distinct active stop
+   sequences as retained native run artifacts.
+2. Match each selected OSM route relation and its stops to an applicable GTFS
+   service pattern. Do not select all same-ref geometry without this match.
+3. Prove graph connectivity for every consecutive active GTFS station pair.
+   Model CCL service patterns, the Changi branch and each LRT loop explicitly.
+4. Exclude proposed, construction, disused, depot and non-passenger track. Use
+   GTFS and operator evidence, not OSM presence, to establish operation.
+5. Define how parallel directional tracks become app-facing geometry. Preserve
+   original physical ways and identify any selected track or derived centreline.
+6. Compare candidates with the approved geometry baseline. Report changed
+   relation membership, added or removed ways, displacement, length, gaps and
+   affected station pairs. Generate an old/new review map.
+7. Complete strict replay, review artifacts, release gates and rollback behavior
+   equivalent to the existing stages. Keep the approved comparison baseline
+   distinct from a production release.
+8. Record an explicit decision and sign-off for initial adoption, source
+   replacement and material geometry changes. Bind approval to exact GTFS, OSM,
+   output and review-package hashes.
+9. Retain OSM attribution, ODbL notices, source URLs, extraction timestamp and
+   reproducible source data. Review derivative-database obligations before
+   distributing the combined product.
+10. Add the stage to CI and the scheduled workflow only after these requirements
+    pass. A scheduled run may collect and compare geometry but must not approve it.
+
+If an official current operational centreline becomes available, retain its
+licence, publication date, scope and raw bytes and compare it with the approved
+OSM-derived baseline. Official publication does not by itself establish that a
+planning/generalized layer is appropriate for operational navigation.
 
 Quarterly collection is the normal cadence, supplemented by manual runs when a
 known opening, closure or major source change warrants one. Review new changes and

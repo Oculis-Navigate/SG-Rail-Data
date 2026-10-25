@@ -46,9 +46,9 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
     def test_current_audit_has_all_signoffs_and_covers_all_records(self):
         result = validate_initial_ledger(ROOT)
         self.assertEqual(result["status"], "valid")
-        self.assertEqual(result["decision_count"], 27)
+        self.assertEqual(result["decision_count"], 28)
         self.assertEqual(result["intervention_count"], 354)
-        self.assertEqual(result["approved_count"], 27)
+        self.assertEqual(result["approved_count"], 28)
         self.assertEqual(result["pending_decision_ids"], [])
         self.assertEqual(result["release_approval"], "not_granted")
 
@@ -119,8 +119,26 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
             code = main(["audit", "validate", "--json"])
         self.assertEqual(code, 0)
         result = json.loads(output.getvalue())
-        self.assertEqual(result["approved_count"], 27)
+        self.assertEqual(result["approved_count"], 28)
         self.assertEqual(result["release_approval"], "not_granted")
+
+    def test_geometry_baseline_matches_its_exact_approval(self):
+        baseline_path = ROOT / "config/stage3-approved-geometry-baseline.geojson"
+        baseline = json.loads(baseline_path.read_text())
+        decision = json.loads((ROOT / "audit/decisions/D-028.json").read_text())
+        evidence = json.loads(
+            (ROOT / "audit/evidence/2026-10-25-network-geometry-baseline-approval.json").read_text()
+        )
+        target = decision["targets"][0]
+        self.assertEqual(target["path"], "config/stage3-approved-geometry-baseline.geojson")
+        self.assertEqual(target["before"], baseline)
+        self.assertEqual(target["after"], baseline)
+        self.assertEqual(target["after_sha256"], content_hash(baseline))
+        self.assertEqual(
+            evidence["candidate"]["file_sha256"],
+            sha256(baseline_path.read_bytes()).hexdigest(),
+        )
+        self.assertFalse(baseline["metadata"]["publication_allowed"])
 
     def test_stage2_baseline_matches_its_exact_approval(self):
         baseline_path = ROOT / "config/stage2-approved-baseline.json"
@@ -249,9 +267,9 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             root = Path(temp)
             self.copy_package(root)
             revalidated = self.action(root, "revalidate", "D-004")
-            self.assertEqual(revalidated["event"]["event_id"], "S-034")
+            self.assertEqual(revalidated["event"]["event_id"], "S-036")
             result = audit_status(root)
-            self.assertEqual(result["event_count"], 34)
+            self.assertEqual(result["event_count"], 36)
             self.assertEqual(result["pending_decision_ids"], [])
             self.assertIn("D-004", result["effective_states"]["approved"])
 
@@ -447,7 +465,7 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             root = Path(temp)
             self.copy_package(root)
             result = render_signoffs(root)
-            self.assertEqual(result["event_count"], 33)
+            self.assertEqual(result["event_count"], 35)
             index = (root / "audit/signoffs/README.md").read_text()
             page = (root / "audit/signoffs/2026-10-05.md").read_text()
             self.assertIn("generated from `audit/decision-ledger.jsonl`", index)

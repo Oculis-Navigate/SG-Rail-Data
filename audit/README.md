@@ -12,7 +12,8 @@ The initial 25 decision groups cover 354 configured intervention records: 20
 Stage 1 rules and 334 coordinate entries (28 reviewed pins, 266 trusted OneMap
 points, 38 accepted LTA/OSM points and two agent-selected OneMap conflict
 points). D-026 clarifies the Dhoby Ghaut interpretation without adding an
-intervention record. D-027 approves the checked-in Stage 2 baseline. All 27
+intervention record. D-027 approves the checked-in Stage 2 baseline. D-028
+approves the checked-in rail geometry as a comparison baseline only. All 28
 decisions have recorded approval.
 
 ## Current sign-off status
@@ -23,7 +24,9 @@ that Dhoby Ghaut E, F and G are separate exits. The pipeline combines only the
 two source mentions of G so that G retains both destination strings. The rule
 remains pinned to SgWiki revision 37293. The owner also approved the complete
 184-station, 614-exit Stage 2 comparison baseline. The baseline resolves all
-614 exits and has no review finding.
+614 exits and has no review finding. On 25 October 2026, the owner approved the
+283-way rail geometry reviewed in the temporary map as the initial comparison
+baseline. That approval does not authorize a Stage 3 production release.
 
 ## Ledger index
 
@@ -56,6 +59,7 @@ remains pinned to SgWiki revision 37293. The owner also approved the complete
 | D-025 | S-025 | Select Farrer Park MRT:E OneMap candidate | 1 | Prior delegated selection |
 | D-026 | S-031 | Clarify Dhoby Ghaut repeated Exit G evidence | 0 | Direct human sign-off |
 | D-027 | S-033 | Approve the initial Stage 2 coordinate baseline | 1 baseline | Direct human sign-off |
+| D-028 | S-035 | Approve the initial rail geometry comparison baseline | 1 baseline | Direct human sign-off |
 
 ## Evidence and limitations
 
@@ -66,6 +70,7 @@ remains pinned to SgWiki revision 37293. The owner also approved the complete
 - Expo A and Farrer Park E remain agent evidence selections under delegated authority. The app could not be opened; saved source evidence was used.
 - Source reports are historical evidence, not newly fetched verification. The revision-adjusted offline replay is not eligible for live baseline approval.
 - D-027 used saved source snapshots. It approves the comparison baseline and does not claim survey-grade coordinate precision.
+- D-028 binds the geometry baseline to LTA GTFS service date 2026-10-05 and the reviewed OSM state. The retained evidence discloses one OSM node edit after review and preserves the earlier reviewed node version. Approval is for future comparison only; connectivity, service-pattern matching and production release remain pending.
 
 ## Validate before committing
 

@@ -5,6 +5,7 @@
 - Exits added: None
 - Exits removed: None
 - Other data changes: None
+- Network geometry changes: None
 - Interventions added: None
 - Interventions changed or revalidated: None
 - Interventions retired: None

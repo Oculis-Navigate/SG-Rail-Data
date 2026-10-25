@@ -20,6 +20,7 @@ List these items:
 - Coordinates that moved.
 - Source or trust-class changes.
 - Bus, platform, level, closure, hours, or accessibility changes.
+- Released network-geometry lines, branches, segments, or provenance changes.
 - Interventions added, changed, revalidated, or retired.
 
 Use `None` when there is no item.
@@ -28,6 +29,7 @@ For each item, give:
 
 - The station ID.
 - The exit ID, when applicable.
+- The line, branch, segment and source relation or way IDs for network geometry.
 - The old value.
 - The new value.
 - The effective date, when known.
@@ -41,7 +43,8 @@ For each change, give:
 - The source revision or publication date.
 - The retrieval date.
 - The file hash.
-- The exact table row, page, marker, or record.
+- The exact table row, page, marker, record, OSM relation, or OSM way.
+- The OSM element version and timestamp for network geometry.
 - The claim that the evidence supports.
 
 State when the evidence supports an inference only.
@@ -107,6 +110,7 @@ Stations removed: None
 Exits added: None
 Exits removed: None
 Other data changes: <items or None>
+Network geometry changes: <line/segment identities or None>
 Interventions added: <decision IDs or None>
 Interventions changed or revalidated: <decision IDs or None>
 Interventions retired: <decision IDs or None>

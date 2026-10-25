@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rail geometry preview</title>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Temporary source review</p>
+      <h1>Singapore rail geometry preview</h1>
+      <p class="subtitle">LTA GTFS active services + OpenStreetMap physical rail ways</p>
+    </div>
+    <div class="warning"><strong>Not production data</strong><span>This geometry is unapproved and exists only for visual review.</span></div>
+  </header>
+  <main>
+    <aside>
+      <section>
+        <h2>Layers</h2>
+        <label class="switch"><input id="stationsToggle" type="checkbox" checked> <span>GTFS stations</span></label>
+        <label class="switch"><input id="chordsToggle" type="checkbox"> <span>Straight GTFS chords</span></label>
+        <p class="hint">Turn on straight chords to compare them with the curved OSM geometry.</p>
+      </section>
+      <section>
+        <h2>Lines</h2>
+        <div id="lineFilters"></div>
+      </section>
+      <section>
+        <h2>Preview checks</h2>
+        <dl id="summary"></dl>
+        <button id="fitButton" type="button">Fit visible network</button>
+      </section>
+      <section class="limitations">
+        <h2>Known limitations</h2>
+        <ul id="limitations"></ul>
+      </section>
+      <footer>Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>, ODbL.</footer>
+    </aside>
+    <section class="map-wrap">
+      <div id="map" aria-label="Interactive map of preview rail geometry"></div>
+      <div class="map-key"><span class="solid"></span> OSM rail way <span class="dashed"></span> GTFS station chord</div>
+    </section>
+  </main>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="preview-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

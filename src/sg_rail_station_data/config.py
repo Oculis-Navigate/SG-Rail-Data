@@ -47,6 +47,7 @@ class PathsConfig:
     stage2_coordinate_ledger: Path
     stage2_trusted_onemap_baseline: Path
     stage2_trusted_supplemental_baseline: Path
+    stage3_approved_geometry_baseline: Path
 
 
 @dataclass(frozen=True, slots=True)
@@ -85,6 +86,8 @@ class SourcesConfig:
     lta_bus_stops: SourceConfig
     sgwiki_api: SourceConfig
     sgwiki_mapdata: SourceConfig
+    osm_overpass: SourceConfig
+    osm_api: SourceConfig
 
 
 @dataclass(frozen=True, slots=True)
@@ -196,6 +199,7 @@ def _load_config(path: str | Path) -> PipelineConfig:
             "stage2_coordinate_ledger",
             "stage2_trusted_onemap_baseline",
             "stage2_trusted_supplemental_baseline",
+            "stage3_approved_geometry_baseline",
         },
         "paths",
     )
@@ -240,6 +244,11 @@ def _load_config(path: str | Path) -> PipelineConfig:
             repo_root,
             "paths.stage2_trusted_supplemental_baseline",
         ),
+        stage3_approved_geometry_baseline=safe_repo_path(
+            paths_table["stage3_approved_geometry_baseline"],
+            repo_root,
+            "paths.stage3_approved_geometry_baseline",
+        ),
     )
 
     locale_table = require_fields(document["locale"], {"timezone"}, "locale")
@@ -265,7 +274,10 @@ def _load_config(path: str | Path) -> PipelineConfig:
 
     sources_table = require_fields(
         document["sources"],
-        {"lta_gtfs", "lta_bus_stops", "sgwiki_api", "sgwiki_mapdata"},
+        {
+            "lta_gtfs", "lta_bus_stops", "sgwiki_api", "sgwiki_mapdata",
+            "osm_overpass", "osm_api",
+        },
         "sources",
     )
     sources = SourcesConfig(
@@ -273,6 +285,8 @@ def _load_config(path: str | Path) -> PipelineConfig:
         lta_bus_stops=_source(sources_table["lta_bus_stops"], "sources.lta_bus_stops"),
         sgwiki_api=_source(sources_table["sgwiki_api"], "sources.sgwiki_api"),
         sgwiki_mapdata=_source(sources_table["sgwiki_mapdata"], "sources.sgwiki_mapdata"),
+        osm_overpass=_source(sources_table["osm_overpass"], "sources.osm_overpass"),
+        osm_api=_source(sources_table["osm_api"], "sources.osm_api"),
     )
 
     network_table = require_fields(
