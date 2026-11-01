@@ -122,6 +122,8 @@ class NetworkGeometryTests(unittest.TestCase):
         self.assertFalse(network["publication_allowed"])
         self.assertEqual([line["id"] for line in network["lines"]], ["NSL"])
         self.assertEqual(network["patterns"][0]["station_stop_ids"], ["A", "B"])
+        self.assertEqual(network["stations"][0]["codes"], ["NS1"])
+        self.assertEqual(network["stations"][0]["display_codes"], ["NS1"])
         self.assertEqual(stations["features"][1]["geometry"]["coordinates"], [103.81, 1.31])
 
     def test_osm_collection_keeps_raw_evidence_and_normalizes_member_way(self):

@@ -426,7 +426,7 @@ def prepare_kartographer_exits(
             fail(context, "overlay disagrees with its collection provenance row")
 
         stage1_station = stage1_by_name.get(station_name)
-        if stage1_station is not None and stage1_station["codes"] != codes:
+        if stage1_station is not None and set(stage1_station["codes"]) != set(codes):
             fail(context, "Kartographer station codes disagree with Stage 1")
         prepared_markers: list[dict[str, object]] = []
         seen_labels: set[str] = set()

@@ -63,8 +63,8 @@
         "station_id": "bugis",
         "station_name": "Bugis",
         "station_codes": [
-          "DT14",
-          "EW12"
+          "EW12",
+          "DT14"
         ],
         "exit_id": "MRT:E",
         "coordinate_source": {
@@ -107,8 +107,8 @@
         "station_id": "bugis",
         "station_name": "Bugis",
         "station_codes": [
-          "DT14",
-          "EW12"
+          "EW12",
+          "DT14"
         ],
         "exit_id": "MRT:F",
         "coordinate_source": {
@@ -150,8 +150,8 @@
         "station_id": "bugis",
         "station_name": "Bugis",
         "station_codes": [
-          "DT14",
-          "EW12"
+          "EW12",
+          "DT14"
         ],
         "exit_id": "MRT:G",
         "coordinate_source": {
@@ -999,8 +999,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:K",
         "coordinate_source": {
@@ -1042,8 +1042,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:L",
         "coordinate_source": {
@@ -1085,8 +1085,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:M",
         "coordinate_source": {

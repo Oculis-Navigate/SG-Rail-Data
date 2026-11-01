@@ -25,8 +25,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "CR11",
-        "NS16"
+        "NS16",
+        "CR11"
       ],
       "name": "Ang Mo Kio",
       "sgwiki_title": "Ang Mo Kio station"
@@ -123,8 +123,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC15",
-        "NS17"
+        "NS17",
+        "CC15"
       ],
       "name": "Bishan",
       "sgwiki_title": "Bishan station"
@@ -190,8 +190,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT14",
-        "EW12"
+        "EW12",
+        "DT14"
       ],
       "name": "Bugis",
       "sgwiki_title": "Bugis station"
@@ -215,8 +215,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "BP6",
-        "DT1"
+        "DT1",
+        "BP6"
       ],
       "name": "Bukit Panjang",
       "sgwiki_title": "Bukit Panjang station"
@@ -224,8 +224,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC22",
-        "EW21"
+        "EW21",
+        "CC22"
       ],
       "name": "Buona Vista",
       "sgwiki_title": "Buona Vista station"
@@ -282,8 +282,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT19",
-        "NE4"
+        "NE4",
+        "DT19"
       ],
       "name": "Chinatown",
       "sgwiki_title": "Chinatown station"
@@ -299,9 +299,9 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "BP1",
+        "NS4",
         "JS1",
-        "NS4"
+        "BP1"
       ],
       "name": "Choa Chu Kang",
       "sgwiki_title": "Choa Chu Kang station"
@@ -309,8 +309,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "EW13",
-        "NS25"
+        "NS25",
+        "EW13"
       ],
       "name": "City Hall",
       "sgwiki_title": "City Hall station"
@@ -382,9 +382,9 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC1",
+        "NS24",
         "NE6",
-        "NS24"
+        "CC1"
       ],
       "name": "Dhoby Ghaut",
       "sgwiki_title": "Dhoby Ghaut station"
@@ -513,8 +513,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC29",
-        "NE1"
+        "NE1",
+        "CC29"
       ],
       "name": "HarbourFront",
       "sgwiki_title": "HarbourFront station"
@@ -594,9 +594,9 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
+        "NS1",
         "EW24",
-        "JE5",
-        "NS1"
+        "JE5"
       ],
       "name": "Jurong East",
       "sgwiki_title": "Jurong East station"
@@ -756,8 +756,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT12",
-        "NE7"
+        "NE7",
+        "DT12"
       ],
       "name": "Little India",
       "sgwiki_title": "Little India station"
@@ -782,8 +782,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "CE2",
         "NS27",
+        "CE2",
         "TE20"
       ],
       "name": "Marina Bay",
@@ -880,8 +880,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT11",
-        "NS21"
+        "NS21",
+        "DT11"
       ],
       "name": "Newton",
       "sgwiki_title": "Newton station"
@@ -972,8 +972,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC9",
-        "EW8"
+        "EW8",
+        "CC9"
       ],
       "name": "Paya Lebar",
       "sgwiki_title": "Paya Lebar station"
@@ -1071,8 +1071,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "EW14",
-        "NS26"
+        "NS26",
+        "EW14"
       ],
       "name": "Raffles Place",
       "sgwiki_title": "Raffles Place station"
@@ -1177,8 +1177,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC13",
-        "NE12"
+        "NE12",
+        "CC13"
       ],
       "name": "Serangoon",
       "sgwiki_title": "Serangoon station"
@@ -1283,8 +1283,8 @@
     {
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT32",
-        "EW2"
+        "EW2",
+        "DT32"
       ],
       "name": "Tampines",
       "sgwiki_title": "Tampines station"

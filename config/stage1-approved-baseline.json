@@ -776,8 +776,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "CR11",
-        "NS16"
+        "NS16",
+        "CR11"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -4682,8 +4682,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC15",
-        "NS17"
+        "NS17",
+        "CC15"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -7671,8 +7671,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT14",
-        "EW12"
+        "EW12",
+        "DT14"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -9009,8 +9009,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "BP6",
-        "DT1"
+        "DT1",
+        "BP6"
       ],
       "excluded_bus_links": [
         {
@@ -9771,8 +9771,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC22",
-        "EW21"
+        "EW21",
+        "CC22"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -12254,8 +12254,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT19",
-        "NE4"
+        "NE4",
+        "DT19"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -13126,9 +13126,9 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "BP1",
+        "NS4",
         "JS1",
-        "NS4"
+        "BP1"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -13713,8 +13713,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "EW13",
-        "NS25"
+        "NS25",
+        "EW13"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -16527,9 +16527,9 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC1",
+        "NS24",
         "NE6",
-        "NS24"
+        "CC1"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -22553,8 +22553,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC29",
-        "NE1"
+        "NE1",
+        "CC29"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -25878,9 +25878,9 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
+        "NS1",
         "EW24",
-        "JE5",
-        "NS1"
+        "JE5"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -31918,8 +31918,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT12",
-        "NE7"
+        "NE7",
+        "DT12"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -33268,8 +33268,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "CE2",
         "NS27",
+        "CE2",
         "TE20"
       ],
       "excluded_bus_links": [],
@@ -37613,8 +37613,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT11",
-        "NS21"
+        "NS21",
+        "DT11"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -42024,8 +42024,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC9",
-        "EW8"
+        "EW8",
+        "CC9"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -45937,8 +45937,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "EW14",
-        "NS26"
+        "NS26",
+        "EW14"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -50177,8 +50177,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "CC13",
-        "NE12"
+        "NE12",
+        "CC13"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",
@@ -54556,8 +54556,8 @@
       ],
       "catalog_status": "v1_baseline",
       "codes": [
-        "DT32",
-        "EW2"
+        "EW2",
+        "DT32"
       ],
       "excluded_bus_links": [],
       "exit_inventory_status": "complete",

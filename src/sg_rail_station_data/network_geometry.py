@@ -26,6 +26,7 @@ import time
 from typing import Callable, Mapping
 
 from .sources.lta_gtfs import active_inventory
+from .station_catalog import station_codes_for_display
 from .storage import atomic_write_bytes, atomic_write_json, read_json
 
 
@@ -217,6 +218,7 @@ def build_gtfs_network(gtfs_zip: Path, inventory_path: Path) -> tuple[dict[str, 
             "stop_id": stop_id,
             "name": row["name"],
             "codes": row["codes"],
+            "display_codes": station_codes_for_display(row["codes"]),
             "line_ids": line_ids,
             "coordinates": [longitude, latitude],
         }

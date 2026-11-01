@@ -39,6 +39,24 @@ OSM physical rail ways, but they are not part of the Stage 1/2 release pipeline
 or the scheduled workflow. Baseline approval does not authorize a production
 Stage 3 release.
 
+## Station-code ordering contract
+
+`config/stations.json` stores station codes in system-map presentation order,
+not lexical order. Repository-owned, consumer-facing Stage 1 and Stage 2 station
+records preserve that order, so applications may render their `codes` arrays
+directly. The current order is NSL, EWL, NEL, CCL, DTL, TEL, future MRT lines,
+then LRT systems. Branch codes such as CG and CE inherit their parent line's
+position.
+
+Source evidence may retain a source-specific deterministic order. In particular,
+the normalized LTA GTFS active inventory keeps lexically canonical codes and is
+not a presentation-ready station catalogue. The network preview therefore emits
+both source-ordered `codes` and presentation-ready `display_codes`.
+
+An unsupported station-code prefix is a contract failure. Add its explicit line
+mapping and reviewed display position before using it in the catalogue or a
+consumer-facing artifact.
+
 ## Set up the project
 
 The project requires Python 3.12 and [`uv`](https://docs.astral.sh/uv/).

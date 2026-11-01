@@ -197,7 +197,7 @@ class LtaGtfsTests(unittest.TestCase):
                 },
                 "stations": [{
                     "name": "Alpha",
-                    "codes": ["AA1"],
+                    "codes": ["NS99"],
                     "catalog_status": "v1_baseline",
                     "sgwiki_title": "Alpha station",
                 }],

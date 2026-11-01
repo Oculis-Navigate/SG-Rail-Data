@@ -46,9 +46,9 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
     def test_current_audit_has_all_signoffs_and_covers_all_records(self):
         result = validate_initial_ledger(ROOT)
         self.assertEqual(result["status"], "valid")
-        self.assertEqual(result["decision_count"], 28)
+        self.assertEqual(result["decision_count"], 29)
         self.assertEqual(result["intervention_count"], 354)
-        self.assertEqual(result["approved_count"], 28)
+        self.assertEqual(result["approved_count"], 29)
         self.assertEqual(result["pending_decision_ids"], [])
         self.assertEqual(result["release_approval"], "not_granted")
 
@@ -119,7 +119,7 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
             code = main(["audit", "validate", "--json"])
         self.assertEqual(code, 0)
         result = json.loads(output.getvalue())
-        self.assertEqual(result["approved_count"], 28)
+        self.assertEqual(result["approved_count"], 29)
         self.assertEqual(result["release_approval"], "not_granted")
 
     def test_geometry_baseline_matches_its_exact_approval(self):
@@ -140,20 +140,41 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
         )
         self.assertFalse(baseline["metadata"]["publication_allowed"])
 
-    def test_stage2_baseline_matches_its_exact_approval(self):
+    def test_stage2_baseline_matches_its_approval_and_display_order_migration(self):
         baseline_path = ROOT / "config/stage2-approved-baseline.json"
         baseline = json.loads(baseline_path.read_text())
-        decision = json.loads((ROOT / "audit/decisions/D-027.json").read_text())
+        approval = json.loads((ROOT / "audit/decisions/D-027.json").read_text())
+        migration = json.loads((ROOT / "audit/decisions/D-029.json").read_text())
         evidence = json.loads(
-            (ROOT / "audit/evidence/2026-10-06-stage2-baseline-approval.json").read_text()
+            (ROOT / "audit/evidence/2026-11-01-station-code-display-order-migration.json").read_text()
         )
-        target = decision["targets"][0]
+        target = approval["targets"][0]
         self.assertEqual(target["path"], "config/stage2-approved-baseline.json")
-        self.assertEqual(target["before"], baseline)
-        self.assertEqual(target["after"], baseline)
-        self.assertEqual(target["after_sha256"], content_hash(baseline))
+        migrated = deepcopy(target["after"])
+
+        def pointer(document, value):
+            current = document
+            for token in value[1:].split("/"):
+                current = current[int(token)] if isinstance(current, list) else current[token]
+            return current
+
+        stage2_targets = [
+            item for item in migration["targets"]
+            if item["path"] == "config/stage2-approved-baseline.json"
+        ]
+        self.assertEqual(len(stage2_targets), 18)
+        for item in stage2_targets:
+            codes = pointer(migrated, item["pointer"])
+            self.assertEqual(codes, item["before"])
+            codes[:] = item["after"]
+        self.assertEqual(migrated, baseline)
+        self.assertEqual(evidence["migration"]["semantic_change"], "station code array order only")
+        stage2_evidence = next(
+            item for item in evidence["migration"]["files"]
+            if item["path"] == "config/stage2-approved-baseline.json"
+        )
         self.assertEqual(
-            evidence["candidate"]["file_sha256"],
+            stage2_evidence["after_file_sha256"],
             sha256(baseline_path.read_bytes()).hexdigest(),
         )
 
@@ -267,9 +288,9 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             root = Path(temp)
             self.copy_package(root)
             revalidated = self.action(root, "revalidate", "D-004")
-            self.assertEqual(revalidated["event"]["event_id"], "S-036")
+            self.assertEqual(revalidated["event"]["event_id"], "S-038")
             result = audit_status(root)
-            self.assertEqual(result["event_count"], 36)
+            self.assertEqual(result["event_count"], 38)
             self.assertEqual(result["pending_decision_ids"], [])
             self.assertIn("D-004", result["effective_states"]["approved"])
 
@@ -465,7 +486,7 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             root = Path(temp)
             self.copy_package(root)
             result = render_signoffs(root)
-            self.assertEqual(result["event_count"], 35)
+            self.assertEqual(result["event_count"], 37)
             index = (root / "audit/signoffs/README.md").read_text()
             page = (root / "audit/signoffs/2026-10-05.md").read_text()
             self.assertIn("generated from `audit/decision-ledger.jsonl`", index)

@@ -38,8 +38,8 @@
         "station_id": "bukit-panjang",
         "station_name": "Bukit Panjang",
         "station_codes": [
-          "BP6",
-          "DT1"
+          "DT1",
+          "BP6"
         ],
         "exit_id": "LRT:A",
         "label": "A",
@@ -74,8 +74,8 @@
         "station_id": "bukit-panjang",
         "station_name": "Bukit Panjang",
         "station_codes": [
-          "BP6",
-          "DT1"
+          "DT1",
+          "BP6"
         ],
         "exit_id": "LRT:B",
         "label": "B",
@@ -110,8 +110,8 @@
         "station_id": "bukit-panjang",
         "station_name": "Bukit Panjang",
         "station_codes": [
-          "BP6",
-          "DT1"
+          "DT1",
+          "BP6"
         ],
         "exit_id": "LRT:C",
         "label": "C",
@@ -146,8 +146,8 @@
         "station_id": "bukit-panjang",
         "station_name": "Bukit Panjang",
         "station_codes": [
-          "BP6",
-          "DT1"
+          "DT1",
+          "BP6"
         ],
         "exit_id": "LRT:D",
         "label": "D",
@@ -182,8 +182,8 @@
         "station_id": "bukit-panjang",
         "station_name": "Bukit Panjang",
         "station_codes": [
-          "BP6",
-          "DT1"
+          "DT1",
+          "BP6"
         ],
         "exit_id": "MRT:A1",
         "label": "A1",
@@ -218,8 +218,8 @@
         "station_id": "bukit-panjang",
         "station_name": "Bukit Panjang",
         "station_codes": [
-          "BP6",
-          "DT1"
+          "DT1",
+          "BP6"
         ],
         "exit_id": "MRT:A2",
         "label": "A2",
@@ -254,8 +254,8 @@
         "station_id": "bukit-panjang",
         "station_name": "Bukit Panjang",
         "station_codes": [
-          "BP6",
-          "DT1"
+          "DT1",
+          "BP6"
         ],
         "exit_id": "MRT:B",
         "label": "B",
@@ -290,8 +290,8 @@
         "station_id": "bukit-panjang",
         "station_name": "Bukit Panjang",
         "station_codes": [
-          "BP6",
-          "DT1"
+          "DT1",
+          "BP6"
         ],
         "exit_id": "MRT:C",
         "label": "C",
@@ -326,8 +326,8 @@
         "station_id": "bukit-panjang",
         "station_name": "Bukit Panjang",
         "station_codes": [
-          "BP6",
-          "DT1"
+          "DT1",
+          "BP6"
         ],
         "exit_id": "MRT:D",
         "label": "D",

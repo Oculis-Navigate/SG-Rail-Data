@@ -270,15 +270,16 @@ def _snapshot_records(snapshot: object, catalog: StationCatalog) -> list[dict[st
         row = require_fields(
             value, {"name", "codes", "catalog_status", "sgwiki_title", "source"}, context
         )
+        snapshot_codes = _string_list(row["codes"], f"{context}.codes", nonempty=True)
         if (
             row["name"] != configured.name
-            or row["codes"] != list(configured.codes)
+            or set(snapshot_codes) != set(configured.codes)
             or row["catalog_status"] != configured.catalog_status
             or row["sgwiki_title"] != configured.sgwiki_title
         ):
             fail(context, "station identity disagrees with the reviewed registry")
         source = _validate_source(row["source"], configured.name)
-        records.append({**row, "source": source})
+        records.append({**row, "codes": list(configured.codes), "source": source})
     return records
 
 

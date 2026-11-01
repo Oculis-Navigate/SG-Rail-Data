@@ -57,7 +57,7 @@ def bukit_panjang_station():
     )
     return {
         "station": "Bukit Panjang",
-        "codes": ["BP6", "DT1"],
+        "codes": ["DT1", "BP6"],
         "page_id": 342,
         "revision_id": 36376,
         "source_inventory_status": "complete",
@@ -114,7 +114,7 @@ class Stage1ReviewedDecisionTests(unittest.TestCase):
     def test_choa_chu_kang_only_exit_e_is_shared(self):
         source = {
             "station": "Choa Chu Kang",
-            "codes": ["BP1", "JS1", "NS4"],
+            "codes": ["NS4", "JS1", "BP1"],
             "page_id": 109,
             "revision_id": 500,
             "source_inventory_status": "complete",

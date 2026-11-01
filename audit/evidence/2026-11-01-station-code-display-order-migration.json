@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "kind": "station_code_display_order_migration_approval_evidence",
+  "decision_id": "D-029",
+  "authorization": {
+    "speaker": "project_owner",
+    "quote": "lets handle the migration then. i think the generic rule of thumb is any internal application can handle however they want based on the sources but for anything consumer facing, it should render the display code sorted in the intended order alr (essentially like a facade). we probably need to migrate the rest of the items so that stage 1 and stage 2 match then we should do a rerun agian",
+    "scope": "Migrate current consumer-facing catalogue, Stage 1 and Stage 2 code arrays to system-map display order and rerun the pipeline."
+  },
+  "migration": {
+    "semantic_change": "station code array order only",
+    "station_identity_changes": 0,
+    "exit_identity_changes": 0,
+    "coordinate_changes": 0,
+    "files": [
+      {
+        "path": "config/stations.json",
+        "reordered_code_arrays": 18,
+        "before_file_sha256": "dc9d08d22e78fae14aed6573028f0183464dbff35789d21931910eb4ab8e3640",
+        "after_file_sha256": "cabaee1113ff72df006cb0201c20ad3fce89b2229ade164e4920d90186b2c746"
+      },
+      {
+        "path": "config/stage1-reviewed-decisions.json",
+        "reordered_code_arrays": 8,
+        "before_file_sha256": "b0fceb5a20af35315600a5cd611dfcc05ba2b7b704c157242812e43818f7d1ac",
+        "after_file_sha256": "c85b204116ef6b477f9e5a7c0c439d7b6d9748f9e490b504036e84c00a9ccd6a"
+      },
+      {
+        "path": "config/stage1-approved-baseline.json",
+        "reordered_code_arrays": 18,
+        "before_file_sha256": "e7f285fcca301dac11daed8533c7d3e0626540a6ab871ba40adafd5461e2aa6c",
+        "after_file_sha256": "52d29bdc0e89b3f26474f46a9752112f5839b5c5485724dffeb76a2e015ce1ed"
+      },
+      {
+        "path": "config/stage2-reviewed-coordinates.geojson",
+        "reordered_code_arrays": 9,
+        "before_file_sha256": "585179147c222c67b5a5f9c88450c2c487386271037cb5a3555512bd5f57ceb3",
+        "after_file_sha256": "72375d86d5fc06e370e79f428409d0b2e267cdbef8163c83078632bb170af915"
+      },
+      {
+        "path": "config/stage2-trusted-onemap-baseline.geojson",
+        "reordered_code_arrays": 44,
+        "before_file_sha256": "36089c19698267d5cb027aa74a3a5284740db7fd551f30db59c511d324fc21df",
+        "after_file_sha256": "b94ea83d6d6c37729c1218bf87fe790d49c0b642a80bce8ea0286b5046ebe195"
+      },
+      {
+        "path": "config/stage2-trusted-supplemental-baseline.geojson",
+        "reordered_code_arrays": 6,
+        "before_file_sha256": "0f90775922761555899f057defd3a375d36fc8ed120939a5d26dc8107be8a614",
+        "after_file_sha256": "1fb47b72143fafb0176fc293f188a4d5909095247b00de3d4be37bb8723afb78"
+      },
+      {
+        "path": "config/stage2-approved-baseline.json",
+        "reordered_code_arrays": 18,
+        "before_file_sha256": "0f59ad44e71c3a45792e6467cab03c9b643b68fc3321c26fbbb3b36dfeb8ab25",
+        "after_file_sha256": "60b0800ce51a059d64d025907ee1c52c097acc042573019abbde5909510ac2ce"
+      }
+    ]
+  }
+}

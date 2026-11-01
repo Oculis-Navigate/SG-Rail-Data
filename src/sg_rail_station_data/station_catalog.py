@@ -12,6 +12,38 @@ from .contracts import ContractError, exact_str, fail, require_fields, string_li
 
 STATION_CODE = re.compile(r"(?:[A-Z]{1,3}[0-9]+|STC|PTC)\Z")
 
+# Use the familiar system-map sequence for presentation. Future MRT systems
+# remain ahead of LRT systems; branch prefixes share their parent line's rank.
+STATION_CODE_DISPLAY_ORDER = (
+    "NSL", "EWL", "NEL", "CCL", "DTL", "TEL", "JRL", "CRL",
+    "BPLRT", "SKLRT", "PGLRT",
+)
+_STATION_CODE_PREFIX_ORDER = (
+    "NS", "EW", "CG", "NE", "CC", "CE", "DT", "TE",
+    "JE", "JS", "JW", "CR", "CP", "BP",
+    "SE", "SW", "STC", "PE", "PW", "PTC",
+)
+_STATION_CODE_DISPLAY_RANK = {
+    prefix: rank for rank, prefix in enumerate(_STATION_CODE_PREFIX_ORDER)
+}
+
+
+def station_codes_for_display(
+    codes: list[str] | tuple[str, ...],
+    *,
+    context: str = "station codes",
+) -> list[str]:
+    """Return station codes in system-map display order without mutating storage order."""
+
+    def key(code: str) -> tuple[int, str]:
+        prefix_match = re.match(r"[A-Z]+", code)
+        prefix = prefix_match.group() if prefix_match else ""
+        if prefix not in _STATION_CODE_DISPLAY_RANK:
+            fail(context, f"unsupported station code prefix {prefix!r} in {code!r}")
+        return (_STATION_CODE_DISPLAY_RANK[prefix], code)
+
+    return sorted(codes, key=key)
+
 
 @dataclass(frozen=True, slots=True)
 class CatalogStation:
@@ -86,6 +118,12 @@ def load_station_catalog(path: str | Path, *, expected_count: int) -> StationCat
         invalid = [code for code in codes if STATION_CODE.fullmatch(code) is None]
         if invalid:
             fail(f"{context}.codes", f"invalid station codes {invalid}")
+        expected_codes = station_codes_for_display(codes, context=f"{context}.codes")
+        if list(codes) != expected_codes:
+            fail(
+                f"{context}.codes",
+                f"expected system-map display order {expected_codes}",
+            )
         repeated_codes = sorted(set(codes) & assigned_codes)
         if repeated_codes:
             fail(f"{context}.codes", f"codes assigned to multiple stations {repeated_codes}")
@@ -107,7 +145,9 @@ __all__ = [
     "CatalogStation",
     "STATION_CODE",
     "StationCatalog",
+    "STATION_CODE_DISPLAY_ORDER",
     "load_station_catalog",
+    "station_codes_for_display",
     "station_key",
     "station_slug",
 ]

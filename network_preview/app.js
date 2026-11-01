@@ -43,18 +43,19 @@
 
   const stations = Object.fromEntries(data.network.stations.map(station => [station.stop_id, station]));
   for (const station of data.network.stations) {
+    const displayCodes = station.display_codes || station.codes;
     const hasReview = station.line_ids.some(lineId => reviewKeys.has(`${station.stop_id}:${lineId}`));
     const colour = details[station.line_ids[0]].colour;
     const marker = L.circleMarker([station.coordinates[1], station.coordinates[0]], {
       radius: 4.5, color: hasReview ? "#c0392b" : "#ffffff", weight: hasReview ? 3 : 2,
       fillColor: colour, fillOpacity: 1,
     });
-    marker.bindTooltip(`${escapeHtml(station.codes.join("/"))} ${escapeHtml(station.name)}`, {
+    marker.bindTooltip(`${escapeHtml(displayCodes.join("/"))} ${escapeHtml(station.name)}`, {
       permanent: false, direction: "top", className: "station-label",
     });
     const checks = data.coverage.checks.filter(row => row.stop_id === station.stop_id);
     marker.bindPopup(
-      `<strong>${escapeHtml(station.name)}</strong> (${escapeHtml(station.codes.join(", "))})<br>` +
+      `<strong>${escapeHtml(station.name)}</strong> (${escapeHtml(displayCodes.join(", "))})<br>` +
       checks.map(row => `${escapeHtml(row.line_id)}: ${row.distance_metres.toFixed(1)} m from geometry`).join("<br>")
     );
     stationLayers.push({ lineIds: station.line_ids, layer: marker });

@@ -1576,8 +1576,8 @@
         "station_id": "bugis",
         "station_name": "Bugis",
         "station_codes": [
-          "DT14",
-          "EW12"
+          "EW12",
+          "DT14"
         ],
         "exit_id": "MRT:A",
         "label": "A",
@@ -1622,8 +1622,8 @@
         "station_id": "bugis",
         "station_name": "Bugis",
         "station_codes": [
-          "DT14",
-          "EW12"
+          "EW12",
+          "DT14"
         ],
         "exit_id": "MRT:B",
         "label": "B",
@@ -1668,8 +1668,8 @@
         "station_id": "bugis",
         "station_name": "Bugis",
         "station_codes": [
-          "DT14",
-          "EW12"
+          "EW12",
+          "DT14"
         ],
         "exit_id": "MRT:C",
         "label": "C",
@@ -1714,8 +1714,8 @@
         "station_id": "bugis",
         "station_name": "Bugis",
         "station_codes": [
-          "DT14",
-          "EW12"
+          "EW12",
+          "DT14"
         ],
         "exit_id": "MRT:D",
         "label": "D",
@@ -1760,8 +1760,8 @@
         "station_id": "chinatown",
         "station_name": "Chinatown",
         "station_codes": [
-          "DT19",
-          "NE4"
+          "NE4",
+          "DT19"
         ],
         "exit_id": "MRT:A",
         "label": "A",
@@ -1806,8 +1806,8 @@
         "station_id": "chinatown",
         "station_name": "Chinatown",
         "station_codes": [
-          "DT19",
-          "NE4"
+          "NE4",
+          "DT19"
         ],
         "exit_id": "MRT:C",
         "label": "C",
@@ -1852,8 +1852,8 @@
         "station_id": "chinatown",
         "station_name": "Chinatown",
         "station_codes": [
-          "DT19",
-          "NE4"
+          "NE4",
+          "DT19"
         ],
         "exit_id": "MRT:D",
         "label": "D",
@@ -1898,8 +1898,8 @@
         "station_id": "chinatown",
         "station_name": "Chinatown",
         "station_codes": [
-          "DT19",
-          "NE4"
+          "NE4",
+          "DT19"
         ],
         "exit_id": "MRT:E",
         "label": "E",
@@ -1944,8 +1944,8 @@
         "station_id": "chinatown",
         "station_name": "Chinatown",
         "station_codes": [
-          "DT19",
-          "NE4"
+          "NE4",
+          "DT19"
         ],
         "exit_id": "MRT:F",
         "label": "F",
@@ -1990,8 +1990,8 @@
         "station_id": "chinatown",
         "station_name": "Chinatown",
         "station_codes": [
-          "DT19",
-          "NE4"
+          "NE4",
+          "DT19"
         ],
         "exit_id": "MRT:G",
         "label": "G",
@@ -2036,8 +2036,8 @@
         "station_id": "chinatown",
         "station_name": "Chinatown",
         "station_codes": [
-          "DT19",
-          "NE4"
+          "NE4",
+          "DT19"
         ],
         "exit_id": "MRT:H",
         "label": "H",
@@ -2217,8 +2217,8 @@
         "station_id": "city-hall",
         "station_name": "City Hall",
         "station_codes": [
-          "EW13",
-          "NS25"
+          "NS25",
+          "EW13"
         ],
         "exit_id": "MRT:A",
         "label": "A",
@@ -2263,8 +2263,8 @@
         "station_id": "city-hall",
         "station_name": "City Hall",
         "station_codes": [
-          "EW13",
-          "NS25"
+          "NS25",
+          "EW13"
         ],
         "exit_id": "MRT:B",
         "label": "B",
@@ -2309,8 +2309,8 @@
         "station_id": "city-hall",
         "station_name": "City Hall",
         "station_codes": [
-          "EW13",
-          "NS25"
+          "NS25",
+          "EW13"
         ],
         "exit_id": "MRT:C",
         "label": "C",
@@ -2355,8 +2355,8 @@
         "station_id": "city-hall",
         "station_name": "City Hall",
         "station_codes": [
-          "EW13",
-          "NS25"
+          "NS25",
+          "EW13"
         ],
         "exit_id": "MRT:D",
         "label": "D",
@@ -3031,9 +3031,9 @@
         "station_id": "dhoby-ghaut",
         "station_name": "Dhoby Ghaut",
         "station_codes": [
-          "CC1",
+          "NS24",
           "NE6",
-          "NS24"
+          "CC1"
         ],
         "exit_id": "MRT:A",
         "label": "A",
@@ -3078,9 +3078,9 @@
         "station_id": "dhoby-ghaut",
         "station_name": "Dhoby Ghaut",
         "station_codes": [
-          "CC1",
+          "NS24",
           "NE6",
-          "NS24"
+          "CC1"
         ],
         "exit_id": "MRT:B",
         "label": "B",
@@ -3125,9 +3125,9 @@
         "station_id": "dhoby-ghaut",
         "station_name": "Dhoby Ghaut",
         "station_codes": [
-          "CC1",
+          "NS24",
           "NE6",
-          "NS24"
+          "CC1"
         ],
         "exit_id": "MRT:C",
         "label": "C",
@@ -3172,9 +3172,9 @@
         "station_id": "dhoby-ghaut",
         "station_name": "Dhoby Ghaut",
         "station_codes": [
-          "CC1",
+          "NS24",
           "NE6",
-          "NS24"
+          "CC1"
         ],
         "exit_id": "MRT:D",
         "label": "D",
@@ -3219,9 +3219,9 @@
         "station_id": "dhoby-ghaut",
         "station_name": "Dhoby Ghaut",
         "station_codes": [
-          "CC1",
+          "NS24",
           "NE6",
-          "NS24"
+          "CC1"
         ],
         "exit_id": "MRT:E",
         "label": "E",
@@ -3266,9 +3266,9 @@
         "station_id": "dhoby-ghaut",
         "station_name": "Dhoby Ghaut",
         "station_codes": [
-          "CC1",
+          "NS24",
           "NE6",
-          "NS24"
+          "CC1"
         ],
         "exit_id": "MRT:F",
         "label": "F",
@@ -3313,9 +3313,9 @@
         "station_id": "dhoby-ghaut",
         "station_name": "Dhoby Ghaut",
         "station_codes": [
-          "CC1",
+          "NS24",
           "NE6",
-          "NS24"
+          "CC1"
         ],
         "exit_id": "MRT:G",
         "label": "G",
@@ -4761,8 +4761,8 @@
         "station_id": "harbourfront",
         "station_name": "HarbourFront",
         "station_codes": [
-          "CC29",
-          "NE1"
+          "NE1",
+          "CC29"
         ],
         "exit_id": "MRT:A",
         "label": "A",
@@ -4807,8 +4807,8 @@
         "station_id": "harbourfront",
         "station_name": "HarbourFront",
         "station_codes": [
-          "CC29",
-          "NE1"
+          "NE1",
+          "CC29"
         ],
         "exit_id": "MRT:B",
         "label": "B",
@@ -4853,8 +4853,8 @@
         "station_id": "harbourfront",
         "station_name": "HarbourFront",
         "station_codes": [
-          "CC29",
-          "NE1"
+          "NE1",
+          "CC29"
         ],
         "exit_id": "MRT:C",
         "label": "C",
@@ -4899,8 +4899,8 @@
         "station_id": "harbourfront",
         "station_name": "HarbourFront",
         "station_codes": [
-          "CC29",
-          "NE1"
+          "NE1",
+          "CC29"
         ],
         "exit_id": "MRT:D",
         "label": "D",
@@ -4945,8 +4945,8 @@
         "station_id": "harbourfront",
         "station_name": "HarbourFront",
         "station_codes": [
-          "CC29",
-          "NE1"
+          "NE1",
+          "CC29"
         ],
         "exit_id": "MRT:E",
         "label": "E",
@@ -8738,8 +8738,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:A",
         "label": "A",
@@ -8784,8 +8784,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:B",
         "label": "B",
@@ -8830,8 +8830,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:C",
         "label": "C",
@@ -8876,8 +8876,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:D",
         "label": "D",
@@ -8922,8 +8922,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:E",
         "label": "E",
@@ -8968,8 +8968,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:F",
         "label": "F",
@@ -9014,8 +9014,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:G",
         "label": "G",
@@ -9060,8 +9060,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:H",
         "label": "H",
@@ -9106,8 +9106,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:I",
         "label": "I",
@@ -9152,8 +9152,8 @@
         "station_id": "raffles-place",
         "station_name": "Raffles Place",
         "station_codes": [
-          "EW14",
-          "NS26"
+          "NS26",
+          "EW14"
         ],
         "exit_id": "MRT:J",
         "label": "J",
@@ -10061,8 +10061,8 @@
         "station_id": "tampines",
         "station_name": "Tampines",
         "station_codes": [
-          "DT32",
-          "EW2"
+          "EW2",
+          "DT32"
         ],
         "exit_id": "MRT:A",
         "label": "A",
@@ -10112,8 +10112,8 @@
         "station_id": "tampines",
         "station_name": "Tampines",
         "station_codes": [
-          "DT32",
-          "EW2"
+          "EW2",
+          "DT32"
         ],
         "exit_id": "MRT:B",
         "label": "B",
@@ -10163,8 +10163,8 @@
         "station_id": "tampines",
         "station_name": "Tampines",
         "station_codes": [
-          "DT32",
-          "EW2"
+          "EW2",
+          "DT32"
         ],
         "exit_id": "MRT:C",
         "label": "C",
@@ -10214,8 +10214,8 @@
         "station_id": "tampines",
         "station_name": "Tampines",
         "station_codes": [
-          "DT32",
-          "EW2"
+          "EW2",
+          "DT32"
         ],
         "exit_id": "MRT:D",
         "label": "D",
@@ -10265,8 +10265,8 @@
         "station_id": "tampines",
         "station_name": "Tampines",
         "station_codes": [
-          "DT32",
-          "EW2"
+          "EW2",
+          "DT32"
         ],
         "exit_id": "MRT:E",
         "label": "E",
@@ -10316,8 +10316,8 @@
         "station_id": "tampines",
         "station_name": "Tampines",
         "station_codes": [
-          "DT32",
-          "EW2"
+          "EW2",
+          "DT32"
         ],
         "exit_id": "MRT:F",
         "label": "F",
@@ -10367,8 +10367,8 @@
         "station_id": "tampines",
         "station_name": "Tampines",
         "station_codes": [
-          "DT32",
-          "EW2"
+          "EW2",
+          "DT32"
         ],
         "exit_id": "MRT:G",
         "label": "G",
