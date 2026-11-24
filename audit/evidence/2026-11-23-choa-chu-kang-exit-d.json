@@ -1,0 +1,83 @@
+{
+  "station": "Choa Chu Kang",
+  "locator": "Entrances/Exits: MRT Exit D; Layout: BPLRT platforms 1/3 and 2/4",
+  "observations": [
+    {
+      "run_id": "20261005T072816522416Z-3952f61269c2",
+      "revision_url": "https://sgwiki.miraheze.org/w/index.php?oldid=37616",
+      "source_sha256": "33a0bdc49d48fd8b54c8ad541f962d87c81a6cafed4b9dcebe9baaa355101f10",
+      "exit_status": {
+        "labels": [
+          "D"
+        ],
+        "scopes": [
+          "MRT"
+        ],
+        "destination_verbatim": "",
+        "status": "closed",
+        "alternative_exits": [
+          "A",
+          "C",
+          "E"
+        ],
+        "status_verbatim": "(Closed – use Exit A/C/E)",
+        "status_markup": "small.d-block.mx-auto.fw-normal.tx-center"
+      },
+      "platform_findings": [
+        {
+          "section": "layout",
+          "reason": "combined_platform_label",
+          "row": 2,
+          "floor": "L2",
+          "caption": "BPLRT Platform",
+          "label": "1/3"
+        },
+        {
+          "section": "layout",
+          "reason": "combined_platform_label",
+          "row": 2,
+          "floor": "L2",
+          "caption": "BPLRT Platform",
+          "label": "2/4"
+        }
+      ]
+    },
+    {
+      "run_id": "20261122T150409Z-live-rerun",
+      "revision_url": "https://sgwiki.miraheze.org/w/index.php?oldid=39978",
+      "source_sha256": "2e2a9ceceb77367c9c74e2e8a2be5899032f3b77be50947b2df606e6ec3be490",
+      "exit_status": {
+        "labels": [
+          "D"
+        ],
+        "scopes": [
+          "MRT"
+        ],
+        "destination_verbatim": "Choa Chu Kang Loop",
+        "status": "closed",
+        "alternative_exits": [],
+        "status_verbatim": "(Closed)",
+        "status_markup": "small.d-block.mx-auto.fw-normal.tx-center"
+      },
+      "platform_findings": [
+        {
+          "section": "layout",
+          "reason": "combined_platform_label",
+          "row": 2,
+          "floor": "L2",
+          "caption": "BPLRT Platform",
+          "label": "1/3"
+        },
+        {
+          "section": "layout",
+          "reason": "combined_platform_label",
+          "row": 2,
+          "floor": "L2",
+          "caption": "BPLRT Platform",
+          "label": "2/4"
+        }
+      ]
+    }
+  ],
+  "authorization": "looks good to close and remove the routing advice"
+}

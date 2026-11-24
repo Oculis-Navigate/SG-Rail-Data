@@ -1,0 +1,6 @@
+{
+  "authorization": ["yyep approve the new reviewed baseline", "yes approve. stage 2 now"],
+  "scope": "Keep Cantonment, Keppel and Prince Edward Road in the regular catalog with no exit overrides. Promote the reviewed Stage 1 dataset after clearing only the catalog findings and verifying other station data against the readiness run. Proceed to Stage 2, without approving coordinates or a release.",
+  "reviewed_run": "20261123T125623Z-stage1-readiness",
+  "source_run": "20261123T102639Z-pl-woodlands-live"
+}

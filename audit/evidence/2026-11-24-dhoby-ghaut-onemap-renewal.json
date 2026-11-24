@@ -1,0 +1,37 @@
+{
+  "authorization": "sure you know what to do",
+  "scope": "Renew only Dhoby Ghaut A\u2013G OneMap revision guards, keep their approved coordinates and replay the same inputs.",
+  "findings_run": "20261124T020417Z-dhoby-replay",
+  "source_review": "audit/evidence/2026-11-24-dhoby-ghaut-renewal.json",
+  "source_revision_url": "https://sgwiki.miraheze.org/w/index.php?oldid=41955",
+  "points_lon_lat": {
+    "MRT:A": [
+      103.8467792535331,
+      1.298452146580756
+    ],
+    "MRT:B": [
+      103.8452256250463,
+      1.299064430235275
+    ],
+    "MRT:C": [
+      103.8447478574997,
+      1.299649242449701
+    ],
+    "MRT:D": [
+      103.8450301319431,
+      1.299930665759226
+    ],
+    "MRT:E": [
+      103.8453722940039,
+      1.299748470750606
+    ],
+    "MRT:F": [
+      103.8458423177257,
+      1.299634891709077
+    ],
+    "MRT:G": [
+      103.845889867433,
+      1.299936384813703
+    ]
+  }
+}

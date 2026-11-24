@@ -1,0 +1,9 @@
+{
+  "publication_allowed": true,
+  "scope": "Physical passenger track geometry only; no timetable or routing claims.",
+  "service_date": "2026-11-24",
+  "decision_id": "D-052",
+  "baseline_sha256": "e95e79d33d1aaf3a20efdaa25a9cbff2c18fd6c48b3bc6ec7a1aeb199e32ffaf",
+  "inventory_sha256": "23548d544333381cdb312bafcdb852780fa1a57902ee9d725c4faf7704a69332",
+  "asset_sha256": "ec5e76be9f92402eb3d1f078d47e79778d227e86db64453802eff3683f8a7c4b"
+}

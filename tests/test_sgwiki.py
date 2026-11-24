@@ -69,6 +69,22 @@ class SgWikiTests(unittest.TestCase):
         self.assertEqual(result["bus_connections"]["rows"][0]["bus_stop_code"], "99999")
         self.assertEqual([row["floor"] for row in result["layout"]["floors"]], ["L1", "B1"])
 
+    def test_exit_d_closed_without_alternative_preserves_identity(self):
+        station = {"name": "Ang Mo Kio", "codes": ["NS16", "CR11"]}
+        payload = json.loads(api_response())
+        markup = '<small class="d-block mx-auto fw-normal tx-center">(Closed)</small>'
+        html = station_html().replace('>A<', '>D<').replace('Test Landmark', 'Ang Mo Kio Town Garden' + markup)
+        payload['parse'].update(title='Ang Mo Kio station', pageid=111, revid=39808, text=html)
+        result, _ = parse_response(json.dumps(payload).encode(), station, source='sgwiki')
+        self.assertEqual(result['exit_statuses'], [{
+            'labels': ['D'], 'scopes': ['MRT'], 'status': 'closed', 'alternative_exits': [],
+            'destination_verbatim': 'Ang Mo Kio Town Garden', 'status_verbatim': '(Closed)',
+            'status_markup': 'small.d-block.mx-auto.fw-normal.tx-center',
+        }])
+        payload['parse']['text'] = html.replace('(Closed)', '(Possibly closed)')
+        with self.assertRaisesRegex(SgWikiSourceError, 'Unknown SgWiki exit annotation'):
+            parse_response(json.dumps(payload).encode(), station, source='sgwiki')
+
     def test_exact_daily_exit_hours_become_structured_data(self):
         payload = json.loads(api_response())
         payload["parse"]["text"] = payload["parse"]["text"].replace(

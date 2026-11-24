@@ -1,0 +1,41 @@
+{
+  "change_type": "revision_revalidation",
+  "evidence": [
+    {
+      "description": "Comparison of retained station pages and owner authorization",
+      "path": "audit/evidence/2026-11-23-dhoby-ghaut-revalidation.json",
+      "sha256": "74b9bd94656ce79d5348325b64252bb2386627ef1c6822f652f3b4490e8c1f26"
+    }
+  ],
+  "id": "D-032",
+  "kind": "audit_decision",
+  "limitations": [
+    "The two destinations are SgWiki source evidence, not independent doorway surveys."
+  ],
+  "reason": "Renew the source guard for the unchanged D-026 interpretation; do not change exit identities, destinations, or the D-029 code order.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Dhoby Ghaut page 119: 37293 to 41817"
+  ],
+  "targets": [
+    {
+      "after": 41817,
+      "after_sha256": "edc331395224322891bc86d2bfba397ac0de77a26fb6a282887f657da19f3475",
+      "before": 37293,
+      "before_sha256": "81d22ebb2bf09248326871392774d2f6590666fda2c5997a57662c55b924cd5b",
+      "identity": "Dhoby Ghaut:review_acceptance:revision_id",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/4/revision_id"
+    },
+    {
+      "after": "Human-reviewed decision: accept the NEL scope cell's trailing rowspan, pinned to revision 41817",
+      "after_sha256": "5304a28d3db95bfb80c5b5dcdc136613788dd949282c07cd3551854afb53fcb4",
+      "before": "Human-reviewed decision: accept the NEL scope cell's trailing rowspan, pinned to revision 37293",
+      "before_sha256": "48d6f925be545d91b1c9b26a719e47e50b9836384cffd24269ca53f18107af48",
+      "identity": "Dhoby Ghaut:review_acceptance:evidence/4",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/4/evidence/4"
+    }
+  ],
+  "title": "Renew the Dhoby Ghaut review at revision 41817"
+}

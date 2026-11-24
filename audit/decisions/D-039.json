@@ -1,0 +1,50 @@
+{
+  "change_type": "catalog_approval",
+  "evidence": [
+    {
+      "description": "Direct owner approvals and reviewed replay scope",
+      "path": "audit/evidence/2026-11-23-stage1-promotion.json",
+      "sha256": "60f813056d7a6995f71ba97310337d33e43ff2cbecdde6b55504b54645871718"
+    }
+  ],
+  "id": "D-039",
+  "kind": "audit_decision",
+  "limitations": [
+    "No release or Stage 2 coordinate approval."
+  ],
+  "reason": "Keep Cantonment, Keppel and Prince Edward Road in the regular catalog with no exit overrides. Promote the reviewed Stage 1 dataset after clearing only the catalog findings and verifying other station data against the readiness run. Proceed to Stage 2, without approving coordinates or a release.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Retained station sources: 20261123T102639Z-pl-woodlands-live"
+  ],
+  "targets": [
+    {
+      "after": "v1_baseline",
+      "after_sha256": "f75e6f8d6b6418508963835054158272b741a3cdcf71dfc9002c3a82a776780a",
+      "before": "operator_addition_requires_review",
+      "before_sha256": "a7f2ae3663c61f50b7b0f7661843d1cc7cc24d6e699576c0ef3124c28933cfac",
+      "identity": "Cantonment",
+      "path": "config/stations.json",
+      "pointer": "/stations/29/catalog_status"
+    },
+    {
+      "after": "v1_baseline",
+      "after_sha256": "f75e6f8d6b6418508963835054158272b741a3cdcf71dfc9002c3a82a776780a",
+      "before": "operator_addition_requires_review",
+      "before_sha256": "a7f2ae3663c61f50b7b0f7661843d1cc7cc24d6e699576c0ef3124c28933cfac",
+      "identity": "Keppel",
+      "path": "config/stations.json",
+      "pointer": "/stations/80/catalog_status"
+    },
+    {
+      "after": "v1_baseline",
+      "after_sha256": "f75e6f8d6b6418508963835054158272b741a3cdcf71dfc9002c3a82a776780a",
+      "before": "operator_addition_requires_review",
+      "before_sha256": "a7f2ae3663c61f50b7b0f7661843d1cc7cc24d6e699576c0ef3124c28933cfac",
+      "identity": "Prince Edward Road",
+      "path": "config/stations.json",
+      "pointer": "/stations/123/catalog_status"
+    }
+  ],
+  "title": "Approve three regular Circle Line catalog stations"
+}

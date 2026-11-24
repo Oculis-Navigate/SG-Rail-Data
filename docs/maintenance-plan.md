@@ -1,6 +1,6 @@
 # Pipeline maintenance and decision audit plan
 
-Status: proposed design, 2026-10-05. An [initial retrospective sign-off
+Historical design, 2026-10-05. For current local collection, hooks, offline PR validation and administrator promotion, follow [Dataset releases](dataset-releases.md); it supersedes the workflow and release-storage proposals below. An [initial retrospective sign-off
 inventory](../audit/README.md) and `audit validate` command now exist. The general
 review, approval, commit enforcement and publishing workflows below remain
 planned. Existing commands are documented in the README.
@@ -283,8 +283,7 @@ The preview is deliberately outside the current Stage 1/2 run and quarterly
 workflow. D-028 approves its initial geometry for future comparison and the
 builder reports changes against that baseline. It does not approve a production
 Stage 3 release. Do not copy preview GeoJSON into a release or treat a successful
-proximity check as release approval. The current check
-only measures each GTFS station's distance from same-line OSM ways. Selecting an
+proximity check as release approval. `coverage.json` measures same-line station proximity. D-047 adds a separate `continuity.json` test of physical paths along passenger relation member ways using matching OSM node IDs. Reverse-only and skip-stop matches are identified rather than treated as proof of directional service. Selecting an
 OSM relation by line identity can still include an extra branch or omit a valid
 service segment.
 

@@ -148,7 +148,28 @@ class Stage1ReviewedDecisionTests(unittest.TestCase):
             ["45009", "44029", "44021", "44251", "44031", "44859"],
         )
 
+    def use_historical_overrides(self):
+        package = json.loads((REPO_ROOT / 'audit/initial-package.json').read_text())
+        digest = next(item['sha256'] for item in package['files']
+                      if item['path'] == 'config/stage1-reviewed-decisions.json')
+        self.decisions = load_reviewed_decisions(REPO_ROOT / 'audit/bootstrap' / digest)
+
+    def test_retired_overrides_use_the_native_exit_inventories(self):
+        evidence = json.loads((REPO_ROOT / 'audit/evidence/2026-11-22-exit-inventory-retirements.json').read_text())
+        for row in evidence['stations']:
+            with self.subTest(station=row['station']):
+                source = dict(cantonment_station(), station=row['station'], page_id=row['page_id'],
+                              codes=[{'Cantonment':'CC31','Keppel':'CC30','Prince Edward Road':'CC32'}[row['station']]],
+                              revision_id=row['revision_id'], exits=row['source_exits'], bus_links=[],
+                              source_inventory_status='complete', source_inventory_evidence_kind='sgwiki_exit_table')
+                result = self.build(source)['stations'][0]
+                self.assertEqual(result['exit_inventory_status'], 'complete')
+                self.assertEqual(result['contracts_applied'], [])
+                self.assertEqual([item['id'] for item in result['exits']],
+                                 ['MRT:' + item['label'] for item in row['source_exits']])
+
     def test_partial_inventory_override_adds_only_reviewed_exits(self):
+        self.use_historical_overrides()
         station = self.build(cantonment_station())["stations"][0]
         self.assertEqual(
             [item["id"] for item in station["exits"]],
@@ -159,6 +180,7 @@ class Stage1ReviewedDecisionTests(unittest.TestCase):
         self.assertEqual(station["contracts_applied"][0]["kind"], "exit_inventory_override")
 
     def test_partial_inventory_override_fails_when_source_inventory_changes(self):
+        self.use_historical_overrides()
         source = cantonment_station()
         source["exits"].append({"label": "2", "scopes": ["MRT"]})
         with self.assertRaisesRegex(ContractError, "partial exit inventory changed"):

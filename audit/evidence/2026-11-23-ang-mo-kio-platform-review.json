@@ -1,0 +1,13 @@
+{
+  "authorization": "yep accepted. just visited amk a few days ago and can confirm.",
+  "source_url": "https://sgwiki.miraheze.org/index.php?oldid=41909",
+  "raw_sha256": "2dfc16e3a07b147ac19d01232cc21775e4063e3c6486ad4bbf34f831474eeac0",
+  "locator": "Layout, L2 NSL Platform",
+  "platform": {
+    "heading_verbatim": "C/D Platform No train service at this platform",
+    "label": "C/D",
+    "line_or_area": "NSL Platform",
+    "line_or_area_source": "caption"
+  },
+  "scope": "Accept the grouped C/D finding for Ang Mo Kio at revision 41909; no inference of permanent closure. Keep the existing MRT:D exit closure review."
+}

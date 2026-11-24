@@ -1,6 +1,8 @@
 "use strict";
 
 (() => {
+  initStageSwitch(3);
+  document.getElementById('stageSwitch').hidden = !['/stage3/', '/stage3/index.html'].includes(location.pathname);
   const data = window.RAIL_PREVIEW_DATA;
   if (!data) throw new Error("Preview data is unavailable.");
 
@@ -63,7 +65,8 @@
 
   const seenPatterns = new Set();
   for (const pattern of data.network.patterns) {
-    const coordinates = pattern.station_stop_ids.map(id => stations[id]).filter(Boolean).map(s => [s.coordinates[1], s.coordinates[0]]);
+    const pathIds = data.display_paths?.[pattern.id] ?? pattern.station_stop_ids;
+    const coordinates = pathIds.map(id => stations[id]).filter(Boolean).map(s => [s.coordinates[1], s.coordinates[0]]);
     if (coordinates.length < 2) continue;
     const signature = `${pattern.line_id}:${coordinates.map(c => c.join(",")).join(";")}`;
     if (seenPatterns.has(signature)) continue;
@@ -114,8 +117,11 @@
     ["Active lines", data.manifest.line_count],
     ["GTFS stations", data.manifest.station_count],
     ["OSM route relations", data.manifest.osm_relation_count],
+    ["OSM source", data.manifest.osm_source_mode],
     ["OSM rail ways", data.manifest.geometry_feature_count],
     ["Geometry changes", data.manifest.geometry_change_count],
+    ["Physical pairs checked", data.manifest.physical_pair_count],
+    ["Physical gaps to review", data.manifest.physical_pair_review_count],
     ["Proximity reviews", data.manifest.coverage_review_count],
     ["Maximum distance", `${data.coverage.maximum_distance_metres.toFixed(1)} m`],
   ];

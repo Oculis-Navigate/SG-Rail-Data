@@ -218,9 +218,9 @@ def cell_labels(cell, *, source=None):
                 status_verbatim = clean(node.get_text(" ", strip=True))
                 match = re.fullmatch(r"\(Closed – use Exit (" + LABEL + r"(?:/" + LABEL + r")*)\)",
                                      status_verbatim)
-                require(match is not None,
+                require(match is not None or status_verbatim == "(Closed)",
                         f"Unknown SgWiki exit annotation: {status_verbatim!r}")
-                alternatives = match[1].split("/")
+                alternatives = match[1].split("/") if match else []
                 require(len(alternatives) == len(set(alternatives))
                         and not set(alternatives).intersection(labels),
                         "Invalid SgWiki alternative exits")

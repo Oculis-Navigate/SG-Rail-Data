@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+review=$(git diff --cached --name-only -- 'changesets/*/review.json')
+[ -n "$review" ] || exit 0
+for key in 'Stations added' 'Stations removed' 'Exits added' 'Exits removed' 'Other data changes' 'Network geometry changes' 'Interventions added' 'Interventions changed or revalidated' 'Interventions retired' Sign-offs Evidence Run; do
+  grep -Eq "^$key: [^[:space:]]" "$1" || { echo "Missing $key in dataset commit (docs/change-log-format.md)" >&2; exit 1; }
+done
+run=$(uv run python -c 'import json,sys;print(json.load(open(sys.argv[1]))["run_id"])' "${review%/*}/candidate.json")
+grep -Fxq "Run: $run" "$1" || { echo "Use Run: $run" >&2; exit 1; }

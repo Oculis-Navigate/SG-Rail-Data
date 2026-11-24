@@ -1,0 +1,50 @@
+{
+  "change_type": "semantic_clarification",
+  "evidence": [
+    {
+      "description": "Owner authorization and Tanjong Pagar closure evidence",
+      "path": "audit/evidence/2026-11-23-closure-display-policy.json",
+      "sha256": "40ab6fedaa8f5c8f1e5a6015d08e4e70f741ef9784f4dc7280386c1de377d19c"
+    }
+  ],
+  "id": "D-035",
+  "kind": "audit_decision",
+  "limitations": [
+    "An empty alternative_exits array means no recommendation is provided. It does not establish reachability, accessibility or distance."
+  ],
+  "reason": "For all source-reported closed exits, expose the closure, not a recommended diversion. Keep source-reported alternatives as evidence only.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Tanjong Pagar page 215, revision 41616"
+  ],
+  "targets": [
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "Tanjong Pagar:review_acceptance:revision_id",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/11/revision_id"
+    },
+    {
+      "after": "Retain the source-reported closure of MRT Exit E. Alternative-exit wording is source evidence only, not passenger routing advice.",
+      "after_sha256": "24b1d5e6ca36da2ab45b4bb2f91da5ebd144ca29807d04aa319555b8ce44e891",
+      "before": "Human-reviewed decision: retain the exact source-reported Exit E closure and alternative Exit H",
+      "before_sha256": "bd0279b89002a561bae8ac73c003034d65aa64bc543010a20a9ae2f71eb2d105",
+      "identity": "Tanjong Pagar:review_acceptance:evidence/0",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/11/evidence/0"
+    },
+    {
+      "after": "Pinned to SgWiki Tanjong Pagar station revision 41616",
+      "after_sha256": "016e8135e40fba890b5d600471ede608aff7a26bf365ab448f3b0e811bf37db8",
+      "before": "Pinned to SgWiki Tanjong Pagar station revision 31544",
+      "before_sha256": "93ff42d66e86aa7065ae3db1114a68f6c080e10df03f639ee66970f394c688cf",
+      "identity": "Tanjong Pagar:review_acceptance:evidence/1",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/11/evidence/1"
+    }
+  ],
+  "title": "Keep exit closures without passenger-facing diversions"
+}

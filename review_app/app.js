@@ -843,7 +843,10 @@ async function fetchState() {
   let data = {};
   try { data = await response.json(); } catch (_) { /* error below */ }
   if (!response.ok) throw new Error(data.error || `Review API failed with HTTP ${response.status}.`);
-  return validateResponse(data);
+  const validated = validateResponse(data);
+  const control = document.getElementById('stageSwitch');
+  control.hidden = !validated.network_preview;
+  return validated;
 }
 
 async function reloadState() {
@@ -858,6 +861,7 @@ async function reloadState() {
 
 async function load() {
   initializeMap();
+  initStageSwitch(2);
   try {
     state.response = await fetchState();
     state.bundle = state.response.bundle;

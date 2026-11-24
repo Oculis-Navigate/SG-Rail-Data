@@ -1,0 +1,676 @@
+# Dataset 2026.11.24.1
+
+Initial versioned candidate: 184 catalog stations, 614 scoped exits and 283 passenger track ways. No stations or exits added or removed relative to the base commit. Use source-reported closures without unverified diversion advice. Fourteen exit positions differ, including the owner-accepted City Hall A–D positions that coincide with Esplanade. Track data describes physical geometry, not directional service.
+
+## Changes
+- Stage 1 stations/admiralty: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS10. Station evidence refreshed, page 98, revision 33867 → 39800. S-062 S-085
+- Stage 1 stations/aljunied: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW9. S-062 S-085
+- Stage 1 stations/ang-mo-kio/MRT:D: alternative_exits, source_rows, status_notes — alternative_exits: ["B"] → []. Retain revised verbatim exit row evidence; not an exit identity change. status_notes: ["(Closed – use Exit B)"] → ["(Closed)"]. S-062 S-085 S-052
+- Stage 1 stations/ang-mo-kio: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS16. Station evidence refreshed, page 111, revision 33858 → 41909. S-062 S-085
+- Stage 1 stations/bakau: source — Station evidence refreshed, page 505, revision 24724 → 40514. S-062 S-085
+- Stage 1 stations/bartley: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC12. Station evidence refreshed, page 280, revision 34524 → 41825. S-062 S-085
+- Stage 1 stations/bayfront/MRT:C: source_rows — Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/bayfront/MRT:D: source_rows — Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/bayfront/MRT:E: source_rows — Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/bayfront: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC34. Station evidence refreshed, page 274, revision 36652 → 41890. S-062 S-085
+- Stage 1 stations/bayshore: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE29. S-062 S-085
+- Stage 1 stations/beauty-world: bus_links, gtfs_matches — bus_links: refreshed stop evidence for 42159. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT5. S-062 S-085
+- Stage 1 stations/bedok: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW5. S-062 S-085
+- Stage 1 stations/bedok-north: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT29. S-062 S-085
+- Stage 1 stations/bedok-reservoir: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT30. S-062 S-085
+- Stage 1 stations/bencoolen: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT21. S-062 S-085
+- Stage 1 stations/bendemeer: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT23. S-062 S-085
+- Stage 1 stations/bishan: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC15. Recorded 2 supplementary layout tables (previously 0). Station evidence refreshed, page 113, revision 33984 → 41911. S-062 S-085
+- Stage 1 stations/boon-keng: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE9. S-062 S-085
+- Stage 1 stations/boon-lay: bus_links, gtfs_matches — bus_links: refreshed stop evidence for 22499. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW27. S-062 S-085
+- Stage 1 stations/botanic-gardens: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC19. Station evidence refreshed, page 275, revision 33981 → 41828. S-062 S-085
+- Stage 1 stations/braddell/MRT:A: destinations, source_rows — destinations: [] → ["Blk 109 (Lor 1 Toa Payoh)"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/braddell/MRT:B: destinations, source_rows — destinations: [] → ["Blk 116 (Lor 1 Toa Payoh)"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/braddell/MRT:C: destinations, source_rows — destinations: [] → ["Braddell House"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/braddell: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS18. Station evidence refreshed, page 112, revision 36654 → 39807. S-062 S-085
+- Stage 1 stations/bras-basah/MRT:A: source_rows — Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/bras-basah/MRT:E: source_rows — Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/bras-basah: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC2. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 273, revision 33458 → 41880. S-062 S-085
+- Stage 1 stations/bright-hill: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE7. S-062 S-085
+- Stage 1 stations/buangkok/MRT:A: destinations, source_rows — destinations: [] → ["Sengkang Central"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/buangkok/MRT:B: destinations, source_rows — destinations: [] → ["Sengkang Central"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/buangkok: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 67609. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE15. Station evidence refreshed, page 238, revision 36670 → 39017. S-062 S-085
+- Stage 1 stations/bugis: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT14. S-062 S-085
+- Stage 1 stations/bukit-batok: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS2. Station evidence refreshed, page 107, revision 36243 → 39794. S-062 S-085
+- Stage 1 stations/bukit-gombak: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 43571, 43579. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS3. Station evidence refreshed, page 108, revision 37671 → 39975. S-062 S-085
+- Stage 1 stations/bukit-panjang: excluded_bus_links, gtfs_matches — excluded_bus_links: refreshed stop evidence for 44909. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): BP6, DT1. S-062 S-085
+- Stage 1 stations/buona-vista: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC22. Station evidence refreshed, page 172, revision 33843 → 41833. S-062 S-085
+- Stage 1 stations/caldecott: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC17. Station evidence refreshed, page 300, revision 33982 → 41024. S-062 S-085
+- Stage 1 stations/canberra: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS12. Station evidence refreshed, page 96, revision 35870 → 39803. S-062 S-085
+- Stage 1 stations/cantonment/MRT:1: destinations, inventory_evidence, source_rows — destinations: [] → ["Singapore Art Museum"]. inventory_evidence: "complete_reviewed_override" → "complete". Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/cantonment/MRT:2: destinations, inventory_evidence, source_rows — destinations: [] → ["Blk 108 (Spottiswoode Park Road)"]. inventory_evidence: "complete_reviewed_override" → "complete". Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/cantonment/MRT:3: destinations, inventory_evidence, source_rows — destinations: [] → ["Spottiswoode Park Road"]. inventory_evidence: "complete_reviewed_override" → "complete". Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/cantonment/MRT:4: destinations, inventory_evidence, source_rows — destinations: [] → ["Former Tanjong Pagar Railway Station"]. inventory_evidence: "complete_reviewed_override" → "complete". Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/cantonment: bus_links, catalog_status, exit_inventory_status, gtfs_matches, layout_supplements, source — bus_links: refreshed stop evidence for 14061, 14069. catalog_status: "operator_addition_requires_review" → "v1_baseline". exit_inventory_status: "complete_reviewed_override" → "complete". Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC31. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 278, revision 35867 → 41849. S-062 S-085 S-060
+- Stage 1 stations/cashew: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT2. S-062 S-085
+- Stage 1 stations/changi-airport: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CG2. S-062 S-085
+- Stage 1 stations/chinatown: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT19. S-062 S-085
+- Stage 1 stations/chinese-garden: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW25. S-062 S-085
+- Stage 1 stations/choa-chu-kang/MRT:A: destinations, source_rows — destinations: [] → ["Choa Chu Kang Interchange"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/choa-chu-kang/MRT:B: destinations, source_rows — destinations: [] → ["Choa Chu Kang Avenue 4"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/choa-chu-kang/MRT:C: destinations, source_rows — destinations: [] → ["Choa Chu Kang Loop"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/choa-chu-kang/MRT:D: alternative_exits, destinations, source_rows, status_notes — alternative_exits: ["A","C","E"] → []. destinations: [] → ["Choa Chu Kang Loop"]. Retain revised verbatim exit row evidence; not an exit identity change. status_notes: ["(Closed – use Exit A/C/E)"] → ["(Closed)"]. S-062 S-085 S-052
+- Stage 1 stations/choa-chu-kang/SHARED:E: destinations, source_rows — destinations: [] → ["Lot 1 Shoppers’ Mall"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/choa-chu-kang: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 44531. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): BP1, NS4. Station evidence refreshed, page 109, revision 37616 → 39978. S-062 S-085
+- Stage 1 stations/city-hall: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW13. Station evidence refreshed, page 120, revision 33852 → 41804. S-062 S-085
+- Stage 1 stations/clarke-quay: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE5. S-062 S-085
+- Stage 1 stations/clementi: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW23. S-062 S-085
+- Stage 1 stations/commonwealth: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW20. S-062 S-085
+- Stage 1 stations/compassvale: bus_links, source — bus_links: refreshed stop evidence for 67251, 67259. Station evidence refreshed, page 506, revision 21165 → 40512. S-062 S-085
+- Stage 1 stations/cove: bus_links — bus_links: refreshed stop evidence for 65159. S-062 S-085
+- Stage 1 stations/dakota: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC8. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 271, revision 34527 → 41838. S-062 S-085
+- Stage 1 stations/dhoby-ghaut: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS24. Recorded 3 supplementary layout tables (previously 0). Station evidence refreshed, page 119, revision 37293 → 41955. S-062 S-085
+- Stage 1 stations/dover: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW22. S-062 S-085
+- Stage 1 stations/downtown: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT17. S-062 S-085
+- Stage 1 stations/esplanade: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC3. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 282, revision 33575 → 41891. S-062 S-085
+- Stage 1 stations/eunos: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW7. S-062 S-085
+- Stage 1 stations/expo: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CG1. S-062 S-085
+- Stage 1 stations/farrer-park: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE8. S-062 S-085
+- Stage 1 stations/farrer-road: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC20. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 293, revision 33980 → 41839. S-062 S-085
+- Stage 1 stations/fort-canning: bus_links, gtfs_matches — bus_links: refreshed stop evidence for 04331. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT20. S-062 S-085
+- Stage 1 stations/gardens-by-the-bay: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE22. S-062 S-085
+- Stage 1 stations/geylang-bahru: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT24. S-062 S-085
+- Stage 1 stations/great-world/MRT:1: destinations, source_rows — destinations: [] → ["Kim Seng Road"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/great-world/MRT:2: destinations, source_rows — destinations: [] → ["Great World Shopping Mall"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/great-world/MRT:3: destinations, source_rows — destinations: [] → ["Great World Shopping Mall (L2 via overhead bridge)"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/great-world/MRT:4: destinations, source_rows — destinations: [] → ["River Valley Green"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/great-world/MRT:5: destinations, source_rows — destinations: [] → ["River Valley Road"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/great-world/MRT:6: destinations, source_rows — destinations: [] → ["Great World Shopping Mall (B2)"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/great-world: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE15. Station evidence refreshed, page 393, revision 36689 → 38965. S-062 S-085
+- Stage 1 stations/gul-circle: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW30. S-062 S-085
+- Stage 1 stations/harbourfront: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC29. Station evidence refreshed, page 264, revision 37292 → 41034. S-062 S-085
+- Stage 1 stations/havelock: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE16. S-062 S-085
+- Stage 1 stations/haw-par-villa: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC25. Station evidence refreshed, page 286, revision 33515 → 41030. S-062 S-085
+- Stage 1 stations/hillview: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 42991. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT3. Station evidence refreshed, page 379, revision 37673 → 39990. S-062 S-085
+- Stage 1 stations/holland-village: bus_links, gtfs_matches, layout_supplements, source — bus_links: refreshed stop evidence for 11401. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC21. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 291, revision 33979 → 41840. S-062 S-085
+- Stage 1 stations/hougang: bus_links, gtfs_matches — bus_links: refreshed stop evidence for 64389. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE14. S-062 S-085
+- Stage 1 stations/hume: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 43041, 43821. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT4. Station evidence refreshed, page 378, revision 37672 → 39989. S-062 S-085
+- Stage 1 stations/jalan-besar/MRT:A: destinations, source_rows — destinations: [] → ["Jalan Besar"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/jalan-besar/MRT:B: destinations, source_rows — destinations: [] → ["Jalan Besar"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/jalan-besar: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 07529. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT22. Station evidence refreshed, page 326, revision 33878 → 39028. S-062 S-085
+- Stage 1 stations/joo-koon: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW29. S-062 S-085
+- Stage 1 stations/jurong-east: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW24. S-062 S-085
+- Stage 1 stations/kaki-bukit: bus_links, gtfs_matches — bus_links: refreshed stop evidence for 72049. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT28. S-062 S-085
+- Stage 1 stations/kallang: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW10. S-062 S-085
+- Stage 1 stations/kangkar: source — Station evidence refreshed, page 508, revision 24725 → 40515. S-062 S-085
+- Stage 1 stations/katong-park: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE24. S-062 S-085
+- Stage 1 stations/kembangan: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW6. S-062 S-085
+- Stage 1 stations/kent-ridge: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 18339. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC24. Station evidence refreshed, page 292, revision 36645 → 41023. S-062 S-085
+- Stage 1 stations/keppel/MRT:1: destinations, inventory_evidence, source_rows — destinations: [] → ["Keppel Road"]. inventory_evidence: "complete_reviewed_override" → "complete". Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/keppel/MRT:2: destinations, inventory_evidence, source_rows — destinations: [] → ["Keppel Road"]. inventory_evidence: "complete_reviewed_override" → "complete". Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/keppel/MRT:3: destinations, inventory_evidence, source_rows — destinations: [] → ["Keppel Road"]. inventory_evidence: "complete_reviewed_override" → "complete". Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/keppel: bus_links, catalog_status, exit_inventory_status, gtfs_matches, layout_supplements, source — bus_links: refreshed stop evidence for 14081, 14089. catalog_status: "operator_addition_requires_review" → "v1_baseline". exit_inventory_status: "complete_reviewed_override" → "complete". Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC30. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 279, revision 35864 → 41852. S-062 S-085 S-060
+- Stage 1 stations/khatib: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 59041, 59049. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS14. Station evidence refreshed, page 94, revision 34389 → 39805. S-062 S-085
+- Stage 1 stations/king-albert-park: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT6. S-062 S-085
+- Stage 1 stations/kovan/MRT:A: destinations, source_rows — destinations: [] → ["Upper Serangoon Road"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/kovan/MRT:B: destinations, source_rows — destinations: [] → ["Upper Serangoon Road"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/kovan/MRT:C: destinations, source_rows — destinations: [] → ["Heartland Mall-Kovan"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/kovan: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE13. Station evidence refreshed, page 241, revision 36700 → 39016. S-062 S-085
+- Stage 1 stations/kranji: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS7. Station evidence refreshed, page 101, revision 36241 → 39798. S-062 S-085
+- Stage 1 stations/labrador-park: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC27. Station evidence refreshed, page 283, revision 33457 → 41032. S-062 S-085
+- Stage 1 stations/lakeside: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW26. Station evidence refreshed, page 169, revision 29014 → 41203. S-062 S-085
+- Stage 1 stations/lavender: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW11. S-062 S-085
+- Stage 1 stations/lentor: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE5. S-062 S-085
+- Stage 1 stations/little-india: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT12. S-062 S-085
+- Stage 1 stations/lorong-chuan: bus_links, gtfs_matches, layout_supplements, source — bus_links: refreshed stop evidence for 66399. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC14. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 294, revision 34397 → 41912. S-062 S-085
+- Stage 1 stations/macpherson: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC10. Recorded 2 supplementary layout tables (previously 0). Station evidence refreshed, page 295, revision 33503 → 41843. S-062 S-085
+- Stage 1 stations/marina-bay: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC33. Recorded 3 supplementary layout tables (previously 0). Station evidence refreshed, page 122, revision 35863 → 41886. S-062 S-085
+- Stage 1 stations/marina-south-pier: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS28. S-062 S-085
+- Stage 1 stations/marine-parade: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE26. S-062 S-085
+- Stage 1 stations/marine-terrace: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE27. S-062 S-085
+- Stage 1 stations/marsiling: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 46521. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS8. Station evidence refreshed, page 100, revision 36253 → 39799. S-062 S-085
+- Stage 1 stations/marymount: bus_links, gtfs_matches, layout_supplements, source — bus_links: refreshed stop evidence for 53311, 53319. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC16. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 269, revision 33983 → 41917. S-062 S-085
+- Stage 1 stations/mattar: bus_links, gtfs_matches — bus_links: refreshed stop evidence for 70161. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT25. S-062 S-085
+- Stage 1 stations/maxwell: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE18. S-062 S-085
+- Stage 1 stations/mayflower: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE6. S-062 S-085
+- Stage 1 stations/mountbatten: bus_links, gtfs_matches, layout_supplements, source — bus_links: refreshed stop evidence for 80149. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC7. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 270, revision 33785 → 41903. S-062 S-085
+- Stage 1 stations/napier: bus_links, gtfs_matches — bus_links: refreshed stop evidence for 13019. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE12. S-062 S-085
+- Stage 1 stations/newton: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT11. S-062 S-085
+- Stage 1 stations/nicoll-highway: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC5. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 288, revision 35030 → 41876. S-062 S-085
+- Stage 1 stations/novena/MRT:A: destinations, source_rows — destinations: ["Sinaran Drive"] → ["Square 2"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/novena/MRT:B: destinations, source_rows — destinations: ["Thomson Road"] → ["Novena Square"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/novena: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS20. Station evidence refreshed, page 115, revision 37879 → 39810. S-062 S-085
+- Stage 1 stations/oasis: bus_links — bus_links: refreshed stop evidence for 65319. S-062 S-085
+- Stage 1 stations/one-north: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 18059. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC23. Station evidence refreshed, page 285, revision 33845 → 41834. S-062 S-085
+- Stage 1 stations/orchard: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS22. S-062 S-085
+- Stage 1 stations/orchard-boulevard: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE13. S-062 S-085
+- Stage 1 stations/outram-park: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW16. S-062 S-085
+- Stage 1 stations/pasir-panjang: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC26. Station evidence refreshed, page 287, revision 33514 → 41031. S-062 S-085
+- Stage 1 stations/pasir-ris: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW1. S-062 S-085
+- Stage 1 stations/paya-lebar: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC9. Station evidence refreshed, page 200, revision 34530 → 41822. S-062 S-085
+- Stage 1 stations/pioneer: bus_links, gtfs_matches — bus_links: refreshed stop evidence for 22521. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW28. S-062 S-085
+- Stage 1 stations/potong-pasir: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE10. S-062 S-085
+- Stage 1 stations/prince-edward-road/MRT:1: bus_stop_codes, destinations, inventory_evidence, source_rows — bus_stop_codes: ["03222"] → ["03222","03241","03223"]. destinations: [] → ["Shenton Way"]. inventory_evidence: "complete_reviewed_override" → "complete". Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/prince-edward-road/MRT:2: bus_stop_codes, destinations, inventory_evidence, source_rows — bus_stop_codes: ["03223","03218","03239"] → ["03217","03218","03239"]. destinations: [] → ["Hock Teck See Temple"]. inventory_evidence: "complete_reviewed_override" → "complete". Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/prince-edward-road: bus_links, catalog_status, exit_inventory_status, gtfs_matches, layout_supplements, source — bus_links: refreshed stop evidence for 03217, 03218, 03223, 03239, 03241. catalog_status: "operator_addition_requires_review" → "v1_baseline". exit_inventory_status: "complete_reviewed_override" → "complete". Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC32. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 277, revision 35868 → 41853. S-062 S-085 S-060
+- Stage 1 stations/promenade: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC4. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 281, revision 33891 → 41889. S-062 S-085
+- Stage 1 stations/punggol: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE17. S-062 S-085
+- Stage 1 stations/punggol-coast: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE18. S-062 S-085
+- Stage 1 stations/queenstown: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW19. S-062 S-085
+- Stage 1 stations/raffles-place: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW14. Station evidence refreshed, page 121, revision 36682 → 41884. S-062 S-085
+- Stage 1 stations/ranggung: source — Station evidence refreshed, page 507, revision 20979 → 40516. S-062 S-085
+- Stage 1 stations/redhill: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW18. S-062 S-085
+- Stage 1 stations/rochor: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT13. S-062 S-085
+- Stage 1 stations/rumbia: source — Station evidence refreshed, page 509, revision 21166 → 40513. S-062 S-085
+- Stage 1 stations/sembawang: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS11. Station evidence refreshed, page 97, revision 35871 → 39802. S-062 S-085
+- Stage 1 stations/sengkang/SHARED:B: bus_stop_codes, destinations, source_rows — bus_stop_codes: ["67009","67759"] → ["67009"]. destinations: ["Sengkang Bus Interchange"] → ["Sengkang Interchange"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/sengkang/SHARED:C: bus_stop_codes — bus_stop_codes: ["67689"] → []. S-062 S-085
+- Stage 1 stations/sengkang: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 67009, 67401, 67409, 67689, 67759. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE16. Station evidence refreshed, page 236, revision 30255 → 40387. S-062 S-085
+- Stage 1 stations/serangoon: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC13. Recorded 2 supplementary layout tables (previously 0). Station evidence refreshed, page 244, revision 34715 → 41913. S-062 S-085
+- Stage 1 stations/shenton-way: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE19. S-062 S-085
+- Stage 1 stations/siglap: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE28. S-062 S-085
+- Stage 1 stations/simei: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW3. S-062 S-085
+- Stage 1 stations/sixth-avenue: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT7. S-062 S-085
+- Stage 1 stations/somerset: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS23. S-062 S-085
+- Stage 1 stations/springleaf: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE4. S-062 S-085
+- Stage 1 stations/stadium: gtfs_matches, layout_supplements, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC6. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 289, revision 33573 → 41836. S-062 S-085
+- Stage 1 stations/stevens: bus_links, gtfs_matches — bus_links: refreshed stop evidence for 40231. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT10. S-062 S-085
+- Stage 1 stations/tai-seng: bus_links, gtfs_matches, layout_supplements, source — bus_links: refreshed stop evidence for 70281. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC11. Recorded 1 supplementary layout tables (previously 0). Station evidence refreshed, page 272, revision 34525 → 41844. S-062 S-085
+- Stage 1 stations/tampines: areas, bus_links, gtfs_matches, source — B1 underpass now also names Wellness Village. bus_links: refreshed stop evidence for 76141, 76149. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT32. Station evidence refreshed, page 206, revision 36651 → 38999. S-062 S-085
+- Stage 1 stations/tampines-east: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT33. S-062 S-085
+- Stage 1 stations/tampines-west: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT31. S-062 S-085
+- Stage 1 stations/tan-kah-kee: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT8. S-062 S-085
+- Stage 1 stations/tanah-merah: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW4. S-062 S-085
+- Stage 1 stations/tanjong-katong: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE25. S-062 S-085
+- Stage 1 stations/tanjong-pagar/MRT:D: destinations, source_rows — destinations: ["Prince Edward Road"] → ["Prince Edward Road","Skywaters Residences","MAS Building","Shenton Way Terminal","CC32 Prince Edward Road"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/tanjong-pagar/MRT:E: alternative_exits, status_notes — alternative_exits: ["H"] → []. status_notes: ["(Closed – use Exit H)"] → ["(Closed)"]. S-062 S-085 S-052
+- Stage 1 stations/tanjong-pagar: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 03218. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW15. Station evidence refreshed, page 215, revision 31544 → 41616. S-062 S-085
+- Stage 1 stations/tanjong-rhu: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE23. S-062 S-085
+- Stage 1 stations/telok-ayer: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT18. S-062 S-085
+- Stage 1 stations/telok-blangah: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): CC28. Station evidence refreshed, page 284, revision 33454 → 41033. S-062 S-085
+- Stage 1 stations/tiong-bahru: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW17. S-062 S-085
+- Stage 1 stations/toa-payoh/MRT:C: destinations, source_rows — destinations: ["Toa Payoh Central"] → ["Blk 175 (Toa Payoh Central)"]. Retain revised verbatim exit row evidence; not an exit identity change. S-062 S-085
+- Stage 1 stations/toa-payoh: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS19. Station evidence refreshed, page 114, revision 33861 → 39811. S-062 S-085
+- Stage 1 stations/tuas-crescent: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW31. S-062 S-085
+- Stage 1 stations/tuas-link: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW33. S-062 S-085
+- Stage 1 stations/tuas-west-road: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): EW32. S-062 S-085
+- Stage 1 stations/ubi: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT27. S-062 S-085
+- Stage 1 stations/upper-changi: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): DT34. S-062 S-085
+- Stage 1 stations/upper-thomson: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE8. S-062 S-085
+- Stage 1 stations/woodlands: gtfs_matches, source, station_connections — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS9. Station evidence refreshed, page 99, revision 37676 → 39894. Retain Woodlands interchange 46009 at station level; refresh source evidence, no exit assignment. S-062 S-085
+- Stage 1 stations/woodlands-north: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE1. Station evidence refreshed, page 430, revision 38586 → 39893. S-062 S-085
+- Stage 1 stations/woodlands-south: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): TE3. S-062 S-085
+- Stage 1 stations/woodleigh: gtfs_matches — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NE11. S-062 S-085
+- Stage 1 stations/yew-tee: gtfs_matches, source — Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS5. Station evidence refreshed, page 102, revision 33871 → 39796. S-062 S-085
+- Stage 1 stations/yio-chu-kang: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 55301, 55309, 55509. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS15. Station evidence refreshed, page 110, revision 35571 → 39806. S-062 S-085
+- Stage 1 stations/yishun: bus_links, gtfs_matches, source — bus_links: refreshed stop evidence for 59091. Retain the LTA feed’s pattern-specific route IDs for the matched stop(s): NS13. Station evidence refreshed, page 50, revision 33856 → 39804. S-062 S-085
+- Stage 1 dataset metadata: gtfs, reviewed_decisions, summary — Recompute gtfs for the reviewed 24 November inputs. Recompute reviewed_decisions for the reviewed 24 November inputs. Recompute summary for the reviewed 24 November inputs. S-062 S-085
+- Stage 2 stations/admiralty/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33867) → sgwiki_kartographer (revision 39800). Position unchanged. S-076 S-087
+- Stage 2 stations/admiralty/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33867) → sgwiki_kartographer (revision 39800). Position unchanged. S-076 S-087
+- Stage 2 stations/admiralty/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33867) → sgwiki_kartographer (revision 39800). Position unchanged. S-076 S-087
+- Stage 2 stations/admiralty/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33867) → sgwiki_kartographer (revision 39800). Position unchanged. S-076 S-087
+- Stage 2 stations/admiralty: source — Station evidence refreshed, page 98, revision 33867 → 39800. S-076 S-087
+- Stage 2 stations/aljunied/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 26897) → sgwiki_kartographer (revision 26897). Position unchanged. S-076 S-087
+- Stage 2 stations/aljunied/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 26897) → sgwiki_kartographer (revision 26897). Position unchanged. S-076 S-087
+- Stage 2 stations/ang-mo-kio/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33858) → sgwiki_kartographer (revision 41909). Position unchanged. S-076 S-087
+- Stage 2 stations/ang-mo-kio/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33858) → sgwiki_kartographer (revision 41909). Position unchanged. S-076 S-087
+- Stage 2 stations/ang-mo-kio/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33858) → sgwiki_kartographer (revision 41909). Position unchanged. S-076 S-087
+- Stage 2 stations/ang-mo-kio/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33858) → sgwiki_kartographer (revision 41909). Position unchanged. S-076 S-087
+- Stage 2 stations/ang-mo-kio: source — Station evidence refreshed, page 111, revision 33858 → 41909. S-076 S-087
+- Stage 2 stations/bakau/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 24724) → sgwiki_kartographer (revision 40514). Position unchanged. S-076 S-087
+- Stage 2 stations/bakau/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 24724) → sgwiki_kartographer (revision 40514). Position unchanged. S-076 S-087
+- Stage 2 stations/bakau: source — Station evidence refreshed, page 505, revision 24724 → 40514. S-076 S-087
+- Stage 2 stations/bartley/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34524) → sgwiki_kartographer (revision 41825). Position unchanged. S-076 S-087
+- Stage 2 stations/bartley/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34524) → sgwiki_kartographer (revision 41825). Position unchanged. S-076 S-087
+- Stage 2 stations/bartley: source — Station evidence refreshed, page 280, revision 34524 → 41825. S-076 S-087
+- Stage 2 stations/bayfront/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36652) → trusted_onemap_baseline (revision 41890). Position unchanged. S-076 S-087
+- Stage 2 stations/bayfront/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36652) → trusted_onemap_baseline (revision 41890). Position unchanged. S-076 S-087
+- Stage 2 stations/bayfront/MRT:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36652) → trusted_onemap_baseline (revision 41890). Position unchanged. S-076 S-087
+- Stage 2 stations/bayfront/MRT:D: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36652) → trusted_onemap_baseline (revision 41890). Position unchanged. S-076 S-087
+- Stage 2 stations/bayfront/MRT:E: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36652) → trusted_onemap_baseline (revision 41890). Position unchanged. S-076 S-087
+- Stage 2 stations/bayfront: source — Station evidence refreshed, page 274, revision 36652 → 41890. S-076 S-087
+- Stage 2 stations/beauty-world/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33899) → sgwiki_kartographer (revision 33899). Position unchanged. S-076 S-087
+- Stage 2 stations/beauty-world/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33899) → sgwiki_kartographer (revision 33899). Position unchanged. S-076 S-087
+- Stage 2 stations/beauty-world/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33899) → sgwiki_kartographer (revision 33899). Position unchanged. S-076 S-087
+- Stage 2 stations/beauty-world/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33899) → sgwiki_kartographer (revision 33899). Position unchanged. S-076 S-087
+- Stage 2 stations/bedok-north/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33884) → sgwiki_kartographer (revision 33884). Position unchanged. S-076 S-087
+- Stage 2 stations/bedok-north/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33884) → sgwiki_kartographer (revision 33884). Position unchanged. S-076 S-087
+- Stage 2 stations/bedok-north/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33884) → sgwiki_kartographer (revision 33884). Position unchanged. S-076 S-087
+- Stage 2 stations/bishan/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33984) → sgwiki_kartographer (revision 41911). Position unchanged. S-076 S-087
+- Stage 2 stations/bishan/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33984) → sgwiki_kartographer (revision 41911). Position unchanged. S-076 S-087
+- Stage 2 stations/bishan/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33984) → sgwiki_kartographer (revision 41911). Position unchanged. S-076 S-087
+- Stage 2 stations/bishan/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33984) → sgwiki_kartographer (revision 41911). Position unchanged. S-076 S-087
+- Stage 2 stations/bishan/MRT:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33984) → sgwiki_kartographer (revision 41911). Position unchanged. S-076 S-087
+- Stage 2 stations/bishan: source — Station evidence refreshed, page 113, revision 33984 → 41911. S-076 S-087
+- Stage 2 stations/botanic-gardens/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33981) → sgwiki_kartographer (revision 41828). Position unchanged. S-076 S-087
+- Stage 2 stations/botanic-gardens/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33981) → sgwiki_kartographer (revision 41828). Position unchanged. S-076 S-087
+- Stage 2 stations/botanic-gardens: source — Station evidence refreshed, page 275, revision 33981 → 41828. S-076 S-087
+- Stage 2 stations/braddell/MRT:A: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 36654) → sgwiki_kartographer (revision 39807). coordinates: [103.8464117628576,1.341078755479382] → [103.8465,1.34107]. S-076 S-087 S-064
+- Stage 2 stations/braddell/MRT:B: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 36654) → sgwiki_kartographer (revision 39807). coordinates: [103.8463932449764,1.340746516111449] → [103.84648,1.34073]. S-076 S-087 S-064
+- Stage 2 stations/braddell/MRT:C: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 36654) → sgwiki_kartographer (revision 39807). coordinates: [103.8474307678529,1.340681574035467] → [103.84739,1.34063]. S-076 S-087 S-064
+- Stage 2 stations/braddell: source — Station evidence refreshed, page 112, revision 36654 → 39807. S-076 S-087
+- Stage 2 stations/bras-basah/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33458) → sgwiki_kartographer (revision 41880). Position unchanged. S-076 S-087
+- Stage 2 stations/bras-basah/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33458) → sgwiki_kartographer (revision 41880). Position unchanged. S-076 S-087
+- Stage 2 stations/bras-basah/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33458) → sgwiki_kartographer (revision 41880). Position unchanged. S-076 S-087
+- Stage 2 stations/bras-basah/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33458) → sgwiki_kartographer (revision 41880). Position unchanged. S-076 S-087
+- Stage 2 stations/bras-basah/MRT:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33458) → sgwiki_kartographer (revision 41880). Position unchanged. S-076 S-087
+- Stage 2 stations/bras-basah: source — Station evidence refreshed, page 273, revision 33458 → 41880. S-076 S-087
+- Stage 2 stations/bright-hill/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33935) → sgwiki_kartographer (revision 33935). Position unchanged. S-076 S-087
+- Stage 2 stations/bright-hill/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33935) → sgwiki_kartographer (revision 33935). Position unchanged. S-076 S-087
+- Stage 2 stations/bright-hill/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33935) → sgwiki_kartographer (revision 33935). Position unchanged. S-076 S-087
+- Stage 2 stations/bright-hill/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33935) → sgwiki_kartographer (revision 33935). Position unchanged. S-076 S-087
+- Stage 2 stations/buangkok/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36670) → trusted_onemap_baseline (revision 39017). Position unchanged. S-076 S-087
+- Stage 2 stations/buangkok/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36670) → trusted_onemap_baseline (revision 39017). Position unchanged. S-076 S-087
+- Stage 2 stations/buangkok: source — Station evidence refreshed, page 238, revision 36670 → 39017. S-076 S-087
+- Stage 2 stations/bukit-batok/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36243) → sgwiki_kartographer (revision 39794). Position unchanged. S-076 S-087
+- Stage 2 stations/bukit-batok/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36243) → sgwiki_kartographer (revision 39794). Position unchanged. S-076 S-087
+- Stage 2 stations/bukit-batok/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36243) → sgwiki_kartographer (revision 39794). Position unchanged. S-076 S-087
+- Stage 2 stations/bukit-batok/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36243) → sgwiki_kartographer (revision 39794). Position unchanged. S-076 S-087
+- Stage 2 stations/bukit-batok: source — Station evidence refreshed, page 107, revision 36243 → 39794. S-076 S-087
+- Stage 2 stations/bukit-gombak/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37671) → sgwiki_kartographer (revision 39975). Position unchanged. S-076 S-087
+- Stage 2 stations/bukit-gombak/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37671) → sgwiki_kartographer (revision 39975). Position unchanged. S-076 S-087
+- Stage 2 stations/bukit-gombak/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37671) → sgwiki_kartographer (revision 39975). Position unchanged. S-076 S-087
+- Stage 2 stations/bukit-gombak/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37671) → sgwiki_kartographer (revision 39975). Position unchanged. S-076 S-087
+- Stage 2 stations/bukit-gombak: source — Station evidence refreshed, page 108, revision 37671 → 39975. S-076 S-087
+- Stage 2 stations/buona-vista/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33843) → sgwiki_kartographer (revision 41833). Position unchanged. S-076 S-087
+- Stage 2 stations/buona-vista/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33843) → sgwiki_kartographer (revision 41833). Position unchanged. S-076 S-087
+- Stage 2 stations/buona-vista/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33843) → sgwiki_kartographer (revision 41833). Position unchanged. S-076 S-087
+- Stage 2 stations/buona-vista/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33843) → sgwiki_kartographer (revision 41833). Position unchanged. S-076 S-087
+- Stage 2 stations/buona-vista: source — Station evidence refreshed, page 172, revision 33843 → 41833. S-076 S-087
+- Stage 2 stations/caldecott/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33982) → sgwiki_kartographer (revision 41024). Position unchanged. S-076 S-087
+- Stage 2 stations/caldecott/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33982) → sgwiki_kartographer (revision 41024). Position unchanged. S-076 S-087
+- Stage 2 stations/caldecott/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33982) → sgwiki_kartographer (revision 41024). Position unchanged. S-076 S-087
+- Stage 2 stations/caldecott/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33982) → sgwiki_kartographer (revision 41024). Position unchanged. S-076 S-087
+- Stage 2 stations/caldecott: source — Station evidence refreshed, page 300, revision 33982 → 41024. S-076 S-087
+- Stage 2 stations/canberra/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35870) → sgwiki_kartographer (revision 39803). Position unchanged. S-076 S-087
+- Stage 2 stations/canberra/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35870) → sgwiki_kartographer (revision 39803). Position unchanged. S-076 S-087
+- Stage 2 stations/canberra/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35870) → sgwiki_kartographer (revision 39803). Position unchanged. S-076 S-087
+- Stage 2 stations/canberra/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35870) → sgwiki_kartographer (revision 39803). Position unchanged. S-076 S-087
+- Stage 2 stations/canberra/MRT:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35870) → sgwiki_kartographer (revision 39803). Position unchanged. S-076 S-087
+- Stage 2 stations/canberra: source — Station evidence refreshed, page 96, revision 35870 → 39803. S-076 S-087
+- Stage 2 stations/cantonment/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35867) → sgwiki_kartographer (revision 41849). Position unchanged. S-076 S-087
+- Stage 2 stations/cantonment/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35867) → sgwiki_kartographer (revision 41849). Position unchanged. S-076 S-087
+- Stage 2 stations/cantonment/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35867) → sgwiki_kartographer (revision 41849). Position unchanged. S-076 S-087
+- Stage 2 stations/cantonment/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35867) → sgwiki_kartographer (revision 41849). Position unchanged. S-076 S-087
+- Stage 2 stations/cantonment: source — Station evidence refreshed, page 278, revision 35867 → 41849. S-076 S-087
+- Stage 2 stations/cashew/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33902) → sgwiki_kartographer (revision 33902). Position unchanged. S-076 S-087
+- Stage 2 stations/changi-airport/MRT:T2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34883) → sgwiki_kartographer (revision 34883). Position unchanged. S-076 S-087
+- Stage 2 stations/changi-airport/MRT:T3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34883) → sgwiki_kartographer (revision 34883). Position unchanged. S-076 S-087
+- Stage 2 stations/cheng-lim/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28643) → sgwiki_kartographer (revision 28643). Position unchanged. S-076 S-087
+- Stage 2 stations/cheng-lim/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28643) → sgwiki_kartographer (revision 28643). Position unchanged. S-076 S-087
+- Stage 2 stations/choa-chu-kang/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37616) → sgwiki_kartographer (revision 39978). Position unchanged. S-076 S-087
+- Stage 2 stations/choa-chu-kang/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37616) → sgwiki_kartographer (revision 39978). Position unchanged. S-076 S-087
+- Stage 2 stations/choa-chu-kang/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37616) → sgwiki_kartographer (revision 39978). Position unchanged. S-076 S-087
+- Stage 2 stations/choa-chu-kang/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37616) → sgwiki_kartographer (revision 39978). Position unchanged. S-076 S-087
+- Stage 2 stations/choa-chu-kang/SHARED:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37616) → sgwiki_kartographer (revision 39978). Position unchanged. S-076 S-087
+- Stage 2 stations/choa-chu-kang: source — Station evidence refreshed, page 109, revision 37616 → 39978. S-076 S-087
+- Stage 2 stations/city-hall/MRT:A: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 33852) → sgwiki_kartographer (revision 41804). coordinates: [103.8530215622706,1.293233075934794] → [103.85633,1.29316]. S-076 S-087 S-064
+- Stage 2 stations/city-hall/MRT:B: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 33852) → sgwiki_kartographer (revision 41804). coordinates: [103.8519511294807,1.293108533088286] → [103.85619,1.29282]. S-076 S-087 S-064
+- Stage 2 stations/city-hall/MRT:C: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 33852) → sgwiki_kartographer (revision 41804). coordinates: [103.8529853014308,1.293046947638803] → [103.856,1.29292]. S-076 S-087 S-064
+- Stage 2 stations/city-hall/MRT:D: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 33852) → sgwiki_kartographer (revision 41804). coordinates: [103.8518655458821,1.293503346202729] → [103.85599,1.2926]. S-076 S-087 S-064
+- Stage 2 stations/city-hall: source — Station evidence refreshed, page 120, revision 33852 → 41804. S-076 S-087
+- Stage 2 stations/compassvale/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 21165) → sgwiki_kartographer (revision 40512). Position unchanged. S-076 S-087
+- Stage 2 stations/compassvale/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 21165) → sgwiki_kartographer (revision 40512). Position unchanged. S-076 S-087
+- Stage 2 stations/compassvale: source — Station evidence refreshed, page 506, revision 21165 → 40512. S-076 S-087
+- Stage 2 stations/dakota/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34527) → sgwiki_kartographer (revision 41838). Position unchanged. S-076 S-087
+- Stage 2 stations/dakota/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34527) → sgwiki_kartographer (revision 41838). Position unchanged. S-076 S-087
+- Stage 2 stations/dakota: source — Station evidence refreshed, page 271, revision 34527 → 41838. S-076 S-087
+- Stage 2 stations/dhoby-ghaut/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37293) → trusted_onemap_baseline (revision 41955). Position unchanged. S-076 S-087 S-083
+- Stage 2 stations/dhoby-ghaut/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37293) → trusted_onemap_baseline (revision 41955). Position unchanged. S-076 S-087 S-083
+- Stage 2 stations/dhoby-ghaut/MRT:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37293) → trusted_onemap_baseline (revision 41955). Position unchanged. S-076 S-087 S-083
+- Stage 2 stations/dhoby-ghaut/MRT:D: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37293) → trusted_onemap_baseline (revision 41955). Position unchanged. S-076 S-087 S-083
+- Stage 2 stations/dhoby-ghaut/MRT:E: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37293) → trusted_onemap_baseline (revision 41955). Position unchanged. S-076 S-087 S-083
+- Stage 2 stations/dhoby-ghaut/MRT:F: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37293) → trusted_onemap_baseline (revision 41955). Position unchanged. S-076 S-087 S-083
+- Stage 2 stations/dhoby-ghaut/MRT:G: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37293) → trusted_onemap_baseline (revision 41955). Position unchanged. S-076 S-087 S-083
+- Stage 2 stations/dhoby-ghaut: source — Station evidence refreshed, page 119, revision 37293 → 41955. S-076 S-087
+- Stage 2 stations/dover/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 25438) → sgwiki_kartographer (revision 25438). Position unchanged. S-076 S-087
+- Stage 2 stations/dover/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 25438) → sgwiki_kartographer (revision 25438). Position unchanged. S-076 S-087
+- Stage 2 stations/esplanade/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33575) → sgwiki_kartographer (revision 41891). Position unchanged. S-076 S-087
+- Stage 2 stations/esplanade/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33575) → sgwiki_kartographer (revision 41891). Position unchanged. S-076 S-087
+- Stage 2 stations/esplanade/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33575) → sgwiki_kartographer (revision 41891). Position unchanged. S-076 S-087
+- Stage 2 stations/esplanade/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33575) → sgwiki_kartographer (revision 41891). Position unchanged. S-076 S-087
+- Stage 2 stations/esplanade/MRT:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33575) → sgwiki_kartographer (revision 41891). Position unchanged. S-076 S-087
+- Stage 2 stations/esplanade/MRT:F: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33575) → sgwiki_kartographer (revision 41891). Position unchanged. S-076 S-087
+- Stage 2 stations/esplanade/MRT:G: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33575) → sgwiki_kartographer (revision 41891). Position unchanged. S-076 S-087
+- Stage 2 stations/esplanade: source — Station evidence refreshed, page 282, revision 33575 → 41891. S-076 S-087
+- Stage 2 stations/eunos/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 27216) → sgwiki_kartographer (revision 27216). Position unchanged. S-076 S-087
+- Stage 2 stations/eunos/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 27216) → sgwiki_kartographer (revision 27216). Position unchanged. S-076 S-087
+- Stage 2 stations/eunos/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 27216) → sgwiki_kartographer (revision 27216). Position unchanged. S-076 S-087
+- Stage 2 stations/farmway/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 20959) → sgwiki_kartographer (revision 20959). Position unchanged. S-076 S-087
+- Stage 2 stations/farmway/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 20959) → sgwiki_kartographer (revision 20959). Position unchanged. S-076 S-087
+- Stage 2 stations/farrer-road/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33980) → sgwiki_kartographer (revision 41839). Position unchanged. S-076 S-087
+- Stage 2 stations/farrer-road/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33980) → sgwiki_kartographer (revision 41839). Position unchanged. S-076 S-087
+- Stage 2 stations/farrer-road: source — Station evidence refreshed, page 293, revision 33980 → 41839. S-076 S-087
+- Stage 2 stations/fernvale/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 20980) → sgwiki_kartographer (revision 20980). Position unchanged. S-076 S-087
+- Stage 2 stations/great-world/MRT:1: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36689) → trusted_onemap_baseline (revision 38965). Position unchanged. S-076 S-087
+- Stage 2 stations/great-world/MRT:2: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36689) → trusted_onemap_baseline (revision 38965). Position unchanged. S-076 S-087
+- Stage 2 stations/great-world/MRT:3: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36689) → trusted_onemap_baseline (revision 38965). Position unchanged. S-076 S-087
+- Stage 2 stations/great-world/MRT:4: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36689) → trusted_onemap_baseline (revision 38965). Position unchanged. S-076 S-087
+- Stage 2 stations/great-world/MRT:5: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36689) → trusted_onemap_baseline (revision 38965). Position unchanged. S-076 S-087
+- Stage 2 stations/great-world/MRT:6: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36689) → trusted_onemap_baseline (revision 38965). Position unchanged. S-076 S-087
+- Stage 2 stations/great-world: source — Station evidence refreshed, page 393, revision 36689 → 38965. S-076 S-087
+- Stage 2 stations/harbourfront/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37292) → trusted_onemap_baseline (revision 41034). Position unchanged. S-076 S-087
+- Stage 2 stations/harbourfront/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37292) → trusted_onemap_baseline (revision 41034). Position unchanged. S-076 S-087
+- Stage 2 stations/harbourfront/MRT:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37292) → trusted_onemap_baseline (revision 41034). Position unchanged. S-076 S-087
+- Stage 2 stations/harbourfront/MRT:D: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37292) → trusted_onemap_baseline (revision 41034). Position unchanged. S-076 S-087
+- Stage 2 stations/harbourfront/MRT:E: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 37292) → trusted_onemap_baseline (revision 41034). Position unchanged. S-076 S-087
+- Stage 2 stations/harbourfront: source — Station evidence refreshed, page 264, revision 37292 → 41034. S-076 S-087
+- Stage 2 stations/haw-par-villa/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 33515) → trusted_onemap_baseline (revision 41030). Position unchanged. S-076 S-087
+- Stage 2 stations/haw-par-villa: source — Station evidence refreshed, page 286, revision 33515 → 41030. S-076 S-087
+- Stage 2 stations/hillview/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37673) → sgwiki_kartographer (revision 39990). Position unchanged. S-076 S-087
+- Stage 2 stations/hillview/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37673) → sgwiki_kartographer (revision 39990). Position unchanged. S-076 S-087
+- Stage 2 stations/hillview: source — Station evidence refreshed, page 379, revision 37673 → 39990. S-076 S-087
+- Stage 2 stations/holland-village/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33979) → sgwiki_kartographer (revision 41840). Position unchanged. S-076 S-087
+- Stage 2 stations/holland-village/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33979) → sgwiki_kartographer (revision 41840). Position unchanged. S-076 S-087
+- Stage 2 stations/holland-village/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33979) → sgwiki_kartographer (revision 41840). Position unchanged. S-076 S-087
+- Stage 2 stations/holland-village: source — Station evidence refreshed, page 291, revision 33979 → 41840. S-076 S-087
+- Stage 2 stations/hougang/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 27365) → sgwiki_kartographer (revision 27365). Position unchanged. S-076 S-087
+- Stage 2 stations/hougang/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 27365) → sgwiki_kartographer (revision 27365). Position unchanged. S-076 S-087
+- Stage 2 stations/hougang/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 27365) → sgwiki_kartographer (revision 27365). Position unchanged. S-076 S-087
+- Stage 2 stations/hume/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37672) → sgwiki_kartographer (revision 39989). Position unchanged. S-076 S-087
+- Stage 2 stations/hume/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37672) → sgwiki_kartographer (revision 39989). Position unchanged. S-076 S-087
+- Stage 2 stations/hume: source — Station evidence refreshed, page 378, revision 37672 → 39989. S-076 S-087
+- Stage 2 stations/jalan-besar/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 33878) → trusted_onemap_baseline (revision 39028). Position unchanged. S-076 S-087
+- Stage 2 stations/jalan-besar/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 33878) → trusted_onemap_baseline (revision 39028). Position unchanged. S-076 S-087
+- Stage 2 stations/jalan-besar: source — Station evidence refreshed, page 326, revision 33878 → 39028. S-076 S-087
+- Stage 2 stations/jurong-east/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36254) → sgwiki_kartographer (revision 36254). Position unchanged. S-076 S-087
+- Stage 2 stations/jurong-east/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36254) → sgwiki_kartographer (revision 36254). Position unchanged. S-076 S-087
+- Stage 2 stations/jurong-east/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36254) → sgwiki_kartographer (revision 36254). Position unchanged. S-076 S-087
+- Stage 2 stations/jurong-east/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36254) → sgwiki_kartographer (revision 36254). Position unchanged. S-076 S-087
+- Stage 2 stations/kangkar/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 24725) → sgwiki_kartographer (revision 40515). Position unchanged. S-076 S-087
+- Stage 2 stations/kangkar/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 24725) → sgwiki_kartographer (revision 40515). Position unchanged. S-076 S-087
+- Stage 2 stations/kangkar: source — Station evidence refreshed, page 508, revision 24725 → 40515. S-076 S-087
+- Stage 2 stations/kent-ridge/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36645) → trusted_onemap_baseline (revision 41023). Position unchanged. S-076 S-087
+- Stage 2 stations/kent-ridge/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36645) → trusted_onemap_baseline (revision 41023). Position unchanged. S-076 S-087
+- Stage 2 stations/kent-ridge/MRT:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36645) → trusted_onemap_baseline (revision 41023). Position unchanged. S-076 S-087
+- Stage 2 stations/kent-ridge/MRT:D: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36645) → trusted_onemap_baseline (revision 41023). Position unchanged. S-076 S-087
+- Stage 2 stations/kent-ridge/MRT:E: coordinate_source, coordinates — Coordinate evidence: human_reviewed (revision 36645) → human_reviewed (revision 41023). coordinates: [103.78530979156496,1.2922296988256536] → [103.78515,1.2929]. S-076 S-087 S-068
+- Stage 2 stations/kent-ridge: source — Station evidence refreshed, page 292, revision 36645 → 41023. S-076 S-087
+- Stage 2 stations/keppel/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35864) → sgwiki_kartographer (revision 41852). Position unchanged. S-076 S-087
+- Stage 2 stations/keppel/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35864) → sgwiki_kartographer (revision 41852). Position unchanged. S-076 S-087
+- Stage 2 stations/keppel/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35864) → sgwiki_kartographer (revision 41852). Position unchanged. S-076 S-087
+- Stage 2 stations/keppel: source — Station evidence refreshed, page 279, revision 35864 → 41852. S-076 S-087
+- Stage 2 stations/khatib/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34389) → sgwiki_kartographer (revision 39805). Position unchanged. S-076 S-087
+- Stage 2 stations/khatib/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34389) → sgwiki_kartographer (revision 39805). Position unchanged. S-076 S-087
+- Stage 2 stations/khatib/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34389) → sgwiki_kartographer (revision 39805). Position unchanged. S-076 S-087
+- Stage 2 stations/khatib/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34389) → sgwiki_kartographer (revision 39805). Position unchanged. S-076 S-087
+- Stage 2 stations/khatib: source — Station evidence refreshed, page 94, revision 34389 → 39805. S-076 S-087
+- Stage 2 stations/king-albert-park/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36774) → sgwiki_kartographer (revision 36774). Position unchanged. S-076 S-087
+- Stage 2 stations/king-albert-park/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36774) → sgwiki_kartographer (revision 36774). Position unchanged. S-076 S-087
+- Stage 2 stations/kovan/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36700) → trusted_onemap_baseline (revision 39016). Position unchanged. S-076 S-087
+- Stage 2 stations/kovan/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36700) → trusted_onemap_baseline (revision 39016). Position unchanged. S-076 S-087
+- Stage 2 stations/kovan/MRT:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36700) → trusted_onemap_baseline (revision 39016). Position unchanged. S-076 S-087
+- Stage 2 stations/kovan: source — Station evidence refreshed, page 241, revision 36700 → 39016. S-076 S-087
+- Stage 2 stations/kranji/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36241) → sgwiki_kartographer (revision 39798). Position unchanged. S-076 S-087
+- Stage 2 stations/kranji/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36241) → sgwiki_kartographer (revision 39798). Position unchanged. S-076 S-087
+- Stage 2 stations/kranji/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36241) → sgwiki_kartographer (revision 39798). Position unchanged. S-076 S-087
+- Stage 2 stations/kranji/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36241) → sgwiki_kartographer (revision 39798). Position unchanged. S-076 S-087
+- Stage 2 stations/kranji: source — Station evidence refreshed, page 101, revision 36241 → 39798. S-076 S-087
+- Stage 2 stations/kupang/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 21164) → sgwiki_kartographer (revision 21164). Position unchanged. S-076 S-087
+- Stage 2 stations/kupang/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 21164) → sgwiki_kartographer (revision 21164). Position unchanged. S-076 S-087
+- Stage 2 stations/labrador-park/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33457) → sgwiki_kartographer (revision 41032). Position unchanged. S-076 S-087
+- Stage 2 stations/labrador-park: source — Station evidence refreshed, page 283, revision 33457 → 41032. S-076 S-087
+- Stage 2 stations/lakeside/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 29014) → trusted_onemap_baseline (revision 41203). Position unchanged. S-076 S-087
+- Stage 2 stations/lakeside/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 29014) → trusted_onemap_baseline (revision 41203). Position unchanged. S-076 S-087
+- Stage 2 stations/lakeside/MRT:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 29014) → trusted_onemap_baseline (revision 41203). Position unchanged. S-076 S-087
+- Stage 2 stations/lakeside: source — Station evidence refreshed, page 169, revision 29014 → 41203. S-076 S-087
+- Stage 2 stations/lavender/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28714) → sgwiki_kartographer (revision 28714). Position unchanged. S-076 S-087
+- Stage 2 stations/lavender/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28714) → sgwiki_kartographer (revision 28714). Position unchanged. S-076 S-087
+- Stage 2 stations/layar/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 20981) → sgwiki_kartographer (revision 20981). Position unchanged. S-076 S-087
+- Stage 2 stations/layar/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 20981) → sgwiki_kartographer (revision 20981). Position unchanged. S-076 S-087
+- Stage 2 stations/lentor/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33977) → sgwiki_kartographer (revision 33977). Position unchanged. S-076 S-087
+- Stage 2 stations/lentor/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33977) → sgwiki_kartographer (revision 33977). Position unchanged. S-076 S-087
+- Stage 2 stations/lentor/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33977) → sgwiki_kartographer (revision 33977). Position unchanged. S-076 S-087
+- Stage 2 stations/lentor/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33977) → sgwiki_kartographer (revision 33977). Position unchanged. S-076 S-087
+- Stage 2 stations/lentor/MRT:5: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33977) → sgwiki_kartographer (revision 33977). Position unchanged. S-076 S-087
+- Stage 2 stations/little-india/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33894) → sgwiki_kartographer (revision 33894). Position unchanged. S-076 S-087
+- Stage 2 stations/little-india/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33894) → sgwiki_kartographer (revision 33894). Position unchanged. S-076 S-087
+- Stage 2 stations/little-india/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33894) → sgwiki_kartographer (revision 33894). Position unchanged. S-076 S-087
+- Stage 2 stations/little-india/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33894) → sgwiki_kartographer (revision 33894). Position unchanged. S-076 S-087
+- Stage 2 stations/little-india/MRT:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33894) → sgwiki_kartographer (revision 33894). Position unchanged. S-076 S-087
+- Stage 2 stations/little-india/MRT:F: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33894) → sgwiki_kartographer (revision 33894). Position unchanged. S-076 S-087
+- Stage 2 stations/lorong-chuan/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34397) → sgwiki_kartographer (revision 41912). Position unchanged. S-076 S-087
+- Stage 2 stations/lorong-chuan/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34397) → sgwiki_kartographer (revision 41912). Position unchanged. S-076 S-087
+- Stage 2 stations/lorong-chuan: source — Station evidence refreshed, page 294, revision 34397 → 41912. S-076 S-087
+- Stage 2 stations/macpherson/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33503) → sgwiki_kartographer (revision 41843). Position unchanged. S-076 S-087
+- Stage 2 stations/macpherson/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33503) → sgwiki_kartographer (revision 41843). Position unchanged. S-076 S-087
+- Stage 2 stations/macpherson/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33503) → sgwiki_kartographer (revision 41843). Position unchanged. S-076 S-087
+- Stage 2 stations/macpherson/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33503) → sgwiki_kartographer (revision 41843). Position unchanged. S-076 S-087
+- Stage 2 stations/macpherson/MRT:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33503) → sgwiki_kartographer (revision 41843). Position unchanged. S-076 S-087
+- Stage 2 stations/macpherson: source — Station evidence refreshed, page 295, revision 33503 → 41843. S-076 S-087
+- Stage 2 stations/marina-bay/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35863) → sgwiki_kartographer (revision 41886). Position unchanged. S-076 S-087
+- Stage 2 stations/marina-bay/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35863) → sgwiki_kartographer (revision 41886). Position unchanged. S-076 S-087
+- Stage 2 stations/marina-bay/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35863) → sgwiki_kartographer (revision 41886). Position unchanged. S-076 S-087
+- Stage 2 stations/marina-bay/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35863) → sgwiki_kartographer (revision 41886). Position unchanged. S-076 S-087
+- Stage 2 stations/marina-bay/MRT:5: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35863) → sgwiki_kartographer (revision 41886). Position unchanged. S-076 S-087
+- Stage 2 stations/marina-bay: source — Station evidence refreshed, page 122, revision 35863 → 41886. S-076 S-087
+- Stage 2 stations/marina-south-pier/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33854) → sgwiki_kartographer (revision 33854). Position unchanged. S-076 S-087
+- Stage 2 stations/marina-south-pier/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33854) → sgwiki_kartographer (revision 33854). Position unchanged. S-076 S-087
+- Stage 2 stations/marsiling/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36253) → sgwiki_kartographer (revision 39799). Position unchanged. S-076 S-087
+- Stage 2 stations/marsiling/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36253) → sgwiki_kartographer (revision 39799). Position unchanged. S-076 S-087
+- Stage 2 stations/marsiling/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36253) → sgwiki_kartographer (revision 39799). Position unchanged. S-076 S-087
+- Stage 2 stations/marsiling/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36253) → sgwiki_kartographer (revision 39799). Position unchanged. S-076 S-087
+- Stage 2 stations/marsiling: source — Station evidence refreshed, page 100, revision 36253 → 39799. S-076 S-087
+- Stage 2 stations/marymount/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33983) → sgwiki_kartographer (revision 41917). Position unchanged. S-076 S-087
+- Stage 2 stations/marymount/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33983) → sgwiki_kartographer (revision 41917). Position unchanged. S-076 S-087
+- Stage 2 stations/marymount: source — Station evidence refreshed, page 269, revision 33983 → 41917. S-076 S-087
+- Stage 2 stations/mayflower/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33904) → sgwiki_kartographer (revision 33904). Position unchanged. S-076 S-087
+- Stage 2 stations/mayflower/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33904) → sgwiki_kartographer (revision 33904). Position unchanged. S-076 S-087
+- Stage 2 stations/mayflower/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33904) → sgwiki_kartographer (revision 33904). Position unchanged. S-076 S-087
+- Stage 2 stations/mayflower/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33904) → sgwiki_kartographer (revision 33904). Position unchanged. S-076 S-087
+- Stage 2 stations/mayflower/MRT:5: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33904) → sgwiki_kartographer (revision 33904). Position unchanged. S-076 S-087
+- Stage 2 stations/mayflower/MRT:6: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33904) → sgwiki_kartographer (revision 33904). Position unchanged. S-076 S-087
+- Stage 2 stations/mayflower/MRT:7: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33904) → sgwiki_kartographer (revision 33904). Position unchanged. S-076 S-087
+- Stage 2 stations/meridian/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28641) → sgwiki_kartographer (revision 28641). Position unchanged. S-076 S-087
+- Stage 2 stations/meridian/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28641) → sgwiki_kartographer (revision 28641). Position unchanged. S-076 S-087
+- Stage 2 stations/mountbatten/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33785) → sgwiki_kartographer (revision 41903). Position unchanged. S-076 S-087
+- Stage 2 stations/mountbatten/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33785) → sgwiki_kartographer (revision 41903). Position unchanged. S-076 S-087
+- Stage 2 stations/mountbatten: source — Station evidence refreshed, page 270, revision 33785 → 41903. S-076 S-087
+- Stage 2 stations/napier/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33937) → sgwiki_kartographer (revision 33937). Position unchanged. S-076 S-087
+- Stage 2 stations/napier/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33937) → sgwiki_kartographer (revision 33937). Position unchanged. S-076 S-087
+- Stage 2 stations/newton/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33849) → sgwiki_kartographer (revision 33849). Position unchanged. S-076 S-087
+- Stage 2 stations/newton/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33849) → sgwiki_kartographer (revision 33849). Position unchanged. S-076 S-087
+- Stage 2 stations/newton/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33849) → sgwiki_kartographer (revision 33849). Position unchanged. S-076 S-087
+- Stage 2 stations/nicoll-highway/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35030) → sgwiki_kartographer (revision 41876). Position unchanged. S-076 S-087
+- Stage 2 stations/nicoll-highway/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35030) → sgwiki_kartographer (revision 41876). Position unchanged. S-076 S-087
+- Stage 2 stations/nicoll-highway: source — Station evidence refreshed, page 288, revision 35030 → 41876. S-076 S-087
+- Stage 2 stations/novena/MRT:A: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 37879) → sgwiki_kartographer (revision 39810). coordinates: [103.8444057912622,1.321103003672807] → [103.84444,1.32082]. S-076 S-087 S-064
+- Stage 2 stations/novena/MRT:B: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 37879) → sgwiki_kartographer (revision 39810). coordinates: [103.8433228666909,1.319884007888243] → [103.84341,1.31984]. S-076 S-087 S-064
+- Stage 2 stations/novena: source — Station evidence refreshed, page 115, revision 37879 → 39810. S-076 S-087
+- Stage 2 stations/one-north/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33845) → sgwiki_kartographer (revision 41834). Position unchanged. S-076 S-087
+- Stage 2 stations/one-north/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33845) → sgwiki_kartographer (revision 41834). Position unchanged. S-076 S-087
+- Stage 2 stations/one-north/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33845) → sgwiki_kartographer (revision 41834). Position unchanged. S-076 S-087
+- Stage 2 stations/one-north/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33845) → sgwiki_kartographer (revision 41834). Position unchanged. S-076 S-087
+- Stage 2 stations/one-north: source — Station evidence refreshed, page 285, revision 33845 → 41834. S-076 S-087
+- Stage 2 stations/orchard-boulevard/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33938) → sgwiki_kartographer (revision 33938). Position unchanged. S-076 S-087
+- Stage 2 stations/orchard-boulevard/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33938) → sgwiki_kartographer (revision 33938). Position unchanged. S-076 S-087
+- Stage 2 stations/pasir-panjang/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33514) → sgwiki_kartographer (revision 41031). Position unchanged. S-076 S-087
+- Stage 2 stations/pasir-panjang: source — Station evidence refreshed, page 287, revision 33514 → 41031. S-076 S-087
+- Stage 2 stations/pasir-ris/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 30972) → sgwiki_kartographer (revision 30972). Position unchanged. S-076 S-087
+- Stage 2 stations/pasir-ris/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 30972) → sgwiki_kartographer (revision 30972). Position unchanged. S-076 S-087
+- Stage 2 stations/paya-lebar/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34530) → sgwiki_kartographer (revision 41822). Position unchanged. S-076 S-087
+- Stage 2 stations/paya-lebar/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34530) → sgwiki_kartographer (revision 41822). Position unchanged. S-076 S-087
+- Stage 2 stations/paya-lebar/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34530) → sgwiki_kartographer (revision 41822). Position unchanged. S-076 S-087
+- Stage 2 stations/paya-lebar/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34530) → sgwiki_kartographer (revision 41822). Position unchanged. S-076 S-087
+- Stage 2 stations/paya-lebar/MRT:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34530) → sgwiki_kartographer (revision 41822). Position unchanged. S-076 S-087
+- Stage 2 stations/paya-lebar/MRT:F: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34530) → sgwiki_kartographer (revision 41822). Position unchanged. S-076 S-087
+- Stage 2 stations/paya-lebar: source — Station evidence refreshed, page 200, revision 34530 → 41822. S-076 S-087
+- Stage 2 stations/pending/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 30188) → sgwiki_kartographer (revision 30188). Position unchanged. S-076 S-087
+- Stage 2 stations/prince-edward-road/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35868) → sgwiki_kartographer (revision 41853). Position unchanged. S-076 S-087
+- Stage 2 stations/prince-edward-road/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35868) → sgwiki_kartographer (revision 41853). Position unchanged. S-076 S-087
+- Stage 2 stations/prince-edward-road: source — Station evidence refreshed, page 277, revision 35868 → 41853. S-076 S-087
+- Stage 2 stations/promenade/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33891) → sgwiki_kartographer (revision 41889). Position unchanged. S-076 S-087
+- Stage 2 stations/promenade/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33891) → sgwiki_kartographer (revision 41889). Position unchanged. S-076 S-087
+- Stage 2 stations/promenade/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33891) → sgwiki_kartographer (revision 41889). Position unchanged. S-076 S-087
+- Stage 2 stations/promenade: source — Station evidence refreshed, page 281, revision 33891 → 41889. S-076 S-087
+- Stage 2 stations/punggol-coast/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37433) → sgwiki_kartographer (revision 37433). Position unchanged. S-076 S-087
+- Stage 2 stations/punggol-coast/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37433) → sgwiki_kartographer (revision 37433). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:D: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:E: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:F: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:G: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:H: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:I: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:J: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36682) → trusted_onemap_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:K: coordinate_source — Coordinate evidence: trusted_supplemental_baseline (revision 36682) → trusted_supplemental_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:L: coordinate_source — Coordinate evidence: trusted_supplemental_baseline (revision 36682) → trusted_supplemental_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place/MRT:M: coordinate_source — Coordinate evidence: trusted_supplemental_baseline (revision 36682) → trusted_supplemental_baseline (revision 41884). Position unchanged. S-076 S-087
+- Stage 2 stations/raffles-place: source — Station evidence refreshed, page 121, revision 36682 → 41884. S-076 S-087
+- Stage 2 stations/ranggung/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 20979) → sgwiki_kartographer (revision 40516). Position unchanged. S-076 S-087
+- Stage 2 stations/ranggung/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 20979) → sgwiki_kartographer (revision 40516). Position unchanged. S-076 S-087
+- Stage 2 stations/ranggung: source — Station evidence refreshed, page 507, revision 20979 → 40516. S-076 S-087
+- Stage 2 stations/renjong/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28745) → sgwiki_kartographer (revision 28745). Position unchanged. S-076 S-087
+- Stage 2 stations/renjong/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28745) → sgwiki_kartographer (revision 28745). Position unchanged. S-076 S-087
+- Stage 2 stations/rumbia/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 21166) → sgwiki_kartographer (revision 40513). Position unchanged. S-076 S-087
+- Stage 2 stations/rumbia/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 21166) → sgwiki_kartographer (revision 40513). Position unchanged. S-076 S-087
+- Stage 2 stations/rumbia: source — Station evidence refreshed, page 509, revision 21166 → 40513. S-076 S-087
+- Stage 2 stations/sembawang/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35871) → sgwiki_kartographer (revision 39802). Position unchanged. S-076 S-087
+- Stage 2 stations/sembawang/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35871) → sgwiki_kartographer (revision 39802). Position unchanged. S-076 S-087
+- Stage 2 stations/sembawang/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35871) → sgwiki_kartographer (revision 39802). Position unchanged. S-076 S-087
+- Stage 2 stations/sembawang/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35871) → sgwiki_kartographer (revision 39802). Position unchanged. S-076 S-087
+- Stage 2 stations/sembawang: source — Station evidence refreshed, page 97, revision 35871 → 39802. S-076 S-087
+- Stage 2 stations/sengkang/SHARED:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 30255) → trusted_onemap_baseline (revision 40387). Position unchanged. S-076 S-087
+- Stage 2 stations/sengkang/SHARED:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 30255) → trusted_onemap_baseline (revision 40387). Position unchanged. S-076 S-087
+- Stage 2 stations/sengkang/SHARED:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 30255) → trusted_onemap_baseline (revision 40387). Position unchanged. S-076 S-087
+- Stage 2 stations/sengkang/SHARED:D: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 30255) → trusted_onemap_baseline (revision 40387). Position unchanged. S-076 S-087
+- Stage 2 stations/sengkang: source — Station evidence refreshed, page 236, revision 30255 → 40387. S-076 S-087
+- Stage 2 stations/serangoon/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34715) → sgwiki_kartographer (revision 41913). Position unchanged. S-076 S-087
+- Stage 2 stations/serangoon/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34715) → sgwiki_kartographer (revision 41913). Position unchanged. S-076 S-087
+- Stage 2 stations/serangoon/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34715) → sgwiki_kartographer (revision 41913). Position unchanged. S-076 S-087
+- Stage 2 stations/serangoon/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34715) → sgwiki_kartographer (revision 41913). Position unchanged. S-076 S-087
+- Stage 2 stations/serangoon/MRT:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34715) → sgwiki_kartographer (revision 41913). Position unchanged. S-076 S-087
+- Stage 2 stations/serangoon/MRT:F: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34715) → sgwiki_kartographer (revision 41913). Position unchanged. S-076 S-087
+- Stage 2 stations/serangoon/MRT:G: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34715) → sgwiki_kartographer (revision 41913). Position unchanged. S-076 S-087
+- Stage 2 stations/serangoon/MRT:H: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34715) → sgwiki_kartographer (revision 41913). Position unchanged. S-076 S-087
+- Stage 2 stations/serangoon: source — Station evidence refreshed, page 244, revision 34715 → 41913. S-076 S-087
+- Stage 2 stations/siglap/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33940) → sgwiki_kartographer (revision 33940). Position unchanged. S-076 S-087
+- Stage 2 stations/siglap/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33940) → sgwiki_kartographer (revision 33940). Position unchanged. S-076 S-087
+- Stage 2 stations/siglap/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33940) → sgwiki_kartographer (revision 33940). Position unchanged. S-076 S-087
+- Stage 2 stations/siglap/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33940) → sgwiki_kartographer (revision 33940). Position unchanged. S-076 S-087
+- Stage 2 stations/sixth-avenue/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36775) → sgwiki_kartographer (revision 36775). Position unchanged. S-076 S-087
+- Stage 2 stations/sixth-avenue/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36775) → sgwiki_kartographer (revision 36775). Position unchanged. S-076 S-087
+- Stage 2 stations/springleaf/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33910) → sgwiki_kartographer (revision 33910). Position unchanged. S-076 S-087
+- Stage 2 stations/springleaf/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33910) → sgwiki_kartographer (revision 33910). Position unchanged. S-076 S-087
+- Stage 2 stations/springleaf/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33910) → sgwiki_kartographer (revision 33910). Position unchanged. S-076 S-087
+- Stage 2 stations/stadium/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33573) → sgwiki_kartographer (revision 41836). Position unchanged. S-076 S-087
+- Stage 2 stations/stadium/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33573) → sgwiki_kartographer (revision 41836). Position unchanged. S-076 S-087
+- Stage 2 stations/stadium: source — Station evidence refreshed, page 289, revision 33573 → 41836. S-076 S-087
+- Stage 2 stations/stevens/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33895) → sgwiki_kartographer (revision 33895). Position unchanged. S-076 S-087
+- Stage 2 stations/stevens/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33895) → sgwiki_kartographer (revision 33895). Position unchanged. S-076 S-087
+- Stage 2 stations/stevens/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33895) → sgwiki_kartographer (revision 33895). Position unchanged. S-076 S-087
+- Stage 2 stations/stevens/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33895) → sgwiki_kartographer (revision 33895). Position unchanged. S-076 S-087
+- Stage 2 stations/stevens/MRT:5: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33895) → sgwiki_kartographer (revision 33895). Position unchanged. S-076 S-087
+- Stage 2 stations/tai-seng/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34525) → sgwiki_kartographer (revision 41844). Position unchanged. S-076 S-087
+- Stage 2 stations/tai-seng/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34525) → sgwiki_kartographer (revision 41844). Position unchanged. S-076 S-087
+- Stage 2 stations/tai-seng/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34525) → sgwiki_kartographer (revision 41844). Position unchanged. S-076 S-087
+- Stage 2 stations/tai-seng: source — Station evidence refreshed, page 272, revision 34525 → 41844. S-076 S-087
+- Stage 2 stations/tampines/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36651) → trusted_onemap_baseline (revision 38999). Position unchanged. S-076 S-087
+- Stage 2 stations/tampines/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36651) → trusted_onemap_baseline (revision 38999). Position unchanged. S-076 S-087
+- Stage 2 stations/tampines/MRT:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36651) → trusted_onemap_baseline (revision 38999). Position unchanged. S-076 S-087
+- Stage 2 stations/tampines/MRT:D: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36651) → trusted_onemap_baseline (revision 38999). Position unchanged. S-076 S-087
+- Stage 2 stations/tampines/MRT:E: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36651) → trusted_onemap_baseline (revision 38999). Position unchanged. S-076 S-087
+- Stage 2 stations/tampines/MRT:F: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36651) → trusted_onemap_baseline (revision 38999). Position unchanged. S-076 S-087
+- Stage 2 stations/tampines/MRT:G: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 36651) → trusted_onemap_baseline (revision 38999). Position unchanged. S-076 S-087
+- Stage 2 stations/tampines: source — Station evidence refreshed, page 206, revision 36651 → 38999. S-076 S-087
+- Stage 2 stations/tan-kah-kee/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36776) → sgwiki_kartographer (revision 36776). Position unchanged. S-076 S-087
+- Stage 2 stations/tan-kah-kee/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 36776) → sgwiki_kartographer (revision 36776). Position unchanged. S-076 S-087
+- Stage 2 stations/tanah-merah/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34810) → sgwiki_kartographer (revision 34810). Position unchanged. S-076 S-087
+- Stage 2 stations/tanah-merah/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 34810) → sgwiki_kartographer (revision 34810). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:A: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 31544) → trusted_onemap_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:B: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 31544) → trusted_onemap_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:C: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 31544) → trusted_onemap_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:D: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 31544) → trusted_onemap_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:E: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 31544) → trusted_onemap_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:F: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 31544) → trusted_onemap_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:G: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 31544) → trusted_onemap_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:H: coordinate_source — Coordinate evidence: trusted_onemap_baseline (revision 31544) → trusted_onemap_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:J: coordinate_source — Coordinate evidence: trusted_supplemental_baseline (revision 31544) → trusted_supplemental_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar/MRT:K: coordinate_source — Coordinate evidence: trusted_supplemental_baseline (revision 31544) → trusted_supplemental_baseline (revision 41616). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-pagar: source — Station evidence refreshed, page 215, revision 31544 → 41616. S-076 S-087
+- Stage 2 stations/tanjong-rhu/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33976) → sgwiki_kartographer (revision 33976). Position unchanged. S-076 S-087
+- Stage 2 stations/tanjong-rhu/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33976) → sgwiki_kartographer (revision 33976). Position unchanged. S-076 S-087
+- Stage 2 stations/telok-blangah/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33454) → sgwiki_kartographer (revision 41033). Position unchanged. S-076 S-087
+- Stage 2 stations/telok-blangah: source — Station evidence refreshed, page 284, revision 33454 → 41033. S-076 S-087
+- Stage 2 stations/thanggam/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 20961) → sgwiki_kartographer (revision 20961). Position unchanged. S-076 S-087
+- Stage 2 stations/thanggam/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 20961) → sgwiki_kartographer (revision 20961). Position unchanged. S-076 S-087
+- Stage 2 stations/toa-payoh/MRT:A: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 33861) → sgwiki_kartographer (revision 39811). coordinates: [103.8477238042458,1.332376442166927] → [103.84781,1.33266]. S-076 S-087 S-064
+- Stage 2 stations/toa-payoh/MRT:B: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 33861) → sgwiki_kartographer (revision 39811). coordinates: [103.8475578006123,1.332297175560529] → [103.84747,1.33233]. S-076 S-087 S-064
+- Stage 2 stations/toa-payoh/MRT:C: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 33861) → sgwiki_kartographer (revision 39811). coordinates: [103.8473184364742,1.333007441851997] → [103.84731,1.33302]. S-076 S-087 S-064
+- Stage 2 stations/toa-payoh/MRT:D: coordinate_source, coordinates — Coordinate evidence: trusted_onemap_baseline (revision 33861) → sgwiki_kartographer (revision 39811). coordinates: [103.8465174056438,1.333278745724068] → [103.84655,1.33328]. S-076 S-087 S-064
+- Stage 2 stations/toa-payoh: source — Station evidence refreshed, page 114, revision 33861 → 39811. S-076 S-087
+- Stage 2 stations/tongkang/LRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28744) → sgwiki_kartographer (revision 28744). Position unchanged. S-076 S-087
+- Stage 2 stations/tongkang/LRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 28744) → sgwiki_kartographer (revision 28744). Position unchanged. S-076 S-087
+- Stage 2 stations/upper-thomson/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33978) → sgwiki_kartographer (revision 33978). Position unchanged. S-076 S-087
+- Stage 2 stations/upper-thomson/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33978) → sgwiki_kartographer (revision 33978). Position unchanged. S-076 S-087
+- Stage 2 stations/upper-thomson/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33978) → sgwiki_kartographer (revision 33978). Position unchanged. S-076 S-087
+- Stage 2 stations/upper-thomson/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33978) → sgwiki_kartographer (revision 33978). Position unchanged. S-076 S-087
+- Stage 2 stations/upper-thomson/MRT:5: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33978) → sgwiki_kartographer (revision 33978). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37676) → sgwiki_kartographer (revision 39894). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37676) → sgwiki_kartographer (revision 39894). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37676) → sgwiki_kartographer (revision 39894). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37676) → sgwiki_kartographer (revision 39894). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands/MRT:5: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37676) → sgwiki_kartographer (revision 39894). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands/MRT:6: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37676) → sgwiki_kartographer (revision 39894). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands/MRT:7: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 37676) → sgwiki_kartographer (revision 39894). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands: source — Station evidence refreshed, page 99, revision 37676 → 39894. S-076 S-087
+- Stage 2 stations/woodlands-north/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 38586) → sgwiki_kartographer (revision 39893). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands-north/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 38586) → sgwiki_kartographer (revision 39893). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands-north: source — Station evidence refreshed, page 430, revision 38586 → 39893. S-076 S-087
+- Stage 2 stations/woodlands-south/MRT:1: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33909) → sgwiki_kartographer (revision 33909). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands-south/MRT:2: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33909) → sgwiki_kartographer (revision 33909). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands-south/MRT:3: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33909) → sgwiki_kartographer (revision 33909). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands-south/MRT:4: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33909) → sgwiki_kartographer (revision 33909). Position unchanged. S-076 S-087
+- Stage 2 stations/woodlands-south/MRT:5: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33909) → sgwiki_kartographer (revision 33909). Position unchanged. S-076 S-087
+- Stage 2 stations/yew-tee/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33871) → sgwiki_kartographer (revision 39796). Position unchanged. S-076 S-087
+- Stage 2 stations/yew-tee/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33871) → sgwiki_kartographer (revision 39796). Position unchanged. S-076 S-087
+- Stage 2 stations/yew-tee/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33871) → sgwiki_kartographer (revision 39796). Position unchanged. S-076 S-087
+- Stage 2 stations/yew-tee/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33871) → sgwiki_kartographer (revision 39796). Position unchanged. S-076 S-087
+- Stage 2 stations/yew-tee: source — Station evidence refreshed, page 102, revision 33871 → 39796. S-076 S-087
+- Stage 2 stations/yio-chu-kang/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35571) → sgwiki_kartographer (revision 39806). Position unchanged. S-076 S-087
+- Stage 2 stations/yio-chu-kang/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35571) → sgwiki_kartographer (revision 39806). Position unchanged. S-076 S-087
+- Stage 2 stations/yio-chu-kang/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 35571) → sgwiki_kartographer (revision 39806). Position unchanged. S-076 S-087
+- Stage 2 stations/yio-chu-kang: source — Station evidence refreshed, page 110, revision 35571 → 39806. S-076 S-087
+- Stage 2 stations/yishun/MRT:A: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33856) → sgwiki_kartographer (revision 39804). Position unchanged. S-076 S-087
+- Stage 2 stations/yishun/MRT:B: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33856) → sgwiki_kartographer (revision 39804). Position unchanged. S-076 S-087
+- Stage 2 stations/yishun/MRT:C: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33856) → sgwiki_kartographer (revision 39804). Position unchanged. S-076 S-087
+- Stage 2 stations/yishun/MRT:D: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33856) → sgwiki_kartographer (revision 39804). Position unchanged. S-076 S-087
+- Stage 2 stations/yishun/MRT:E: coordinate_source — Coordinate evidence: sgwiki_kartographer (revision 33856) → sgwiki_kartographer (revision 39804). Position unchanged. S-076 S-087
+- Stage 2 stations/yishun: source — Station evidence refreshed, page 50, revision 33856 → 39804. S-076 S-087
+- Stage 2 dataset metadata: stage1_sha256, summary — Recompute stage1_sha256 for the reviewed 24 November inputs. Recompute summary for the reviewed 24 November inputs. S-076 S-087
+- Stage 3 physical geometry publication approval and asset hash — First publication authorization for the pinned physical ways, not a new survey: October OSM geometry rechecked with the 24 November active GTFS inventory, all 427 physical pairs connected. S-079 S-089.
+
+## Evidence
+Live collection 20261124T043012Z-release-live; service date 2026-11-24; exact source and product hashes in candidate.json. See reports/2026-11-23-stage1-triage.md, audit/evidence/2026-11-24-station-baselines-promotion.json, audit/evidence/2026-11-23-stage2-thirteen-moves.json and audit/evidence/2026-11-24-stage3-publication.json. Source revisions and input locators are retained in the stage records and audit decisions.
+
+## Human decisions
+Reviewed by: Project owner (recorded decisions in audit/decision-ledger.jsonl); Pi compiled this comparison from the approved records.
+S-039 / D-030: Owner requested resolution of the Exit D closure; not a release approval.
+S-040 / D-004: Retire the Cantonment partial-inventory override: SgWiki revision 41849 directly lists MRT Exits 1–4, matching the reviewed inventory.
+S-041 / D-005: Retire the Keppel partial-inventory override: SgWiki revision 41852 directly lists MRT Exits 1–3, matching the reviewed inventory.
+S-042 / D-006: Retire the Prince Edward Road partial-inventory override: SgWiki revision 41853 directly lists MRT Exits 1–2, matching the reviewed inventory.
+S-044 / D-031: Owner confirmed that CCK Exit D stays closed with no stated alternatives.
+S-046 / D-032: Owner validated retaining one MRT:G with both source rows at revision 41817.
+S-048 / D-033: Owner requested the Exit D expansion only.
+S-050 / D-034: Owner requested following the SgWiki C/D service wording and keeping the Woodlands interchange connection.
+S-052 / D-035: Owner requested closures without alternative-exit recommendations.
+S-054 / D-030: Owner approved the closure renewal. Platform finding remains open.
+S-056 / D-036: Owner accepted the platform interpretation after a recent visit; retain the exit closure.
+S-058 / D-038: Amend only the nearby_landmarks subfield of D-033; current Kovan and closure decisions are untouched.
+S-060 / D-039: Approve three regular Circle Line catalog stations
+S-062 / D-040: Promote reviewed Stage 1 comparison baseline
+S-064 / D-041: Accept all 13 moves; City Hall overlap disclosed. Defer baseline promotion until remaining Stage 2 findings are resolved.
+S-066 / D-042: Keep the existing exact OneMap point.
+S-068 / D-043: Use retained manual point for Kent Ridge E.
+S-069 / D-043: Apply the owner-selected manual position.
+S-071 / D-044: Renew exact remaining coordinate source guards; accept three City Hall non-exits
+S-073 / D-045: Retire 13 superseded OneMap fallback points after exact D-041 marker verification
+S-075 / D-027: Retire original Stage 2 comparison baseline in favor of verified D-046; D-029 had already migrated code ordering in the intervening baseline.
+S-076 / D-046: Promote after clean replay and verification against the prior baseline.
+S-078 / D-047: Physical track comparison for the retained GTFS service date only. Not an approval of directional service or publication.
+S-079 / D-028: Verified all 184 catalog stations against 186 GTFS and map points; reproduced the exact reviewed November preview. Reaffirm the unchanged physical geometry comparison baseline, not publication. Evidence SHA-256: 82cdf2592b57d4ecd91bf15e57983831c194df7931f3ae54d6f9a489e7ae5c0c.
+S-081 / D-032: Renew the same Stage 1 review at 41955; diagrams only.
+S-083 / D-049: Renew the seven source guards, without changing any coordinates.
+S-085 / D-040: Promote stage1 comparison baseline for 24 November
+S-087 / D-046: Promote stage2 comparison baseline for 24 November
+S-089 / D-052: Authorize exact 24 November physical track GeoJSON for dataset publication
+
+## Validation
+Run: 20261124T043525Z-release-replay; service date: 2026-11-24; prior version: initial baseline.

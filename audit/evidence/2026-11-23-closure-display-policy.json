@@ -1,0 +1,26 @@
+{
+  "authorization": "lets just make closure kept and no longer provide an alternative.",
+  "policy": "For all source-reported closed exits, expose the closure, not a recommended diversion. Keep source-reported alternatives as evidence only.",
+  "scope": "Passenger-facing closure fields for all exits; also renew the Tanjong Pagar Exit E closure finding, without changing landmarks or other station pins.",
+  "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41616",
+  "locator": "Entrances/Exits: MRT Exit E",
+  "raw_sha256": "fa70be1403afc8985239bcda2da9d87c2d95a0a3cc7971f6896f33be44aed320",
+  "source_observation": {
+    "alternative_exits": [
+      "H"
+    ],
+    "destination_verbatim": "AXA Tower",
+    "labels": [
+      "E"
+    ],
+    "scopes": [
+      "MRT"
+    ],
+    "status": "closed",
+    "status_markup": "small.d-block.mx-auto.fw-normal.tx-center",
+    "status_verbatim": "(Closed – use Exit H)"
+  },
+  "conflicting_source": "https://landtransportguru.net/tanjong-pagar-station/",
+  "prior_comparison": "audit/evidence/2026-11-23-tanjong-pagar-landmarks.json",
+  "limitation": "An empty alternative_exits array means no recommendation is provided. It does not establish reachability, accessibility or distance."
+}

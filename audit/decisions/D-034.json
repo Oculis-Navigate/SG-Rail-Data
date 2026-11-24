@@ -1,0 +1,60 @@
+{
+  "change_type": "revision_revalidation",
+  "evidence": [
+    {
+      "description": "Before/after SgWiki checks for both named stations",
+      "path": "audit/evidence/2026-11-23-paya-lebar-woodlands-revalidation.json",
+      "sha256": "b6bf288eefa8f3377e9e05b4b562bb579d0d01a808d7da902ebf6b450aeb9136"
+    }
+  ],
+  "id": "D-034",
+  "kind": "audit_decision",
+  "limitations": [
+    "No claims of permanent non-service on C/D or exclusive access via a numbered Woodlands exit."
+  ],
+  "reason": "Retain SgWiki platform wording at Paya Lebar and Woodlands station-level connection to 46009. No new exit assignment, operating schedule or release approval.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Paya Lebar 34530 → 41822",
+    "Woodlands 37676 → 39894"
+  ],
+  "targets": [
+    {
+      "after": 41822,
+      "after_sha256": "b9d47d1c11bfb1331adc76852c2afe073be7a1fa3dc8f7b0e2642e43ff7e8460",
+      "before": 34530,
+      "before_sha256": "b409a58430bc03873d2b31acbc6bcbd44bdb472beae307ff5b9bdabb837038c4",
+      "identity": "Paya Lebar:review_acceptances:revision_id",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/8/revision_id"
+    },
+    {
+      "after": "SgWiki revision 41822 groups C/D on B2 with the heading “No train service at this platform”. Retain that source heading for both faces; do not infer permanent closure.",
+      "after_sha256": "c020f825f28f3051a0958769708febd8d95799c174a0535d0433747e616c04f3",
+      "before": "Pinned to SgWiki Paya Lebar station revision 34530",
+      "before_sha256": "17630a1b47c3ba3b4eea74ec34efc3633384ee0dd906fe279d372b491673b5e6",
+      "identity": "Paya Lebar:review_acceptances:evidence/1",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/8/evidence/1"
+    },
+    {
+      "after": 39894,
+      "after_sha256": "07105a752443b6be3afbf66028844acfc86c7b0d38e908a619e0ce9c3547e8a9",
+      "before": 37676,
+      "before_sha256": "512efb592b19a164ddc33f38b9369bf264b6620077654ca99d9199a8b7504298",
+      "identity": "Woodlands:station_connection_contracts:revision_id",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/station_connection_contracts/0/revision_id"
+    },
+    {
+      "after": "SgWiki Woodlands station revision 39894 lists bus stop 46009 without an exit label",
+      "after_sha256": "31d324a78ce3085e01dd62147a1afbefd921559202ffc85ed1c42d807276a76f",
+      "before": "SgWiki Woodlands station revision 37676 lists bus stop 46009 without an exit label",
+      "before_sha256": "2276af874a5e2c716b651b980de0bd7ab88114abfefaf564e96ee9e7f37231f8",
+      "identity": "Woodlands:station_connection_contracts:evidence/0",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/station_connection_contracts/0/evidence/0"
+    }
+  ],
+  "title": "Renew Paya Lebar platform and Woodlands interchange rules"
+}

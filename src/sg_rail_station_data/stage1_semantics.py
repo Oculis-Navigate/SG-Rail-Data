@@ -274,12 +274,18 @@ def _snapshot_records(snapshot: object, catalog: StationCatalog) -> list[dict[st
         if (
             row["name"] != configured.name
             or set(snapshot_codes) != set(configured.codes)
-            or row["catalog_status"] != configured.catalog_status
+            or (row["catalog_status"] != configured.catalog_status and not (
+                # Replay may predate approval in the current registry. Only
+                # permit promotion, never reversal or another identity change.
+                row["catalog_status"] == "operator_addition_requires_review"
+                and configured.catalog_status == "v1_baseline"
+            ))
             or row["sgwiki_title"] != configured.sgwiki_title
         ):
             fail(context, "station identity disagrees with the reviewed registry")
         source = _validate_source(row["source"], configured.name)
-        records.append({**row, "codes": list(configured.codes), "source": source})
+        records.append({**row, "codes": list(configured.codes),
+                        "catalog_status": configured.catalog_status, "source": source})
     return records
 
 
@@ -410,6 +416,21 @@ def _group_review_items(
     return groups
 
 
+def _apply_nearby_landmarks(station, source, exits, acceptance):
+    """Add only an explicitly reviewed POI cell, not every comma-delimited row."""
+    rule = acceptance.get("nearby_landmarks") if acceptance else None
+    if rule is None:
+        return
+    if source["page_id"] != acceptance["page_id"] or source["revision_id"] != rule["revision_id"]:
+        fail(station, "nearby landmark source guard changed")
+    matches = [item for item in exits if item["id"] == rule["exit_id"]]
+    expected_row = [rule["exit_cell"], rule["source_cell"]]
+    if len(matches) != 1 or [row["row_verbatim"] for row in matches[0]["source_rows"]] != [expected_row]:
+        fail(station, "reviewed nearby landmark row changed")
+    for landmark in rule["names"]:
+        _append_unique(matches[0]["destinations"], landmark)
+
+
 def _apply_review_acceptance(
     *,
     station: str,
@@ -527,15 +548,16 @@ def build_full_stage1(
                         target["accessibility"]["evidence"],
                         "sgwiki_crossed_wheelchair_icon",
                     )
+        _apply_nearby_landmarks(name, source, exits, decisions.review_acceptances.get(name))
         for status_index, status in enumerate(source["exit_statuses"]):
             _validate_status(status, f"{name}.source.exit_statuses[{status_index}]")
             scopes = _scopes(status["scopes"], f"{name}.source.exit_statuses[{status_index}].scopes")
             for label in status["labels"]:
                 target = _match_entry_exit(exits, label=label, scopes=scopes, station=name)
                 target["operating_status"] = "source_reported_closed"
-                _append_unique(target["status_notes"], status["status_verbatim"])
-                for alternative in status["alternative_exits"]:
-                    _append_unique(target["alternative_exits"], alternative)
+                # Report the closure, not a diversion. Keep the literal notice in
+                # the source evidence; alternative_exits stays empty for consumers.
+                _append_unique(target["status_notes"], "(Closed)")
         for hours_index, hours in enumerate(source["exit_operating_hours"]):
             _validate_operating_hours(
                 hours, f"{name}.source.exit_operating_hours[{hours_index}]"

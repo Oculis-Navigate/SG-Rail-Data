@@ -4,7 +4,7 @@
     "schema_version": 1,
     "kind": "stage2_trusted_onemap_baseline",
     "status": "trusted",
-    "feature_count": 266,
+    "feature_count": 253,
     "imported_at": "2026-10-05T06:47:28.983887+00:00",
     "source": {
       "repository": "mrt-data-v2",
@@ -46,7 +46,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 274,
-          "sgwiki_revision_id": 36652
+          "sgwiki_revision_id": 41890
         },
         "provenance": {
           "source": "onemap",
@@ -92,7 +92,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 274,
-          "sgwiki_revision_id": 36652
+          "sgwiki_revision_id": 41890
         },
         "provenance": {
           "source": "onemap",
@@ -138,7 +138,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 274,
-          "sgwiki_revision_id": 36652
+          "sgwiki_revision_id": 41890
         },
         "provenance": {
           "source": "onemap",
@@ -184,7 +184,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 274,
-          "sgwiki_revision_id": 36652
+          "sgwiki_revision_id": 41890
         },
         "provenance": {
           "source": "onemap",
@@ -230,7 +230,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 274,
-          "sgwiki_revision_id": 36652
+          "sgwiki_revision_id": 41890
         },
         "provenance": {
           "source": "onemap",
@@ -1339,141 +1339,6 @@
     },
     {
       "type": "Feature",
-      "id": "braddell:MRT:A",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8464117628576,
-          1.341078755479382
-        ]
-      },
-      "properties": {
-        "station_id": "braddell",
-        "station_name": "Braddell",
-        "station_codes": [
-          "NS18"
-        ],
-        "exit_id": "MRT:A",
-        "label": "A",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 112,
-          "sgwiki_revision_id": 36654
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:A",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:0",
-          "candidate_scope": "MRT",
-          "candidate_label": "A",
-          "building": "BRADDELL MRT STATION EXIT A",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/braddell/onemap-mrt/page-1.json",
-              "sha256": "89512b82c8e4d666b908f905fdf2f455ba85e06f8e6297d707a77268fff89474",
-              "fetched_at": "2026-10-01T06:47:28.253695+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "braddell:MRT:B",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8463932449764,
-          1.340746516111449
-        ]
-      },
-      "properties": {
-        "station_id": "braddell",
-        "station_name": "Braddell",
-        "station_codes": [
-          "NS18"
-        ],
-        "exit_id": "MRT:B",
-        "label": "B",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 112,
-          "sgwiki_revision_id": 36654
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:B",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:1",
-          "candidate_scope": "MRT",
-          "candidate_label": "B",
-          "building": "BRADDELL MRT STATION EXIT B",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/braddell/onemap-mrt/page-1.json",
-              "sha256": "89512b82c8e4d666b908f905fdf2f455ba85e06f8e6297d707a77268fff89474",
-              "fetched_at": "2026-10-01T06:47:28.253695+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "braddell:MRT:C",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8474307678529,
-          1.340681574035467
-        ]
-      },
-      "properties": {
-        "station_id": "braddell",
-        "station_name": "Braddell",
-        "station_codes": [
-          "NS18"
-        ],
-        "exit_id": "MRT:C",
-        "label": "C",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 112,
-          "sgwiki_revision_id": 36654
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:C",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:2",
-          "candidate_scope": "MRT",
-          "candidate_label": "C",
-          "building": "BRADDELL MRT STATION EXIT C",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/braddell/onemap-mrt/page-1.json",
-              "sha256": "89512b82c8e4d666b908f905fdf2f455ba85e06f8e6297d707a77268fff89474",
-              "fetched_at": "2026-10-01T06:47:28.253695+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
       "id": "buangkok:MRT:A",
       "geometry": {
         "type": "Point",
@@ -1496,7 +1361,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 238,
-          "sgwiki_revision_id": 36670
+          "sgwiki_revision_id": 39017
         },
         "provenance": {
           "source": "onemap",
@@ -1541,7 +1406,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 238,
-          "sgwiki_revision_id": 36670
+          "sgwiki_revision_id": 39017
         },
         "provenance": {
           "source": "onemap",
@@ -2205,190 +2070,6 @@
     },
     {
       "type": "Feature",
-      "id": "city-hall:MRT:A",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8530215622706,
-          1.293233075934794
-        ]
-      },
-      "properties": {
-        "station_id": "city-hall",
-        "station_name": "City Hall",
-        "station_codes": [
-          "NS25",
-          "EW13"
-        ],
-        "exit_id": "MRT:A",
-        "label": "A",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 120,
-          "sgwiki_revision_id": 33852
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:A",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:0",
-          "candidate_scope": "MRT",
-          "candidate_label": "A",
-          "building": "CITY HALL MRT STATION EXIT A",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/city-hall/onemap-mrt/page-1.json",
-              "sha256": "68333504e866da6e30c14a2e2c08667392d304b1892d486e37ee6c9a95739417",
-              "fetched_at": "2026-10-01T06:48:01.538142+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "city-hall:MRT:B",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8519511294807,
-          1.293108533088286
-        ]
-      },
-      "properties": {
-        "station_id": "city-hall",
-        "station_name": "City Hall",
-        "station_codes": [
-          "NS25",
-          "EW13"
-        ],
-        "exit_id": "MRT:B",
-        "label": "B",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 120,
-          "sgwiki_revision_id": 33852
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:B",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:1",
-          "candidate_scope": "MRT",
-          "candidate_label": "B",
-          "building": "CITY HALL MRT STATION EXIT B",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/city-hall/onemap-mrt/page-1.json",
-              "sha256": "68333504e866da6e30c14a2e2c08667392d304b1892d486e37ee6c9a95739417",
-              "fetched_at": "2026-10-01T06:48:01.538142+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "city-hall:MRT:C",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8529853014308,
-          1.293046947638803
-        ]
-      },
-      "properties": {
-        "station_id": "city-hall",
-        "station_name": "City Hall",
-        "station_codes": [
-          "NS25",
-          "EW13"
-        ],
-        "exit_id": "MRT:C",
-        "label": "C",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 120,
-          "sgwiki_revision_id": 33852
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:C",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:2",
-          "candidate_scope": "MRT",
-          "candidate_label": "C",
-          "building": "CITY HALL MRT STATION EXIT C",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/city-hall/onemap-mrt/page-1.json",
-              "sha256": "68333504e866da6e30c14a2e2c08667392d304b1892d486e37ee6c9a95739417",
-              "fetched_at": "2026-10-01T06:48:01.538142+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "city-hall:MRT:D",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8518655458821,
-          1.293503346202729
-        ]
-      },
-      "properties": {
-        "station_id": "city-hall",
-        "station_name": "City Hall",
-        "station_codes": [
-          "NS25",
-          "EW13"
-        ],
-        "exit_id": "MRT:D",
-        "label": "D",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 120,
-          "sgwiki_revision_id": 33852
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:D",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:3",
-          "candidate_scope": "MRT",
-          "candidate_label": "D",
-          "building": "CITY HALL MRT STATION EXIT D",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/city-hall/onemap-mrt/page-1.json",
-              "sha256": "68333504e866da6e30c14a2e2c08667392d304b1892d486e37ee6c9a95739417",
-              "fetched_at": "2026-10-01T06:48:01.538142+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
       "id": "clarke-quay:MRT:A",
       "geometry": {
         "type": "Point",
@@ -3043,7 +2724,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 119,
-          "sgwiki_revision_id": 37293
+          "sgwiki_revision_id": 41955
         },
         "provenance": {
           "source": "onemap",
@@ -3090,7 +2771,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 119,
-          "sgwiki_revision_id": 37293
+          "sgwiki_revision_id": 41955
         },
         "provenance": {
           "source": "onemap",
@@ -3137,7 +2818,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 119,
-          "sgwiki_revision_id": 37293
+          "sgwiki_revision_id": 41955
         },
         "provenance": {
           "source": "onemap",
@@ -3184,7 +2865,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 119,
-          "sgwiki_revision_id": 37293
+          "sgwiki_revision_id": 41955
         },
         "provenance": {
           "source": "onemap",
@@ -3231,7 +2912,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 119,
-          "sgwiki_revision_id": 37293
+          "sgwiki_revision_id": 41955
         },
         "provenance": {
           "source": "onemap",
@@ -3278,7 +2959,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 119,
-          "sgwiki_revision_id": 37293
+          "sgwiki_revision_id": 41955
         },
         "provenance": {
           "source": "onemap",
@@ -3325,7 +3006,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 119,
-          "sgwiki_revision_id": 37293
+          "sgwiki_revision_id": 41955
         },
         "provenance": {
           "source": "onemap",
@@ -4411,7 +4092,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 393,
-          "sgwiki_revision_id": 36689
+          "sgwiki_revision_id": 38965
         },
         "provenance": {
           "source": "onemap",
@@ -4456,7 +4137,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 393,
-          "sgwiki_revision_id": 36689
+          "sgwiki_revision_id": 38965
         },
         "provenance": {
           "source": "onemap",
@@ -4501,7 +4182,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 393,
-          "sgwiki_revision_id": 36689
+          "sgwiki_revision_id": 38965
         },
         "provenance": {
           "source": "onemap",
@@ -4546,7 +4227,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 393,
-          "sgwiki_revision_id": 36689
+          "sgwiki_revision_id": 38965
         },
         "provenance": {
           "source": "onemap",
@@ -4591,7 +4272,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 393,
-          "sgwiki_revision_id": 36689
+          "sgwiki_revision_id": 38965
         },
         "provenance": {
           "source": "onemap",
@@ -4636,7 +4317,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 393,
-          "sgwiki_revision_id": 36689
+          "sgwiki_revision_id": 38965
         },
         "provenance": {
           "source": "onemap",
@@ -4772,7 +4453,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 264,
-          "sgwiki_revision_id": 37292
+          "sgwiki_revision_id": 41034
         },
         "provenance": {
           "source": "onemap",
@@ -4818,7 +4499,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 264,
-          "sgwiki_revision_id": 37292
+          "sgwiki_revision_id": 41034
         },
         "provenance": {
           "source": "onemap",
@@ -4864,7 +4545,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 264,
-          "sgwiki_revision_id": 37292
+          "sgwiki_revision_id": 41034
         },
         "provenance": {
           "source": "onemap",
@@ -4910,7 +4591,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 264,
-          "sgwiki_revision_id": 37292
+          "sgwiki_revision_id": 41034
         },
         "provenance": {
           "source": "onemap",
@@ -4956,7 +4637,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 264,
-          "sgwiki_revision_id": 37292
+          "sgwiki_revision_id": 41034
         },
         "provenance": {
           "source": "onemap",
@@ -5226,7 +4907,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 286,
-          "sgwiki_revision_id": 33515
+          "sgwiki_revision_id": 41030
         },
         "provenance": {
           "source": "onemap",
@@ -5271,7 +4952,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 326,
-          "sgwiki_revision_id": 33878
+          "sgwiki_revision_id": 39028
         },
         "provenance": {
           "source": "onemap",
@@ -5316,7 +4997,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 326,
-          "sgwiki_revision_id": 33878
+          "sgwiki_revision_id": 39028
         },
         "provenance": {
           "source": "onemap",
@@ -5811,7 +5492,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 292,
-          "sgwiki_revision_id": 36645
+          "sgwiki_revision_id": 41023
         },
         "provenance": {
           "source": "onemap",
@@ -5856,7 +5537,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 292,
-          "sgwiki_revision_id": 36645
+          "sgwiki_revision_id": 41023
         },
         "provenance": {
           "source": "onemap",
@@ -5901,7 +5582,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 292,
-          "sgwiki_revision_id": 36645
+          "sgwiki_revision_id": 41023
         },
         "provenance": {
           "source": "onemap",
@@ -5946,7 +5627,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 292,
-          "sgwiki_revision_id": 36645
+          "sgwiki_revision_id": 41023
         },
         "provenance": {
           "source": "onemap",
@@ -5991,7 +5672,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 241,
-          "sgwiki_revision_id": 36700
+          "sgwiki_revision_id": 39016
         },
         "provenance": {
           "source": "onemap",
@@ -6036,7 +5717,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 241,
-          "sgwiki_revision_id": 36700
+          "sgwiki_revision_id": 39016
         },
         "provenance": {
           "source": "onemap",
@@ -6081,7 +5762,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 241,
-          "sgwiki_revision_id": 36700
+          "sgwiki_revision_id": 39016
         },
         "provenance": {
           "source": "onemap",
@@ -6126,7 +5807,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 169,
-          "sgwiki_revision_id": 29014
+          "sgwiki_revision_id": 41203
         },
         "provenance": {
           "source": "onemap",
@@ -6171,7 +5852,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 169,
-          "sgwiki_revision_id": 29014
+          "sgwiki_revision_id": 41203
         },
         "provenance": {
           "source": "onemap",
@@ -6216,7 +5897,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 169,
-          "sgwiki_revision_id": 29014
+          "sgwiki_revision_id": 41203
         },
         "provenance": {
           "source": "onemap",
@@ -6997,96 +6678,6 @@
               "file": "sources/maxwell/onemap-mrt/page-1.json",
               "sha256": "fda904867a00a91ff57bda1dccf7577107c9113683d492f072c4119fcb8e6639",
               "fetched_at": "2026-10-01T06:50:08.711273+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "novena:MRT:A",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8444057912622,
-          1.321103003672807
-        ]
-      },
-      "properties": {
-        "station_id": "novena",
-        "station_name": "Novena",
-        "station_codes": [
-          "NS20"
-        ],
-        "exit_id": "MRT:A",
-        "label": "A",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 115,
-          "sgwiki_revision_id": 37879
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:A",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:0",
-          "candidate_scope": "MRT",
-          "candidate_label": "A",
-          "building": "NOVENA MRT STATION EXIT A",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/novena/onemap-mrt/page-1.json",
-              "sha256": "2c2f8995bee529530770c4ead76b9d4ef4ab221391f47950dbdfd3d325e6b967",
-              "fetched_at": "2026-10-01T06:50:22.965626+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "novena:MRT:B",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8433228666909,
-          1.319884007888243
-        ]
-      },
-      "properties": {
-        "station_id": "novena",
-        "station_name": "Novena",
-        "station_codes": [
-          "NS20"
-        ],
-        "exit_id": "MRT:B",
-        "label": "B",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 115,
-          "sgwiki_revision_id": 37879
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:B",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:1",
-          "candidate_scope": "MRT",
-          "candidate_label": "B",
-          "building": "NOVENA MRT STATION EXIT B",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/novena/onemap-mrt/page-1.json",
-              "sha256": "2c2f8995bee529530770c4ead76b9d4ef4ab221391f47950dbdfd3d325e6b967",
-              "fetched_at": "2026-10-01T06:50:22.965626+00:00"
             }
           ]
         }
@@ -8749,7 +8340,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -8795,7 +8386,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -8841,7 +8432,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -8887,7 +8478,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -8933,7 +8524,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -8979,7 +8570,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -9025,7 +8616,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -9071,7 +8662,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -9117,7 +8708,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -9163,7 +8754,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 121,
-          "sgwiki_revision_id": 36682
+          "sgwiki_revision_id": 41884
         },
         "provenance": {
           "source": "onemap",
@@ -9390,7 +8981,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 236,
-          "sgwiki_revision_id": 30255
+          "sgwiki_revision_id": 40387
         },
         "provenance": {
           "source": "onemap",
@@ -9437,7 +9028,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 236,
-          "sgwiki_revision_id": 30255
+          "sgwiki_revision_id": 40387
         },
         "provenance": {
           "source": "onemap",
@@ -9484,7 +9075,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 236,
-          "sgwiki_revision_id": 30255
+          "sgwiki_revision_id": 40387
         },
         "provenance": {
           "source": "onemap",
@@ -9531,7 +9122,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 236,
-          "sgwiki_revision_id": 30255
+          "sgwiki_revision_id": 40387
         },
         "provenance": {
           "source": "onemap",
@@ -10072,7 +9663,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 206,
-          "sgwiki_revision_id": 36651
+          "sgwiki_revision_id": 38999
         },
         "provenance": {
           "source": "onemap",
@@ -10123,7 +9714,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 206,
-          "sgwiki_revision_id": 36651
+          "sgwiki_revision_id": 38999
         },
         "provenance": {
           "source": "onemap",
@@ -10174,7 +9765,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 206,
-          "sgwiki_revision_id": 36651
+          "sgwiki_revision_id": 38999
         },
         "provenance": {
           "source": "onemap",
@@ -10225,7 +9816,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 206,
-          "sgwiki_revision_id": 36651
+          "sgwiki_revision_id": 38999
         },
         "provenance": {
           "source": "onemap",
@@ -10276,7 +9867,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 206,
-          "sgwiki_revision_id": 36651
+          "sgwiki_revision_id": 38999
         },
         "provenance": {
           "source": "onemap",
@@ -10327,7 +9918,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 206,
-          "sgwiki_revision_id": 36651
+          "sgwiki_revision_id": 38999
         },
         "provenance": {
           "source": "onemap",
@@ -10378,7 +9969,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 206,
-          "sgwiki_revision_id": 36651
+          "sgwiki_revision_id": 38999
         },
         "provenance": {
           "source": "onemap",
@@ -10833,7 +10424,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 215,
-          "sgwiki_revision_id": 31544
+          "sgwiki_revision_id": 41616
         },
         "provenance": {
           "source": "onemap",
@@ -10878,7 +10469,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 215,
-          "sgwiki_revision_id": 31544
+          "sgwiki_revision_id": 41616
         },
         "provenance": {
           "source": "onemap",
@@ -10923,7 +10514,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 215,
-          "sgwiki_revision_id": 31544
+          "sgwiki_revision_id": 41616
         },
         "provenance": {
           "source": "onemap",
@@ -10968,7 +10559,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 215,
-          "sgwiki_revision_id": 31544
+          "sgwiki_revision_id": 41616
         },
         "provenance": {
           "source": "onemap",
@@ -11013,7 +10604,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 215,
-          "sgwiki_revision_id": 31544
+          "sgwiki_revision_id": 41616
         },
         "provenance": {
           "source": "onemap",
@@ -11058,7 +10649,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 215,
-          "sgwiki_revision_id": 31544
+          "sgwiki_revision_id": 41616
         },
         "provenance": {
           "source": "onemap",
@@ -11103,7 +10694,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 215,
-          "sgwiki_revision_id": 31544
+          "sgwiki_revision_id": 41616
         },
         "provenance": {
           "source": "onemap",
@@ -11148,7 +10739,7 @@
         "trust_class": "trusted_onemap_import",
         "source_guard": {
           "sgwiki_page_id": 215,
-          "sgwiki_revision_id": 31544
+          "sgwiki_revision_id": 41616
         },
         "provenance": {
           "source": "onemap",
@@ -11344,186 +10935,6 @@
               "file": "sources/tiong-bahru/onemap-mrt/page-1.json",
               "sha256": "a15499e8dddbc49b38f14f05a48299fc1f324b7649d20e16e99ae9918b740137",
               "fetched_at": "2026-10-01T06:52:17.849163+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "toa-payoh:MRT:A",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8477238042458,
-          1.332376442166927
-        ]
-      },
-      "properties": {
-        "station_id": "toa-payoh",
-        "station_name": "Toa Payoh",
-        "station_codes": [
-          "NS19"
-        ],
-        "exit_id": "MRT:A",
-        "label": "A",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 114,
-          "sgwiki_revision_id": 33861
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:A",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:0",
-          "candidate_scope": "MRT",
-          "candidate_label": "A",
-          "building": "TOA PAYOH MRT STATION EXIT A",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/toa-payoh/onemap-mrt/page-1.json",
-              "sha256": "7734f6c8aca47b784d728245774b0d9958bb54e6de097f9eb042a5f921b6ab1b",
-              "fetched_at": "2026-10-01T06:52:19.387370+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "toa-payoh:MRT:B",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8475578006123,
-          1.332297175560529
-        ]
-      },
-      "properties": {
-        "station_id": "toa-payoh",
-        "station_name": "Toa Payoh",
-        "station_codes": [
-          "NS19"
-        ],
-        "exit_id": "MRT:B",
-        "label": "B",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 114,
-          "sgwiki_revision_id": 33861
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:B",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:1",
-          "candidate_scope": "MRT",
-          "candidate_label": "B",
-          "building": "TOA PAYOH MRT STATION EXIT B",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/toa-payoh/onemap-mrt/page-1.json",
-              "sha256": "7734f6c8aca47b784d728245774b0d9958bb54e6de097f9eb042a5f921b6ab1b",
-              "fetched_at": "2026-10-01T06:52:19.387370+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "toa-payoh:MRT:C",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8473184364742,
-          1.333007441851997
-        ]
-      },
-      "properties": {
-        "station_id": "toa-payoh",
-        "station_name": "Toa Payoh",
-        "station_codes": [
-          "NS19"
-        ],
-        "exit_id": "MRT:C",
-        "label": "C",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 114,
-          "sgwiki_revision_id": 33861
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:C",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:2",
-          "candidate_scope": "MRT",
-          "candidate_label": "C",
-          "building": "TOA PAYOH MRT STATION EXIT C",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/toa-payoh/onemap-mrt/page-1.json",
-              "sha256": "7734f6c8aca47b784d728245774b0d9958bb54e6de097f9eb042a5f921b6ab1b",
-              "fetched_at": "2026-10-01T06:52:19.387370+00:00"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "toa-payoh:MRT:D",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.8465174056438,
-          1.333278745724068
-        ]
-      },
-      "properties": {
-        "station_id": "toa-payoh",
-        "station_name": "Toa Payoh",
-        "station_codes": [
-          "NS19"
-        ],
-        "exit_id": "MRT:D",
-        "label": "D",
-        "scopes": [
-          "MRT"
-        ],
-        "trust_class": "trusted_onemap_import",
-        "source_guard": {
-          "sgwiki_page_id": 114,
-          "sgwiki_revision_id": 33861
-        },
-        "provenance": {
-          "source": "onemap",
-          "original_exit_id": "MRT:D",
-          "original_selection_status": "experimental_selected",
-          "candidate_id": "MRT:3",
-          "candidate_scope": "MRT",
-          "candidate_label": "D",
-          "building": "TOA PAYOH MRT STATION EXIT D",
-          "query_scope": "MRT",
-          "response_files": [
-            {
-              "file": "sources/toa-payoh/onemap-mrt/page-1.json",
-              "sha256": "7734f6c8aca47b784d728245774b0d9958bb54e6de097f9eb042a5f921b6ab1b",
-              "fetched_at": "2026-10-01T06:52:19.387370+00:00"
             }
           ]
         }

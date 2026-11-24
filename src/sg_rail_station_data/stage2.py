@@ -27,6 +27,7 @@ from typing import Any
 from urllib.parse import quote_plus, urlsplit
 
 from .contracts import ContractError, exact_bool, exact_int, exact_str, fail, require_fields
+from .sources.sgwiki_mapdata import exit_marker_title_matches
 
 
 SINGAPORE_LONGITUDE = (103.58, 104.12)
@@ -444,7 +445,7 @@ def prepare_kartographer_exits(
             if label in seen_labels:
                 fail(marker_context, f"duplicate marker label {label}")
             seen_labels.add(label)
-            if exact_str(marker["title"], f"{marker_context}.title") != f"Exit {label}":
+            if not exit_marker_title_matches(label, exact_str(marker["title"], f"{marker_context}.title")):
                 fail(marker_context, "marker title does not agree with its label")
             exact_str(
                 marker["destination_verbatim"],
@@ -594,6 +595,21 @@ def _kartographer_markers(
             ),
         })
     return markers, unmatched
+
+
+def _reviewed_city_hall_non_exit(marker: dict) -> bool:
+    reviewed = {"E": (14, [103.8555, 1.29298]), "F": (15, [103.85514, 1.29389]),
+                "G": (16, [103.85468, 1.29378])}
+    return (
+        marker["station_id"] == "city-hall" and marker["station_name"] == "City Hall"
+        and marker["reason"] == "kartographer_exit_label_missing_from_stage1"
+        and marker["matching_exit_ids"] == []
+        and marker["source_url"] == (
+            "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=41804"
+            "&mpdgroups=_8553ade687da469a504575cec997181d1b319d7f&mpdparser=legacy&format=json&formatversion=2"
+        )
+        and reviewed.get(marker["label"]) == (marker["source_feature_index"], marker["coordinates"])
+    )
 
 
 def _review_ledger(document: object) -> tuple[
@@ -1416,6 +1432,10 @@ def build_stage2(
     review_items: list[dict[str, object]] = []
 
     for marker in unmatched_markers:
+        # D-044: these three exact features are not City Hall exits. Keep the
+        # immutable overlay intact; any new revision or marker remains reviewable.
+        if _reviewed_city_hall_non_exit(marker):
+            continue
         review_items.append({
             "severity": "WARNING",
             "reason": marker["reason"],

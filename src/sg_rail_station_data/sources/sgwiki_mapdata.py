@@ -47,6 +47,13 @@ _MAP_ATTRIBUTES = frozenset({
 })
 
 
+def exit_marker_title_matches(label: str, title: str) -> bool:
+    """Every label in the source title must agree with the marker identity."""
+    return _EXIT_LABEL.fullmatch(label) is not None and title in (
+        f"Exit {label}", f"[Exit-{label}]Exit {label}",
+    )
+
+
 class SgWikiMapDataError(SgWikiSourceError):
     """Raised when Kartographer markup, transport, or GeoJSON changes."""
 
@@ -246,17 +253,19 @@ def discover_embedded_map(
     ):
         raise SgWikiMapDataError("SgWiki map snapshot is no longer an OpenStreetMap render")
     try:
-        query = parse_qs(image_url.query, strict_parsing=True)
+        query = parse_qs(image_url.query, strict_parsing=True, keep_blank_values=True)
     except ValueError as error:
         raise SgWikiMapDataError("SgWiki map snapshot query changed") from error
-    if set(query) != {"domain", "groups", "lang", "parser", "revid", "title"}:
+    # The preview image may omit revid. The MapData request below is always
+    # pinned to the revision from the page API, never inferred from the PNG.
+    if set(query) - {"revid"} != {"domain", "groups", "lang", "parser", "title"}:
         raise SgWikiMapDataError("SgWiki map snapshot query changed")
     if (
         _one_query(query, "domain") != "sgwiki.miraheze.org"
         or _one_query(query, "groups") != overlay_id
         or _one_query(query, "lang") != "en"
         or _one_query(query, "parser") != "legacy"
-        or _one_query(query, "revid") != str(revision_id)
+        or ("revid" in query and _one_query(query, "revid") != str(revision_id))
         or _one_query(query, "title") != title.replace(" ", "_")
     ):
         raise SgWikiMapDataError(
@@ -370,7 +379,7 @@ def _normalize_feature(
             )
         if symbol.startswith("exit-"):
             label = symbol.removeprefix("exit-")
-            if _EXIT_LABEL.fullmatch(label) is None or title != f"Exit {label}":
+            if not exit_marker_title_matches(label, title):
                 raise SgWikiMapDataError(
                     f"{context}: ambiguous exit label between marker symbol {symbol!r} "
                     f"and title {title!r}"

@@ -1,0 +1,53 @@
+{
+  "change_type": "semantic_clarification",
+  "evidence": [
+    {
+      "description": "Owner approval and naming sources",
+      "path": "audit/evidence/2026-11-23-tanjong-pagar-display-landmarks.json",
+      "sha256": "19fa0fee39181c460eccd4bba3eccc4ccf082493f2520f5649e5ac53319061d9"
+    }
+  ],
+  "id": "D-038",
+  "kind": "audit_decision",
+  "limitations": [
+    "No approval of Exit E routing, other station guards, or a release."
+  ],
+  "reason": "Preserve exact POI cell as evidence; display Skywaters Residences and MAS Building.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Tanjong Pagar page 215 revision 41616"
+  ],
+  "targets": [
+    {
+      "after": {
+        "exit_cell": "D Prince Edward Road",
+        "exit_id": "MRT:D",
+        "names": [
+          "Skywaters Residences",
+          "MAS Building",
+          "Shenton Way Terminal",
+          "CC32 Prince Edward Road"
+        ],
+        "revision_id": 41616,
+        "source_cell": "AXA Tower, Money Authority of Singapore Building, Shenton Way Terminal, CC32 Prince Edward Road"
+      },
+      "after_sha256": "bce6bc116e388c51563694cc98c81d88e1ad73b28b28d98c0c32f38ee1f89384",
+      "before": {
+        "exit_cell": "D Prince Edward Road",
+        "exit_id": "MRT:D",
+        "names": [
+          "AXA Tower",
+          "Money Authority of Singapore Building",
+          "Shenton Way Terminal",
+          "CC32 Prince Edward Road"
+        ],
+        "revision_id": 41616
+      },
+      "before_sha256": "0c51a0d45c8db30f7a1c8b38d467268ad90b6b14b0ceccc338370f6366ddde72",
+      "identity": "Tanjong Pagar:MRT:D nearby landmarks",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/11/nearby_landmarks"
+    }
+  ],
+  "title": "Use reviewed display names for Tanjong Pagar Exit D"
+}

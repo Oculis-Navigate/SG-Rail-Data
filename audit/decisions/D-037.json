@@ -1,0 +1,72 @@
+{
+  "change_type": "semantic_clarification",
+  "evidence": [
+    {
+      "description": "Layout heading and owner confirmation",
+      "path": "audit/evidence/2026-11-23-ang-mo-kio-platform-review.json",
+      "sha256": "a598cf918f2b3b63eff7c924da08b9fcb7aeb31bdd5205bd24c6a1ade38b6f35"
+    }
+  ],
+  "id": "D-037",
+  "kind": "audit_decision",
+  "limitations": [
+    "No release or change to other stations is approved."
+  ],
+  "reason": "Accept the grouped C/D finding for Ang Mo Kio at revision 41909; no inference of permanent closure. Keep the existing MRT:D exit closure review.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Ang Mo Kio page 111, revision 41909"
+  ],
+  "targets": [
+    {
+      "after": {
+        "codes": [
+          "NS16",
+          "CR11"
+        ],
+        "evidence": [
+          "Revision 41909 explicitly marks MRT Exit D (Ang Mo Kio Town Garden) closed. No alternative exit is stated.",
+          "Owner confirmed the exit closure and, following a recent visit, accepted separate NSL C and D platform records preserving the L2 C/D group and its no-train-service heading."
+        ],
+        "findings": [
+          {
+            "count": 1,
+            "reason": "exit_status_requires_review"
+          },
+          {
+            "count": 1,
+            "reason": "combined_platform_label"
+          }
+        ],
+        "page_id": 111,
+        "revision_id": 41909,
+        "station": "Ang Mo Kio"
+      },
+      "after_sha256": "20f24f694c22a1cb6a6ca885984193cee57ded5809e14abc0068a1649ed28bbe",
+      "before": {
+        "codes": [
+          "NS16",
+          "CR11"
+        ],
+        "evidence": [
+          "Revision 41909 explicitly marks MRT Exit D (Ang Mo Kio Town Garden) closed. No alternative exit is stated.",
+          "Project owner confirmed the closure. The separate platform finding is not accepted by this decision."
+        ],
+        "findings": [
+          {
+            "count": 1,
+            "reason": "exit_status_requires_review"
+          }
+        ],
+        "page_id": 111,
+        "revision_id": 41909,
+        "station": "Ang Mo Kio"
+      },
+      "before_sha256": "93dd77dc165b4bf74b8a04e3edd7b8af5ad59bf3d10ac75d4865f695d79806fb",
+      "identity": "Ang Mo Kio:review_acceptance",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/0"
+    }
+  ],
+  "title": "Accept Ang Mo Kio L2 NSL platform group C/D"
+}

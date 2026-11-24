@@ -1,0 +1,22 @@
+{
+  "version": "2026.11.24.1",
+  "previous": null,
+  "base": "caa0384cc77290a0d36d36d94ec53582fce956c1",
+  "run_id": "20261124T043525Z-release-replay",
+  "service_date": "2026-11-24",
+  "ledger_head": "dc0aa3d0daecb17e4b9d24036e310b1f598124be0e2a173cc44711e4b354fa76",
+  "collection_run": "20261124T043012Z-release-live",
+  "findings_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "sources": {
+    "lta-gtfs/active-stations.json": "23548d544333381cdb312bafcdb852780fa1a57902ee9d725c4faf7704a69332",
+    "lta-bus-stops/snapshot.json": "26e481e74aea14d31cc018cb5dfc013157667065a74d22b554ade76a7f38909d",
+    "sgwiki/snapshot.json": "905592e5469439ead50cf3089529f937af64aa20be276d5624248bc4de3aae92",
+    "sgwiki-mapdata/snapshot.json": "46f328854674bc37ab0f55b3953e23224a13e30d227a5267a7cdd141c7d992d1"
+  },
+  "products": {
+    "stage1/stations.json": "477d9dd00a8f4a4d504a3cc93cb922e891a0c74f578c5f7d11c0122df0be0a9d",
+    "stage2/stations.json": "4e7bdc08aa4e934a5f6e584aa5b3cc8bdb7fc9e350a8bbac9885787e5907e0ca",
+    "stage2/exits.geojson": "da94e12dcb2a8ae48da60d5def9083f8aae9b9db7591dbb7f46572afd73994cf",
+    "stage3/rail-lines.geojson": "ec5e76be9f92402eb3d1f078d47e79778d227e86db64453802eff3683f8a7c4b"
+  }
+}

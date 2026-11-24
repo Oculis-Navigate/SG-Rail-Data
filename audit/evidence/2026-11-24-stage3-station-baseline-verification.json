@@ -1,0 +1,1143 @@
+{
+  "authorization": "help me double check all stations are there and if so, approve this baseline for stage 3",
+  "scope": "Approve the verified station coverage and physical geometry comparison baseline for these exact inputs, not production release or timetable validation.",
+  "run": "20261124T010731Z-yishun-display",
+  "service_date": "2026-11-23",
+  "sources": {
+    "LTA GTFS ZIP": "7a4f56076869e1c71d4019d34b23cec90fe0137d1a729967c66bfc8c18793d7f",
+    "GTFS active station inventory": "2d6b5caaf3ef30515c467ceb2a37995bbf4303f076ffb98345b4e2e0c8657212",
+    "station catalog": "a08dfd509f88f0d4b0cdba568a3c9367bd2ca7b5505f270ffcd933eb2c5cf37f",
+    "Stage 1 approved stations": "9bee8556a7b3869e62df529c0d5aa61f5fab2930b9162d2fd7e86af30c479408",
+    "D-028 geometry": "e95e79d33d1aaf3a20efdaa25a9cbff2c18fd6c48b3bc6ec7a1aeb199e32ffaf"
+  },
+  "artifact_sha256": {
+    "rail-network.json": "14a4a1836986724f4203f1caf6e86ca77ffd97c30e4cf889e257115121bc4234",
+    "rail-lines.geojson": "45e33e7f60d00b5673a5d52e1867ecfc76264667689b2431de0e299b689a666d",
+    "stations.geojson": "a17fc7774027ca4a306fd3766af3d378341b455c9ed7780a172301234a4bac0f",
+    "continuity.json": "9b0fe28dc04b2fb201860e5b81cd817443e23ebd58a20a0fe5084d5ef49163b4",
+    "coverage.json": "aafca8cc89ef03dd865782f2ae6ef3822f967c0ae0aecedf178fbde5622bb5ca",
+    "changes.json": "cc9356f89e3e977afcb39da07a90f2a8f3d28e48dac807ff98d730aaa0df37d2",
+    "preview-data.js": "a3c75f9362921f0cf9d994ccff5e9cde364d3d902a023f3339f64e866729541b"
+  },
+  "replay": "All listed artifacts reproduced byte-for-byte from the retained inputs.",
+  "summary": {
+    "catalog_stations": 184,
+    "gtfs_station_points": 186,
+    "station_line_memberships": 216,
+    "lines": 9,
+    "patterns": 113,
+    "continuous_pairs": 427,
+    "physical_gaps": 0,
+    "geometry_differences": 0,
+    "missing_stations": [],
+    "unexpected_stations": []
+  },
+  "station_points": [
+    {
+      "name": "Admiralty",
+      "gtfs_stop_ids": [
+        "NS10"
+      ]
+    },
+    {
+      "name": "Aljunied",
+      "gtfs_stop_ids": [
+        "EW9"
+      ]
+    },
+    {
+      "name": "Ang Mo Kio",
+      "gtfs_stop_ids": [
+        "NS16"
+      ]
+    },
+    {
+      "name": "Bakau",
+      "gtfs_stop_ids": [
+        "SE3"
+      ]
+    },
+    {
+      "name": "Bangkit",
+      "gtfs_stop_ids": [
+        "BP9"
+      ]
+    },
+    {
+      "name": "Bartley",
+      "gtfs_stop_ids": [
+        "CC12"
+      ]
+    },
+    {
+      "name": "Bayfront",
+      "gtfs_stop_ids": [
+        "CC34"
+      ]
+    },
+    {
+      "name": "Bayshore",
+      "gtfs_stop_ids": [
+        "TE29"
+      ]
+    },
+    {
+      "name": "Beauty World",
+      "gtfs_stop_ids": [
+        "DT5"
+      ]
+    },
+    {
+      "name": "Bedok",
+      "gtfs_stop_ids": [
+        "EW5"
+      ]
+    },
+    {
+      "name": "Bedok North",
+      "gtfs_stop_ids": [
+        "DT29"
+      ]
+    },
+    {
+      "name": "Bedok Reservoir",
+      "gtfs_stop_ids": [
+        "DT30"
+      ]
+    },
+    {
+      "name": "Bencoolen",
+      "gtfs_stop_ids": [
+        "DT21"
+      ]
+    },
+    {
+      "name": "Bendemeer",
+      "gtfs_stop_ids": [
+        "DT23"
+      ]
+    },
+    {
+      "name": "Bishan",
+      "gtfs_stop_ids": [
+        "CC15"
+      ]
+    },
+    {
+      "name": "Boon Keng",
+      "gtfs_stop_ids": [
+        "NE9"
+      ]
+    },
+    {
+      "name": "Boon Lay",
+      "gtfs_stop_ids": [
+        "EW27"
+      ]
+    },
+    {
+      "name": "Botanic Gardens",
+      "gtfs_stop_ids": [
+        "CC19"
+      ]
+    },
+    {
+      "name": "Braddell",
+      "gtfs_stop_ids": [
+        "NS18"
+      ]
+    },
+    {
+      "name": "Bras Basah",
+      "gtfs_stop_ids": [
+        "CC2"
+      ]
+    },
+    {
+      "name": "Bright Hill",
+      "gtfs_stop_ids": [
+        "TE7"
+      ]
+    },
+    {
+      "name": "Buangkok",
+      "gtfs_stop_ids": [
+        "NE15"
+      ]
+    },
+    {
+      "name": "Bugis",
+      "gtfs_stop_ids": [
+        "DT14"
+      ]
+    },
+    {
+      "name": "Bukit Batok",
+      "gtfs_stop_ids": [
+        "NS2"
+      ]
+    },
+    {
+      "name": "Bukit Gombak",
+      "gtfs_stop_ids": [
+        "NS3"
+      ]
+    },
+    {
+      "name": "Bukit Panjang",
+      "gtfs_stop_ids": [
+        "BP6",
+        "DT1"
+      ]
+    },
+    {
+      "name": "Buona Vista",
+      "gtfs_stop_ids": [
+        "CC22"
+      ]
+    },
+    {
+      "name": "Caldecott",
+      "gtfs_stop_ids": [
+        "CC17"
+      ]
+    },
+    {
+      "name": "Canberra",
+      "gtfs_stop_ids": [
+        "NS12"
+      ]
+    },
+    {
+      "name": "Cantonment",
+      "gtfs_stop_ids": [
+        "CC31"
+      ]
+    },
+    {
+      "name": "Cashew",
+      "gtfs_stop_ids": [
+        "DT2"
+      ]
+    },
+    {
+      "name": "Changi Airport",
+      "gtfs_stop_ids": [
+        "CG2"
+      ]
+    },
+    {
+      "name": "Cheng Lim",
+      "gtfs_stop_ids": [
+        "SW1"
+      ]
+    },
+    {
+      "name": "Chinatown",
+      "gtfs_stop_ids": [
+        "DT19"
+      ]
+    },
+    {
+      "name": "Chinese Garden",
+      "gtfs_stop_ids": [
+        "EW25"
+      ]
+    },
+    {
+      "name": "Choa Chu Kang",
+      "gtfs_stop_ids": [
+        "BP1",
+        "NS4"
+      ]
+    },
+    {
+      "name": "City Hall",
+      "gtfs_stop_ids": [
+        "EW13"
+      ]
+    },
+    {
+      "name": "Clarke Quay",
+      "gtfs_stop_ids": [
+        "NE5"
+      ]
+    },
+    {
+      "name": "Clementi",
+      "gtfs_stop_ids": [
+        "EW23"
+      ]
+    },
+    {
+      "name": "Commonwealth",
+      "gtfs_stop_ids": [
+        "EW20"
+      ]
+    },
+    {
+      "name": "Compassvale",
+      "gtfs_stop_ids": [
+        "SE1"
+      ]
+    },
+    {
+      "name": "Coral Edge",
+      "gtfs_stop_ids": [
+        "PE3"
+      ]
+    },
+    {
+      "name": "Cove",
+      "gtfs_stop_ids": [
+        "PE1"
+      ]
+    },
+    {
+      "name": "Dakota",
+      "gtfs_stop_ids": [
+        "CC8"
+      ]
+    },
+    {
+      "name": "Damai",
+      "gtfs_stop_ids": [
+        "PE7"
+      ]
+    },
+    {
+      "name": "Dhoby Ghaut",
+      "gtfs_stop_ids": [
+        "NS24"
+      ]
+    },
+    {
+      "name": "Dover",
+      "gtfs_stop_ids": [
+        "EW22"
+      ]
+    },
+    {
+      "name": "Downtown",
+      "gtfs_stop_ids": [
+        "DT17"
+      ]
+    },
+    {
+      "name": "Esplanade",
+      "gtfs_stop_ids": [
+        "CC3"
+      ]
+    },
+    {
+      "name": "Eunos",
+      "gtfs_stop_ids": [
+        "EW7"
+      ]
+    },
+    {
+      "name": "Expo",
+      "gtfs_stop_ids": [
+        "CG1"
+      ]
+    },
+    {
+      "name": "Fajar",
+      "gtfs_stop_ids": [
+        "BP10"
+      ]
+    },
+    {
+      "name": "Farmway",
+      "gtfs_stop_ids": [
+        "SW2"
+      ]
+    },
+    {
+      "name": "Farrer Park",
+      "gtfs_stop_ids": [
+        "NE8"
+      ]
+    },
+    {
+      "name": "Farrer Road",
+      "gtfs_stop_ids": [
+        "CC20"
+      ]
+    },
+    {
+      "name": "Fernvale",
+      "gtfs_stop_ids": [
+        "SW5"
+      ]
+    },
+    {
+      "name": "Fort Canning",
+      "gtfs_stop_ids": [
+        "DT20"
+      ]
+    },
+    {
+      "name": "Gardens by the Bay",
+      "gtfs_stop_ids": [
+        "TE22"
+      ]
+    },
+    {
+      "name": "Geylang Bahru",
+      "gtfs_stop_ids": [
+        "DT24"
+      ]
+    },
+    {
+      "name": "Great World",
+      "gtfs_stop_ids": [
+        "TE15"
+      ]
+    },
+    {
+      "name": "Gul Circle",
+      "gtfs_stop_ids": [
+        "EW30"
+      ]
+    },
+    {
+      "name": "HarbourFront",
+      "gtfs_stop_ids": [
+        "CC29"
+      ]
+    },
+    {
+      "name": "Havelock",
+      "gtfs_stop_ids": [
+        "TE16"
+      ]
+    },
+    {
+      "name": "Haw Par Villa",
+      "gtfs_stop_ids": [
+        "CC25"
+      ]
+    },
+    {
+      "name": "Hillview",
+      "gtfs_stop_ids": [
+        "DT3"
+      ]
+    },
+    {
+      "name": "Holland Village",
+      "gtfs_stop_ids": [
+        "CC21"
+      ]
+    },
+    {
+      "name": "Hougang",
+      "gtfs_stop_ids": [
+        "NE14"
+      ]
+    },
+    {
+      "name": "Hume",
+      "gtfs_stop_ids": [
+        "DT4"
+      ]
+    },
+    {
+      "name": "Jalan Besar",
+      "gtfs_stop_ids": [
+        "DT22"
+      ]
+    },
+    {
+      "name": "Jelapang",
+      "gtfs_stop_ids": [
+        "BP12"
+      ]
+    },
+    {
+      "name": "Joo Koon",
+      "gtfs_stop_ids": [
+        "EW29"
+      ]
+    },
+    {
+      "name": "Jurong East",
+      "gtfs_stop_ids": [
+        "EW24"
+      ]
+    },
+    {
+      "name": "Kadaloor",
+      "gtfs_stop_ids": [
+        "PE5"
+      ]
+    },
+    {
+      "name": "Kaki Bukit",
+      "gtfs_stop_ids": [
+        "DT28"
+      ]
+    },
+    {
+      "name": "Kallang",
+      "gtfs_stop_ids": [
+        "EW10"
+      ]
+    },
+    {
+      "name": "Kangkar",
+      "gtfs_stop_ids": [
+        "SE4"
+      ]
+    },
+    {
+      "name": "Katong Park",
+      "gtfs_stop_ids": [
+        "TE24"
+      ]
+    },
+    {
+      "name": "Keat Hong",
+      "gtfs_stop_ids": [
+        "BP3"
+      ]
+    },
+    {
+      "name": "Kembangan",
+      "gtfs_stop_ids": [
+        "EW6"
+      ]
+    },
+    {
+      "name": "Kent Ridge",
+      "gtfs_stop_ids": [
+        "CC24"
+      ]
+    },
+    {
+      "name": "Keppel",
+      "gtfs_stop_ids": [
+        "CC30"
+      ]
+    },
+    {
+      "name": "Khatib",
+      "gtfs_stop_ids": [
+        "NS14"
+      ]
+    },
+    {
+      "name": "King Albert Park",
+      "gtfs_stop_ids": [
+        "DT6"
+      ]
+    },
+    {
+      "name": "Kovan",
+      "gtfs_stop_ids": [
+        "NE13"
+      ]
+    },
+    {
+      "name": "Kranji",
+      "gtfs_stop_ids": [
+        "NS7"
+      ]
+    },
+    {
+      "name": "Kupang",
+      "gtfs_stop_ids": [
+        "SW3"
+      ]
+    },
+    {
+      "name": "Labrador Park",
+      "gtfs_stop_ids": [
+        "CC27"
+      ]
+    },
+    {
+      "name": "Lakeside",
+      "gtfs_stop_ids": [
+        "EW26"
+      ]
+    },
+    {
+      "name": "Lavender",
+      "gtfs_stop_ids": [
+        "EW11"
+      ]
+    },
+    {
+      "name": "Layar",
+      "gtfs_stop_ids": [
+        "SW6"
+      ]
+    },
+    {
+      "name": "Lentor",
+      "gtfs_stop_ids": [
+        "TE5"
+      ]
+    },
+    {
+      "name": "Little India",
+      "gtfs_stop_ids": [
+        "DT12"
+      ]
+    },
+    {
+      "name": "Lorong Chuan",
+      "gtfs_stop_ids": [
+        "CC14"
+      ]
+    },
+    {
+      "name": "MacPherson",
+      "gtfs_stop_ids": [
+        "CC10"
+      ]
+    },
+    {
+      "name": "Marina Bay",
+      "gtfs_stop_ids": [
+        "CC33"
+      ]
+    },
+    {
+      "name": "Marina South Pier",
+      "gtfs_stop_ids": [
+        "NS28"
+      ]
+    },
+    {
+      "name": "Marine Parade",
+      "gtfs_stop_ids": [
+        "TE26"
+      ]
+    },
+    {
+      "name": "Marine Terrace",
+      "gtfs_stop_ids": [
+        "TE27"
+      ]
+    },
+    {
+      "name": "Marsiling",
+      "gtfs_stop_ids": [
+        "NS8"
+      ]
+    },
+    {
+      "name": "Marymount",
+      "gtfs_stop_ids": [
+        "CC16"
+      ]
+    },
+    {
+      "name": "Mattar",
+      "gtfs_stop_ids": [
+        "DT25"
+      ]
+    },
+    {
+      "name": "Maxwell",
+      "gtfs_stop_ids": [
+        "TE18"
+      ]
+    },
+    {
+      "name": "Mayflower",
+      "gtfs_stop_ids": [
+        "TE6"
+      ]
+    },
+    {
+      "name": "Meridian",
+      "gtfs_stop_ids": [
+        "PE2"
+      ]
+    },
+    {
+      "name": "Mountbatten",
+      "gtfs_stop_ids": [
+        "CC7"
+      ]
+    },
+    {
+      "name": "Napier",
+      "gtfs_stop_ids": [
+        "TE12"
+      ]
+    },
+    {
+      "name": "Newton",
+      "gtfs_stop_ids": [
+        "DT11"
+      ]
+    },
+    {
+      "name": "Nibong",
+      "gtfs_stop_ids": [
+        "PW5"
+      ]
+    },
+    {
+      "name": "Nicoll Highway",
+      "gtfs_stop_ids": [
+        "CC5"
+      ]
+    },
+    {
+      "name": "Novena",
+      "gtfs_stop_ids": [
+        "NS20"
+      ]
+    },
+    {
+      "name": "Oasis",
+      "gtfs_stop_ids": [
+        "PE6"
+      ]
+    },
+    {
+      "name": "Orchard",
+      "gtfs_stop_ids": [
+        "NS22"
+      ]
+    },
+    {
+      "name": "Orchard Boulevard",
+      "gtfs_stop_ids": [
+        "TE13"
+      ]
+    },
+    {
+      "name": "Outram Park",
+      "gtfs_stop_ids": [
+        "EW16"
+      ]
+    },
+    {
+      "name": "Pasir Panjang",
+      "gtfs_stop_ids": [
+        "CC26"
+      ]
+    },
+    {
+      "name": "Pasir Ris",
+      "gtfs_stop_ids": [
+        "EW1"
+      ]
+    },
+    {
+      "name": "Paya Lebar",
+      "gtfs_stop_ids": [
+        "CC9"
+      ]
+    },
+    {
+      "name": "Pending",
+      "gtfs_stop_ids": [
+        "BP8"
+      ]
+    },
+    {
+      "name": "Petir",
+      "gtfs_stop_ids": [
+        "BP7"
+      ]
+    },
+    {
+      "name": "Phoenix",
+      "gtfs_stop_ids": [
+        "BP5"
+      ]
+    },
+    {
+      "name": "Pioneer",
+      "gtfs_stop_ids": [
+        "EW28"
+      ]
+    },
+    {
+      "name": "Potong Pasir",
+      "gtfs_stop_ids": [
+        "NE10"
+      ]
+    },
+    {
+      "name": "Prince Edward Road",
+      "gtfs_stop_ids": [
+        "CC32"
+      ]
+    },
+    {
+      "name": "Promenade",
+      "gtfs_stop_ids": [
+        "CC4"
+      ]
+    },
+    {
+      "name": "Punggol",
+      "gtfs_stop_ids": [
+        "NE17"
+      ]
+    },
+    {
+      "name": "Punggol Coast",
+      "gtfs_stop_ids": [
+        "NE18"
+      ]
+    },
+    {
+      "name": "Punggol Point",
+      "gtfs_stop_ids": [
+        "PW3"
+      ]
+    },
+    {
+      "name": "Queenstown",
+      "gtfs_stop_ids": [
+        "EW19"
+      ]
+    },
+    {
+      "name": "Raffles Place",
+      "gtfs_stop_ids": [
+        "EW14"
+      ]
+    },
+    {
+      "name": "Ranggung",
+      "gtfs_stop_ids": [
+        "SE5"
+      ]
+    },
+    {
+      "name": "Redhill",
+      "gtfs_stop_ids": [
+        "EW18"
+      ]
+    },
+    {
+      "name": "Renjong",
+      "gtfs_stop_ids": [
+        "SW8"
+      ]
+    },
+    {
+      "name": "Riviera",
+      "gtfs_stop_ids": [
+        "PE4"
+      ]
+    },
+    {
+      "name": "Rochor",
+      "gtfs_stop_ids": [
+        "DT13"
+      ]
+    },
+    {
+      "name": "Rumbia",
+      "gtfs_stop_ids": [
+        "SE2"
+      ]
+    },
+    {
+      "name": "Sam Kee",
+      "gtfs_stop_ids": [
+        "PW1"
+      ]
+    },
+    {
+      "name": "Samudera",
+      "gtfs_stop_ids": [
+        "PW4"
+      ]
+    },
+    {
+      "name": "Segar",
+      "gtfs_stop_ids": [
+        "BP11"
+      ]
+    },
+    {
+      "name": "Sembawang",
+      "gtfs_stop_ids": [
+        "NS11"
+      ]
+    },
+    {
+      "name": "Sengkang",
+      "gtfs_stop_ids": [
+        "NE16"
+      ]
+    },
+    {
+      "name": "Senja",
+      "gtfs_stop_ids": [
+        "BP13"
+      ]
+    },
+    {
+      "name": "Serangoon",
+      "gtfs_stop_ids": [
+        "CC13"
+      ]
+    },
+    {
+      "name": "Shenton Way",
+      "gtfs_stop_ids": [
+        "TE19"
+      ]
+    },
+    {
+      "name": "Siglap",
+      "gtfs_stop_ids": [
+        "TE28"
+      ]
+    },
+    {
+      "name": "Simei",
+      "gtfs_stop_ids": [
+        "EW3"
+      ]
+    },
+    {
+      "name": "Sixth Avenue",
+      "gtfs_stop_ids": [
+        "DT7"
+      ]
+    },
+    {
+      "name": "Somerset",
+      "gtfs_stop_ids": [
+        "NS23"
+      ]
+    },
+    {
+      "name": "Soo Teck",
+      "gtfs_stop_ids": [
+        "PW7"
+      ]
+    },
+    {
+      "name": "South View",
+      "gtfs_stop_ids": [
+        "BP2"
+      ]
+    },
+    {
+      "name": "Springleaf",
+      "gtfs_stop_ids": [
+        "TE4"
+      ]
+    },
+    {
+      "name": "Stadium",
+      "gtfs_stop_ids": [
+        "CC6"
+      ]
+    },
+    {
+      "name": "Stevens",
+      "gtfs_stop_ids": [
+        "DT10"
+      ]
+    },
+    {
+      "name": "Sumang",
+      "gtfs_stop_ids": [
+        "PW6"
+      ]
+    },
+    {
+      "name": "Tai Seng",
+      "gtfs_stop_ids": [
+        "CC11"
+      ]
+    },
+    {
+      "name": "Tampines",
+      "gtfs_stop_ids": [
+        "DT32"
+      ]
+    },
+    {
+      "name": "Tampines East",
+      "gtfs_stop_ids": [
+        "DT33"
+      ]
+    },
+    {
+      "name": "Tampines West",
+      "gtfs_stop_ids": [
+        "DT31"
+      ]
+    },
+    {
+      "name": "Tan Kah Kee",
+      "gtfs_stop_ids": [
+        "DT8"
+      ]
+    },
+    {
+      "name": "Tanah Merah",
+      "gtfs_stop_ids": [
+        "EW4"
+      ]
+    },
+    {
+      "name": "Tanjong Katong",
+      "gtfs_stop_ids": [
+        "TE25"
+      ]
+    },
+    {
+      "name": "Tanjong Pagar",
+      "gtfs_stop_ids": [
+        "EW15"
+      ]
+    },
+    {
+      "name": "Tanjong Rhu",
+      "gtfs_stop_ids": [
+        "TE23"
+      ]
+    },
+    {
+      "name": "Teck Lee",
+      "gtfs_stop_ids": [
+        "PW2"
+      ]
+    },
+    {
+      "name": "Teck Whye",
+      "gtfs_stop_ids": [
+        "BP4"
+      ]
+    },
+    {
+      "name": "Telok Ayer",
+      "gtfs_stop_ids": [
+        "DT18"
+      ]
+    },
+    {
+      "name": "Telok Blangah",
+      "gtfs_stop_ids": [
+        "CC28"
+      ]
+    },
+    {
+      "name": "Thanggam",
+      "gtfs_stop_ids": [
+        "SW4"
+      ]
+    },
+    {
+      "name": "Tiong Bahru",
+      "gtfs_stop_ids": [
+        "EW17"
+      ]
+    },
+    {
+      "name": "Toa Payoh",
+      "gtfs_stop_ids": [
+        "NS19"
+      ]
+    },
+    {
+      "name": "Tongkang",
+      "gtfs_stop_ids": [
+        "SW7"
+      ]
+    },
+    {
+      "name": "Tuas Crescent",
+      "gtfs_stop_ids": [
+        "EW31"
+      ]
+    },
+    {
+      "name": "Tuas Link",
+      "gtfs_stop_ids": [
+        "EW33"
+      ]
+    },
+    {
+      "name": "Tuas West Road",
+      "gtfs_stop_ids": [
+        "EW32"
+      ]
+    },
+    {
+      "name": "Ubi",
+      "gtfs_stop_ids": [
+        "DT27"
+      ]
+    },
+    {
+      "name": "Upper Changi",
+      "gtfs_stop_ids": [
+        "DT34"
+      ]
+    },
+    {
+      "name": "Upper Thomson",
+      "gtfs_stop_ids": [
+        "TE8"
+      ]
+    },
+    {
+      "name": "Woodlands",
+      "gtfs_stop_ids": [
+        "NS9"
+      ]
+    },
+    {
+      "name": "Woodlands North",
+      "gtfs_stop_ids": [
+        "TE1"
+      ]
+    },
+    {
+      "name": "Woodlands South",
+      "gtfs_stop_ids": [
+        "TE3"
+      ]
+    },
+    {
+      "name": "Woodleigh",
+      "gtfs_stop_ids": [
+        "NE11"
+      ]
+    },
+    {
+      "name": "Yew Tee",
+      "gtfs_stop_ids": [
+        "NS5"
+      ]
+    },
+    {
+      "name": "Yio Chu Kang",
+      "gtfs_stop_ids": [
+        "NS15"
+      ]
+    },
+    {
+      "name": "Yishun",
+      "gtfs_stop_ids": [
+        "NS13"
+      ]
+    },
+    {
+      "name": "one-north",
+      "gtfs_stop_ids": [
+        "CC23"
+      ]
+    }
+  ]
+}

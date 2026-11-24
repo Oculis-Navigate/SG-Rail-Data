@@ -1,0 +1,43 @@
+{
+  "change_type": "geometry_publication_approval",
+  "evidence": [
+    {
+      "description": "Owner instruction, asset hash, source pins and repeated verification",
+      "path": "audit/evidence/2026-11-24-stage3-publication.json",
+      "sha256": "c00feb7f67ad2acf438cca22d94c61f247e1a623284d8cd72457ec17f4976795"
+    }
+  ],
+  "id": "D-052",
+  "kind": "audit_decision",
+  "limitations": [
+    "Uses the reviewed October OSM snapshot; not current surveyed track positions.",
+    "Direction-only service and stopping patterns are not certified. All preview artifacts remain nonpublishable."
+  ],
+  "reason": "Physical passenger track geometry only; no timetable or routing claims.",
+  "schema_version": 2,
+  "source_revisions": [
+    "2026-11-24 LTA GTFS and D-028 retained October OSM geometry"
+  ],
+  "targets": [
+    {
+      "after": {
+        "asset_sha256": "ec5e76be9f92402eb3d1f078d47e79778d227e86db64453802eff3683f8a7c4b",
+        "baseline_sha256": "e95e79d33d1aaf3a20efdaa25a9cbff2c18fd6c48b3bc6ec7a1aeb199e32ffaf",
+        "decision_id": "D-052",
+        "inventory_sha256": "23548d544333381cdb312bafcdb852780fa1a57902ee9d725c4faf7704a69332",
+        "publication_allowed": true,
+        "scope": "Physical passenger track geometry only; no timetable or routing claims.",
+        "service_date": "2026-11-24"
+      },
+      "after_sha256": "df6b84fd99290349817fa7c867cd7e4c8226b1f04d4c83be2fe8dffe80108f5b",
+      "before": {
+        "publication_allowed": false
+      },
+      "before_sha256": "9daf2e70b42317dc52b975075fdb59b6cfc6567bd5528b7e6095896260b603ae",
+      "identity": "Stage 3 physical geometry release manifest",
+      "path": "config/stage3-release.json",
+      "pointer": ""
+    }
+  ],
+  "title": "Authorize exact 24 November physical track GeoJSON for dataset publication"
+}

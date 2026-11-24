@@ -1,0 +1,62 @@
+name: Promote dataset
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Reviewed dataset version (YYYY.MM.DD.N)'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: dataset-promotion
+  cancel-in-progress: false
+jobs:
+  authorize:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require administrator dispatch and rerun actor
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RERUN_ACTOR: ${{ github.triggering_actor }}
+        run: |
+          for actor in "$GITHUB_ACTOR" "$RERUN_ACTOR"; do
+            test "$(gh api "repos/$GITHUB_REPOSITORY/collaborators/$actor/permission" --jq .permission)" = admin
+          done
+  publish:
+    needs: authorize
+    runs-on: ubuntu-latest
+    environment: dataset-production
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4e
+      - run: uv sync --frozen --python 3.12
+      - name: Replay the reviewed package, then publish once
+        env:
+          VERSION: ${{ inputs.version }}
+          GH_TOKEN: ${{ github.token }}
+          ENABLED: ${{ vars.DATASET_PROMOTION_ENABLED }}
+        run: |
+          set -euo pipefail
+          test "$ENABLED" = true
+          test "$(gh api "repos/$GITHUB_REPOSITORY/commits/main" --jq .sha)" = "$GITHUB_SHA"
+          uv run python -m unittest discover -s tests -q
+          uv run python scripts/dataset.py verify "$VERSION" --out "$RUNNER_TEMP/assets"
+          candidate="changesets/$VERSION/candidate.json"
+          previous=$(jq -r '.previous // empty' "$candidate")
+          releases=$(gh api --paginate "repos/$GITHUB_REPOSITORY/releases?per_page=100" --jq '.[] | select((.draft or .prerelease) | not) | .tag_name')
+          if [[ -n "$previous" ]]; then
+            test "$(gh api "repos/$GITHUB_REPOSITORY/releases/latest" --jq .tag_name)" = "data-v$previous"
+          else
+            test -z "$releases"
+          fi
+          tag="data-v$VERSION"
+          # Ref creation fails if this version already exists; never move a tag.
+          gh api "repos/$GITHUB_REPOSITORY/git/refs" -f ref="refs/tags/$tag" -f sha="$GITHUB_SHA"
+          gh release create "$tag" "$RUNNER_TEMP/assets/"* --repo "$GITHUB_REPOSITORY" --verify-tag --latest --title "Dataset $VERSION" --notes-file "changesets/$VERSION/changes.md"

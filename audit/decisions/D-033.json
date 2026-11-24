@@ -1,0 +1,77 @@
+{
+  "change_type": "semantic_clarification",
+  "evidence": [
+    {
+      "description": "Exact before/after source rows, alternative-route conflict and authorization scope",
+      "path": "audit/evidence/2026-11-23-tanjong-pagar-landmarks.json",
+      "sha256": "6474c7fde58c89b6b55ff8a46718a9830f7fb3a882db7c1c7a8247d88a50c720"
+    }
+  ],
+  "id": "D-033",
+  "kind": "audit_decision",
+  "limitations": [
+    "No approval of Exit E routing, other station guards, or a release."
+  ],
+  "reason": "Only include the exact Exit D nearby POIs in destinations. Preserve source spelling; not evidence of an operational transfer.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Tanjong Pagar page 215 revision 41616"
+  ],
+  "targets": [
+    {
+      "after": {
+        "codes": [
+          "EW15"
+        ],
+        "evidence": [
+          "Human-reviewed decision: retain the exact source-reported Exit E closure and alternative Exit H",
+          "Pinned to SgWiki Tanjong Pagar station revision 31544"
+        ],
+        "findings": [
+          {
+            "count": 1,
+            "reason": "exit_status_requires_review"
+          }
+        ],
+        "nearby_landmarks": {
+          "exit_cell": "D Prince Edward Road",
+          "exit_id": "MRT:D",
+          "names": [
+            "AXA Tower",
+            "Money Authority of Singapore Building",
+            "Shenton Way Terminal",
+            "CC32 Prince Edward Road"
+          ],
+          "revision_id": 41616
+        },
+        "page_id": 215,
+        "revision_id": 31544,
+        "station": "Tanjong Pagar"
+      },
+      "after_sha256": "1d8d8c96574bf5fba0d04cfd882c1751c44d4ad371579c2d89ba3705884c8d17",
+      "before": {
+        "codes": [
+          "EW15"
+        ],
+        "evidence": [
+          "Human-reviewed decision: retain the exact source-reported Exit E closure and alternative Exit H",
+          "Pinned to SgWiki Tanjong Pagar station revision 31544"
+        ],
+        "findings": [
+          {
+            "count": 1,
+            "reason": "exit_status_requires_review"
+          }
+        ],
+        "page_id": 215,
+        "revision_id": 31544,
+        "station": "Tanjong Pagar"
+      },
+      "before_sha256": "df7dca207acd39ea4f386ffa69ae0842a1b069f9a82d0724231ce8ba3cca4167",
+      "identity": "Tanjong Pagar:MRT:D nearby landmarks",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/11"
+    }
+  ],
+  "title": "Expand Tanjong Pagar MRT:D nearby destinations"
+}

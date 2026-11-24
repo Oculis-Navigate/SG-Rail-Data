@@ -1,0 +1,41 @@
+{
+  "change_type": "revision_revalidation",
+  "evidence": [
+    {
+      "description": "Reviewed station delta and direct owner sign-off",
+      "path": "audit/evidence/2026-11-24-dhoby-ghaut-renewal.json",
+      "sha256": "47e96bd9e6e4ee12d38d45cdf0186858e0259e73952fa9a6e3b28720de06d0d2"
+    }
+  ],
+  "id": "D-048",
+  "kind": "audit_decision",
+  "limitations": [
+    "The two destinations are SgWiki source evidence, not independent doorway surveys."
+  ],
+  "reason": "Renew only the Stage 1 finding acceptance. E/F/G identities, repeated G evidence, and NEL rowspan interpretation unchanged; only supplementary rail service diagrams were added. No baseline or Stage 2 guard approval.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Dhoby Ghaut page 119: 41817 to 41955"
+  ],
+  "targets": [
+    {
+      "after": 41955,
+      "after_sha256": "f95af49714eeec0d948761f26783c8c163e2a86c84f50c52b1f7e023534a17d3",
+      "before": 41817,
+      "before_sha256": "edc331395224322891bc86d2bfba397ac0de77a26fb6a282887f657da19f3475",
+      "identity": "Dhoby Ghaut:review_acceptance:revision_id",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/4/revision_id"
+    },
+    {
+      "after": "Human-reviewed decision: accept the NEL scope cell's trailing rowspan, pinned to revision 41955",
+      "after_sha256": "5b48175362dcb35665201d1f7c66f4b2ce6c4cb288f4f466b8240c13fa61fb7d",
+      "before": "Human-reviewed decision: accept the NEL scope cell's trailing rowspan, pinned to revision 41817",
+      "before_sha256": "5304a28d3db95bfb80c5b5dcdc136613788dd949282c07cd3551854afb53fcb4",
+      "identity": "Dhoby Ghaut:review_acceptance:evidence/4",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/4/evidence/4"
+    }
+  ],
+  "title": "Renew Dhoby Ghaut Stage 1 acceptance at revision 41955"
+}

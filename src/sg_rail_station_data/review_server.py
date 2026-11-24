@@ -278,11 +278,54 @@ class ReviewStore:
             }
 
 
+# Only expose the built preview UI and its inspection reports, not the
+# containing run directory, source archives or directory listings.
+NETWORK_FILES = frozenset({
+    "index.html", "app.js", "styles.css", "preview-data.js", "manifest.json",
+    "coverage.json", "changes.json", "vendor/leaflet/leaflet.js", "vendor/leaflet/leaflet.css",
+})
+
+
+def validate_network_preview(directory: Path) -> Path:
+    root = directory.resolve()
+    for name in NETWORK_FILES:
+        path = root / name
+        if not path.resolve().is_relative_to(root) or not path.is_file():
+            raise ReviewServerError(f"Invalid or incomplete network preview: {name}")
+    manifest = read_json(root / "manifest.json")
+    if (not isinstance(manifest, dict) or manifest.get("kind") != "rail_network_geometry_preview"
+            or manifest.get("publication_allowed") is not False):
+        raise ReviewServerError("Expected an unapproved network geometry preview")
+    return root
+
+
 class ReviewRequestHandler(SimpleHTTPRequestHandler):
     """Serve static UI assets and the loopback review API."""
 
     store: ReviewStore
     allowed_origins: frozenset[str]
+
+    network_preview: Path | None = None
+
+    def send_head(self):
+        path = urlsplit(self.path).path
+        if path == '/stage3' or path.startswith('/stage3/'):
+            name = path.removeprefix('/stage3').lstrip('/') or 'index.html'
+            if self.network_preview is None or name not in NETWORK_FILES | {"stage-switch.css", "stage-switch.js", "continuity.json"}:
+                self.send_error(404)
+                return None
+            if path == '/stage3':
+                self.send_response(301)
+                self.send_header('Location', '/stage3/')
+                self.end_headers()
+                return None
+            asset = self.network_preview / name
+            if not asset.resolve().is_relative_to(self.network_preview) or not asset.is_file():
+                self.send_error(404)
+                return None
+            self.directory = str(self.network_preview)
+            self.path = '/' + name
+        return super().send_head()
 
     def end_headers(self) -> None:
         self.send_header("Cache-Control", "no-store")
@@ -300,7 +343,7 @@ class ReviewRequestHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self) -> None:
         if urlsplit(self.path).path == "/api/review-state":
-            self._json(200, self.store.state())
+            self._json(200, {**self.store.state(), "network_preview": self.network_preview is not None})
             return
         super().do_GET()
 
@@ -343,7 +386,7 @@ class ReviewRequestHandler(SimpleHTTPRequestHandler):
 
 def serve_review_app(
     *, bundle_path: Path, drafts_directory: Path, static_directory: Path,
-    bind: str = "127.0.0.1", port: int = 8000,
+    bind: str = "127.0.0.1", port: int = 8000, network_preview: Path | None = None,
 ) -> None:
     """Serve the local application until interrupted."""
 
@@ -353,11 +396,13 @@ def serve_review_app(
     if not static.is_dir():
         raise ReviewServerError(f"static directory does not exist: {static}")
     store = ReviewStore(bundle_path, drafts_directory)
-    ReviewRequestHandler.store = store
-    ReviewRequestHandler.allowed_origins = frozenset({
-        f"http://{bind}:{port}", f"http://localhost:{port}"
-    })
-    handler = partial(ReviewRequestHandler, directory=str(static))
+    class Handler(ReviewRequestHandler):
+        pass
+
+    Handler.store = store
+    Handler.network_preview = validate_network_preview(network_preview) if network_preview else None
+    Handler.allowed_origins = frozenset({f"http://{bind}:{port}", f"http://localhost:{port}"})
+    handler = partial(Handler, directory=str(static))
     server = ThreadingHTTPServer((bind, port), handler)
     try:
         server.serve_forever()

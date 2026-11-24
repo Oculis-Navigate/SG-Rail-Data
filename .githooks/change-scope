@@ -1,0 +1,16 @@
+#!/bin/sh
+# Called via sh. Arguments are revisions/index options for git diff.
+# Classify the diff, not a contributor-controlled PR label or commit message.
+set -eu
+changed() {
+    if git diff --quiet --no-renames "$@"; then return 1; else code=$?; fi
+    [ "$code" = 1 ] || exit "$code"
+    return 0
+}
+if changed "$@" -- changesets config ':(exclude)config/pipeline.toml'; then
+    echo dataset
+elif changed "$@" -- audit ':(exclude)audit/README.md'; then
+    echo audit
+else
+    echo regular
+fi

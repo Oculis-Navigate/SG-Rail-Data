@@ -1,0 +1,56 @@
+{
+  "authorization": "flip it to true for me then. it should be promoted because we need that",
+  "scope": "Physical passenger track geometry only; no timetable or routing claims.",
+  "approved_manifest": {
+    "publication_allowed": true,
+    "scope": "Physical passenger track geometry only; no timetable or routing claims.",
+    "service_date": "2026-11-24",
+    "decision_id": "D-052",
+    "baseline_sha256": "e95e79d33d1aaf3a20efdaa25a9cbff2c18fd6c48b3bc6ec7a1aeb199e32ffaf",
+    "inventory_sha256": "23548d544333381cdb312bafcdb852780fa1a57902ee9d725c4faf7704a69332",
+    "asset_sha256": "ec5e76be9f92402eb3d1f078d47e79778d227e86db64453802eff3683f8a7c4b"
+  },
+  "source_gtfs_zip_sha256": "7a4f56076869e1c71d4019d34b23cec90fe0137d1a729967c66bfc8c18793d7f",
+  "osm_evidence": {
+    "archive_sha256": "cca77bfd43734429a69b9187c872318d53589ec375c3c452b7941aa9b53c8746",
+    "baseline_sha256": "e95e79d33d1aaf3a20efdaa25a9cbff2c18fd6c48b3bc6ec7a1aeb199e32ffaf",
+    "decision": "D-028",
+    "feature": "osm-way-380508287",
+    "raw_changes": {
+      "count": 1,
+      "items": [
+        {
+          "feature_id": "osm-way-380508287",
+          "fields": [
+            "geometry"
+          ],
+          "reason": "osm_way_changed",
+          "severity": "WARNING",
+          "way_id": 380508287
+        }
+      ],
+      "kind": "preview_rail_geometry_changes",
+      "schema_version": 1,
+      "status": "review_required"
+    }
+  },
+  "repeat_build_sha256": {
+    "coverage.json": "aafca8cc89ef03dd865782f2ae6ef3822f967c0ae0aecedf178fbde5622bb5ca",
+    "continuity.json": "9b0fe28dc04b2fb201860e5b81cd817443e23ebd58a20a0fe5084d5ef49163b4",
+    "rail-network.json": "3f9bba2e5f16860738f42fdbd2a881431827ffa05946e55fb3b1bdc57b594c78",
+    "rail-lines.geojson": "45e33e7f60d00b5673a5d52e1867ecfc76264667689b2431de0e299b689a666d",
+    "stations.geojson": "880ae6235a37704d49498c3d0094d85ac51d93cca26d5d3135e034a8cd81f87c",
+    "changes.json": "cc9356f89e3e977afcb39da07a90f2a8f3d28e48dac807ff98d730aaa0df37d2"
+  },
+  "verification": {
+    "stations": 184,
+    "gtfs_points": 186,
+    "physical_ways": 283,
+    "physical_pairs": 427,
+    "physical_gaps": 0
+  },
+  "limitations": [
+    "Uses the reviewed October OSM snapshot; not current surveyed track positions.",
+    "Direction-only service and stopping patterns are not certified. All preview artifacts remain nonpublishable."
+  ]
+}

@@ -25,7 +25,7 @@ from .network_geometry import build_network_preview
 from .pipeline import run_pipeline
 from .progress import TerminalProgress
 from .review_bundle import write_review_bundle
-from .review_server import ReviewStore, serve_review_app
+from .review_server import ReviewStore, serve_review_app, validate_network_preview
 from .sources.lta_bus_stops import collect_lta_bus_stops
 from .sources.sgwiki_mapdata import collect_sgwiki_mapdata
 from .stage1 import build_stage1_reviewed_links, load_reviewed_decisions
@@ -220,6 +220,8 @@ def build_parser() -> argparse.ArgumentParser:
         "--output-dir", type=Path, required=True,
         help="New immutable preview directory; an existing directory is never reused.",
     )
+    network_preview.add_argument("--replay-reviewed-osm", action="store_true",
+                                 help="Use retained October 2026 OSM responses instead of live collection.")
     network_preview.add_argument("--json", action="store_true")
     network_preview.set_defaults(handler=_build_network_preview_command)
 
@@ -275,6 +277,7 @@ def build_parser() -> argparse.ArgumentParser:
     review_serve.add_argument("--bundle", type=Path, required=True)
     review_serve.add_argument("--drafts-dir", type=Path)
     review_serve.add_argument("--static-dir", type=Path)
+    review_serve.add_argument("--network-preview", type=Path, help="Mount a built Stage 3 preview at /stage3/.")
     review_serve.add_argument("--bind", default="127.0.0.1")
     review_serve.add_argument("--port", type=int, default=8000)
     review_serve.add_argument(
@@ -533,6 +536,7 @@ def _build_network_preview_command(arguments: argparse.Namespace) -> int:
         maximum_backoff_seconds=network.maximum_backoff_seconds,
         minimum_interval_seconds=network.minimum_interval_seconds,
         approved_baseline_path=config.paths.stage3_approved_geometry_baseline,
+        replay_reviewed_osm=arguments.replay_reviewed_osm,
     )
     summary = {
         "status": "review_required",
@@ -592,6 +596,8 @@ def _serve_review_command(arguments: argparse.Namespace) -> int:
         else (repo_root / "review_app").resolve()
     )
     if arguments.check:
+        if arguments.network_preview:
+            validate_network_preview(arguments.network_preview)
         state = ReviewStore(arguments.bundle, drafts_directory).state()
         print(
             f"Review bundle valid: {state['bundle']['summary']['exit_count']} exits; "
@@ -605,6 +611,7 @@ def _serve_review_command(arguments: argparse.Namespace) -> int:
             bundle_path=arguments.bundle,
             drafts_directory=drafts_directory,
             static_directory=static_directory,
+            network_preview=arguments.network_preview,
             bind=arguments.bind,
             port=arguments.port,
         )

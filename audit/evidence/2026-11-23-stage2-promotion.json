@@ -1,0 +1,9 @@
+{
+  "authorization": "use the earlier approval. then resolve the remaining guards and promote after a clean replay",
+  "scope": "Keep D-041 City Hall A-D despite disclosed Esplanade overlap. No E/F/G at City Hall. Stage 2 comparison only, not publication.",
+  "clean_run": "20261123T135507Z-stage2-verification",
+  "comparison_run": "20261123T135507Z-stage2-candidate",
+  "previous_file_sha256": "60b0800ce51a059d64d025907ee1c52c097acc042573019abbde5909510ac2ce",
+  "approved_file_sha256": "b635ebf8a3998efe22746b6220d970714808033f0b015efb1ecf02803e8c1404",
+  "changed_coordinates": 14
+}
