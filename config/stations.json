@@ -248,7 +248,7 @@
       "sgwiki_title": "Canberra station"
     },
     {
-      "catalog_status": "operator_addition_requires_review",
+      "catalog_status": "v1_baseline",
       "codes": [
         "CC31"
       ],
@@ -666,7 +666,7 @@
       "sgwiki_title": "Kent Ridge station"
     },
     {
-      "catalog_status": "operator_addition_requires_review",
+      "catalog_status": "v1_baseline",
       "codes": [
         "CC30"
       ],
@@ -1019,7 +1019,7 @@
       "sgwiki_title": "Potong Pasir station"
     },
     {
-      "catalog_status": "operator_addition_requires_review",
+      "catalog_status": "v1_baseline",
       "codes": [
         "CC32"
       ],

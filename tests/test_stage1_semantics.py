@@ -32,6 +32,23 @@ class Stage1SemanticsTests(unittest.TestCase):
             decisions=decisions,
         )
 
+    def test_reviewed_tanjong_pagar_pois_require_exact_exit_row_and_revision(self):
+        from sg_rail_station_data.stage1_semantics import _apply_nearby_landmarks
+        root = Path(__file__).resolve().parents[1]
+        acceptance = load_reviewed_decisions(root/'config/stage1-reviewed-decisions.json').review_acceptances['Tanjong Pagar']
+        observation = json.loads((root/'audit/evidence/2026-11-23-tanjong-pagar-landmarks.json').read_bytes())['sources'][-1]
+        source = {'page_id': 215, 'revision_id': observation['revision']}
+        d = {'id': 'MRT:D', 'destinations': ['Prince Edward Road'], 'source_rows': [{'row_verbatim': observation['exit_d']}]}
+        e = {'id': 'MRT:E', 'destinations': ['AXA Tower']}
+        _apply_nearby_landmarks('Tanjong Pagar', source, [d, e], acceptance)
+        self.assertEqual(d['destinations'], ['Prince Edward Road', 'Skywaters Residences', 'MAS Building', 'Shenton Way Terminal', 'CC32 Prince Edward Road'])
+        self.assertEqual(e['destinations'], ['AXA Tower'])
+        with self.assertRaisesRegex(ContractError, 'source guard changed'):
+            _apply_nearby_landmarks('Tanjong Pagar', dict(source, revision_id=1), [d], acceptance)
+        d['source_rows'] = []
+        with self.assertRaisesRegex(ContractError, 'landmark row changed'):
+            _apply_nearby_landmarks('Tanjong Pagar', source, [d], acceptance)
+
     def test_full_build_preserves_wayfinding_semantics_and_exact_bus_join(self):
         result = self.build()
         station = result.dataset["stations"][0]
@@ -207,7 +224,12 @@ class Stage1SemanticsTests(unittest.TestCase):
         result = self.build(snapshot)
         exit_record = result.dataset["stations"][0]["exits"][0]
         self.assertEqual(exit_record["operating_status"], "source_reported_closed")
-        self.assertEqual(exit_record["alternative_exits"], ["B"])
+        self.assertEqual(exit_record["alternative_exits"], [])
+        self.assertEqual(exit_record["status_notes"], ["(Closed)"])
+        self.assertEqual(source["exit_statuses"][0]["alternative_exits"], ["B"])
+        self.assertEqual(source["exit_statuses"][0]["status_verbatim"], "(Closed – use Exit B)")
+        self.assertEqual(exit_record["destinations"], ["Test Landmark"])
+        self.assertEqual(exit_record["bus_stop_codes"], ["99999"])
         self.assertEqual(exit_record["operating_hours"][0]["opens"], "10:00")
         self.assertEqual(result.dataset["summary"]["closed_exit_identity_count"], 1)
 

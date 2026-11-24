@@ -1,0 +1,6 @@
+{
+  "authorization": "lets use the Onemap one then for bayfront a. lets use the manual candidate for kent ridge e",
+  "run": "20261123T130023Z-stage2-start",
+  "bayfront": {"exit_id": "MRT:A", "source": "OneMap", "candidate_id": "MRT:1", "point_lon_lat": [103.8589010116042, 1.281275197557872], "page": 274, "revision": 41890, "note": "Keep the previously approved point, not LTA's alternative about 39 m away."},
+  "kent_ridge": {"exit_id": "MRT:E", "source": "reviewed_manual", "candidate_index": 378, "point_lon_lat": [103.78515, 1.2929], "page": 292, "revision": 41023, "note": "Owner selected the retained manual candidate, not the subsequent pin at [103.78530979156496, 1.2922296988256536]. No independent verification of this point or release approval."}
+}

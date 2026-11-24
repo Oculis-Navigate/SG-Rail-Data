@@ -1,0 +1,4821 @@
+{
+  "active_service_count": 3,
+  "active_station_count": 186,
+  "active_trip_count": 7139,
+  "feed_info": {
+    "end_date": "2026-12-31",
+    "language": "en",
+    "publisher_name": "Land Transport Authority",
+    "publisher_url": "https://www.lta.gov.sg/",
+    "start_date": "2025-01-01",
+    "version": "0.1"
+  },
+  "kind": "lta_gtfs_active_train_stations",
+  "schema_version": 1,
+  "service_date": "2026-11-24",
+  "source_zip_sha256": "7a4f56076869e1c71d4019d34b23cec90fe0137d1a729967c66bfc8c18793d7f",
+  "stations": [
+    {
+      "child_stop_ids": [
+        "BP1_A",
+        "BP1_B"
+      ],
+      "codes": [
+        "BP1"
+      ],
+      "name": "Choa Chu Kang",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP1",
+      "stop_id": "BP1"
+    },
+    {
+      "child_stop_ids": [
+        "BP10_A",
+        "BP10_B"
+      ],
+      "codes": [
+        "BP10"
+      ],
+      "name": "Fajar",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP10",
+      "stop_id": "BP10"
+    },
+    {
+      "child_stop_ids": [
+        "BP11_A",
+        "BP11_B"
+      ],
+      "codes": [
+        "BP11"
+      ],
+      "name": "Segar",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP11",
+      "stop_id": "BP11"
+    },
+    {
+      "child_stop_ids": [
+        "BP12_A",
+        "BP12_B"
+      ],
+      "codes": [
+        "BP12"
+      ],
+      "name": "Jelapang",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP12",
+      "stop_id": "BP12"
+    },
+    {
+      "child_stop_ids": [
+        "BP13_A",
+        "BP13_B"
+      ],
+      "codes": [
+        "BP13"
+      ],
+      "name": "Senja",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP13",
+      "stop_id": "BP13"
+    },
+    {
+      "child_stop_ids": [
+        "BP2_A",
+        "BP2_B"
+      ],
+      "codes": [
+        "BP2"
+      ],
+      "name": "South View",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP2",
+      "stop_id": "BP2"
+    },
+    {
+      "child_stop_ids": [
+        "BP3_A",
+        "BP3_B"
+      ],
+      "codes": [
+        "BP3"
+      ],
+      "name": "Keat Hong",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP3",
+      "stop_id": "BP3"
+    },
+    {
+      "child_stop_ids": [
+        "BP4_A",
+        "BP4_B"
+      ],
+      "codes": [
+        "BP4"
+      ],
+      "name": "Teck Whye",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP4",
+      "stop_id": "BP4"
+    },
+    {
+      "child_stop_ids": [
+        "BP5_A",
+        "BP5_B"
+      ],
+      "codes": [
+        "BP5"
+      ],
+      "name": "Phoenix",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP5",
+      "stop_id": "BP5"
+    },
+    {
+      "child_stop_ids": [
+        "BP6_A",
+        "BP6_B"
+      ],
+      "codes": [
+        "BP6"
+      ],
+      "name": "Bukit Panjang",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP6",
+      "stop_id": "BP6"
+    },
+    {
+      "child_stop_ids": [
+        "BP7_A",
+        "BP7_B"
+      ],
+      "codes": [
+        "BP7"
+      ],
+      "name": "Petir",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP7",
+      "stop_id": "BP7"
+    },
+    {
+      "child_stop_ids": [
+        "BP8_A",
+        "BP8_B"
+      ],
+      "codes": [
+        "BP8"
+      ],
+      "name": "Pending",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP8",
+      "stop_id": "BP8"
+    },
+    {
+      "child_stop_ids": [
+        "BP9_A",
+        "BP9_B"
+      ],
+      "codes": [
+        "BP9"
+      ],
+      "name": "Bangkit",
+      "route_ids": [
+        "BP"
+      ],
+      "route_names": [
+        "BP"
+      ],
+      "stop_code": "BP9",
+      "stop_id": "BP9"
+    },
+    {
+      "child_stop_ids": [
+        "CC10_A",
+        "CC10_B",
+        "DT26_A",
+        "DT26_B"
+      ],
+      "codes": [
+        "CC10",
+        "DT26"
+      ],
+      "name": "MacPherson",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC11",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32",
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "CC",
+        "DT"
+      ],
+      "stop_code": "CC10",
+      "stop_id": "CC10"
+    },
+    {
+      "child_stop_ids": [
+        "CC11_A",
+        "CC11_B"
+      ],
+      "codes": [
+        "CC11"
+      ],
+      "name": "Tai Seng",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC11",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC11",
+      "stop_id": "CC11"
+    },
+    {
+      "child_stop_ids": [
+        "CC12_A",
+        "CC12_B"
+      ],
+      "codes": [
+        "CC12"
+      ],
+      "name": "Bartley",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC12",
+      "stop_id": "CC12"
+    },
+    {
+      "child_stop_ids": [
+        "CC13_A",
+        "CC13_B",
+        "NE12_A",
+        "NE12_B"
+      ],
+      "codes": [
+        "CC13",
+        "NE12"
+      ],
+      "name": "Serangoon",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32",
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "CC",
+        "NE"
+      ],
+      "stop_code": "CC13",
+      "stop_id": "CC13"
+    },
+    {
+      "child_stop_ids": [
+        "CC14_A",
+        "CC14_B"
+      ],
+      "codes": [
+        "CC14"
+      ],
+      "name": "Lorong Chuan",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC14",
+      "stop_id": "CC14"
+    },
+    {
+      "child_stop_ids": [
+        "CC15_A",
+        "CC15_B",
+        "NS17_A",
+        "NS17_B"
+      ],
+      "codes": [
+        "CC15",
+        "NS17"
+      ],
+      "name": "Bishan",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32",
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS1",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "CC",
+        "NS"
+      ],
+      "stop_code": "CC15",
+      "stop_id": "CC15"
+    },
+    {
+      "child_stop_ids": [
+        "CC16_A",
+        "CC16_B"
+      ],
+      "codes": [
+        "CC16"
+      ],
+      "name": "Marymount",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC16",
+      "stop_id": "CC16"
+    },
+    {
+      "child_stop_ids": [
+        "CC17_A",
+        "CC17_B",
+        "TE9_A",
+        "TE9_B"
+      ],
+      "codes": [
+        "CC17",
+        "TE9"
+      ],
+      "name": "Caldecott",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32",
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE1_TE9",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "CC",
+        "TE"
+      ],
+      "stop_code": "CC17",
+      "stop_id": "CC17"
+    },
+    {
+      "child_stop_ids": [
+        "CC19_A",
+        "CC19_B",
+        "DT9_A",
+        "DT9_B"
+      ],
+      "codes": [
+        "CC19",
+        "DT9"
+      ],
+      "name": "Botanic Gardens",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32",
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "CC",
+        "DT"
+      ],
+      "stop_code": "CC19",
+      "stop_id": "CC19"
+    },
+    {
+      "child_stop_ids": [
+        "CC2_A",
+        "CC2_B"
+      ],
+      "codes": [
+        "CC2"
+      ],
+      "name": "Bras Basah",
+      "route_ids": [
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC1_CC4",
+        "CCL_CC1_CC6"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC2",
+      "stop_id": "CC2"
+    },
+    {
+      "child_stop_ids": [
+        "CC20_A",
+        "CC20_B"
+      ],
+      "codes": [
+        "CC20"
+      ],
+      "name": "Farrer Road",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC20",
+      "stop_id": "CC20"
+    },
+    {
+      "child_stop_ids": [
+        "CC21_A",
+        "CC21_B"
+      ],
+      "codes": [
+        "CC21"
+      ],
+      "name": "Holland Village",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC21",
+      "stop_id": "CC21"
+    },
+    {
+      "child_stop_ids": [
+        "CC22_A",
+        "CC22_B",
+        "EW21_A",
+        "EW21_B"
+      ],
+      "codes": [
+        "CC22",
+        "EW21"
+      ],
+      "name": "Buona Vista",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32",
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "CC",
+        "EW"
+      ],
+      "stop_code": "CC22",
+      "stop_id": "CC22"
+    },
+    {
+      "child_stop_ids": [
+        "CC23_A",
+        "CC23_B"
+      ],
+      "codes": [
+        "CC23"
+      ],
+      "name": "one-north",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC23",
+      "stop_id": "CC23"
+    },
+    {
+      "child_stop_ids": [
+        "CC24_A",
+        "CC24_B"
+      ],
+      "codes": [
+        "CC24"
+      ],
+      "name": "Kent Ridge",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC24",
+      "stop_id": "CC24"
+    },
+    {
+      "child_stop_ids": [
+        "CC25_A",
+        "CC25_B"
+      ],
+      "codes": [
+        "CC25"
+      ],
+      "name": "Haw Par Villa",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC25",
+      "stop_id": "CC25"
+    },
+    {
+      "child_stop_ids": [
+        "CC26_A",
+        "CC26_B"
+      ],
+      "codes": [
+        "CC26"
+      ],
+      "name": "Pasir Panjang",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC26",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC26",
+      "stop_id": "CC26"
+    },
+    {
+      "child_stop_ids": [
+        "CC27_A",
+        "CC27_B"
+      ],
+      "codes": [
+        "CC27"
+      ],
+      "name": "Labrador Park",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC27",
+      "stop_id": "CC27"
+    },
+    {
+      "child_stop_ids": [
+        "CC28_A",
+        "CC28_B"
+      ],
+      "codes": [
+        "CC28"
+      ],
+      "name": "Telok Blangah",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC28",
+      "stop_id": "CC28"
+    },
+    {
+      "child_stop_ids": [
+        "CC29_A",
+        "CC29_B",
+        "NE1_A",
+        "NE1_B"
+      ],
+      "codes": [
+        "CC29",
+        "NE1"
+      ],
+      "name": "HarbourFront",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32",
+        "NEL_NE1_NE18"
+      ],
+      "route_names": [
+        "CC",
+        "NE"
+      ],
+      "stop_code": "CC29",
+      "stop_id": "CC29"
+    },
+    {
+      "child_stop_ids": [
+        "CC3_A",
+        "CC3_B"
+      ],
+      "codes": [
+        "CC3"
+      ],
+      "name": "Esplanade",
+      "route_ids": [
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC1_CC4",
+        "CCL_CC1_CC6"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC3",
+      "stop_id": "CC3"
+    },
+    {
+      "child_stop_ids": [
+        "CC30_A",
+        "CC30_B"
+      ],
+      "codes": [
+        "CC30"
+      ],
+      "name": "Keppel",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC30",
+      "stop_id": "CC30"
+    },
+    {
+      "child_stop_ids": [
+        "CC31_A",
+        "CC31_B"
+      ],
+      "codes": [
+        "CC31"
+      ],
+      "name": "Cantonment",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC32",
+        "CCL_CC1_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC31",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC31",
+      "stop_id": "CC31"
+    },
+    {
+      "child_stop_ids": [
+        "CC32_A",
+        "CC32_B"
+      ],
+      "codes": [
+        "CC32"
+      ],
+      "name": "Prince Edward Road",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC12_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC31",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC32",
+      "stop_id": "CC32"
+    },
+    {
+      "child_stop_ids": [
+        "CC33_A",
+        "CC33_B",
+        "NS27_A",
+        "NS27_B",
+        "TE20_A",
+        "TE20_B"
+      ],
+      "codes": [
+        "CC33",
+        "NS27",
+        "TE20"
+      ],
+      "name": "Marina Bay",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC31",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS28",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28",
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "CC",
+        "NS",
+        "TE"
+      ],
+      "stop_code": "CC33",
+      "stop_id": "CC33"
+    },
+    {
+      "child_stop_ids": [
+        "CC34_A",
+        "CC34_B",
+        "DT16_A",
+        "DT16_B"
+      ],
+      "codes": [
+        "CC34",
+        "DT16"
+      ],
+      "name": "Bayfront",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC31",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "CC",
+        "DT"
+      ],
+      "stop_code": "CC34",
+      "stop_id": "CC34"
+    },
+    {
+      "child_stop_ids": [
+        "CC4_A",
+        "CC4_B",
+        "DT15_A",
+        "DT15_B"
+      ],
+      "codes": [
+        "CC4",
+        "DT15"
+      ],
+      "name": "Promenade",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC1_CC4",
+        "CCL_CC1_CC6",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC11",
+        "CCL_CC4_CC12",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC24",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC31",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC6",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "CC",
+        "DT"
+      ],
+      "stop_code": "CC4",
+      "stop_id": "CC4"
+    },
+    {
+      "child_stop_ids": [
+        "CC5_A",
+        "CC5_B"
+      ],
+      "codes": [
+        "CC5"
+      ],
+      "name": "Nicoll Highway",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC1_CC6",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC11",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC6",
+        "CCL_CC6_CC9"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC5",
+      "stop_id": "CC5"
+    },
+    {
+      "child_stop_ids": [
+        "CC6_A",
+        "CC6_B"
+      ],
+      "codes": [
+        "CC6"
+      ],
+      "name": "Stadium",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC1_CC6",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC11",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC6",
+        "CCL_CC6_CC9"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC6",
+      "stop_id": "CC6"
+    },
+    {
+      "child_stop_ids": [
+        "CC7_A",
+        "CC7_B"
+      ],
+      "codes": [
+        "CC7"
+      ],
+      "name": "Mountbatten",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC11",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC7_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC7",
+      "stop_id": "CC7"
+    },
+    {
+      "child_stop_ids": [
+        "CC8_A",
+        "CC8_B"
+      ],
+      "codes": [
+        "CC8"
+      ],
+      "name": "Dakota",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC11",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC7_CC32"
+      ],
+      "route_names": [
+        "CC"
+      ],
+      "stop_code": "CC8",
+      "stop_id": "CC8"
+    },
+    {
+      "child_stop_ids": [
+        "CC9_A",
+        "CC9_B",
+        "EW8_A",
+        "EW8_B"
+      ],
+      "codes": [
+        "CC9",
+        "EW8"
+      ],
+      "name": "Paya Lebar",
+      "route_ids": [
+        "CCL_CC11_CC32",
+        "CCL_CC17_CC32",
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC26_CC32",
+        "CCL_CC29_CC32",
+        "CCL_CC32_CC32",
+        "CCL_CC32_CC33",
+        "CCL_CC4_CC11",
+        "CCL_CC4_CC17",
+        "CCL_CC4_CC23",
+        "CCL_CC4_CC26",
+        "CCL_CC4_CC29",
+        "CCL_CC4_CC32",
+        "CCL_CC4_CC4",
+        "CCL_CC4_CC7",
+        "CCL_CC4_CC9",
+        "CCL_CC6_CC9",
+        "CCL_CC7_CC32",
+        "CCL_CC9_CC32",
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "CC",
+        "EW"
+      ],
+      "stop_code": "CC9",
+      "stop_id": "CC9"
+    },
+    {
+      "child_stop_ids": [
+        "CG1_A",
+        "CG1_B",
+        "DT35_A",
+        "DT35_B"
+      ],
+      "codes": [
+        "CG1",
+        "DT35"
+      ],
+      "name": "Expo",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35",
+        "EWL_CGL_CG2_CG",
+        "EWL_CGL_CG_CG2"
+      ],
+      "route_names": [
+        "DT",
+        "CG"
+      ],
+      "stop_code": "CG1",
+      "stop_id": "CG1"
+    },
+    {
+      "child_stop_ids": [
+        "CG2_A",
+        "CG2_B"
+      ],
+      "codes": [
+        "CG2"
+      ],
+      "name": "Changi Airport",
+      "route_ids": [
+        "EWL_CGL_CG2_CG",
+        "EWL_CGL_CG_CG2"
+      ],
+      "route_names": [
+        "CG"
+      ],
+      "stop_code": "CG2",
+      "stop_id": "CG2"
+    },
+    {
+      "child_stop_ids": [
+        "DT1_A",
+        "DT1_B"
+      ],
+      "codes": [
+        "DT1"
+      ],
+      "name": "Bukit Panjang",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT1",
+      "stop_id": "DT1"
+    },
+    {
+      "child_stop_ids": [
+        "DT10_A",
+        "DT10_B",
+        "TE11_A",
+        "TE11_B"
+      ],
+      "codes": [
+        "DT10",
+        "TE11"
+      ],
+      "name": "Stevens",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35",
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "DT",
+        "TE"
+      ],
+      "stop_code": "DT10",
+      "stop_id": "DT10"
+    },
+    {
+      "child_stop_ids": [
+        "DT11_A",
+        "DT11_B",
+        "NS21_A",
+        "NS21_B"
+      ],
+      "codes": [
+        "DT11",
+        "NS21"
+      ],
+      "name": "Newton",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35",
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "DT",
+        "NS"
+      ],
+      "stop_code": "DT11",
+      "stop_id": "DT11"
+    },
+    {
+      "child_stop_ids": [
+        "DT12_A",
+        "DT12_B",
+        "NE7_A",
+        "NE7_B"
+      ],
+      "codes": [
+        "DT12",
+        "NE7"
+      ],
+      "name": "Little India",
+      "route_ids": [
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35",
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "DT",
+        "NE"
+      ],
+      "stop_code": "DT12",
+      "stop_id": "DT12"
+    },
+    {
+      "child_stop_ids": [
+        "DT13_A",
+        "DT13_B"
+      ],
+      "codes": [
+        "DT13"
+      ],
+      "name": "Rochor",
+      "route_ids": [
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT13",
+      "stop_id": "DT13"
+    },
+    {
+      "child_stop_ids": [
+        "DT14_A",
+        "DT14_B",
+        "EW12_A",
+        "EW12_B"
+      ],
+      "codes": [
+        "DT14",
+        "EW12"
+      ],
+      "name": "Bugis",
+      "route_ids": [
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35",
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "DT",
+        "EW"
+      ],
+      "stop_code": "DT14",
+      "stop_id": "DT14"
+    },
+    {
+      "child_stop_ids": [
+        "DT17_A",
+        "DT17_B"
+      ],
+      "codes": [
+        "DT17"
+      ],
+      "name": "Downtown",
+      "route_ids": [
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT17",
+      "stop_id": "DT17"
+    },
+    {
+      "child_stop_ids": [
+        "DT18_A",
+        "DT18_B"
+      ],
+      "codes": [
+        "DT18"
+      ],
+      "name": "Telok Ayer",
+      "route_ids": [
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT18",
+      "stop_id": "DT18"
+    },
+    {
+      "child_stop_ids": [
+        "DT19_A",
+        "DT19_B",
+        "NE4_A",
+        "NE4_B"
+      ],
+      "codes": [
+        "DT19",
+        "NE4"
+      ],
+      "name": "Chinatown",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "DT",
+        "NE"
+      ],
+      "stop_code": "DT19",
+      "stop_id": "DT19"
+    },
+    {
+      "child_stop_ids": [
+        "DT2_A",
+        "DT2_B"
+      ],
+      "codes": [
+        "DT2"
+      ],
+      "name": "Cashew",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT2",
+      "stop_id": "DT2"
+    },
+    {
+      "child_stop_ids": [
+        "DT20_A",
+        "DT20_B"
+      ],
+      "codes": [
+        "DT20"
+      ],
+      "name": "Fort Canning",
+      "route_ids": [
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT20",
+      "stop_id": "DT20"
+    },
+    {
+      "child_stop_ids": [
+        "DT21_A",
+        "DT21_B"
+      ],
+      "codes": [
+        "DT21"
+      ],
+      "name": "Bencoolen",
+      "route_ids": [
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT21",
+      "stop_id": "DT21"
+    },
+    {
+      "child_stop_ids": [
+        "DT22_A",
+        "DT22_B"
+      ],
+      "codes": [
+        "DT22"
+      ],
+      "name": "Jalan Besar",
+      "route_ids": [
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT22",
+      "stop_id": "DT22"
+    },
+    {
+      "child_stop_ids": [
+        "DT23_A",
+        "DT23_B"
+      ],
+      "codes": [
+        "DT23"
+      ],
+      "name": "Bendemeer",
+      "route_ids": [
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT23",
+      "stop_id": "DT23"
+    },
+    {
+      "child_stop_ids": [
+        "DT24_A",
+        "DT24_B"
+      ],
+      "codes": [
+        "DT24"
+      ],
+      "name": "Geylang Bahru",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT24",
+      "stop_id": "DT24"
+    },
+    {
+      "child_stop_ids": [
+        "DT25_A",
+        "DT25_B"
+      ],
+      "codes": [
+        "DT25"
+      ],
+      "name": "Mattar",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT25",
+      "stop_id": "DT25"
+    },
+    {
+      "child_stop_ids": [
+        "DT27_A",
+        "DT27_B"
+      ],
+      "codes": [
+        "DT27"
+      ],
+      "name": "Ubi",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT27",
+      "stop_id": "DT27"
+    },
+    {
+      "child_stop_ids": [
+        "DT28_A",
+        "DT28_B"
+      ],
+      "codes": [
+        "DT28"
+      ],
+      "name": "Kaki Bukit",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT28",
+      "stop_id": "DT28"
+    },
+    {
+      "child_stop_ids": [
+        "DT29_A",
+        "DT29_B"
+      ],
+      "codes": [
+        "DT29"
+      ],
+      "name": "Bedok North",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT29",
+      "stop_id": "DT29"
+    },
+    {
+      "child_stop_ids": [
+        "DT3_A",
+        "DT3_B"
+      ],
+      "codes": [
+        "DT3"
+      ],
+      "name": "Hillview",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT3",
+      "stop_id": "DT3"
+    },
+    {
+      "child_stop_ids": [
+        "DT30_A",
+        "DT30_B"
+      ],
+      "codes": [
+        "DT30"
+      ],
+      "name": "Bedok Reservoir",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT30",
+      "stop_id": "DT30"
+    },
+    {
+      "child_stop_ids": [
+        "DT31_A",
+        "DT31_B"
+      ],
+      "codes": [
+        "DT31"
+      ],
+      "name": "Tampines West",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT31",
+      "stop_id": "DT31"
+    },
+    {
+      "child_stop_ids": [
+        "DT32_A",
+        "DT32_B",
+        "EW2_A",
+        "EW2_B"
+      ],
+      "codes": [
+        "DT32",
+        "EW2"
+      ],
+      "name": "Tampines",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35",
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW3_EW1",
+        "EWL_EW4_EW1"
+      ],
+      "route_names": [
+        "DT",
+        "EW"
+      ],
+      "stop_code": "DT32",
+      "stop_id": "DT32"
+    },
+    {
+      "child_stop_ids": [
+        "DT33_A",
+        "DT33_B"
+      ],
+      "codes": [
+        "DT33"
+      ],
+      "name": "Tampines East",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT33",
+      "stop_id": "DT33"
+    },
+    {
+      "child_stop_ids": [
+        "DT34_A",
+        "DT34_B"
+      ],
+      "codes": [
+        "DT34"
+      ],
+      "name": "Upper Changi",
+      "route_ids": [
+        "DTL_DT1_DT35",
+        "DTL_DT24_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT34",
+      "stop_id": "DT34"
+    },
+    {
+      "child_stop_ids": [
+        "DT4_A",
+        "DT4_B"
+      ],
+      "codes": [
+        "DT4"
+      ],
+      "name": "Hume",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT4",
+      "stop_id": "DT4"
+    },
+    {
+      "child_stop_ids": [
+        "DT5_A",
+        "DT5_B"
+      ],
+      "codes": [
+        "DT5"
+      ],
+      "name": "Beauty World",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT5",
+      "stop_id": "DT5"
+    },
+    {
+      "child_stop_ids": [
+        "DT6_A",
+        "DT6_B"
+      ],
+      "codes": [
+        "DT6"
+      ],
+      "name": "King Albert Park",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT6",
+      "stop_id": "DT6"
+    },
+    {
+      "child_stop_ids": [
+        "DT7_A",
+        "DT7_B"
+      ],
+      "codes": [
+        "DT7"
+      ],
+      "name": "Sixth Avenue",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT7",
+      "stop_id": "DT7"
+    },
+    {
+      "child_stop_ids": [
+        "DT8_A",
+        "DT8_B"
+      ],
+      "codes": [
+        "DT8"
+      ],
+      "name": "Tan Kah Kee",
+      "route_ids": [
+        "DTL_DT1_DT11",
+        "DTL_DT1_DT14",
+        "DTL_DT1_DT35"
+      ],
+      "route_names": [
+        "DT"
+      ],
+      "stop_code": "DT8",
+      "stop_id": "DT8"
+    },
+    {
+      "child_stop_ids": [
+        "EW1_A",
+        "EW1_B"
+      ],
+      "codes": [
+        "EW1"
+      ],
+      "name": "Pasir Ris",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW3_EW1",
+        "EWL_EW4_EW1"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW1",
+      "stop_id": "EW1"
+    },
+    {
+      "child_stop_ids": [
+        "EW10_A",
+        "EW10_B"
+      ],
+      "codes": [
+        "EW10"
+      ],
+      "name": "Kallang",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW10",
+      "stop_id": "EW10"
+    },
+    {
+      "child_stop_ids": [
+        "EW11_A",
+        "EW11_B"
+      ],
+      "codes": [
+        "EW11"
+      ],
+      "name": "Lavender",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW11",
+      "stop_id": "EW11"
+    },
+    {
+      "child_stop_ids": [
+        "EW13_A",
+        "EW13_B",
+        "NS25_A",
+        "NS25_B"
+      ],
+      "codes": [
+        "EW13",
+        "NS25"
+      ],
+      "name": "City Hall",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33",
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS28",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "EW",
+        "NS"
+      ],
+      "stop_code": "EW13",
+      "stop_id": "EW13"
+    },
+    {
+      "child_stop_ids": [
+        "EW14_A",
+        "EW14_B",
+        "NS26_A",
+        "NS26_B"
+      ],
+      "codes": [
+        "EW14",
+        "NS26"
+      ],
+      "name": "Raffles Place",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33",
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS28",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "EW",
+        "NS"
+      ],
+      "stop_code": "EW14",
+      "stop_id": "EW14"
+    },
+    {
+      "child_stop_ids": [
+        "EW15_A",
+        "EW15_B"
+      ],
+      "codes": [
+        "EW15"
+      ],
+      "name": "Tanjong Pagar",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW15",
+      "stop_id": "EW15"
+    },
+    {
+      "child_stop_ids": [
+        "EW16_A",
+        "EW16_B",
+        "NE3_A",
+        "NE3_B",
+        "TE17_A",
+        "TE17_B"
+      ],
+      "codes": [
+        "EW16",
+        "NE3",
+        "TE17"
+      ],
+      "name": "Outram Park",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33",
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18",
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "EW",
+        "NE",
+        "TE"
+      ],
+      "stop_code": "EW16",
+      "stop_id": "EW16"
+    },
+    {
+      "child_stop_ids": [
+        "EW17_A",
+        "EW17_B"
+      ],
+      "codes": [
+        "EW17"
+      ],
+      "name": "Tiong Bahru",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW17",
+      "stop_id": "EW17"
+    },
+    {
+      "child_stop_ids": [
+        "EW18_A",
+        "EW18_B"
+      ],
+      "codes": [
+        "EW18"
+      ],
+      "name": "Redhill",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW18",
+      "stop_id": "EW18"
+    },
+    {
+      "child_stop_ids": [
+        "EW19_A",
+        "EW19_B"
+      ],
+      "codes": [
+        "EW19"
+      ],
+      "name": "Queenstown",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW19",
+      "stop_id": "EW19"
+    },
+    {
+      "child_stop_ids": [
+        "EW20_A",
+        "EW20_B"
+      ],
+      "codes": [
+        "EW20"
+      ],
+      "name": "Commonwealth",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW20",
+      "stop_id": "EW20"
+    },
+    {
+      "child_stop_ids": [
+        "EW22_A",
+        "EW22_B"
+      ],
+      "codes": [
+        "EW22"
+      ],
+      "name": "Dover",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW22",
+      "stop_id": "EW22"
+    },
+    {
+      "child_stop_ids": [
+        "EW23_A",
+        "EW23_B"
+      ],
+      "codes": [
+        "EW23"
+      ],
+      "name": "Clementi",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW23",
+      "stop_id": "EW23"
+    },
+    {
+      "child_stop_ids": [
+        "EW24_A",
+        "EW24_B",
+        "NS1_A",
+        "NS1_B"
+      ],
+      "codes": [
+        "EW24",
+        "NS1"
+      ],
+      "name": "Jurong East",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33",
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS1_NS5",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS5_NS1"
+      ],
+      "route_names": [
+        "EW",
+        "NS"
+      ],
+      "stop_code": "EW24",
+      "stop_id": "EW24"
+    },
+    {
+      "child_stop_ids": [
+        "EW25_A",
+        "EW25_B"
+      ],
+      "codes": [
+        "EW25"
+      ],
+      "name": "Chinese Garden",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW25",
+      "stop_id": "EW25"
+    },
+    {
+      "child_stop_ids": [
+        "EW26_A",
+        "EW26_B"
+      ],
+      "codes": [
+        "EW26"
+      ],
+      "name": "Lakeside",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW26",
+      "stop_id": "EW26"
+    },
+    {
+      "child_stop_ids": [
+        "EW27_A",
+        "EW27_B"
+      ],
+      "codes": [
+        "EW27"
+      ],
+      "name": "Boon Lay",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW27",
+      "stop_id": "EW27"
+    },
+    {
+      "child_stop_ids": [
+        "EW28_A",
+        "EW28_B"
+      ],
+      "codes": [
+        "EW28"
+      ],
+      "name": "Pioneer",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW28",
+      "stop_id": "EW28"
+    },
+    {
+      "child_stop_ids": [
+        "EW29_A",
+        "EW29_B"
+      ],
+      "codes": [
+        "EW29"
+      ],
+      "name": "Joo Koon",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW29",
+      "stop_id": "EW29"
+    },
+    {
+      "child_stop_ids": [
+        "EW3_A",
+        "EW3_B"
+      ],
+      "codes": [
+        "EW3"
+      ],
+      "name": "Simei",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW3_EW1",
+        "EWL_EW4_EW1"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW3",
+      "stop_id": "EW3"
+    },
+    {
+      "child_stop_ids": [
+        "EW30_A",
+        "EW30_B"
+      ],
+      "codes": [
+        "EW30"
+      ],
+      "name": "Gul Circle",
+      "route_ids": [
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW30",
+      "stop_id": "EW30"
+    },
+    {
+      "child_stop_ids": [
+        "EW31_A",
+        "EW31_B"
+      ],
+      "codes": [
+        "EW31"
+      ],
+      "name": "Tuas Crescent",
+      "route_ids": [
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW31",
+      "stop_id": "EW31"
+    },
+    {
+      "child_stop_ids": [
+        "EW32_A",
+        "EW32_B"
+      ],
+      "codes": [
+        "EW32"
+      ],
+      "name": "Tuas West Road",
+      "route_ids": [
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW32",
+      "stop_id": "EW32"
+    },
+    {
+      "child_stop_ids": [
+        "EW33_A",
+        "EW33_B"
+      ],
+      "codes": [
+        "EW33"
+      ],
+      "name": "Tuas Link",
+      "route_ids": [
+        "EWL_EW1_EW33",
+        "EWL_EW24_EW33",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW33",
+      "stop_id": "EW33"
+    },
+    {
+      "child_stop_ids": [
+        "CG_A",
+        "CG_B",
+        "EW4_A",
+        "EW4_B"
+      ],
+      "codes": [
+        "EW4"
+      ],
+      "name": "Tanah Merah",
+      "route_ids": [
+        "EWL_CGL_CG2_CG",
+        "EWL_CGL_CG_CG2",
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "CG",
+        "EW"
+      ],
+      "stop_code": "EW4",
+      "stop_id": "EW4"
+    },
+    {
+      "child_stop_ids": [
+        "EW5_A",
+        "EW5_B"
+      ],
+      "codes": [
+        "EW5"
+      ],
+      "name": "Bedok",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW5",
+      "stop_id": "EW5"
+    },
+    {
+      "child_stop_ids": [
+        "EW6_A",
+        "EW6_B"
+      ],
+      "codes": [
+        "EW6"
+      ],
+      "name": "Kembangan",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW6",
+      "stop_id": "EW6"
+    },
+    {
+      "child_stop_ids": [
+        "EW7_A",
+        "EW7_B"
+      ],
+      "codes": [
+        "EW7"
+      ],
+      "name": "Eunos",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW7",
+      "stop_id": "EW7"
+    },
+    {
+      "child_stop_ids": [
+        "EW9_A",
+        "EW9_B"
+      ],
+      "codes": [
+        "EW9"
+      ],
+      "name": "Aljunied",
+      "route_ids": [
+        "EWL_EW1_EW29",
+        "EWL_EW1_EW33",
+        "EWL_EW23_EW1",
+        "EWL_EW29_EW1",
+        "EWL_EW33_EW1",
+        "EWL_EW4_EW29",
+        "EWL_EW4_EW33"
+      ],
+      "route_names": [
+        "EW"
+      ],
+      "stop_code": "EW9",
+      "stop_id": "EW9"
+    },
+    {
+      "child_stop_ids": [
+        "NE10_A",
+        "NE10_B"
+      ],
+      "codes": [
+        "NE10"
+      ],
+      "name": "Potong Pasir",
+      "route_ids": [
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "NE"
+      ],
+      "stop_code": "NE10",
+      "stop_id": "NE10"
+    },
+    {
+      "child_stop_ids": [
+        "NE11_A",
+        "NE11_B"
+      ],
+      "codes": [
+        "NE11"
+      ],
+      "name": "Woodleigh",
+      "route_ids": [
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "NE"
+      ],
+      "stop_code": "NE11",
+      "stop_id": "NE11"
+    },
+    {
+      "child_stop_ids": [
+        "NE13_A",
+        "NE13_B"
+      ],
+      "codes": [
+        "NE13"
+      ],
+      "name": "Kovan",
+      "route_ids": [
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "NE"
+      ],
+      "stop_code": "NE13",
+      "stop_id": "NE13"
+    },
+    {
+      "child_stop_ids": [
+        "NE14_A",
+        "NE14_B"
+      ],
+      "codes": [
+        "NE14"
+      ],
+      "name": "Hougang",
+      "route_ids": [
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "NE"
+      ],
+      "stop_code": "NE14",
+      "stop_id": "NE14"
+    },
+    {
+      "child_stop_ids": [
+        "NE15_A",
+        "NE15_B"
+      ],
+      "codes": [
+        "NE15"
+      ],
+      "name": "Buangkok",
+      "route_ids": [
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "NE"
+      ],
+      "stop_code": "NE15",
+      "stop_id": "NE15"
+    },
+    {
+      "child_stop_ids": [
+        "NE16_A",
+        "NE16_B",
+        "STC_A",
+        "STC_B"
+      ],
+      "codes": [
+        "NE16",
+        "STC"
+      ],
+      "name": "Sengkang",
+      "route_ids": [
+        "NEL_NE16_NE18",
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18",
+        "SK"
+      ],
+      "route_names": [
+        "NE",
+        "SK"
+      ],
+      "stop_code": "NE16",
+      "stop_id": "NE16"
+    },
+    {
+      "child_stop_ids": [
+        "NE17_A",
+        "NE17_B",
+        "PTC_A",
+        "PTC_B"
+      ],
+      "codes": [
+        "NE17",
+        "PTC"
+      ],
+      "name": "Punggol",
+      "route_ids": [
+        "NEL_NE16_NE18",
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18",
+        "PG"
+      ],
+      "route_names": [
+        "NE",
+        "PG"
+      ],
+      "stop_code": "NE17",
+      "stop_id": "NE17"
+    },
+    {
+      "child_stop_ids": [
+        "NE18_A",
+        "NE18_B"
+      ],
+      "codes": [
+        "NE18"
+      ],
+      "name": "Punggol Coast",
+      "route_ids": [
+        "NEL_NE16_NE18",
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "NE"
+      ],
+      "stop_code": "NE18",
+      "stop_id": "NE18"
+    },
+    {
+      "child_stop_ids": [
+        "NE5_A",
+        "NE5_B"
+      ],
+      "codes": [
+        "NE5"
+      ],
+      "name": "Clarke Quay",
+      "route_ids": [
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "NE"
+      ],
+      "stop_code": "NE5",
+      "stop_id": "NE5"
+    },
+    {
+      "child_stop_ids": [
+        "NE8_A",
+        "NE8_B"
+      ],
+      "codes": [
+        "NE8"
+      ],
+      "name": "Farrer Park",
+      "route_ids": [
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "NE"
+      ],
+      "stop_code": "NE8",
+      "stop_id": "NE8"
+    },
+    {
+      "child_stop_ids": [
+        "NE9_A",
+        "NE9_B"
+      ],
+      "codes": [
+        "NE9"
+      ],
+      "name": "Boon Keng",
+      "route_ids": [
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18"
+      ],
+      "route_names": [
+        "NE"
+      ],
+      "stop_code": "NE9",
+      "stop_id": "NE9"
+    },
+    {
+      "child_stop_ids": [
+        "NS10_A",
+        "NS10_B"
+      ],
+      "codes": [
+        "NS10"
+      ],
+      "name": "Admiralty",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS10",
+      "stop_id": "NS10"
+    },
+    {
+      "child_stop_ids": [
+        "NS11_A",
+        "NS11_B"
+      ],
+      "codes": [
+        "NS11"
+      ],
+      "name": "Sembawang",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS11",
+      "stop_id": "NS11"
+    },
+    {
+      "child_stop_ids": [
+        "NS12_A",
+        "NS12_B"
+      ],
+      "codes": [
+        "NS12"
+      ],
+      "name": "Canberra",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS12",
+      "stop_id": "NS12"
+    },
+    {
+      "child_stop_ids": [
+        "NS13_A",
+        "NS13_B"
+      ],
+      "codes": [
+        "NS13"
+      ],
+      "name": "Yishun",
+      "route_ids": [
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS1",
+        "NSL_NS16_NS13",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS13",
+      "stop_id": "NS13"
+    },
+    {
+      "child_stop_ids": [
+        "NS14_A",
+        "NS14_B"
+      ],
+      "codes": [
+        "NS14"
+      ],
+      "name": "Khatib",
+      "route_ids": [
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS1",
+        "NSL_NS16_NS13",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS14",
+      "stop_id": "NS14"
+    },
+    {
+      "child_stop_ids": [
+        "NS15_A",
+        "NS15_B"
+      ],
+      "codes": [
+        "NS15"
+      ],
+      "name": "Yio Chu Kang",
+      "route_ids": [
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS1",
+        "NSL_NS16_NS13",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS15",
+      "stop_id": "NS15"
+    },
+    {
+      "child_stop_ids": [
+        "NS16_A",
+        "NS16_B"
+      ],
+      "codes": [
+        "NS16"
+      ],
+      "name": "Ang Mo Kio",
+      "route_ids": [
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS1",
+        "NSL_NS16_NS13",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS16",
+      "stop_id": "NS16"
+    },
+    {
+      "child_stop_ids": [
+        "NS18_A",
+        "NS18_B"
+      ],
+      "codes": [
+        "NS18"
+      ],
+      "name": "Braddell",
+      "route_ids": [
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS18",
+      "stop_id": "NS18"
+    },
+    {
+      "child_stop_ids": [
+        "NS19_A",
+        "NS19_B"
+      ],
+      "codes": [
+        "NS19"
+      ],
+      "name": "Toa Payoh",
+      "route_ids": [
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS19",
+      "stop_id": "NS19"
+    },
+    {
+      "child_stop_ids": [
+        "NS2_A",
+        "NS2_B"
+      ],
+      "codes": [
+        "NS2"
+      ],
+      "name": "Bukit Batok",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS1_NS5",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS5_NS1"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS2",
+      "stop_id": "NS2"
+    },
+    {
+      "child_stop_ids": [
+        "NS20_A",
+        "NS20_B"
+      ],
+      "codes": [
+        "NS20"
+      ],
+      "name": "Novena",
+      "route_ids": [
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS20",
+      "stop_id": "NS20"
+    },
+    {
+      "child_stop_ids": [
+        "NS22_A",
+        "NS22_B",
+        "TE14_A",
+        "TE14_B"
+      ],
+      "codes": [
+        "NS22",
+        "TE14"
+      ],
+      "name": "Orchard",
+      "route_ids": [
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS28",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28",
+        "TEL_TE14_TE29",
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "NS",
+        "TE"
+      ],
+      "stop_code": "NS22",
+      "stop_id": "NS22"
+    },
+    {
+      "child_stop_ids": [
+        "NS23_A",
+        "NS23_B"
+      ],
+      "codes": [
+        "NS23"
+      ],
+      "name": "Somerset",
+      "route_ids": [
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS28",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS23",
+      "stop_id": "NS23"
+    },
+    {
+      "child_stop_ids": [
+        "CC1_A",
+        "CC1_B",
+        "NE6_A",
+        "NE6_B",
+        "NS24_A",
+        "NS24_B"
+      ],
+      "codes": [
+        "CC1",
+        "NE6",
+        "NS24"
+      ],
+      "name": "Dhoby Ghaut",
+      "route_ids": [
+        "CCL_CC1_CC11",
+        "CCL_CC1_CC29",
+        "CCL_CC1_CC32",
+        "CCL_CC1_CC4",
+        "CCL_CC1_CC6",
+        "NEL_NE1_NE18",
+        "NEL_NE3_NE18",
+        "NSL_NS13_NS26",
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS28",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "CC",
+        "NE",
+        "NS"
+      ],
+      "stop_code": "NS24",
+      "stop_id": "NS24"
+    },
+    {
+      "child_stop_ids": [
+        "NS28_A",
+        "NS28_B"
+      ],
+      "codes": [
+        "NS28"
+      ],
+      "name": "Marina South Pier",
+      "route_ids": [
+        "NSL_NS13_NS28",
+        "NSL_NS16_NS28",
+        "NSL_NS17_NS28",
+        "NSL_NS1_NS28",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS13",
+        "NSL_NS28_NS16",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS28",
+      "stop_id": "NS28"
+    },
+    {
+      "child_stop_ids": [
+        "NS3_A",
+        "NS3_B"
+      ],
+      "codes": [
+        "NS3"
+      ],
+      "name": "Bukit Gombak",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS1_NS5",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS5_NS1"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS3",
+      "stop_id": "NS3"
+    },
+    {
+      "child_stop_ids": [
+        "NS4_A",
+        "NS4_B"
+      ],
+      "codes": [
+        "NS4"
+      ],
+      "name": "Choa Chu Kang",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS1_NS5",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS5_NS1"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS4",
+      "stop_id": "NS4"
+    },
+    {
+      "child_stop_ids": [
+        "NS5_A",
+        "NS5_B"
+      ],
+      "codes": [
+        "NS5"
+      ],
+      "name": "Yew Tee",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS1_NS5",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS5_NS1"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS5",
+      "stop_id": "NS5"
+    },
+    {
+      "child_stop_ids": [
+        "NS7_A",
+        "NS7_B"
+      ],
+      "codes": [
+        "NS7"
+      ],
+      "name": "Kranji",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS7",
+      "stop_id": "NS7"
+    },
+    {
+      "child_stop_ids": [
+        "NS8_A",
+        "NS8_B"
+      ],
+      "codes": [
+        "NS8"
+      ],
+      "name": "Marsiling",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28"
+      ],
+      "route_names": [
+        "NS"
+      ],
+      "stop_code": "NS8",
+      "stop_id": "NS8"
+    },
+    {
+      "child_stop_ids": [
+        "NS9_A",
+        "NS9_B",
+        "TE2_A",
+        "TE2_B"
+      ],
+      "codes": [
+        "NS9",
+        "TE2"
+      ],
+      "name": "Woodlands",
+      "route_ids": [
+        "NSL_NS16_NS1",
+        "NSL_NS17_NS1",
+        "NSL_NS1_NS16",
+        "NSL_NS1_NS19",
+        "NSL_NS1_NS28",
+        "NSL_NS21_NS1",
+        "NSL_NS27_NS1",
+        "NSL_NS28_NS1",
+        "NSL_NS28_NS7",
+        "NSL_NS7_NS28",
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE1_TE3",
+        "TEL_TE1_TE9"
+      ],
+      "route_names": [
+        "NS",
+        "TE"
+      ],
+      "stop_code": "NS9",
+      "stop_id": "NS9"
+    },
+    {
+      "child_stop_ids": [
+        "PE1_A",
+        "PE1_B"
+      ],
+      "codes": [
+        "PE1"
+      ],
+      "name": "Cove",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PE1",
+      "stop_id": "PE1"
+    },
+    {
+      "child_stop_ids": [
+        "PE2_A",
+        "PE2_B"
+      ],
+      "codes": [
+        "PE2"
+      ],
+      "name": "Meridian",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PE2",
+      "stop_id": "PE2"
+    },
+    {
+      "child_stop_ids": [
+        "PE3_A",
+        "PE3_B"
+      ],
+      "codes": [
+        "PE3"
+      ],
+      "name": "Coral Edge",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PE3",
+      "stop_id": "PE3"
+    },
+    {
+      "child_stop_ids": [
+        "PE4_A",
+        "PE4_B"
+      ],
+      "codes": [
+        "PE4"
+      ],
+      "name": "Riviera",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PE4",
+      "stop_id": "PE4"
+    },
+    {
+      "child_stop_ids": [
+        "PE5_A",
+        "PE5_B"
+      ],
+      "codes": [
+        "PE5"
+      ],
+      "name": "Kadaloor",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PE5",
+      "stop_id": "PE5"
+    },
+    {
+      "child_stop_ids": [
+        "PE6_A",
+        "PE6_B"
+      ],
+      "codes": [
+        "PE6"
+      ],
+      "name": "Oasis",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PE6",
+      "stop_id": "PE6"
+    },
+    {
+      "child_stop_ids": [
+        "PE7_A",
+        "PE7_B"
+      ],
+      "codes": [
+        "PE7"
+      ],
+      "name": "Damai",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PE7",
+      "stop_id": "PE7"
+    },
+    {
+      "child_stop_ids": [
+        "PW1_A",
+        "PW1_B"
+      ],
+      "codes": [
+        "PW1"
+      ],
+      "name": "Sam Kee",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PW1",
+      "stop_id": "PW1"
+    },
+    {
+      "child_stop_ids": [
+        "PW2_A",
+        "PW2_B"
+      ],
+      "codes": [
+        "PW2"
+      ],
+      "name": "Teck Lee",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PW2",
+      "stop_id": "PW2"
+    },
+    {
+      "child_stop_ids": [
+        "PW3_A",
+        "PW3_B"
+      ],
+      "codes": [
+        "PW3"
+      ],
+      "name": "Punggol Point",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PW3",
+      "stop_id": "PW3"
+    },
+    {
+      "child_stop_ids": [
+        "PW4_A",
+        "PW4_B"
+      ],
+      "codes": [
+        "PW4"
+      ],
+      "name": "Samudera",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PW4",
+      "stop_id": "PW4"
+    },
+    {
+      "child_stop_ids": [
+        "PW5_A",
+        "PW5_B"
+      ],
+      "codes": [
+        "PW5"
+      ],
+      "name": "Nibong",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PW5",
+      "stop_id": "PW5"
+    },
+    {
+      "child_stop_ids": [
+        "PW6_A",
+        "PW6_B"
+      ],
+      "codes": [
+        "PW6"
+      ],
+      "name": "Sumang",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PW6",
+      "stop_id": "PW6"
+    },
+    {
+      "child_stop_ids": [
+        "PW7_A",
+        "PW7_B"
+      ],
+      "codes": [
+        "PW7"
+      ],
+      "name": "Soo Teck",
+      "route_ids": [
+        "PG"
+      ],
+      "route_names": [
+        "PG"
+      ],
+      "stop_code": "PW7",
+      "stop_id": "PW7"
+    },
+    {
+      "child_stop_ids": [
+        "SE1_A",
+        "SE1_B"
+      ],
+      "codes": [
+        "SE1"
+      ],
+      "name": "Compassvale",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SE1",
+      "stop_id": "SE1"
+    },
+    {
+      "child_stop_ids": [
+        "SE2_A",
+        "SE2_B"
+      ],
+      "codes": [
+        "SE2"
+      ],
+      "name": "Rumbia",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SE2",
+      "stop_id": "SE2"
+    },
+    {
+      "child_stop_ids": [
+        "SE3_A",
+        "SE3_B"
+      ],
+      "codes": [
+        "SE3"
+      ],
+      "name": "Bakau",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SE3",
+      "stop_id": "SE3"
+    },
+    {
+      "child_stop_ids": [
+        "SE4_A",
+        "SE4_B"
+      ],
+      "codes": [
+        "SE4"
+      ],
+      "name": "Kangkar",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SE4",
+      "stop_id": "SE4"
+    },
+    {
+      "child_stop_ids": [
+        "SE5_A",
+        "SE5_B"
+      ],
+      "codes": [
+        "SE5"
+      ],
+      "name": "Ranggung",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SE5",
+      "stop_id": "SE5"
+    },
+    {
+      "child_stop_ids": [
+        "SW1_A",
+        "SW1_B"
+      ],
+      "codes": [
+        "SW1"
+      ],
+      "name": "Cheng Lim",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SW1",
+      "stop_id": "SW1"
+    },
+    {
+      "child_stop_ids": [
+        "SW2_A",
+        "SW2_B"
+      ],
+      "codes": [
+        "SW2"
+      ],
+      "name": "Farmway",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SW2",
+      "stop_id": "SW2"
+    },
+    {
+      "child_stop_ids": [
+        "SW3_A",
+        "SW3_B"
+      ],
+      "codes": [
+        "SW3"
+      ],
+      "name": "Kupang",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SW3",
+      "stop_id": "SW3"
+    },
+    {
+      "child_stop_ids": [
+        "SW4_A",
+        "SW4_B"
+      ],
+      "codes": [
+        "SW4"
+      ],
+      "name": "Thanggam",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SW4",
+      "stop_id": "SW4"
+    },
+    {
+      "child_stop_ids": [
+        "SW5_A",
+        "SW5_B"
+      ],
+      "codes": [
+        "SW5"
+      ],
+      "name": "Fernvale",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SW5",
+      "stop_id": "SW5"
+    },
+    {
+      "child_stop_ids": [
+        "SW6_A",
+        "SW6_B"
+      ],
+      "codes": [
+        "SW6"
+      ],
+      "name": "Layar",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SW6",
+      "stop_id": "SW6"
+    },
+    {
+      "child_stop_ids": [
+        "SW7_A",
+        "SW7_B"
+      ],
+      "codes": [
+        "SW7"
+      ],
+      "name": "Tongkang",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SW7",
+      "stop_id": "SW7"
+    },
+    {
+      "child_stop_ids": [
+        "SW8_A",
+        "SW8_B"
+      ],
+      "codes": [
+        "SW8"
+      ],
+      "name": "Renjong",
+      "route_ids": [
+        "SK"
+      ],
+      "route_names": [
+        "SK"
+      ],
+      "stop_code": "SW8",
+      "stop_id": "SW8"
+    },
+    {
+      "child_stop_ids": [
+        "TE1_A",
+        "TE1_B"
+      ],
+      "codes": [
+        "TE1"
+      ],
+      "name": "Woodlands North",
+      "route_ids": [
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE1_TE3",
+        "TEL_TE1_TE9"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE1",
+      "stop_id": "TE1"
+    },
+    {
+      "child_stop_ids": [
+        "TE12_A",
+        "TE12_B"
+      ],
+      "codes": [
+        "TE12"
+      ],
+      "name": "Napier",
+      "route_ids": [
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE12",
+      "stop_id": "TE12"
+    },
+    {
+      "child_stop_ids": [
+        "TE13_A",
+        "TE13_B"
+      ],
+      "codes": [
+        "TE13"
+      ],
+      "name": "Orchard Boulevard",
+      "route_ids": [
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE13",
+      "stop_id": "TE13"
+    },
+    {
+      "child_stop_ids": [
+        "TE15_A",
+        "TE15_B"
+      ],
+      "codes": [
+        "TE15"
+      ],
+      "name": "Great World",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE15",
+      "stop_id": "TE15"
+    },
+    {
+      "child_stop_ids": [
+        "TE16_A",
+        "TE16_B"
+      ],
+      "codes": [
+        "TE16"
+      ],
+      "name": "Havelock",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE16",
+      "stop_id": "TE16"
+    },
+    {
+      "child_stop_ids": [
+        "TE18_A",
+        "TE18_B"
+      ],
+      "codes": [
+        "TE18"
+      ],
+      "name": "Maxwell",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE18",
+      "stop_id": "TE18"
+    },
+    {
+      "child_stop_ids": [
+        "TE19_A",
+        "TE19_B"
+      ],
+      "codes": [
+        "TE19"
+      ],
+      "name": "Shenton Way",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE19",
+      "stop_id": "TE19"
+    },
+    {
+      "child_stop_ids": [
+        "TE22_A",
+        "TE22_B"
+      ],
+      "codes": [
+        "TE22"
+      ],
+      "name": "Gardens by the Bay",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE22_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE22",
+      "stop_id": "TE22"
+    },
+    {
+      "child_stop_ids": [
+        "TE23_A",
+        "TE23_B"
+      ],
+      "codes": [
+        "TE23"
+      ],
+      "name": "Tanjong Rhu",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE22_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE23",
+      "stop_id": "TE23"
+    },
+    {
+      "child_stop_ids": [
+        "TE24_A",
+        "TE24_B"
+      ],
+      "codes": [
+        "TE24"
+      ],
+      "name": "Katong Park",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE22_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE24",
+      "stop_id": "TE24"
+    },
+    {
+      "child_stop_ids": [
+        "TE25_A",
+        "TE25_B"
+      ],
+      "codes": [
+        "TE25"
+      ],
+      "name": "Tanjong Katong",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE22_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE25",
+      "stop_id": "TE25"
+    },
+    {
+      "child_stop_ids": [
+        "TE26_A",
+        "TE26_B"
+      ],
+      "codes": [
+        "TE26"
+      ],
+      "name": "Marine Parade",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE22_TE29",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE26",
+      "stop_id": "TE26"
+    },
+    {
+      "child_stop_ids": [
+        "TE27_A",
+        "TE27_B"
+      ],
+      "codes": [
+        "TE27"
+      ],
+      "name": "Marine Terrace",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE22_TE29",
+        "TEL_TE27_TE29",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE27",
+      "stop_id": "TE27"
+    },
+    {
+      "child_stop_ids": [
+        "TE28_A",
+        "TE28_B"
+      ],
+      "codes": [
+        "TE28"
+      ],
+      "name": "Siglap",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE29",
+        "TEL_TE22_TE29",
+        "TEL_TE27_TE29",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE28",
+      "stop_id": "TE28"
+    },
+    {
+      "child_stop_ids": [
+        "TE29_A",
+        "TE29_B"
+      ],
+      "codes": [
+        "TE29"
+      ],
+      "name": "Bayshore",
+      "route_ids": [
+        "TEL_TE14_TE29",
+        "TEL_TE17_TE29",
+        "TEL_TE1_TE29",
+        "TEL_TE22_TE29",
+        "TEL_TE27_TE29",
+        "TEL_TE3_TE29",
+        "TEL_TE9_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE29",
+      "stop_id": "TE29"
+    },
+    {
+      "child_stop_ids": [
+        "TE3_A",
+        "TE3_B"
+      ],
+      "codes": [
+        "TE3"
+      ],
+      "name": "Woodlands South",
+      "route_ids": [
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE1_TE3",
+        "TEL_TE1_TE9",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE3",
+      "stop_id": "TE3"
+    },
+    {
+      "child_stop_ids": [
+        "TE4_A",
+        "TE4_B"
+      ],
+      "codes": [
+        "TE4"
+      ],
+      "name": "Springleaf",
+      "route_ids": [
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE1_TE9",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE4",
+      "stop_id": "TE4"
+    },
+    {
+      "child_stop_ids": [
+        "TE5_A",
+        "TE5_B"
+      ],
+      "codes": [
+        "TE5"
+      ],
+      "name": "Lentor",
+      "route_ids": [
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE1_TE9",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE5",
+      "stop_id": "TE5"
+    },
+    {
+      "child_stop_ids": [
+        "TE6_A",
+        "TE6_B"
+      ],
+      "codes": [
+        "TE6"
+      ],
+      "name": "Mayflower",
+      "route_ids": [
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE1_TE9",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE6",
+      "stop_id": "TE6"
+    },
+    {
+      "child_stop_ids": [
+        "TE7_A",
+        "TE7_B"
+      ],
+      "codes": [
+        "TE7"
+      ],
+      "name": "Bright Hill",
+      "route_ids": [
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE1_TE9",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE7",
+      "stop_id": "TE7"
+    },
+    {
+      "child_stop_ids": [
+        "TE8_A",
+        "TE8_B"
+      ],
+      "codes": [
+        "TE8"
+      ],
+      "name": "Upper Thomson",
+      "route_ids": [
+        "TEL_TE1_TE14",
+        "TEL_TE1_TE17",
+        "TEL_TE1_TE22",
+        "TEL_TE1_TE26",
+        "TEL_TE1_TE27",
+        "TEL_TE1_TE29",
+        "TEL_TE1_TE9",
+        "TEL_TE3_TE26",
+        "TEL_TE3_TE29"
+      ],
+      "route_names": [
+        "TE"
+      ],
+      "stop_code": "TE8",
+      "stop_id": "TE8"
+    }
+  ],
+  "status": "complete"
+}

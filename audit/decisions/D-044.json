@@ -1,0 +1,779 @@
+{
+  "change_type": "revision_revalidation",
+  "evidence": [
+    {
+      "description": "Owner authorization and reviewed scope",
+      "path": "audit/evidence/2026-11-23-stage2-guards.json",
+      "sha256": "f43b4555db922c46cbbc7425eb0d6c93bf408309ec05ea89c68cee67854595bb"
+    }
+  ],
+  "id": "D-044",
+  "kind": "audit_decision",
+  "limitations": [
+    "Keep D-041 City Hall A-D despite disclosed Esplanade overlap. No E/F/G at City Hall. Stage 2 comparison only, not publication."
+  ],
+  "reason": "Renew exact remaining coordinate source guards; accept three City Hall non-exits",
+  "schema_version": 2,
+  "source_revisions": [
+    "20261123T102639Z-pl-woodlands-live replay"
+  ],
+  "targets": [
+    {
+      "after": 41890,
+      "after_sha256": "005fdb9fa20a520a913e7636a6c0ab7a77f9b370ce78676b26e71b9bd8545ad6",
+      "before": 36652,
+      "before_sha256": "e3f27513341324347a50fde583755f1628436902f0bd984f5068bc0a68d7409e",
+      "identity": "bayfront:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/1/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41890,
+      "after_sha256": "005fdb9fa20a520a913e7636a6c0ab7a77f9b370ce78676b26e71b9bd8545ad6",
+      "before": 36652,
+      "before_sha256": "e3f27513341324347a50fde583755f1628436902f0bd984f5068bc0a68d7409e",
+      "identity": "bayfront:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/2/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41890,
+      "after_sha256": "005fdb9fa20a520a913e7636a6c0ab7a77f9b370ce78676b26e71b9bd8545ad6",
+      "before": 36652,
+      "before_sha256": "e3f27513341324347a50fde583755f1628436902f0bd984f5068bc0a68d7409e",
+      "identity": "bayfront:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/3/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41890,
+      "after_sha256": "005fdb9fa20a520a913e7636a6c0ab7a77f9b370ce78676b26e71b9bd8545ad6",
+      "before": 36652,
+      "before_sha256": "e3f27513341324347a50fde583755f1628436902f0bd984f5068bc0a68d7409e",
+      "identity": "bayfront:MRT:E",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/4/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39807,
+      "after_sha256": "d67fe00321f5606ff4c8486b319e7cd416641d219f11715f29e25627c2c0c0d3",
+      "before": 36654,
+      "before_sha256": "01223fe0101fe3067c39696bd207f42dee72e795c80668eb2dd7dfaf7a7e4b86",
+      "identity": "braddell:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/29/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39807,
+      "after_sha256": "d67fe00321f5606ff4c8486b319e7cd416641d219f11715f29e25627c2c0c0d3",
+      "before": 36654,
+      "before_sha256": "01223fe0101fe3067c39696bd207f42dee72e795c80668eb2dd7dfaf7a7e4b86",
+      "identity": "braddell:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/30/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39807,
+      "after_sha256": "d67fe00321f5606ff4c8486b319e7cd416641d219f11715f29e25627c2c0c0d3",
+      "before": 36654,
+      "before_sha256": "01223fe0101fe3067c39696bd207f42dee72e795c80668eb2dd7dfaf7a7e4b86",
+      "identity": "braddell:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/31/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39017,
+      "after_sha256": "4148147df1d59a0eff92dc51d00788f14002809b7bb5d85f2cd3c8e3112e8da2",
+      "before": 36670,
+      "before_sha256": "5f38fe3b25f48c613fdaa0fcaf432d7eb0f14a4b9ad14fe29ff14228f0393cd7",
+      "identity": "buangkok:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/32/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39017,
+      "after_sha256": "4148147df1d59a0eff92dc51d00788f14002809b7bb5d85f2cd3c8e3112e8da2",
+      "before": 36670,
+      "before_sha256": "5f38fe3b25f48c613fdaa0fcaf432d7eb0f14a4b9ad14fe29ff14228f0393cd7",
+      "identity": "buangkok:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/33/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41804,
+      "after_sha256": "b78eaa89d11a240e8f28b0acd86a34fa8aaac4fe879423fe58a8bea32d634168",
+      "before": 33852,
+      "before_sha256": "340d2ca91beccfd5b74b58cb63f693df55f75623191255747610d06a19b36de6",
+      "identity": "city-hall:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/48/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41804,
+      "after_sha256": "b78eaa89d11a240e8f28b0acd86a34fa8aaac4fe879423fe58a8bea32d634168",
+      "before": 33852,
+      "before_sha256": "340d2ca91beccfd5b74b58cb63f693df55f75623191255747610d06a19b36de6",
+      "identity": "city-hall:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/49/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41804,
+      "after_sha256": "b78eaa89d11a240e8f28b0acd86a34fa8aaac4fe879423fe58a8bea32d634168",
+      "before": 33852,
+      "before_sha256": "340d2ca91beccfd5b74b58cb63f693df55f75623191255747610d06a19b36de6",
+      "identity": "city-hall:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/50/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41804,
+      "after_sha256": "b78eaa89d11a240e8f28b0acd86a34fa8aaac4fe879423fe58a8bea32d634168",
+      "before": 33852,
+      "before_sha256": "340d2ca91beccfd5b74b58cb63f693df55f75623191255747610d06a19b36de6",
+      "identity": "city-hall:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/51/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41817,
+      "after_sha256": "edc331395224322891bc86d2bfba397ac0de77a26fb6a282887f657da19f3475",
+      "before": 37293,
+      "before_sha256": "81d22ebb2bf09248326871392774d2f6590666fda2c5997a57662c55b924cd5b",
+      "identity": "dhoby-ghaut:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/66/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41817,
+      "after_sha256": "edc331395224322891bc86d2bfba397ac0de77a26fb6a282887f657da19f3475",
+      "before": 37293,
+      "before_sha256": "81d22ebb2bf09248326871392774d2f6590666fda2c5997a57662c55b924cd5b",
+      "identity": "dhoby-ghaut:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/67/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41817,
+      "after_sha256": "edc331395224322891bc86d2bfba397ac0de77a26fb6a282887f657da19f3475",
+      "before": 37293,
+      "before_sha256": "81d22ebb2bf09248326871392774d2f6590666fda2c5997a57662c55b924cd5b",
+      "identity": "dhoby-ghaut:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/68/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41817,
+      "after_sha256": "edc331395224322891bc86d2bfba397ac0de77a26fb6a282887f657da19f3475",
+      "before": 37293,
+      "before_sha256": "81d22ebb2bf09248326871392774d2f6590666fda2c5997a57662c55b924cd5b",
+      "identity": "dhoby-ghaut:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/69/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41817,
+      "after_sha256": "edc331395224322891bc86d2bfba397ac0de77a26fb6a282887f657da19f3475",
+      "before": 37293,
+      "before_sha256": "81d22ebb2bf09248326871392774d2f6590666fda2c5997a57662c55b924cd5b",
+      "identity": "dhoby-ghaut:MRT:E",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/70/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41817,
+      "after_sha256": "edc331395224322891bc86d2bfba397ac0de77a26fb6a282887f657da19f3475",
+      "before": 37293,
+      "before_sha256": "81d22ebb2bf09248326871392774d2f6590666fda2c5997a57662c55b924cd5b",
+      "identity": "dhoby-ghaut:MRT:F",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/71/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41817,
+      "after_sha256": "edc331395224322891bc86d2bfba397ac0de77a26fb6a282887f657da19f3475",
+      "before": 37293,
+      "before_sha256": "81d22ebb2bf09248326871392774d2f6590666fda2c5997a57662c55b924cd5b",
+      "identity": "dhoby-ghaut:MRT:G",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/72/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38965,
+      "after_sha256": "e1ac527af7d53677bb02f00389d217dff694d3c420b7a4bbe1e1373ea4d2fb55",
+      "before": 36689,
+      "before_sha256": "6f2758ff3351f0bb189a6ad1843de4af10a6e9b4b07cf26a61fb167be90c790d",
+      "identity": "great-world:MRT:1",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/96/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38965,
+      "after_sha256": "e1ac527af7d53677bb02f00389d217dff694d3c420b7a4bbe1e1373ea4d2fb55",
+      "before": 36689,
+      "before_sha256": "6f2758ff3351f0bb189a6ad1843de4af10a6e9b4b07cf26a61fb167be90c790d",
+      "identity": "great-world:MRT:2",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/97/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38965,
+      "after_sha256": "e1ac527af7d53677bb02f00389d217dff694d3c420b7a4bbe1e1373ea4d2fb55",
+      "before": 36689,
+      "before_sha256": "6f2758ff3351f0bb189a6ad1843de4af10a6e9b4b07cf26a61fb167be90c790d",
+      "identity": "great-world:MRT:3",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/98/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38965,
+      "after_sha256": "e1ac527af7d53677bb02f00389d217dff694d3c420b7a4bbe1e1373ea4d2fb55",
+      "before": 36689,
+      "before_sha256": "6f2758ff3351f0bb189a6ad1843de4af10a6e9b4b07cf26a61fb167be90c790d",
+      "identity": "great-world:MRT:4",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/99/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38965,
+      "after_sha256": "e1ac527af7d53677bb02f00389d217dff694d3c420b7a4bbe1e1373ea4d2fb55",
+      "before": 36689,
+      "before_sha256": "6f2758ff3351f0bb189a6ad1843de4af10a6e9b4b07cf26a61fb167be90c790d",
+      "identity": "great-world:MRT:5",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/100/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38965,
+      "after_sha256": "e1ac527af7d53677bb02f00389d217dff694d3c420b7a4bbe1e1373ea4d2fb55",
+      "before": 36689,
+      "before_sha256": "6f2758ff3351f0bb189a6ad1843de4af10a6e9b4b07cf26a61fb167be90c790d",
+      "identity": "great-world:MRT:6",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/101/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41034,
+      "after_sha256": "2e54f712e5617d949a9a597b5e09b95b18d68ea5ce20953e30ee6f4cd30f3a5f",
+      "before": 37292,
+      "before_sha256": "084567162a1152043b1be664a17acab6f6dc05523fa2559a42c83a2de06ef27f",
+      "identity": "harbourfront:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/104/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41034,
+      "after_sha256": "2e54f712e5617d949a9a597b5e09b95b18d68ea5ce20953e30ee6f4cd30f3a5f",
+      "before": 37292,
+      "before_sha256": "084567162a1152043b1be664a17acab6f6dc05523fa2559a42c83a2de06ef27f",
+      "identity": "harbourfront:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/105/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41034,
+      "after_sha256": "2e54f712e5617d949a9a597b5e09b95b18d68ea5ce20953e30ee6f4cd30f3a5f",
+      "before": 37292,
+      "before_sha256": "084567162a1152043b1be664a17acab6f6dc05523fa2559a42c83a2de06ef27f",
+      "identity": "harbourfront:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/106/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41034,
+      "after_sha256": "2e54f712e5617d949a9a597b5e09b95b18d68ea5ce20953e30ee6f4cd30f3a5f",
+      "before": 37292,
+      "before_sha256": "084567162a1152043b1be664a17acab6f6dc05523fa2559a42c83a2de06ef27f",
+      "identity": "harbourfront:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/107/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41034,
+      "after_sha256": "2e54f712e5617d949a9a597b5e09b95b18d68ea5ce20953e30ee6f4cd30f3a5f",
+      "before": 37292,
+      "before_sha256": "084567162a1152043b1be664a17acab6f6dc05523fa2559a42c83a2de06ef27f",
+      "identity": "harbourfront:MRT:E",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/108/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41030,
+      "after_sha256": "0b79805740ce585943ab30209a741cd78017779e9fa2a4fd733c04916cad39dd",
+      "before": 33515,
+      "before_sha256": "29bb4975696252af21763644cdcca5da755653a7a4d983d7503d2681b96b110c",
+      "identity": "haw-par-villa:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/114/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39028,
+      "after_sha256": "0cc388c4eb67a685dd9e73b6664d9535c9130c23d498f00f30a16d798b3b1148",
+      "before": 33878,
+      "before_sha256": "490bb855e170002665ba95a26314db71ed61d23b1c1afaf2999b86a122359f95",
+      "identity": "jalan-besar:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/115/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39028,
+      "after_sha256": "0cc388c4eb67a685dd9e73b6664d9535c9130c23d498f00f30a16d798b3b1148",
+      "before": 33878,
+      "before_sha256": "490bb855e170002665ba95a26314db71ed61d23b1c1afaf2999b86a122359f95",
+      "identity": "jalan-besar:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/116/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41023,
+      "after_sha256": "389dad3d3c5d05616effcf492876fbff3064130a9f68fba61a3cfaa3bc6da2dc",
+      "before": 36645,
+      "before_sha256": "d6ddba22ab0188d65fe993d208404f121c19f5ec497b5acdbfd448ea13136f5c",
+      "identity": "kent-ridge:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/127/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41023,
+      "after_sha256": "389dad3d3c5d05616effcf492876fbff3064130a9f68fba61a3cfaa3bc6da2dc",
+      "before": 36645,
+      "before_sha256": "d6ddba22ab0188d65fe993d208404f121c19f5ec497b5acdbfd448ea13136f5c",
+      "identity": "kent-ridge:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/128/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41023,
+      "after_sha256": "389dad3d3c5d05616effcf492876fbff3064130a9f68fba61a3cfaa3bc6da2dc",
+      "before": 36645,
+      "before_sha256": "d6ddba22ab0188d65fe993d208404f121c19f5ec497b5acdbfd448ea13136f5c",
+      "identity": "kent-ridge:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/129/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41023,
+      "after_sha256": "389dad3d3c5d05616effcf492876fbff3064130a9f68fba61a3cfaa3bc6da2dc",
+      "before": 36645,
+      "before_sha256": "d6ddba22ab0188d65fe993d208404f121c19f5ec497b5acdbfd448ea13136f5c",
+      "identity": "kent-ridge:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/130/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39016,
+      "after_sha256": "c6bff00ade0a71aabd46b0671f0f35de5035eef592a17ad0836a3040cd043fcf",
+      "before": 36700,
+      "before_sha256": "ed992f9a1d2b15bfa01eeaa2cea28b72d5b4f0121eb572b3d918007fa12f5d35",
+      "identity": "kovan:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/131/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39016,
+      "after_sha256": "c6bff00ade0a71aabd46b0671f0f35de5035eef592a17ad0836a3040cd043fcf",
+      "before": 36700,
+      "before_sha256": "ed992f9a1d2b15bfa01eeaa2cea28b72d5b4f0121eb572b3d918007fa12f5d35",
+      "identity": "kovan:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/132/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39016,
+      "after_sha256": "c6bff00ade0a71aabd46b0671f0f35de5035eef592a17ad0836a3040cd043fcf",
+      "before": 36700,
+      "before_sha256": "ed992f9a1d2b15bfa01eeaa2cea28b72d5b4f0121eb572b3d918007fa12f5d35",
+      "identity": "kovan:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/133/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41203,
+      "after_sha256": "30bafe391ca948973a4d913d22a1ed31b858fec1fe375cce91afeca543eb5bf6",
+      "before": 29014,
+      "before_sha256": "1379d877ee7a9fb545e04bdbdf9fb5fd335ce3f36082b83214a9eacf59133f6a",
+      "identity": "lakeside:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/134/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41203,
+      "after_sha256": "30bafe391ca948973a4d913d22a1ed31b858fec1fe375cce91afeca543eb5bf6",
+      "before": 29014,
+      "before_sha256": "1379d877ee7a9fb545e04bdbdf9fb5fd335ce3f36082b83214a9eacf59133f6a",
+      "identity": "lakeside:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/135/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41203,
+      "after_sha256": "30bafe391ca948973a4d913d22a1ed31b858fec1fe375cce91afeca543eb5bf6",
+      "before": 29014,
+      "before_sha256": "1379d877ee7a9fb545e04bdbdf9fb5fd335ce3f36082b83214a9eacf59133f6a",
+      "identity": "lakeside:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/136/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39810,
+      "after_sha256": "03ddf1bf300bd6d51b29abcbb76ce181534a3ba940e0cc9ded18aaeb03323f75",
+      "before": 37879,
+      "before_sha256": "4227ba00c8e0048af74ed3b57fe506cbca1304cf4e64131fd7a4350bd2ebe74c",
+      "identity": "novena:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/154/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39810,
+      "after_sha256": "03ddf1bf300bd6d51b29abcbb76ce181534a3ba940e0cc9ded18aaeb03323f75",
+      "before": 37879,
+      "before_sha256": "4227ba00c8e0048af74ed3b57fe506cbca1304cf4e64131fd7a4350bd2ebe74c",
+      "identity": "novena:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/155/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/190/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/191/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/192/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/193/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:E",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/194/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:F",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/195/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:G",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/196/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:H",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/197/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:I",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/198/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:J",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/199/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 40387,
+      "after_sha256": "c6f09db9685f34691490390033c37b1bd7b13a7c6a4d48af372b9ba2b0889579",
+      "before": 30255,
+      "before_sha256": "7d55d6c62061e1642ff01e67540f7320038cb159eec66298ade5fb36b5cd5d00",
+      "identity": "sengkang:SHARED:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/204/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 40387,
+      "after_sha256": "c6f09db9685f34691490390033c37b1bd7b13a7c6a4d48af372b9ba2b0889579",
+      "before": 30255,
+      "before_sha256": "7d55d6c62061e1642ff01e67540f7320038cb159eec66298ade5fb36b5cd5d00",
+      "identity": "sengkang:SHARED:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/205/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 40387,
+      "after_sha256": "c6f09db9685f34691490390033c37b1bd7b13a7c6a4d48af372b9ba2b0889579",
+      "before": 30255,
+      "before_sha256": "7d55d6c62061e1642ff01e67540f7320038cb159eec66298ade5fb36b5cd5d00",
+      "identity": "sengkang:SHARED:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/206/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 40387,
+      "after_sha256": "c6f09db9685f34691490390033c37b1bd7b13a7c6a4d48af372b9ba2b0889579",
+      "before": 30255,
+      "before_sha256": "7d55d6c62061e1642ff01e67540f7320038cb159eec66298ade5fb36b5cd5d00",
+      "identity": "sengkang:SHARED:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/207/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38999,
+      "after_sha256": "8aa7b17ee7826102d469b92bf31d7149f37ad34b2043832610457edb896b9e5f",
+      "before": 36651,
+      "before_sha256": "31655c169b52c5b8eb411adef5cb5c3a4ce893903d98dee20caa330c09b7b502",
+      "identity": "tampines:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/219/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38999,
+      "after_sha256": "8aa7b17ee7826102d469b92bf31d7149f37ad34b2043832610457edb896b9e5f",
+      "before": 36651,
+      "before_sha256": "31655c169b52c5b8eb411adef5cb5c3a4ce893903d98dee20caa330c09b7b502",
+      "identity": "tampines:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/220/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38999,
+      "after_sha256": "8aa7b17ee7826102d469b92bf31d7149f37ad34b2043832610457edb896b9e5f",
+      "before": 36651,
+      "before_sha256": "31655c169b52c5b8eb411adef5cb5c3a4ce893903d98dee20caa330c09b7b502",
+      "identity": "tampines:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/221/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38999,
+      "after_sha256": "8aa7b17ee7826102d469b92bf31d7149f37ad34b2043832610457edb896b9e5f",
+      "before": 36651,
+      "before_sha256": "31655c169b52c5b8eb411adef5cb5c3a4ce893903d98dee20caa330c09b7b502",
+      "identity": "tampines:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/222/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38999,
+      "after_sha256": "8aa7b17ee7826102d469b92bf31d7149f37ad34b2043832610457edb896b9e5f",
+      "before": 36651,
+      "before_sha256": "31655c169b52c5b8eb411adef5cb5c3a4ce893903d98dee20caa330c09b7b502",
+      "identity": "tampines:MRT:E",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/223/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38999,
+      "after_sha256": "8aa7b17ee7826102d469b92bf31d7149f37ad34b2043832610457edb896b9e5f",
+      "before": 36651,
+      "before_sha256": "31655c169b52c5b8eb411adef5cb5c3a4ce893903d98dee20caa330c09b7b502",
+      "identity": "tampines:MRT:F",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/224/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 38999,
+      "after_sha256": "8aa7b17ee7826102d469b92bf31d7149f37ad34b2043832610457edb896b9e5f",
+      "before": 36651,
+      "before_sha256": "31655c169b52c5b8eb411adef5cb5c3a4ce893903d98dee20caa330c09b7b502",
+      "identity": "tampines:MRT:G",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/225/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/235/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/236/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/237/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/238/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:E",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/239/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:F",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/240/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:G",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/241/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:H",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/242/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39811,
+      "after_sha256": "78cc9361e0e05d0f317ff3950d1fdf2b1c449a3adc28b267db4037ac128c8ff6",
+      "before": 33861,
+      "before_sha256": "6d6120ef4b6a7a5215dea9357826e913423a433d4d600a877c30563dc03bd2e0",
+      "identity": "toa-payoh:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/247/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39811,
+      "after_sha256": "78cc9361e0e05d0f317ff3950d1fdf2b1c449a3adc28b267db4037ac128c8ff6",
+      "before": 33861,
+      "before_sha256": "6d6120ef4b6a7a5215dea9357826e913423a433d4d600a877c30563dc03bd2e0",
+      "identity": "toa-payoh:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/248/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39811,
+      "after_sha256": "78cc9361e0e05d0f317ff3950d1fdf2b1c449a3adc28b267db4037ac128c8ff6",
+      "before": 33861,
+      "before_sha256": "6d6120ef4b6a7a5215dea9357826e913423a433d4d600a877c30563dc03bd2e0",
+      "identity": "toa-payoh:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/249/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 39811,
+      "after_sha256": "78cc9361e0e05d0f317ff3950d1fdf2b1c449a3adc28b267db4037ac128c8ff6",
+      "before": 33861,
+      "before_sha256": "6d6120ef4b6a7a5215dea9357826e913423a433d4d600a877c30563dc03bd2e0",
+      "identity": "toa-payoh:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/250/properties/source_guard/sgwiki_revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:K",
+      "path": "config/stage2-trusted-supplemental-baseline.geojson",
+      "pointer": "/features/23/properties/coordinate_source/revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:L",
+      "path": "config/stage2-trusted-supplemental-baseline.geojson",
+      "pointer": "/features/24/properties/coordinate_source/revision_id"
+    },
+    {
+      "after": 41884,
+      "after_sha256": "d58554d80c86de0c8494208e9a9e97d0d818388d584277c6d31eb5e8ba79009e",
+      "before": 36682,
+      "before_sha256": "c370509e71b8a40978973bdd458061596385a9191643bdff0c8ec8697725d123",
+      "identity": "raffles-place:MRT:M",
+      "path": "config/stage2-trusted-supplemental-baseline.geojson",
+      "pointer": "/features/25/properties/coordinate_source/revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:J",
+      "path": "config/stage2-trusted-supplemental-baseline.geojson",
+      "pointer": "/features/36/properties/coordinate_source/revision_id"
+    },
+    {
+      "after": 41616,
+      "after_sha256": "1d7e33bfe0fdde97367b6ae7759364c92c1592b1d27187079bee63a511b15955",
+      "before": 31544,
+      "before_sha256": "c840124f7e6c935e58d702a313b037bd51fa42e15006e290482a01995e9c3dcf",
+      "identity": "tanjong-pagar:MRT:K",
+      "path": "config/stage2-trusted-supplemental-baseline.geojson",
+      "pointer": "/features/37/properties/coordinate_source/revision_id"
+    }
+  ],
+  "title": "Renew exact remaining coordinate source guards; accept three City Hall non-exits"
+}

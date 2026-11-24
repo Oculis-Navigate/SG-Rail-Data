@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "run": "20261005T072816522416Z-3952f61269c2",
+      "revision": 37293,
+      "url": "https://sgwiki.miraheze.org/w/index.php?oldid=37293",
+      "raw_sha256": "cd211bcc69cad0729b930191c7fe2d2ab8bfeb395bec66c821af67be29f44242"
+    },
+    {
+      "run": "20261122T150409Z-live-rerun",
+      "revision": 41817,
+      "url": "https://sgwiki.miraheze.org/w/index.php?oldid=41817",
+      "raw_sha256": "cf2e9055e5c4b7a42cab1f6232ba945f5f40b66363028fcb30a6f7979c17e157"
+    }
+  ],
+  "locator": "Entrances/Exits, NEL rows E/G and F/G",
+  "comparison": "All fields of the normalized station page match except revision_id. G is one scoped exit serving both destination rows.",
+  "rows": [
+    [
+      "NEL",
+      "E G The Atrium@Orchard",
+      ""
+    ],
+    [
+      "NEL",
+      "F G Macdonald House",
+      "Oldham Lane, Orchard Road"
+    ]
+  ],
+  "reviews": [
+    {
+      "reason": "line_scope_rowspan_overruns_table",
+      "scope_verbatim": "NEL",
+      "extra_rows": 2
+    },
+    {
+      "reason": "repeated_exit_identity_in_source_table",
+      "identity": [
+        "MRT",
+        "G"
+      ],
+      "table": 1,
+      "row": 7
+    }
+  ],
+  "authorization": "validated. lets carry on with the live run."
+}

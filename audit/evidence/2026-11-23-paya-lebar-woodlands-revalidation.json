@@ -1,0 +1,56 @@
+{
+  "authorization": "so lets just follow sgwiki ... lets keep the connection. amend both",
+  "stations": [
+    {
+      "station": "Paya Lebar",
+      "observations": [
+        {
+          "run": "20261005T072816522416Z-3952f61269c2",
+          "url": "https://sgwiki.miraheze.org/index.php?oldid=34530",
+          "revision": 34530,
+          "raw_sha256": "8440a032dd292a1b2a985958d44ad130c9d2b39b493758a50c08dc3df5d7bfcb"
+        },
+        {
+          "run": "20261123T052700Z-dhoby-live",
+          "url": "https://sgwiki.miraheze.org/index.php?oldid=41822",
+          "revision": 41822,
+          "raw_sha256": "c960c12ea109e7b59bff01d4251c596dde0c19428e958f9547942be10a7b18d2"
+        }
+      ],
+      "unchanged_source_facts": [
+        {
+          "heading_verbatim": "C/D Platform No train service at this platform",
+          "label": "C/D",
+          "line_or_area": "CCL Platform",
+          "line_or_area_source": "caption"
+        }
+      ]
+    },
+    {
+      "station": "Woodlands",
+      "observations": [
+        {
+          "run": "20261005T072816522416Z-3952f61269c2",
+          "url": "https://sgwiki.miraheze.org/index.php?oldid=37676",
+          "revision": 37676,
+          "raw_sha256": "2c57403435dfc8e8c987d32bb53e20578075fed5c17c4616ca1309bf61764a27"
+        },
+        {
+          "run": "20261123T052700Z-dhoby-live",
+          "url": "https://sgwiki.miraheze.org/index.php?oldid=39894",
+          "revision": 39894,
+          "raw_sha256": "852f03807afcc403f579c8ca3c7a511b8c370cda225e4a2450fa8191d361dd55"
+        }
+      ],
+      "unchanged_source_facts": [
+        {
+          "bus_stop_code": "46009",
+          "row": 2,
+          "service_verbatim": "161 168 169 178 187 856 858 900 901 901M 902 903 903M 904 911 912 913 913M 960 960e 962 963 963e 964 966 969",
+          "stop_verbatim": "46009 Woodlands Int 1 W'lands Sq"
+        }
+      ]
+    }
+  ],
+  "scope": "Retain SgWiki platform wording at Paya Lebar and Woodlands station-level connection to 46009. No new exit assignment, operating schedule or release approval."
+}

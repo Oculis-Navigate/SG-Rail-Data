@@ -108,6 +108,24 @@ def full_relation(*, railway: str = "subway") -> dict[str, object]:
 
 
 class NetworkGeometryTests(unittest.TestCase):
+    def test_continuity_requires_shared_nodes_and_no_intervening_stop(self):
+        from sg_rail_station_data.network_continuity import _connected
+        graph = {1: {2}, 2: {1, 3}, 3: {2}, 4: {5}, 5: {4}}
+        self.assertTrue(_connected(graph, 1, 3, {1, 3}))
+        self.assertFalse(_connected(graph, 1, 3, {1, 2, 3}))
+        self.assertFalse(_connected(graph, 1, 5, {1, 5}))
+
+    def test_endpoint_qualified_routes(self):
+        from sg_rail_station_data.network_geometry import _line_id
+        for route, line in [('NEL_NE16_NE18', 'NEL'), ('NSL_NS1_NS28', 'NSL'),
+                            ('EWL_EW29_EW1', 'EWL'), ('EWL_CGL_CG_CG2', 'EWL'),
+                            ('DTL_DT1_DT14', 'DTL'), ('TEL_TE1_TE9', 'TEL')]:
+            with self.subTest(route=route):
+                self.assertEqual(_line_id(route), line)
+        for route in ('NEL_depot', 'NEL_NE1_TE2', 'UNKNOWN_NE1_NE2'):
+            with self.assertRaises(NetworkGeometryError):
+                _line_id(route)
+
     def test_gtfs_network_retains_station_points_and_service_pattern(self):
         raw = network_gtfs_zip()
         with TemporaryDirectory() as temporary:

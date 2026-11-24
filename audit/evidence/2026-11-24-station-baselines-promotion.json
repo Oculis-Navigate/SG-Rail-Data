@@ -1,0 +1,67 @@
+{
+  "authorization": "approved and promote both",
+  "scope": "Promote the two comparison baselines for the 24 November retained inputs; four new diagrams, revision/guard and derived metadata only. No coordinate move, Stage 3 change or publication.",
+  "live_collection": "20261124T014253Z-live-check",
+  "reviewed_candidate": "20261124T021659Z-dhoby-onemap-replay",
+  "clean_replay": "20261124T022139Z-baseline-check",
+  "products": {
+    "stage1": {
+      "previous_file_sha256": "9bee8556a7b3869e62df529c0d5aa61f5fab2930b9162d2fd7e86af30c479408",
+      "approved_file_sha256": "477d9dd00a8f4a4d504a3cc93cb922e891a0c74f578c5f7d11c0122df0be0a9d",
+      "reviewed_changes": [
+        {
+          "from": 41817,
+          "reason": "sgwiki_revision_changed",
+          "severity": "WARNING",
+          "station_id": "dhoby-ghaut",
+          "to": 41955
+        },
+        {
+          "fields": [
+            "layout_supplements"
+          ],
+          "reason": "station_semantics_changed",
+          "severity": "WARNING",
+          "station_id": "dhoby-ghaut"
+        },
+        {
+          "from": 41827,
+          "reason": "sgwiki_revision_changed",
+          "severity": "WARNING",
+          "station_id": "marymount",
+          "to": 41917
+        },
+        {
+          "fields": [
+            "layout_supplements"
+          ],
+          "reason": "station_semantics_changed",
+          "severity": "WARNING",
+          "station_id": "marymount"
+        }
+      ]
+    },
+    "stage2": {
+      "previous_file_sha256": "b635ebf8a3998efe22746b6220d970714808033f0b015efb1ecf02803e8c1404",
+      "approved_file_sha256": "4e7bdc08aa4e934a5f6e584aa5b3cc8bdb7fc9e350a8bbac9885787e5907e0ca",
+      "reviewed_changes": [
+        {
+          "current_revision_id": 41917,
+          "exit_id": "MRT:A",
+          "previous_revision_id": 41827,
+          "reason": "kartographer_source_page_revision_changed",
+          "severity": "WARNING",
+          "station_id": "marymount"
+        },
+        {
+          "current_revision_id": 41917,
+          "exit_id": "MRT:B",
+          "previous_revision_id": 41827,
+          "reason": "kartographer_source_page_revision_changed",
+          "severity": "WARNING",
+          "station_id": "marymount"
+        }
+      ]
+    }
+  }
+}

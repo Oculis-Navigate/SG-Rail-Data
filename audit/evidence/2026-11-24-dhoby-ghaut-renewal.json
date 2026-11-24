@@ -1,0 +1,35 @@
+{
+  "authorization": "great do that dor dhoby and rerun",
+  "sources": [
+    {
+      "run": "20261123T102639Z-pl-woodlands-live",
+      "page_id": 119,
+      "revision_id": 41817,
+      "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41817",
+      "response_sha256": "cf2e9055e5c4b7a42cab1f6232ba945f5f40b66363028fcb30a6f7979c17e157",
+      "layout_supplements": []
+    },
+    {
+      "run": "20261124T014253Z-live-check",
+      "page_id": 119,
+      "revision_id": 41955,
+      "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41955",
+      "response_sha256": "5d2bcca97694638396cc71eb02416133a8a866c0498c8c1d53ea513151abb2c7",
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        },
+        {
+          "kind": "rail_service_diagram",
+          "table": 3
+        },
+        {
+          "kind": "rail_service_diagram",
+          "table": 4
+        }
+      ]
+    }
+  ],
+  "scope": "Renew only the Stage 1 finding acceptance. E/F/G identities, repeated G evidence, and NEL rowspan interpretation unchanged; only supplementary rail service diagrams were added. No baseline or Stage 2 guard approval."
+}

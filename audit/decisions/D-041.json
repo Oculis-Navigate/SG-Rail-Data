@@ -1,0 +1,793 @@
+{
+  "change_type": "coordinate_update",
+  "evidence": [
+    {
+      "description": "Run-specific moves, distances, owner authorization and City Hall attribution caveat",
+      "path": "audit/evidence/2026-11-23-stage2-thirteen-moves.json",
+      "sha256": "68f7cce3a949ef54bfccc33dcc5f942cbe4a7cc12a1c072d49f60ce0fde84a4f"
+    }
+  ],
+  "id": "D-041",
+  "kind": "audit_decision",
+  "limitations": [
+    "Owner accepted all four City Hall points after being informed that they exactly coincide with Esplanade A-D. Attribution remains unverified. This does not accept unmatched E/F/G, renew coordinate guards or promote an incomplete Stage 2 baseline."
+  ],
+  "reason": "Owner approved the exact 13 candidate points for eventual baseline inclusion.",
+  "schema_version": 2,
+  "source_revisions": [
+    "braddell: SgWiki 39807",
+    "city-hall: SgWiki 41804",
+    "novena: SgWiki 39810",
+    "toa-payoh: SgWiki 39811"
+  ],
+  "targets": [
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 120,
+          "revision_id": 41804,
+          "source_feature_index": 10,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=41804&mpdgroups=_8553ade687da469a504575cec997181d1b319d7f&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.85633,
+          1.29316
+        ],
+        "id": "MRT:A",
+        "label": "A",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "8ee37ffeff5bb045051953c1049a98c3ee71e6b2711128347a2acdacbfe18fda",
+      "before": {
+        "coordinate_source": {
+          "building": "CITY HALL MRT STATION EXIT A",
+          "candidate_id": "MRT:0",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:A",
+          "page_id": 120,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:48:01.538142+00:00",
+              "file": "sources/city-hall/onemap-mrt/page-1.json",
+              "sha256": "68333504e866da6e30c14a2e2c08667392d304b1892d486e37ee6c9a95739417"
+            }
+          ],
+          "revision_id": 33852,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8530215622706,
+          1.293233075934794
+        ],
+        "id": "MRT:A",
+        "label": "A",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "82b510213cdd3f3588d8c79f942c40055bd23fa90b1825aae406a879f9b3ba65",
+      "identity": "city-hall:MRT:A",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/36/exits/0"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 120,
+          "revision_id": 41804,
+          "source_feature_index": 11,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=41804&mpdgroups=_8553ade687da469a504575cec997181d1b319d7f&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.85619,
+          1.29282
+        ],
+        "id": "MRT:B",
+        "label": "B",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "23bb8668b49881387019eb8f107055c9000989a8a13ef7ad893590d7d35e24fc",
+      "before": {
+        "coordinate_source": {
+          "building": "CITY HALL MRT STATION EXIT B",
+          "candidate_id": "MRT:1",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:B",
+          "page_id": 120,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:48:01.538142+00:00",
+              "file": "sources/city-hall/onemap-mrt/page-1.json",
+              "sha256": "68333504e866da6e30c14a2e2c08667392d304b1892d486e37ee6c9a95739417"
+            }
+          ],
+          "revision_id": 33852,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8519511294807,
+          1.293108533088286
+        ],
+        "id": "MRT:B",
+        "label": "B",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "805df51f783b19c69c6f6185eddfb6a5d8c87f517c84b20f1f0a7741c12b6c54",
+      "identity": "city-hall:MRT:B",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/36/exits/1"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 120,
+          "revision_id": 41804,
+          "source_feature_index": 12,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=41804&mpdgroups=_8553ade687da469a504575cec997181d1b319d7f&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.856,
+          1.29292
+        ],
+        "id": "MRT:C",
+        "label": "C",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "7c5be596aae4864acf2446ac5f01a6fab0be864a7343f7ab172bd0680b379573",
+      "before": {
+        "coordinate_source": {
+          "building": "CITY HALL MRT STATION EXIT C",
+          "candidate_id": "MRT:2",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:C",
+          "page_id": 120,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:48:01.538142+00:00",
+              "file": "sources/city-hall/onemap-mrt/page-1.json",
+              "sha256": "68333504e866da6e30c14a2e2c08667392d304b1892d486e37ee6c9a95739417"
+            }
+          ],
+          "revision_id": 33852,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8529853014308,
+          1.293046947638803
+        ],
+        "id": "MRT:C",
+        "label": "C",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "9a2529963b877221a9c1e77db7c3e2243fee14e7e957b496aec364642b76be44",
+      "identity": "city-hall:MRT:C",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/36/exits/2"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 120,
+          "revision_id": 41804,
+          "source_feature_index": 13,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=41804&mpdgroups=_8553ade687da469a504575cec997181d1b319d7f&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.85599,
+          1.2926
+        ],
+        "id": "MRT:D",
+        "label": "D",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "8a9230885b5167771e98e783e2af578b978cb638311061618af082144d84189f",
+      "before": {
+        "coordinate_source": {
+          "building": "CITY HALL MRT STATION EXIT D",
+          "candidate_id": "MRT:3",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:D",
+          "page_id": 120,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:48:01.538142+00:00",
+              "file": "sources/city-hall/onemap-mrt/page-1.json",
+              "sha256": "68333504e866da6e30c14a2e2c08667392d304b1892d486e37ee6c9a95739417"
+            }
+          ],
+          "revision_id": 33852,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8518655458821,
+          1.293503346202729
+        ],
+        "id": "MRT:D",
+        "label": "D",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "661bdfb3a9f32a8ca1cea94023203e3dc0b9cc407accca1ff020c835d357862b",
+      "identity": "city-hall:MRT:D",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/36/exits/3"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 115,
+          "revision_id": 39810,
+          "source_feature_index": 4,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=39810&mpdgroups=_be14b7376f0013d7cd59f141fc0133db21b843fe&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.84444,
+          1.32082
+        ],
+        "id": "MRT:A",
+        "label": "A",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "0bc4815498a1124a4fd3827e5982322c5e679079c745cb9d31d5766825604463",
+      "before": {
+        "coordinate_source": {
+          "building": "NOVENA MRT STATION EXIT A",
+          "candidate_id": "MRT:0",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:A",
+          "page_id": 115,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:50:22.965626+00:00",
+              "file": "sources/novena/onemap-mrt/page-1.json",
+              "sha256": "2c2f8995bee529530770c4ead76b9d4ef4ab221391f47950dbdfd3d325e6b967"
+            }
+          ],
+          "revision_id": 37879,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8444057912622,
+          1.321103003672807
+        ],
+        "id": "MRT:A",
+        "label": "A",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "84f73fea630f0897fb7da41d4c147f5af7fd1ad5f5d9cf5b7bfb3d124268b85b",
+      "identity": "novena:MRT:A",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/109/exits/0"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 114,
+          "revision_id": 39811,
+          "source_feature_index": 4,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=39811&mpdgroups=_233dd9a783c5bb1a4825299c708ebf8106822343&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.84781,
+          1.33266
+        ],
+        "id": "MRT:A",
+        "label": "A",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "ce4d8db9e2452519d900daf3545bc65353b53732b8a47bb342ac771d9a4ac0ae",
+      "before": {
+        "coordinate_source": {
+          "building": "TOA PAYOH MRT STATION EXIT A",
+          "candidate_id": "MRT:0",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:A",
+          "page_id": 114,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:52:19.387370+00:00",
+              "file": "sources/toa-payoh/onemap-mrt/page-1.json",
+              "sha256": "7734f6c8aca47b784d728245774b0d9958bb54e6de097f9eb042a5f921b6ab1b"
+            }
+          ],
+          "revision_id": 33861,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8477238042458,
+          1.332376442166927
+        ],
+        "id": "MRT:A",
+        "label": "A",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "7f70ca167974ee12b9164f223c5954d00d2a6ab21cf58a06cff388f3e21015ef",
+      "identity": "toa-payoh:MRT:A",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/169/exits/0"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 112,
+          "revision_id": 39807,
+          "source_feature_index": 4,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=39807&mpdgroups=_3a14caf7577efb2b25e7add5fec9097eebb086a7&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8465,
+          1.34107
+        ],
+        "id": "MRT:A",
+        "label": "A",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "a93d585b6ffef4cb17506525f75d978296e1385465fab48a86851733ff873465",
+      "before": {
+        "coordinate_source": {
+          "building": "BRADDELL MRT STATION EXIT A",
+          "candidate_id": "MRT:0",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:A",
+          "page_id": 112,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:47:28.253695+00:00",
+              "file": "sources/braddell/onemap-mrt/page-1.json",
+              "sha256": "89512b82c8e4d666b908f905fdf2f455ba85e06f8e6297d707a77268fff89474"
+            }
+          ],
+          "revision_id": 36654,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8464117628576,
+          1.341078755479382
+        ],
+        "id": "MRT:A",
+        "label": "A",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "7dfcbfcbdfb912d78d22117c94a66c413d607c1bfe75eef2b582169f78c3e7ca",
+      "identity": "braddell:MRT:A",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/18/exits/0"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 112,
+          "revision_id": 39807,
+          "source_feature_index": 5,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=39807&mpdgroups=_3a14caf7577efb2b25e7add5fec9097eebb086a7&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.84648,
+          1.34073
+        ],
+        "id": "MRT:B",
+        "label": "B",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "3d5e0067ad45f2da73f6af3713ab7bacb7089c535e5d778479ef1cff7187015c",
+      "before": {
+        "coordinate_source": {
+          "building": "BRADDELL MRT STATION EXIT B",
+          "candidate_id": "MRT:1",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:B",
+          "page_id": 112,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:47:28.253695+00:00",
+              "file": "sources/braddell/onemap-mrt/page-1.json",
+              "sha256": "89512b82c8e4d666b908f905fdf2f455ba85e06f8e6297d707a77268fff89474"
+            }
+          ],
+          "revision_id": 36654,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8463932449764,
+          1.340746516111449
+        ],
+        "id": "MRT:B",
+        "label": "B",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "d19c1b63c9823a9b6439b5fc47fe66d98026986e93fe4fc90a56adc33594b04c",
+      "identity": "braddell:MRT:B",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/18/exits/1"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 112,
+          "revision_id": 39807,
+          "source_feature_index": 6,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=39807&mpdgroups=_3a14caf7577efb2b25e7add5fec9097eebb086a7&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.84739,
+          1.34063
+        ],
+        "id": "MRT:C",
+        "label": "C",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "e0c9dcd2bf85269e8496c1ef9714793ebb638647c105b0b34c51da851997400e",
+      "before": {
+        "coordinate_source": {
+          "building": "BRADDELL MRT STATION EXIT C",
+          "candidate_id": "MRT:2",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:C",
+          "page_id": 112,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:47:28.253695+00:00",
+              "file": "sources/braddell/onemap-mrt/page-1.json",
+              "sha256": "89512b82c8e4d666b908f905fdf2f455ba85e06f8e6297d707a77268fff89474"
+            }
+          ],
+          "revision_id": 36654,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8474307678529,
+          1.340681574035467
+        ],
+        "id": "MRT:C",
+        "label": "C",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "bddd7a3cad71e3336b3955a0afb052a8aa9c9b230036c570e13f4bdb0f850e37",
+      "identity": "braddell:MRT:C",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/18/exits/2"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 115,
+          "revision_id": 39810,
+          "source_feature_index": 5,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=39810&mpdgroups=_be14b7376f0013d7cd59f141fc0133db21b843fe&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.84341,
+          1.31984
+        ],
+        "id": "MRT:B",
+        "label": "B",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "09b70da932ec7ca9ef9643a61dd9e21a2ddc9ac0e3a10a48d3fecf2cd36dfb72",
+      "before": {
+        "coordinate_source": {
+          "building": "NOVENA MRT STATION EXIT B",
+          "candidate_id": "MRT:1",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:B",
+          "page_id": 115,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:50:22.965626+00:00",
+              "file": "sources/novena/onemap-mrt/page-1.json",
+              "sha256": "2c2f8995bee529530770c4ead76b9d4ef4ab221391f47950dbdfd3d325e6b967"
+            }
+          ],
+          "revision_id": 37879,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8433228666909,
+          1.319884007888243
+        ],
+        "id": "MRT:B",
+        "label": "B",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "d3a5d9ad7b8a4ed13b8671e7890406e9d9e9ff7fd07e0c47aeb757e99519ea25",
+      "identity": "novena:MRT:B",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/109/exits/1"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 114,
+          "revision_id": 39811,
+          "source_feature_index": 5,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=39811&mpdgroups=_233dd9a783c5bb1a4825299c708ebf8106822343&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.84747,
+          1.33233
+        ],
+        "id": "MRT:B",
+        "label": "B",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "fa9070c46b727ef3d1559f621cfdcb901b4d3b430b9c5b4b003feaf7c16a8732",
+      "before": {
+        "coordinate_source": {
+          "building": "TOA PAYOH MRT STATION EXIT B",
+          "candidate_id": "MRT:1",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:B",
+          "page_id": 114,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:52:19.387370+00:00",
+              "file": "sources/toa-payoh/onemap-mrt/page-1.json",
+              "sha256": "7734f6c8aca47b784d728245774b0d9958bb54e6de097f9eb042a5f921b6ab1b"
+            }
+          ],
+          "revision_id": 33861,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8475578006123,
+          1.332297175560529
+        ],
+        "id": "MRT:B",
+        "label": "B",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "914e53dd13dc59a9b9958fee9f9aab56b010ce33d8cfc74ed9c34af119278c4c",
+      "identity": "toa-payoh:MRT:B",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/169/exits/1"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 114,
+          "revision_id": 39811,
+          "source_feature_index": 6,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=39811&mpdgroups=_233dd9a783c5bb1a4825299c708ebf8106822343&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.84731,
+          1.33302
+        ],
+        "id": "MRT:C",
+        "label": "C",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "5af0d6e950454dd3abae5c8109698ee3426916a4b32b7823f50ef9a710d39759",
+      "before": {
+        "coordinate_source": {
+          "building": "TOA PAYOH MRT STATION EXIT C",
+          "candidate_id": "MRT:2",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:C",
+          "page_id": 114,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:52:19.387370+00:00",
+              "file": "sources/toa-payoh/onemap-mrt/page-1.json",
+              "sha256": "7734f6c8aca47b784d728245774b0d9958bb54e6de097f9eb042a5f921b6ab1b"
+            }
+          ],
+          "revision_id": 33861,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8473184364742,
+          1.333007441851997
+        ],
+        "id": "MRT:C",
+        "label": "C",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "6417e0416d760ed79c0fb8fb8d27fc2d828958c979329b6bd053c27e61b57444",
+      "identity": "toa-payoh:MRT:C",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/169/exits/2"
+    },
+    {
+      "after": {
+        "coordinate_source": {
+          "kind": "sgwiki_kartographer",
+          "page_id": 114,
+          "revision_id": 39811,
+          "source_feature_index": 7,
+          "url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=39811&mpdgroups=_233dd9a783c5bb1a4825299c708ebf8106822343&mpdparser=legacy&format=json&formatversion=2"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.84655,
+          1.33328
+        ],
+        "id": "MRT:D",
+        "label": "D",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "after_sha256": "caeffeca27e1a8983501018d4d9811293cda4d89f0eb29008d1946417866f6c4",
+      "before": {
+        "coordinate_source": {
+          "building": "TOA PAYOH MRT STATION EXIT D",
+          "candidate_id": "MRT:3",
+          "candidate_scope": "MRT",
+          "imported_at": "2026-10-05T06:47:28.983887+00:00",
+          "kind": "trusted_onemap_baseline",
+          "legacy_candidate_bundle_sha256": "cccac719c2a641e15df739aa943c1d3260d00d6d48ee09d6ed487b17faf66c0d",
+          "legacy_stage2_sha256": "a0213cf2801cdcf6b3164cabe034956df025ef7fc1a423ea68101b56e1f64383",
+          "original_exit_id": "MRT:D",
+          "page_id": 114,
+          "query_scope": "MRT",
+          "response_files": [
+            {
+              "fetched_at": "2026-10-01T06:52:19.387370+00:00",
+              "file": "sources/toa-payoh/onemap-mrt/page-1.json",
+              "sha256": "7734f6c8aca47b784d728245774b0d9958bb54e6de097f9eb042a5f921b6ab1b"
+            }
+          ],
+          "revision_id": 33861,
+          "trust_class": "trusted_onemap_import"
+        },
+        "coordinate_status": "resolved",
+        "coordinates": [
+          103.8465174056438,
+          1.333278745724068
+        ],
+        "id": "MRT:D",
+        "label": "D",
+        "scopes": [
+          "MRT"
+        ]
+      },
+      "before_sha256": "6597a83bb900bf06690e48c1beffac16f6ae2019139798eed672fad32645c783",
+      "identity": "toa-payoh:MRT:D",
+      "path": "config/stage2-approved-baseline.json",
+      "pointer": "/stations/169/exits/3"
+    }
+  ],
+  "title": "Accept 13 Stage 2 candidate exit coordinate changes"
+}

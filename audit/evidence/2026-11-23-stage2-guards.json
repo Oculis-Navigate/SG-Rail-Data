@@ -1,0 +1,54 @@
+{
+  "authorization": "use the earlier approval. then resolve the remaining guards and promote after a clean replay",
+  "scope": "Keep D-041 City Hall A-D despite disclosed Esplanade overlap. No E/F/G at City Hall. Stage 2 comparison only, not publication.",
+  "unmatched_city_hall_features": [
+    {
+      "coordinates": [
+        103.85468,
+        1.29378
+      ],
+      "exit_id": null,
+      "exit_label": "G",
+      "matching_exit_ids": [],
+      "reason": "kartographer_exit_label_missing_from_stage1",
+      "severity": "WARNING",
+      "source_feature_index": 16,
+      "source_url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=41804&mpdgroups=_8553ade687da469a504575cec997181d1b319d7f&mpdparser=legacy&format=json&formatversion=2",
+      "station_id": "city-hall",
+      "station_name": "City Hall"
+    },
+    {
+      "coordinates": [
+        103.85514,
+        1.29389
+      ],
+      "exit_id": null,
+      "exit_label": "F",
+      "matching_exit_ids": [],
+      "reason": "kartographer_exit_label_missing_from_stage1",
+      "severity": "WARNING",
+      "source_feature_index": 15,
+      "source_url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=41804&mpdgroups=_8553ade687da469a504575cec997181d1b319d7f&mpdparser=legacy&format=json&formatversion=2",
+      "station_id": "city-hall",
+      "station_name": "City Hall"
+    },
+    {
+      "coordinates": [
+        103.8555,
+        1.29298
+      ],
+      "exit_id": null,
+      "exit_label": "E",
+      "matching_exit_ids": [],
+      "reason": "kartographer_exit_label_missing_from_stage1",
+      "severity": "WARNING",
+      "source_feature_index": 14,
+      "source_url": "https://sgwiki.miraheze.org/w/api.php?action=query&prop=mapdata&revids=41804&mpdgroups=_8553ade687da469a504575cec997181d1b319d7f&mpdparser=legacy&format=json&formatversion=2",
+      "station_id": "city-hall",
+      "station_name": "City Hall"
+    }
+  ],
+  "reviewed_run": "20261123T134946Z-bayfront-kent-ridge",
+  "unresolved_triage_sha256": "3f29d5f20323599f6189568809b92cb8e50b11872ef2309b407f78925ef2c1e5",
+  "rationale": "Only revision guards change, not fallback positions or selection precedence. 71 unresolved identities were source-compared, the other 13 already select the approved mapped points."
+}

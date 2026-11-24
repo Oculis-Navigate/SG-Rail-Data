@@ -1,0 +1,67 @@
+{
+  "authorization": "for tanjonag pagar, lets just expandexit D and double check exit E",
+  "locator": "Entrances/Exits, D and E",
+  "sources": [
+    {
+      "run": "20261005T072816522416Z-3952f61269c2",
+      "revision": 31544,
+      "url": "https://sgwiki.miraheze.org/w/index.php?oldid=31544",
+      "response_sha256": "27c47796b4b723da4aa170f2695691a2b7b1ff037cc863bbebb3d2c252eedd6e",
+      "exit_d": [
+        "D Prince Edward Road",
+        "AXA Tower"
+      ],
+      "exit_e": [
+        {
+          "alternative_exits": [
+            "H"
+          ],
+          "destination_verbatim": "AXA Tower",
+          "labels": [
+            "E"
+          ],
+          "scopes": [
+            "MRT"
+          ],
+          "status": "closed",
+          "status_markup": "small.d-block.mx-auto.fw-normal.tx-center",
+          "status_verbatim": "(Closed – use Exit H)"
+        }
+      ]
+    },
+    {
+      "run": "20261123T052700Z-dhoby-live",
+      "revision": 41616,
+      "url": "https://sgwiki.miraheze.org/w/index.php?oldid=41616",
+      "response_sha256": "fa70be1403afc8985239bcda2da9d87c2d95a0a3cc7971f6896f33be44aed320",
+      "exit_d": [
+        "D Prince Edward Road",
+        "AXA Tower, Money Authority of Singapore Building, Shenton Way Terminal, CC32 Prince Edward Road"
+      ],
+      "exit_e": [
+        {
+          "alternative_exits": [
+            "H"
+          ],
+          "destination_verbatim": "AXA Tower",
+          "labels": [
+            "E"
+          ],
+          "scopes": [
+            "MRT"
+          ],
+          "status": "closed",
+          "status_markup": "small.d-block.mx-auto.fw-normal.tx-center",
+          "status_verbatim": "(Closed – use Exit H)"
+        }
+      ]
+    }
+  ],
+  "secondary": {
+    "url": "https://landtransportguru.net/tanjong-pagar-station/",
+    "locator": "Exits table",
+    "exit_e": "Exit E is currently closed for renovation; use Exit D instead",
+    "limitation": "Conflicts with SgWiki on alternative; do not renew the Exit E finding."
+  },
+  "scope": "Only include the exact Exit D nearby POIs in destinations. Preserve source spelling; not evidence of an operational transfer."
+}

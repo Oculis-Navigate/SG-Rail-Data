@@ -1,0 +1,192 @@
+{
+  "authorization": "for those which are failing now, lets just use the overide method and use the old oct tracks",
+  "scope": "Physical track comparison for the retained GTFS service date only. Not an approval of directional service or publication.",
+  "run": "20261124T004457Z-october-geometry",
+  "repeat_verification": "Two offline builds produced byte-identical geometry, network, coverage, continuity and changes JSON.",
+  "source_date": "2026-11-23",
+  "gtfs_zip_sha256": "7a4f56076869e1c71d4019d34b23cec90fe0137d1a729967c66bfc8c18793d7f",
+  "override": {
+    "archive_sha256": "cca77bfd43734429a69b9187c872318d53589ec375c3c452b7941aa9b53c8746",
+    "baseline_sha256": "e95e79d33d1aaf3a20efdaa25a9cbff2c18fd6c48b3bc6ec7a1aeb199e32ffaf",
+    "decision": "D-028",
+    "feature": "osm-way-380508287",
+    "raw_changes": {
+      "count": 1,
+      "items": [
+        {
+          "feature_id": "osm-way-380508287",
+          "fields": [
+            "geometry"
+          ],
+          "reason": "osm_way_changed",
+          "severity": "WARNING",
+          "way_id": 380508287
+        }
+      ],
+      "kind": "preview_rail_geometry_changes",
+      "schema_version": 1,
+      "status": "review_required"
+    }
+  },
+  "output_hashes": {
+    "rail-network.json": "14a4a1836986724f4203f1caf6e86ca77ffd97c30e4cf889e257115121bc4234",
+    "rail-lines.geojson": "45e33e7f60d00b5673a5d52e1867ecfc76264667689b2431de0e299b689a666d",
+    "coverage.json": "aafca8cc89ef03dd865782f2ae6ef3822f967c0ae0aecedf178fbde5622bb5ca",
+    "continuity.json": "9b0fe28dc04b2fb201860e5b81cd817443e23ebd58a20a0fe5084d5ef49163b4",
+    "changes.json": "cc9356f89e3e977afcb39da07a90f2a8f3d28e48dac807ff98d730aaa0df37d2"
+  },
+  "pattern_count": 113,
+  "checked_pairs": 427,
+  "non_adjacent_or_reverse_only": [
+    {
+      "evidence": [
+        {
+          "direction": "reverse",
+          "relation_id": 2076291,
+          "stop_hops": 1,
+          "via": []
+        },
+        {
+          "direction": "reverse",
+          "relation_id": 7981668,
+          "stop_hops": 1,
+          "via": []
+        }
+      ],
+      "from_stop": "CC32",
+      "line_id": "CCL",
+      "pattern_ids": [
+        "0223390f488ca6ca",
+        "26fe16eef4696887",
+        "38458d3fdc2739b0",
+        "5295409a4ada4b68",
+        "81e3f3c05d777a83",
+        "ddcb56479f6db4cc",
+        "ed4384bbe39c47f4"
+      ],
+      "status": "connected",
+      "to_stop": "CC33"
+    },
+    {
+      "evidence": [
+        {
+          "direction": "reverse",
+          "relation_id": 2076291,
+          "stop_hops": 1,
+          "via": []
+        },
+        {
+          "direction": "reverse",
+          "relation_id": 7981668,
+          "stop_hops": 1,
+          "via": []
+        }
+      ],
+      "from_stop": "CC33",
+      "line_id": "CCL",
+      "pattern_ids": [
+        "0223390f488ca6ca",
+        "26fe16eef4696887",
+        "38458d3fdc2739b0",
+        "5295409a4ada4b68",
+        "81e3f3c05d777a83",
+        "ddcb56479f6db4cc",
+        "ed4384bbe39c47f4"
+      ],
+      "status": "connected",
+      "to_stop": "CC34"
+    },
+    {
+      "evidence": [
+        {
+          "direction": "reverse",
+          "relation_id": 7981668,
+          "stop_hops": 1,
+          "via": []
+        },
+        {
+          "direction": "ordered",
+          "relation_id": 2076291,
+          "stop_hops": 29,
+          "via": [
+            "CC33",
+            "CC32",
+            "CC31",
+            "CC30",
+            "CC29",
+            "CC28",
+            "CC27",
+            "CC26",
+            "CC25",
+            "CC24",
+            "CC23",
+            "CC22",
+            "CC21",
+            "CC20",
+            "CC19",
+            "CC17",
+            "CC16",
+            "CC15",
+            "CC14",
+            "CC13",
+            "CC12",
+            "CC11",
+            "CC10",
+            "CC9",
+            "CC8",
+            "CC7",
+            "CC6",
+            "CC5"
+          ]
+        }
+      ],
+      "from_stop": "CC34",
+      "line_id": "CCL",
+      "pattern_ids": [
+        "0223390f488ca6ca",
+        "26fe16eef4696887",
+        "38458d3fdc2739b0",
+        "5295409a4ada4b68",
+        "81e3f3c05d777a83",
+        "ddcb56479f6db4cc",
+        "ed4384bbe39c47f4"
+      ],
+      "status": "connected",
+      "to_stop": "CC4"
+    },
+    {
+      "evidence": [
+        {
+          "direction": "ordered",
+          "relation_id": 2312797,
+          "stop_hops": 5,
+          "via": [
+            "NS14",
+            "NS15",
+            "NS16",
+            "CC15"
+          ]
+        },
+        {
+          "direction": "reverse",
+          "relation_id": 445768,
+          "stop_hops": 5,
+          "via": [
+            "NS14",
+            "NS15",
+            "NS16",
+            "CC15"
+          ]
+        }
+      ],
+      "from_stop": "NS13",
+      "line_id": "NSL",
+      "pattern_ids": [
+        "36315303a59b4eb2"
+      ],
+      "status": "connected",
+      "to_stop": "NS18"
+    }
+  ],
+  "station_matching_exception": "Two exact Tampines EWL stop nodes, guarded by GTFS ZIP and per-relation response hashes; the published GTFS parent is at the DTL end of the interchange."
+}

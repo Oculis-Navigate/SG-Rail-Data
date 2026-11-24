@@ -46,9 +46,29 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
     def test_current_audit_has_all_signoffs_and_covers_all_records(self):
         result = validate_initial_ledger(ROOT)
         self.assertEqual(result["status"], "valid")
-        self.assertEqual(result["decision_count"], 29)
+        self.assertEqual(result["decision_count"], 52)
+        self.assertIn("D-030", result["effective_states"]["replaced"])
+        self.assertIn("D-036", result["effective_states"]["replaced"])
+        self.assertIn("D-037", result["effective_states"]["approved"])
         self.assertEqual(result["intervention_count"], 354)
-        self.assertEqual(result["approved_count"], 29)
+        self.assertEqual(result["approved_count"], 43)
+        self.assertIn("D-052", result["effective_states"]["approved"])
+        self.assertIn("D-049", result["effective_states"]["approved"])
+        self.assertIn("D-047", result["effective_states"]["approved"])
+        self.assertIn("D-048", result["effective_states"]["approved"])
+        self.assertIn("D-032", result["effective_states"]["replaced"])
+        self.assertIn("D-046", result["effective_states"]["replaced"])
+        self.assertIn("D-051", result["effective_states"]["approved"])
+        self.assertIn("D-043", result["effective_states"]["approved"])
+        self.assertIn("D-041", result["effective_states"]["approved"])
+        self.assertIn("D-040", result["effective_states"]["replaced"])
+        self.assertIn("D-050", result["effective_states"]["approved"])
+        self.assertIn("D-038", result["effective_states"]["approved"])
+        self.assertIn("D-035", result["effective_states"]["approved"])
+        self.assertIn("D-034", result["effective_states"]["approved"])
+        self.assertIn("D-033", result["effective_states"]["approved"])
+        self.assertIn("D-031", result["effective_states"]["approved"])
+        self.assertEqual(result["effective_states"]["retired"], ["D-004", "D-005", "D-006", "D-027"])
         self.assertEqual(result["pending_decision_ids"], [])
         self.assertEqual(result["release_approval"], "not_granted")
 
@@ -119,7 +139,7 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
             code = main(["audit", "validate", "--json"])
         self.assertEqual(code, 0)
         result = json.loads(output.getvalue())
-        self.assertEqual(result["approved_count"], 29)
+        self.assertEqual(result["approved_count"], 43)
         self.assertEqual(result["release_approval"], "not_granted")
 
     def test_geometry_baseline_matches_its_exact_approval(self):
@@ -167,7 +187,15 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
             codes = pointer(migrated, item["pointer"])
             self.assertEqual(codes, item["before"])
             codes[:] = item["after"]
-        self.assertEqual(migrated, baseline)
+        promoted = json.loads((ROOT / "audit/decisions/D-046.json").read_text())["targets"][0]
+        self.assertEqual(migrated, promoted["before"])
+        latest = json.loads((ROOT / "audit/decisions/D-051.json").read_text())["targets"][0]
+        self.assertEqual(promoted["after"], latest["before"])
+        self.assertEqual(baseline, latest["after"])
+        promotion = json.loads((ROOT / "audit/evidence/2026-11-23-stage2-promotion.json").read_text())
+        latest_evidence = json.loads((ROOT / "audit/evidence/2026-11-24-station-baselines-promotion.json").read_text())["products"]["stage2"]
+        self.assertEqual(promotion["approved_file_sha256"], latest_evidence["previous_file_sha256"])
+        self.assertEqual(latest_evidence["approved_file_sha256"], sha256(baseline_path.read_bytes()).hexdigest())
         self.assertEqual(evidence["migration"]["semantic_change"], "station code array order only")
         stage2_evidence = next(
             item for item in evidence["migration"]["files"]
@@ -175,7 +203,7 @@ class InitialAuditTests(AuditFixture, unittest.TestCase):
         )
         self.assertEqual(
             stage2_evidence["after_file_sha256"],
-            sha256(baseline_path.read_bytes()).hexdigest(),
+            promotion["previous_file_sha256"],
         )
 
 
@@ -183,7 +211,12 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
     def coordinate_draft_project(self, temp: str):
         root = Path(temp) / "project"
         config = write_test_project(root)
-        shutil.copytree(ROOT / "audit", root / "audit")
+        # The synthetic project starts with an empty coordinate ledger. Seed
+        # only the immutable bootstrap, not production overrides or map drafts.
+        shutil.copytree(ROOT / "audit", root / "audit", ignore=shutil.ignore_patterns("drafts"))
+        ledger = root / "audit/decision-ledger.jsonl"
+        ledger.write_bytes(b"".join(line for line in ledger.read_bytes().splitlines(keepends=True)
+                                    if json.loads(line)["schema_version"] == 1))
         replay = write_replay_bundle(Path(temp) / "replay")
         run = run_pipeline(
             config=config,
@@ -287,12 +320,12 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
         with TemporaryDirectory() as temp:
             root = Path(temp)
             self.copy_package(root)
-            revalidated = self.action(root, "revalidate", "D-004")
-            self.assertEqual(revalidated["event"]["event_id"], "S-038")
+            revalidated = self.action(root, "revalidate", "D-007")
+            self.assertEqual(revalidated["event"]["event_id"], "S-090")
             result = audit_status(root)
-            self.assertEqual(result["event_count"], 38)
+            self.assertEqual(result["event_count"], 90)
             self.assertEqual(result["pending_decision_ids"], [])
-            self.assertIn("D-004", result["effective_states"]["approved"])
+            self.assertIn("D-007", result["effective_states"]["approved"])
 
     def test_propose_approve_and_retire_preserve_exact_decision_hash(self):
         with TemporaryDirectory() as temp:
@@ -360,7 +393,7 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             self.assertEqual(ledger.read_bytes(), original)
             with self.assertRaisesRegex(ContractError, "must not be empty"):
                 record_decision_action(
-                    root, "revalidate", "D-004", recorded_by="agent", approved_by="reviewer",
+                    root, "revalidate", "D-007", recorded_by="agent", approved_by="reviewer",
                     authorization_basis="direct_human_signoff", authorization_refs=[], note="Approve it.",
                 )
             self.assertEqual(ledger.read_bytes(), original)
@@ -486,7 +519,7 @@ class AuditLifecycleTests(AuditFixture, unittest.TestCase):
             root = Path(temp)
             self.copy_package(root)
             result = render_signoffs(root)
-            self.assertEqual(result["event_count"], 37)
+            self.assertEqual(result["event_count"], 89)
             index = (root / "audit/signoffs/README.md").read_text()
             page = (root / "audit/signoffs/2026-10-05.md").read_text()
             self.assertIn("generated from `audit/decision-ledger.jsonl`", index)

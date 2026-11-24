@@ -301,11 +301,21 @@ def _bus_override(value: object, context: str) -> tuple[str, dict[str, Any]]:
 
 
 def _review_acceptance(value: object, context: str) -> tuple[str, dict[str, Any]]:
-    row = require_fields(
-        value,
-        {"station", "page_id", "revision_id", "codes", "findings", "evidence"},
-        context,
-    )
+    fields = {"station", "page_id", "revision_id", "codes", "findings", "evidence"}
+    if isinstance(value, dict) and "nearby_landmarks" in value:
+        fields.add("nearby_landmarks")
+    row = require_fields(value, fields, context)
+    landmarks = None
+    if "nearby_landmarks" in row:
+        loc = f"{context}.nearby_landmarks"
+        rule = require_fields(row["nearby_landmarks"], {"revision_id", "exit_id", "exit_cell", "source_cell", "names"}, loc)
+        landmarks = {
+            "revision_id": exact_int(rule["revision_id"], f"{loc}.revision_id", minimum=1),
+            "exit_id": exact_str(rule["exit_id"], f"{loc}.exit_id"),
+            "exit_cell": exact_str(rule["exit_cell"], f"{loc}.exit_cell"),
+            "source_cell": exact_str(rule["source_cell"], f"{loc}.source_cell"),
+            "names": string_list(rule["names"], f"{loc}.names", nonempty=True),
+        }
     station = exact_str(row["station"], f"{context}.station")
     page_id = exact_int(row["page_id"], f"{context}.page_id", minimum=1)
     revision_id = exact_int(row["revision_id"], f"{context}.revision_id", minimum=1)
@@ -329,6 +339,7 @@ def _review_acceptance(value: object, context: str) -> tuple[str, dict[str, Any]
         "codes": codes,
         "findings": findings,
         "evidence": evidence,
+        "nearby_landmarks": landmarks,
     }
 
 

@@ -9,8 +9,8 @@
       "start_date": "2025-01-01",
       "version": "0.1"
     },
-    "service_date": "2026-10-05",
-    "source_zip_sha256": "e39bd35048133efe554e7c78e958f38c2930bd921a018d9cb37e0d53796b82d3"
+    "service_date": "2026-11-24",
+    "source_zip_sha256": "7a4f56076869e1c71d4019d34b23cec90fe0137d1a729967c66bfc8c18793d7f"
   },
   "kind": "sg_rail_station_data_stage_1",
   "normalizations": [
@@ -28,7 +28,7 @@
   "publication_allowed": true,
   "reviewed_decisions": {
     "path": "stage1-reviewed-decisions.json",
-    "sha256": "604b2cd879defc8a8897c08cf822c8e82bb118b03155cbf469349b1deb85b2c8"
+    "sha256": "8008739061e7440518cfaf3515be19fc702ba0e78be201821fb35b4b11f219cb"
   },
   "schema_version": 1,
   "stations": [
@@ -267,7 +267,16 @@
           "match_method": "station_code",
           "name": "Admiralty",
           "route_ids": [
-            "NSL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -362,8 +371,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 98,
         "redirects": [],
-        "revision_id": 33867,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33867",
+        "revision_id": 39800,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39800",
         "title": "Admiralty station",
         "url": "https://sgwiki.miraheze.org/wiki/Admiralty_station"
       },
@@ -540,7 +549,13 @@
           "match_method": "station_code",
           "name": "Aljunied",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -892,9 +907,7 @@
             "status": "not_classified",
             "uninterpreted_source_icon": false
           },
-          "alternative_exits": [
-            "B"
-          ],
+          "alternative_exits": [],
           "bus_stop_codes": [],
           "destinations": [
             "Ang Mo Kio Town Garden"
@@ -909,17 +922,17 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "D Ang Mo Kio Town Garden (Closed – use Exit B)",
+              "label_cell_verbatim": "D Ang Mo Kio Town Garden (Closed)",
               "row": 5,
               "row_verbatim": [
-                "D Ang Mo Kio Town Garden (Closed – use Exit B)",
+                "D Ang Mo Kio Town Garden (Closed)",
                 ""
               ],
               "table": 1
             }
           ],
           "status_notes": [
-            "(Closed – use Exit B)"
+            "(Closed)"
           ]
         }
       ],
@@ -935,7 +948,22 @@
           "match_method": "station_code",
           "name": "Ang Mo Kio",
           "route_ids": [
-            "NSL"
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS1",
+            "NSL_NS16_NS13",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -1083,9 +1111,8 @@
         "contracts_applied": [
           {
             "evidence": [
-              "Human-reviewed decision: retain the exact source-reported Exit D closure and its alternative Exit B",
-              "Human-reviewed decision: split source platform group C/D into individual platform records while preserving source_group_label",
-              "Pinned to SgWiki Ang Mo Kio station revision 33858"
+              "Revision 41909 explicitly marks MRT Exit D (Ang Mo Kio Town Garden) closed. No alternative exit is stated.",
+              "Owner confirmed the exit closure and, following a recent visit, accepted separate NSL C and D platform records preserving the L2 C/D group and its no-train-service heading."
             ],
             "findings": [
               {
@@ -1099,14 +1126,14 @@
             ],
             "kind": "review_acceptance",
             "page_id": 111,
-            "revision_id": 33858
+            "revision_id": 41909
           }
         ],
         "kind": "sgwiki_station_page",
         "page_id": 111,
         "redirects": [],
-        "revision_id": 33858,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33858",
+        "revision_id": 41909,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41909",
         "title": "Ang Mo Kio station",
         "url": "https://sgwiki.miraheze.org/wiki/Ang_Mo_Kio_station"
       },
@@ -1364,8 +1391,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 505,
         "redirects": [],
-        "revision_id": 24724,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=24724",
+        "revision_id": 40514,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=40514",
         "title": "Bakau station",
         "url": "https://sgwiki.miraheze.org/wiki/Bakau_station"
       },
@@ -1749,13 +1776,28 @@
           "match_method": "station_code",
           "name": "Bartley",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -1850,8 +1892,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 280,
         "redirects": [],
-        "revision_id": 34524,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=34524",
+        "revision_id": 41825,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41825",
         "title": "Bartley station",
         "url": "https://sgwiki.miraheze.org/wiki/Bartley_station"
       },
@@ -2051,10 +2093,10 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "C",
+              "label_cell_verbatim": "C D",
               "row": 4,
               "row_verbatim": [
-                "C",
+                "C D",
                 "Marina Bay Sands, The Shoppes at Marina Bay Sands, Sands Expo and Convention Centre"
               ],
               "table": 1
@@ -2083,10 +2125,10 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "D",
-              "row": 5,
+              "label_cell_verbatim": "C D",
+              "row": 4,
               "row_verbatim": [
-                "D",
+                "C D",
                 "Marina Bay Sands, The Shoppes at Marina Bay Sands, Sands Expo and Convention Centre"
               ],
               "table": 1
@@ -2116,7 +2158,7 @@
           "source_rows": [
             {
               "label_cell_verbatim": "E",
-              "row": 6,
+              "row": 5,
               "row_verbatim": [
                 "E",
                 "Bayfront Link, Marina Bay Sands, Sands Expo and Convention Centre"
@@ -2142,11 +2184,20 @@
           "match_method": "station_code",
           "name": "Bayfront",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "DTL"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC31",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "CC",
@@ -2288,8 +2339,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 274,
         "redirects": [],
-        "revision_id": 36652,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36652",
+        "revision_id": 41890,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41890",
         "title": "Bayfront station",
         "url": "https://sgwiki.miraheze.org/wiki/Bayfront_station"
       },
@@ -2547,7 +2598,13 @@
           "match_method": "station_code",
           "name": "Bayshore",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE29",
+            "TEL_TE22_TE29",
+            "TEL_TE27_TE29",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -2784,8 +2841,8 @@
           "lta": {
             "BusStopCode": "42159",
             "Description": "Opp Beauty World Stn",
-            "Latitude": 1.34036805329812,
-            "Longitude": 103.77530898996658,
+            "Latitude": 1.340383,
+            "Longitude": 103.774954,
             "RoadName": "Jln Jurong Kechil"
           },
           "resolution": "unique_exit_label",
@@ -2954,7 +3011,9 @@
           "match_method": "station_code",
           "name": "Beauty World",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -3263,7 +3322,13 @@
           "match_method": "station_code",
           "name": "Bedok",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -3592,7 +3657,8 @@
           "match_method": "station_code",
           "name": "Bedok North",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "DT"
@@ -3859,7 +3925,8 @@
           "match_method": "station_code",
           "name": "Bedok Reservoir",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "DT"
@@ -4199,7 +4266,7 @@
           "match_method": "station_code",
           "name": "Bencoolen",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -4469,7 +4536,7 @@
           "match_method": "station_code",
           "name": "Bendemeer",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -4881,14 +4948,42 @@
           "match_method": "station_code",
           "name": "Bishan",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "NSL"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32",
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS1",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "CC",
@@ -4913,7 +5008,16 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 4
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        },
+        {
+          "kind": "rail_service_diagram",
+          "table": 3
+        }
+      ],
       "name": "Bishan",
       "operational_status": "active",
       "platforms": [
@@ -5033,8 +5137,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 113,
         "redirects": [],
-        "revision_id": 33984,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33984",
+        "revision_id": 41911,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41911",
         "title": "Bishan station",
         "url": "https://sgwiki.miraheze.org/wiki/Bishan_station"
       },
@@ -5246,7 +5350,8 @@
           "match_method": "station_code",
           "name": "Boon Keng",
           "route_ids": [
-            "NEL"
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "NE"
@@ -5416,8 +5521,8 @@
           "lta": {
             "BusStopCode": "22499",
             "Description": "Opp Blk 662C",
-            "Latitude": 1.3377065,
-            "Longitude": 103.704634,
+            "Latitude": 1.3376905,
+            "Longitude": 103.704801,
             "RoadName": "Jurong West St 64"
           },
           "resolution": "unique_exit_label",
@@ -5647,7 +5752,13 @@
           "match_method": "station_code",
           "name": "Boon Lay",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -5932,13 +6043,29 @@
           "match_method": "station_code",
           "name": "Botanic Gardens",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "DTL"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32",
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "CC",
@@ -6083,8 +6210,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 275,
         "redirects": [],
-        "revision_id": 33981,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33981",
+        "revision_id": 41828,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41828",
         "title": "Botanic Gardens station",
         "url": "https://sgwiki.miraheze.org/wiki/Botanic_Gardens_station"
       },
@@ -6198,7 +6325,9 @@
             "52161",
             "52171"
           ],
-          "destinations": [],
+          "destinations": [
+            "Blk 109 (Lor 1 Toa Payoh)"
+          ],
           "id": "MRT:A",
           "inventory_evidence": "complete",
           "label": "A",
@@ -6209,11 +6338,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "A",
+              "label_cell_verbatim": "A Blk 109 (Lor 1 Toa Payoh)",
               "row": 2,
               "row_verbatim": [
-                "A",
-                "Lorong 1 Toa Payoh"
+                "A Blk 109 (Lor 1 Toa Payoh)",
+                ""
               ],
               "table": 1
             }
@@ -6228,7 +6357,9 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [],
-          "destinations": [],
+          "destinations": [
+            "Blk 116 (Lor 1 Toa Payoh)"
+          ],
           "id": "MRT:B",
           "inventory_evidence": "complete",
           "label": "B",
@@ -6239,11 +6370,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "B",
+              "label_cell_verbatim": "B Blk 116 (Lor 1 Toa Payoh)",
               "row": 3,
               "row_verbatim": [
-                "B",
-                "Lorong 1 Toa Payoh, Lorong 2 Toa Payoh"
+                "B Blk 116 (Lor 1 Toa Payoh)",
+                ""
               ],
               "table": 1
             }
@@ -6262,7 +6393,9 @@
           "bus_stop_codes": [
             "52179"
           ],
-          "destinations": [],
+          "destinations": [
+            "Braddell House"
+          ],
           "id": "MRT:C",
           "inventory_evidence": "complete",
           "label": "C",
@@ -6273,11 +6406,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "C",
+              "label_cell_verbatim": "C Braddell House",
               "row": 4,
               "row_verbatim": [
-                "C",
-                "Yellow Pages Building"
+                "C Braddell House",
+                ""
               ],
               "table": 1
             }
@@ -6297,7 +6430,19 @@
           "match_method": "station_code",
           "name": "Braddell",
           "route_ids": [
-            "NSL"
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -6387,8 +6532,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 112,
         "redirects": [],
-        "revision_id": 36654,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36654",
+        "revision_id": 39807,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39807",
         "title": "Braddell station",
         "url": "https://sgwiki.miraheze.org/wiki/Braddell_station"
       },
@@ -6587,7 +6732,7 @@
               "row": 2,
               "row_verbatim": [
                 "A NTUC Trade Union House",
-                "Singapore Art Museum"
+                ""
               ],
               "table": 1
             }
@@ -6724,7 +6869,7 @@
               "row": 5,
               "row_verbatim": [
                 "E Waterloo Street",
-                "Lazada One, Singapore Art Museum"
+                ""
               ],
               "table": 1
             }
@@ -6744,8 +6889,11 @@
           "match_method": "station_code",
           "name": "Bras Basah",
           "route_ids": [
-            "CCL_DBG_PER",
-            "CCL_DBG_SDM"
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC1_CC4",
+            "CCL_CC1_CC6"
           ],
           "route_names": [
             "CC"
@@ -6769,7 +6917,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Bras Basah",
       "operational_status": "active",
       "platforms": [
@@ -6835,8 +6988,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 273,
         "redirects": [],
-        "revision_id": 33458,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33458",
+        "revision_id": 41880,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41880",
         "title": "Bras Basah station",
         "url": "https://sgwiki.miraheze.org/wiki/Bras_Basah_station"
       },
@@ -7117,7 +7270,15 @@
           "match_method": "station_code",
           "name": "Bright Hill",
           "route_ids": [
-            "TEL"
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE1_TE9",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29"
           ],
           "route_names": [
             "TE"
@@ -7270,8 +7431,8 @@
           "lta": {
             "BusStopCode": "67609",
             "Description": "Buangkok Stn Exit A",
-            "Latitude": 1.38393305306468,
-            "Longitude": 103.89303978530081,
+            "Latitude": 1.382819,
+            "Longitude": 103.892976,
             "RoadName": "Sengkang Ctrl"
           },
           "resolution": "unique_exit_label",
@@ -7322,7 +7483,9 @@
             "63009",
             "67609"
           ],
-          "destinations": [],
+          "destinations": [
+            "Sengkang Central"
+          ],
           "id": "MRT:A",
           "inventory_evidence": "complete",
           "label": "A",
@@ -7333,11 +7496,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "A",
+              "label_cell_verbatim": "A Sengkang Central",
               "row": 2,
               "row_verbatim": [
-                "A",
-                "Buangkok Interchange , Sengkang Central, Palm View Primary School, Compassvale Ancilla Park"
+                "A Sengkang Central",
+                "Buangkok Interchange , Palm View Primary School, Compassvale Ancilla Park"
               ],
               "table": 1
             }
@@ -7354,7 +7517,9 @@
           "bus_stop_codes": [
             "67601"
           ],
-          "destinations": [],
+          "destinations": [
+            "Sengkang Central"
+          ],
           "id": "MRT:B",
           "inventory_evidence": "complete",
           "label": "B",
@@ -7365,11 +7530,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "B",
+              "label_cell_verbatim": "B Sengkang Central",
               "row": 3,
               "row_verbatim": [
-                "B",
-                "Sengkang Central, North Vista Primary School"
+                "B Sengkang Central",
+                "North Vista Primary School"
               ],
               "table": 1
             }
@@ -7389,7 +7554,8 @@
           "match_method": "station_code",
           "name": "Buangkok",
           "route_ids": [
-            "NEL"
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "NE"
@@ -7479,8 +7645,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 238,
         "redirects": [],
-        "revision_id": 36670,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36670",
+        "revision_id": 39017,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39017",
         "title": "Buangkok station",
         "url": "https://sgwiki.miraheze.org/wiki/Buangkok_station"
       },
@@ -7940,8 +8106,15 @@
           "match_method": "station_code",
           "name": "Bugis",
           "route_ids": [
-            "DTL",
-            "EWL"
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35",
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "DT",
@@ -8393,7 +8566,16 @@
           "match_method": "station_code",
           "name": "Bukit Batok",
           "route_ids": [
-            "NSL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS1_NS5",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS5_NS1"
           ],
           "route_names": [
             "NS"
@@ -8483,8 +8665,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 107,
         "redirects": [],
-        "revision_id": 36243,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36243",
+        "revision_id": 39794,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39794",
         "title": "Bukit Batok station",
         "url": "https://sgwiki.miraheze.org/wiki/Bukit_Batok_station"
       },
@@ -8525,7 +8707,7 @@
           "resolved_exit_ids": [
             "MRT:C"
           ],
-          "service_verbatim": "451 945 991",
+          "service_verbatim": "451 873 873M 945 991",
           "source_row": 2,
           "stop_verbatim": "43571 Opp Bt Gombak Stn Bt Batok West Ave 5"
         },
@@ -8538,15 +8720,15 @@
           "lta": {
             "BusStopCode": "43579",
             "Description": "Bt Gombak Stn",
-            "Latitude": 1.35911715344895,
-            "Longitude": 103.75166771394562,
+            "Latitude": 1.358835,
+            "Longitude": 103.751678,
             "RoadName": "Bt Batok West Ave 5"
           },
           "resolution": "unique_exit_label",
           "resolved_exit_ids": [
             "MRT:C"
           ],
-          "service_verbatim": "451 945 991",
+          "service_verbatim": "451 873 873M 945 991",
           "source_row": 3,
           "stop_verbatim": "43579 Bt Gombak Stn Bt Batok West Ave 5"
         }
@@ -8704,7 +8886,16 @@
           "match_method": "station_code",
           "name": "Bukit Gombak",
           "route_ids": [
-            "NSL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS1_NS5",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS5_NS1"
           ],
           "route_names": [
             "NS"
@@ -8794,8 +8985,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 108,
         "redirects": [],
-        "revision_id": 37671,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=37671",
+        "revision_id": 39975,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39975",
         "title": "Bukit Gombak station",
         "url": "https://sgwiki.miraheze.org/wiki/Bukit_Gombak_station"
       },
@@ -9038,8 +9229,8 @@
           "lta": {
             "BusStopCode": "44909",
             "Description": "Blk 184",
-            "Latitude": 1.37998945869065,
-            "Longitude": 103.76225836886368,
+            "Latitude": 1.3800657,
+            "Longitude": 103.762398,
             "RoadName": "Bt Panjang Rd"
           },
           "reason": "Human-reviewed decision to exclude this SgWiki bus link",
@@ -9393,7 +9584,9 @@
           "match_method": "station_code",
           "name": "Bukit Panjang",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -9940,13 +10133,33 @@
           "match_method": "station_code",
           "name": "Buona Vista",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "EWL"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32",
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "CC",
@@ -10100,8 +10313,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 172,
         "redirects": [],
-        "revision_id": 33843,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33843",
+        "revision_id": 41833,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41833",
         "title": "Buona Vista station",
         "url": "https://sgwiki.miraheze.org/wiki/Buona_Vista_station"
       },
@@ -10486,14 +10699,38 @@
           "match_method": "station_code",
           "name": "Caldecott",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "TEL"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32",
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE1_TE9",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "CC",
@@ -10638,8 +10875,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 300,
         "redirects": [],
-        "revision_id": 33982,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33982",
+        "revision_id": 41024,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41024",
         "title": "Caldecott station",
         "url": "https://sgwiki.miraheze.org/wiki/Caldecott_station"
       },
@@ -10890,7 +11127,16 @@
           "match_method": "station_code",
           "name": "Canberra",
           "route_ids": [
-            "NSL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -10985,8 +11231,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 96,
         "redirects": [],
-        "revision_id": 35870,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=35870",
+        "revision_id": 39803,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39803",
         "title": "Canberra station",
         "url": "https://sgwiki.miraheze.org/wiki/Canberra_station"
       },
@@ -11053,7 +11299,7 @@
           ],
           "service_verbatim": "10 30 57 80 97 97e 100 131 145",
           "source_row": 2,
-          "stop_verbatim": "14061 Opp Cantonment Stn Exit 4 Keppel Rd"
+          "stop_verbatim": "14061 Opp Cantonment Stn Exit 4 1 Keppel Rd"
         },
         {
           "bus_stop_code": "14069",
@@ -11064,8 +11310,8 @@
           "lta": {
             "BusStopCode": "14069",
             "Description": "Cantonment Stn Exit 4",
-            "Latitude": 1.272538056,
-            "Longitude": 103.8364069,
+            "Latitude": 1.2724955,
+            "Longitude": 103.837084,
             "RoadName": "Keppel Rd"
           },
           "resolution": "unique_exit_label",
@@ -11074,7 +11320,7 @@
           ],
           "service_verbatim": "10 30 57 80 97 97e 100 131 145",
           "source_row": 3,
-          "stop_verbatim": "14069 Cantonment Stn Exit 4 Keppel Rd"
+          "stop_verbatim": "14069 Cantonment Stn Exit 4 1 Keppel Rd"
         },
         {
           "bus_stop_code": "14071",
@@ -11119,12 +11365,12 @@
           "stop_verbatim": "05631 Blk 16 Cantonment Lk"
         }
       ],
-      "catalog_status": "operator_addition_requires_review",
+      "catalog_status": "v1_baseline",
       "codes": [
         "CC31"
       ],
       "excluded_bus_links": [],
-      "exit_inventory_status": "complete_reviewed_override",
+      "exit_inventory_status": "complete",
       "exits": [
         {
           "accessibility": {
@@ -11136,16 +11382,28 @@
           "bus_stop_codes": [
             "14071"
           ],
-          "destinations": [],
+          "destinations": [
+            "Singapore Art Museum"
+          ],
           "id": "MRT:1",
-          "inventory_evidence": "complete_reviewed_override",
+          "inventory_evidence": "complete",
           "label": "1",
           "operating_hours": [],
           "operating_status": "not_stated",
           "scopes": [
             "MRT"
           ],
-          "source_rows": [],
+          "source_rows": [
+            {
+              "label_cell_verbatim": "1 Singapore Art Museum",
+              "row": 2,
+              "row_verbatim": [
+                "1 Singapore Art Museum",
+                ""
+              ],
+              "table": 1
+            }
+          ],
           "status_notes": []
         },
         {
@@ -11156,16 +11414,28 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [],
-          "destinations": [],
+          "destinations": [
+            "Blk 108 (Spottiswoode Park Road)"
+          ],
           "id": "MRT:2",
-          "inventory_evidence": "complete_reviewed_override",
+          "inventory_evidence": "complete",
           "label": "2",
           "operating_hours": [],
           "operating_status": "not_stated",
           "scopes": [
             "MRT"
           ],
-          "source_rows": [],
+          "source_rows": [
+            {
+              "label_cell_verbatim": "2 Blk 108 (Spottiswoode Park Road)",
+              "row": 3,
+              "row_verbatim": [
+                "2 Blk 108 (Spottiswoode Park Road)",
+                "Kampong Bahru Terminal"
+              ],
+              "table": 1
+            }
+          ],
           "status_notes": []
         },
         {
@@ -11178,16 +11448,28 @@
           "bus_stop_codes": [
             "05631"
           ],
-          "destinations": [],
+          "destinations": [
+            "Spottiswoode Park Road"
+          ],
           "id": "MRT:3",
-          "inventory_evidence": "complete_reviewed_override",
+          "inventory_evidence": "complete",
           "label": "3",
           "operating_hours": [],
           "operating_status": "not_stated",
           "scopes": [
             "MRT"
           ],
-          "source_rows": [],
+          "source_rows": [
+            {
+              "label_cell_verbatim": "3 Spottiswoode Park Road",
+              "row": 4,
+              "row_verbatim": [
+                "3 Spottiswoode Park Road",
+                "Cantonment Primary School, Former Tanjong Pagar Railway Station"
+              ],
+              "table": 1
+            }
+          ],
           "status_notes": []
         },
         {
@@ -11201,16 +11483,28 @@
             "14061",
             "14069"
           ],
-          "destinations": [],
+          "destinations": [
+            "Former Tanjong Pagar Railway Station"
+          ],
           "id": "MRT:4",
-          "inventory_evidence": "complete_reviewed_override",
+          "inventory_evidence": "complete",
           "label": "4",
           "operating_hours": [],
           "operating_status": "not_stated",
           "scopes": [
             "MRT"
           ],
-          "source_rows": [],
+          "source_rows": [
+            {
+              "label_cell_verbatim": "4 Former Tanjong Pagar Railway Station",
+              "row": 5,
+              "row_verbatim": [
+                "4 Former Tanjong Pagar Railway Station",
+                ""
+              ],
+              "table": 1
+            }
+          ],
           "status_notes": []
         }
       ],
@@ -11226,11 +11520,21 @@
           "match_method": "station_code",
           "name": "Cantonment",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC31",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -11254,7 +11558,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Cantonment",
       "operational_status": "active",
       "platforms": [
@@ -11316,23 +11625,12 @@
       "reviews": [],
       "source": {
         "api_url": "https://sgwiki.miraheze.org/w/api.php?action=parse&page=Cantonment+station&prop=text%7Crevid&format=json&formatversion=2&redirects=1",
-        "contracts_applied": [
-          {
-            "evidence": [
-              "Human-reviewed decision: Cantonment has MRT Exits 1-4",
-              "mrt-data-v2 comparison: SMRT lists 1-4; OneMap lists 1-3; OSM lists 1, 2 and 4; SgWiki bus evidence lists 1, 3 and 4"
-            ],
-            "kind": "exit_inventory_override",
-            "page_id": 278,
-            "source_inventory_evidence_kind": "bus_connections_only",
-            "source_inventory_status": "partial"
-          }
-        ],
+        "contracts_applied": [],
         "kind": "sgwiki_station_page",
         "page_id": 278,
         "redirects": [],
-        "revision_id": 35867,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=35867",
+        "revision_id": 41849,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41849",
         "title": "Cantonment station",
         "url": "https://sgwiki.miraheze.org/wiki/Cantonment_station"
       },
@@ -11462,7 +11760,9 @@
           "match_method": "station_code",
           "name": "Cashew",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -11716,7 +12016,8 @@
           "match_method": "station_code",
           "name": "Changi Airport",
           "route_ids": [
-            "EWL_CGL"
+            "EWL_CGL_CG2_CG",
+            "EWL_CGL_CG_CG2"
           ],
           "route_names": [
             "CG"
@@ -12540,8 +12841,9 @@
           "match_method": "station_code",
           "name": "Chinatown",
           "route_ids": [
-            "DTL",
-            "NEL"
+            "DTL_DT1_DT35",
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "DT",
@@ -12914,7 +13216,13 @@
           "match_method": "station_code",
           "name": "Chinese Garden",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -13096,7 +13404,7 @@
             "MRT:B",
             "SHARED:E"
           ],
-          "service_verbatim": "307 974 975",
+          "service_verbatim": "307 874 974 975",
           "source_row": 3,
           "stop_verbatim": "44531 Opp Choa Chu Kang Stn Choa Chu Kang Ave 4"
         },
@@ -13143,7 +13451,9 @@
           "bus_stop_codes": [
             "44009"
           ],
-          "destinations": [],
+          "destinations": [
+            "Choa Chu Kang Interchange"
+          ],
           "id": "MRT:A",
           "inventory_evidence": "complete",
           "label": "A",
@@ -13154,12 +13464,12 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "A",
+              "label_cell_verbatim": "A Choa Chu Kang Interchange",
               "row": 2,
               "row_verbatim": [
                 "NSL",
-                "A",
-                "Lot 1 Shoppers’ Mall, Choa Chu Kang Interchange"
+                "A Choa Chu Kang Interchange",
+                "Lot 1 Shoppers’ Mall"
               ],
               "table": 1
             }
@@ -13177,7 +13487,9 @@
             "44531",
             "44539"
           ],
-          "destinations": [],
+          "destinations": [
+            "Choa Chu Kang Avenue 4"
+          ],
           "id": "MRT:B",
           "inventory_evidence": "complete",
           "label": "B",
@@ -13188,12 +13500,12 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "B",
+              "label_cell_verbatim": "B Choa Chu Kang Avenue 4",
               "row": 3,
               "row_verbatim": [
                 "NSL",
-                "B",
-                "Lot 1 Shoppers’ Mall, Choa Chu Kang Avenue 4"
+                "B Choa Chu Kang Avenue 4",
+                "Lot 1 Shoppers’ Mall"
               ],
               "table": 1
             }
@@ -13208,7 +13520,9 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [],
-          "destinations": [],
+          "destinations": [
+            "Choa Chu Kang Loop"
+          ],
           "id": "MRT:C",
           "inventory_evidence": "complete",
           "label": "C",
@@ -13219,12 +13533,12 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "C",
+              "label_cell_verbatim": "C Choa Chu Kang Loop",
               "row": 4,
               "row_verbatim": [
                 "NSL",
-                "C",
-                "Choa Chu Kang Loop"
+                "C Choa Chu Kang Loop",
+                ""
               ],
               "table": 1
             }
@@ -13237,13 +13551,11 @@
             "status": "not_classified",
             "uninterpreted_source_icon": false
           },
-          "alternative_exits": [
-            "A",
-            "C",
-            "E"
-          ],
+          "alternative_exits": [],
           "bus_stop_codes": [],
-          "destinations": [],
+          "destinations": [
+            "Choa Chu Kang Loop"
+          ],
           "id": "MRT:D",
           "inventory_evidence": "complete",
           "label": "D",
@@ -13254,18 +13566,18 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "D (Closed – use Exit A/C/E)",
+              "label_cell_verbatim": "D Choa Chu Kang Loop (Closed)",
               "row": 5,
               "row_verbatim": [
                 "NSL",
-                "D (Closed – use Exit A/C/E)",
-                "Choa Chu Kang Loop"
+                "D Choa Chu Kang Loop (Closed)",
+                ""
               ],
               "table": 1
             }
           ],
           "status_notes": [
-            "(Closed – use Exit A/C/E)"
+            "(Closed)"
           ]
         },
         {
@@ -13279,7 +13591,9 @@
             "44531",
             "44539"
           ],
-          "destinations": [],
+          "destinations": [
+            "Lot 1 Shoppers’ Mall"
+          ],
           "id": "SHARED:E",
           "inventory_evidence": "complete",
           "label": "E",
@@ -13291,12 +13605,12 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "E",
+              "label_cell_verbatim": "E Lot 1 Shoppers’ Mall",
               "row": 6,
               "row_verbatim": [
                 "NSL LRT",
-                "E",
-                "Lot 1 Shoppers’ Mall, Choa Chu Kang Avenue 4, Keat Hong Community Centre"
+                "E Lot 1 Shoppers’ Mall",
+                "Keat Hong Community Centre"
               ],
               "table": 1
             }
@@ -13335,7 +13649,16 @@
           "match_method": "station_code",
           "name": "Choa Chu Kang",
           "route_ids": [
-            "NSL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS1_NS5",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS5_NS1"
           ],
           "route_names": [
             "NS"
@@ -13540,9 +13863,9 @@
           },
           {
             "evidence": [
-              "Human-reviewed decision: retain the exact source-reported Exit D closure and its alternative Exits A, C and E",
+              "MRT Exit D remains source-reported closed. Revision 39978 states no alternative exits; do not carry forward A/C/E.",
               "Human-reviewed decision: split source platform groups 1/3 and 2/4 into individual records while preserving source_group_label",
-              "Pinned to SgWiki Choa Chu Kang station revision 37616"
+              "Pinned to SgWiki Choa Chu Kang station revision 39978"
             ],
             "findings": [
               {
@@ -13556,14 +13879,14 @@
             ],
             "kind": "review_acceptance",
             "page_id": 109,
-            "revision_id": 37616
+            "revision_id": 39978
           }
         ],
         "kind": "sgwiki_station_page",
         "page_id": 109,
         "redirects": [],
-        "revision_id": 37616,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=37616",
+        "revision_id": 39978,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39978",
         "title": "Choa Chu Kang station",
         "url": "https://sgwiki.miraheze.org/wiki/Choa_Chu_Kang_station"
       },
@@ -13865,8 +14188,24 @@
           "match_method": "station_code",
           "name": "City Hall",
           "route_ids": [
-            "EWL",
-            "NSL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33",
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS28",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "EW",
@@ -14016,8 +14355,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 120,
         "redirects": [],
-        "revision_id": 33852,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33852",
+        "revision_id": 41804,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41804",
         "title": "City Hall station",
         "url": "https://sgwiki.miraheze.org/wiki/City_Hall_station"
       },
@@ -14340,7 +14679,8 @@
           "match_method": "station_code",
           "name": "Clarke Quay",
           "route_ids": [
-            "NEL"
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "NE"
@@ -14684,7 +15024,13 @@
           "match_method": "station_code",
           "name": "Clementi",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -15043,7 +15389,13 @@
           "match_method": "station_code",
           "name": "Commonwealth",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -15180,8 +15532,8 @@
           "lta": {
             "BusStopCode": "67251",
             "Description": "Compassvale Stn Exit A",
-            "Latitude": 1.39442862205324,
-            "Longitude": 103.9003121852631,
+            "Latitude": 1.394628165,
+            "Longitude": 103.8999871,
             "RoadName": "Compassvale St"
           },
           "resolution": "unique_exit_label",
@@ -15201,8 +15553,8 @@
           "lta": {
             "BusStopCode": "67259",
             "Description": "Compassvale Stn Exit B",
-            "Latitude": 1.39465386086721,
-            "Longitude": 103.90046238900585,
+            "Latitude": 1.394742,
+            "Longitude": 103.900043,
             "RoadName": "Compassvale St"
           },
           "resolution": "unique_exit_label",
@@ -15397,8 +15749,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 506,
         "redirects": [],
-        "revision_id": 21165,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=21165",
+        "revision_id": 40512,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=40512",
         "title": "Compassvale station",
         "url": "https://sgwiki.miraheze.org/wiki/Compassvale_station"
       },
@@ -15646,8 +15998,8 @@
           "lta": {
             "BusStopCode": "65159",
             "Description": "Cove Stn Exit A",
-            "Latitude": 1.39856872266182,
-            "Longitude": 103.90665292741664,
+            "Latitude": 1.3991025,
+            "Longitude": 103.9060835,
             "RoadName": "Punggol Field"
           },
           "resolution": "unique_exit_label",
@@ -16022,13 +16374,24 @@
           "match_method": "station_code",
           "name": "Dakota",
           "route_ids": [
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "CCL_TSG_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC11",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC7_CC32"
           ],
           "route_names": [
             "CC"
@@ -16052,7 +16415,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Dakota",
       "operational_status": "active",
       "platforms": [
@@ -16118,8 +16486,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 271,
         "redirects": [],
-        "revision_id": 34527,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=34527",
+        "revision_id": 41838,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41838",
         "title": "Dakota station",
         "url": "https://sgwiki.miraheze.org/wiki/Dakota_station"
       },
@@ -16807,10 +17175,24 @@
           "match_method": "station_code",
           "name": "Dhoby Ghaut",
           "route_ids": [
-            "CCL_DBG_PER",
-            "CCL_DBG_SDM",
-            "NEL",
-            "NSL"
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC1_CC4",
+            "CCL_CC1_CC6",
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18",
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS28",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "CC",
@@ -16836,7 +17218,20 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 6
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        },
+        {
+          "kind": "rail_service_diagram",
+          "table": 3
+        },
+        {
+          "kind": "rail_service_diagram",
+          "table": 4
+        }
+      ],
       "name": "Dhoby Ghaut",
       "operational_status": "active",
       "platforms": [
@@ -17009,10 +17404,11 @@
         "contracts_applied": [
           {
             "evidence": [
-              "SgWiki groups the same Exit G with Exit E for The Atrium@Orchard and with Exit F for Macdonald House",
+              "SgWiki lists separate Exits E and G for The Atrium@Orchard, and separate Exits F and G for Macdonald House",
               "mrt-data-v2 operator comparison: SBS and SMRT each list one physical Exit G for Dhoby Ghaut",
-              "Human-reviewed rule: merge both SgWiki rows into one Exit G and retain both destination evidence strings",
-              "Human-reviewed decision: accept the NEL scope cell's trailing rowspan, pinned to revision 37293"
+              "Human-reviewed interpretation: MRT:E, MRT:F and MRT:G are three separate physical exit identities",
+              "Deterministic rule: de-duplicate only the repeated MRT:G identity; keep MRT:E and MRT:F separate and attach both destination rows to MRT:G",
+              "Human-reviewed decision: accept the NEL scope cell's trailing rowspan, pinned to revision 41955"
             ],
             "findings": [
               {
@@ -17030,14 +17426,14 @@
             ],
             "kind": "review_acceptance",
             "page_id": 119,
-            "revision_id": 37293
+            "revision_id": 41955
           }
         ],
         "kind": "sgwiki_station_page",
         "page_id": 119,
         "redirects": [],
-        "revision_id": 37293,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=37293",
+        "revision_id": 41955,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41955",
         "title": "Dhoby Ghaut station",
         "url": "https://sgwiki.miraheze.org/wiki/Dhoby_Ghaut_station"
       },
@@ -17200,7 +17596,13 @@
           "match_method": "station_code",
           "name": "Dover",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -17644,7 +18046,7 @@
           "match_method": "station_code",
           "name": "Downtown",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -18172,8 +18574,11 @@
           "match_method": "station_code",
           "name": "Esplanade",
           "route_ids": [
-            "CCL_DBG_PER",
-            "CCL_DBG_SDM"
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC1_CC4",
+            "CCL_CC1_CC6"
           ],
           "route_names": [
             "CC"
@@ -18197,7 +18602,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Esplanade",
       "operational_status": "active",
       "platforms": [
@@ -18263,8 +18673,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 282,
         "redirects": [],
-        "revision_id": 33575,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33575",
+        "revision_id": 41891,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41891",
         "title": "Esplanade station",
         "url": "https://sgwiki.miraheze.org/wiki/Esplanade_station"
       },
@@ -18501,7 +18911,13 @@
           "match_method": "station_code",
           "name": "Eunos",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -19078,8 +19494,10 @@
           "match_method": "station_code",
           "name": "Expo",
           "route_ids": [
-            "DTL",
-            "EWL_CGL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35",
+            "EWL_CGL_CG2_CG",
+            "EWL_CGL_CG_CG2"
           ],
           "route_names": [
             "DT",
@@ -20092,7 +20510,8 @@
           "match_method": "station_code",
           "name": "Farrer Park",
           "route_ids": [
-            "NEL"
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "NE"
@@ -20356,12 +20775,26 @@
           "match_method": "station_code",
           "name": "Farrer Road",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -20385,7 +20818,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Farrer Road",
       "operational_status": "active",
       "platforms": [
@@ -20451,8 +20889,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 293,
         "redirects": [],
-        "revision_id": 33980,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33980",
+        "revision_id": 41839,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41839",
         "title": "Farrer Road station",
         "url": "https://sgwiki.miraheze.org/wiki/Farrer_Road_station"
       },
@@ -20755,8 +21193,8 @@
           "lta": {
             "BusStopCode": "04331",
             "Description": "Bef Fort Canning Stn",
-            "Latitude": 1.29183939431601,
-            "Longitude": 103.84504089382705,
+            "Latitude": 1.29198,
+            "Longitude": 103.844962,
             "RoadName": "River Valley Rd"
           },
           "resolution": "unique_exit_label",
@@ -20877,7 +21315,7 @@
           "match_method": "station_code",
           "name": "Fort Canning",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -21163,7 +21601,16 @@
           "match_method": "station_code",
           "name": "Gardens by the Bay",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE22_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -21557,7 +22004,8 @@
           "match_method": "station_code",
           "name": "Geylang Bahru",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "DT"
@@ -21788,7 +22236,9 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [],
-          "destinations": [],
+          "destinations": [
+            "Kim Seng Road"
+          ],
           "id": "MRT:1",
           "inventory_evidence": "complete",
           "label": "1",
@@ -21799,11 +22249,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "1",
+              "label_cell_verbatim": "1 Kim Seng Road",
               "row": 2,
               "row_verbatim": [
-                "1",
-                "Kim Seng Road, Kim Seng Park, River Valley Primary School"
+                "1 Kim Seng Road",
+                "Kim Seng Park, River Valley Primary School"
               ],
               "table": 1
             }
@@ -21820,7 +22270,9 @@
           "bus_stop_codes": [
             "13121"
           ],
-          "destinations": [],
+          "destinations": [
+            "Great World Shopping Mall"
+          ],
           "id": "MRT:2",
           "inventory_evidence": "complete",
           "label": "2",
@@ -21831,11 +22283,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "2",
+              "label_cell_verbatim": "2 Great World Shopping Mall",
               "row": 3,
               "row_verbatim": [
-                "2",
-                "Great World Shopping Mall"
+                "2 Great World Shopping Mall",
+                ""
               ],
               "table": 1
             }
@@ -21852,7 +22304,9 @@
           "bus_stop_codes": [
             "13119"
           ],
-          "destinations": [],
+          "destinations": [
+            "Great World Shopping Mall (L2 via overhead bridge)"
+          ],
           "id": "MRT:3",
           "inventory_evidence": "complete",
           "label": "3",
@@ -21863,11 +22317,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "3",
+              "label_cell_verbatim": "3 Great World Shopping Mall (L2 via overhead bridge)",
               "row": 4,
               "row_verbatim": [
-                "3",
-                "Great World Shopping Mall (L2 via overhead bridge)"
+                "3 Great World Shopping Mall (L2 via overhead bridge)",
+                ""
               ],
               "table": 1
             }
@@ -21884,7 +22338,9 @@
           "bus_stop_codes": [
             "13079"
           ],
-          "destinations": [],
+          "destinations": [
+            "River Valley Green"
+          ],
           "id": "MRT:4",
           "inventory_evidence": "complete",
           "label": "4",
@@ -21895,11 +22351,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "4",
+              "label_cell_verbatim": "4 River Valley Green",
               "row": 5,
               "row_verbatim": [
-                "4",
-                "River Valley Road, River Valley Green"
+                "4 River Valley Green",
+                "River Valley Road"
               ],
               "table": 1
             }
@@ -21916,7 +22372,9 @@
           "bus_stop_codes": [
             "13071"
           ],
-          "destinations": [],
+          "destinations": [
+            "River Valley Road"
+          ],
           "id": "MRT:5",
           "inventory_evidence": "complete",
           "label": "5",
@@ -21927,11 +22385,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "5",
+              "label_cell_verbatim": "5 River Valley Road",
               "row": 6,
               "row_verbatim": [
-                "5",
-                "River Valley Road"
+                "5 River Valley Road",
+                ""
               ],
               "table": 1
             }
@@ -21946,7 +22404,9 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [],
-          "destinations": [],
+          "destinations": [
+            "Great World Shopping Mall (B2)"
+          ],
           "id": "MRT:6",
           "inventory_evidence": "complete",
           "label": "6",
@@ -21957,11 +22417,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "6",
+              "label_cell_verbatim": "6 Great World Shopping Mall (B2)",
               "row": 7,
               "row_verbatim": [
-                "6",
-                "Great World Shopping Mall (B2)"
+                "6 Great World Shopping Mall (B2)",
+                ""
               ],
               "table": 1
             }
@@ -21981,7 +22441,15 @@
           "match_method": "station_code",
           "name": "Great World",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -22071,8 +22539,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 393,
         "redirects": [],
-        "revision_id": 36689,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36689",
+        "revision_id": 38965,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=38965",
         "title": "Great World station",
         "url": "https://sgwiki.miraheze.org/wiki/Great_World_station"
       },
@@ -22241,7 +22709,10 @@
           "match_method": "station_code",
           "name": "Gul Circle",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -22746,13 +23217,24 @@
           "match_method": "station_code",
           "name": "HarbourFront",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "NEL"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32",
+            "NEL_NE1_NE18"
           ],
           "route_names": [
             "CC",
@@ -22897,8 +23379,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 264,
         "redirects": [],
-        "revision_id": 37292,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=37292",
+        "revision_id": 41034,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41034",
         "title": "HarbourFront station",
         "url": "https://sgwiki.miraheze.org/wiki/HarbourFront_station"
       },
@@ -23223,7 +23705,15 @@
           "match_method": "station_code",
           "name": "Havelock",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -23488,13 +23978,26 @@
           "match_method": "station_code",
           "name": "Haw Par Villa",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -23584,8 +24087,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 286,
         "redirects": [],
-        "revision_id": 33515,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33515",
+        "revision_id": 41030,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41030",
         "title": "Haw Par Villa station",
         "url": "https://sgwiki.miraheze.org/wiki/Haw_Par_Villa_station"
       },
@@ -23663,7 +24166,7 @@
           "resolved_exit_ids": [
             "MRT:B"
           ],
-          "service_verbatim": "973",
+          "service_verbatim": "873 973",
           "source_row": 3,
           "stop_verbatim": "42991 Bef Hillview Stn Exit B Upp Bt Timah Rd"
         },
@@ -23822,7 +24325,9 @@
           "match_method": "station_code",
           "name": "Hillview",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -23912,8 +24417,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 379,
         "redirects": [],
-        "revision_id": 37673,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=37673",
+        "revision_id": 39990,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39990",
         "title": "Hillview station",
         "url": "https://sgwiki.miraheze.org/wiki/Hillview_station"
       },
@@ -24017,8 +24522,8 @@
           "lta": {
             "BusStopCode": "11401",
             "Description": "Holland V Stn/Blk 12",
-            "Latitude": 1.30906722197973,
-            "Longitude": 103.79507444402137,
+            "Latitude": 1.3089815,
+            "Longitude": 103.7949975,
             "RoadName": "Holland Ave"
           },
           "resolution": "unique_exit_label",
@@ -24157,12 +24662,26 @@
           "match_method": "station_code",
           "name": "Holland Village",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -24186,7 +24705,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Holland Village",
       "operational_status": "active",
       "platforms": [
@@ -24252,8 +24776,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 291,
         "redirects": [],
-        "revision_id": 33979,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33979",
+        "revision_id": 41840,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41840",
         "title": "Holland Village station",
         "url": "https://sgwiki.miraheze.org/wiki/Holland_Village_station"
       },
@@ -24378,8 +24902,8 @@
           "lta": {
             "BusStopCode": "64389",
             "Description": "Blk 522",
-            "Latitude": 1.37313809346006,
-            "Longitude": 103.89156818388481,
+            "Latitude": 1.373103,
+            "Longitude": 103.891719,
             "RoadName": "Hougang Ave 10"
           },
           "resolution": "unique_exit_label",
@@ -24516,7 +25040,8 @@
           "match_method": "station_code",
           "name": "Hougang",
           "route_ids": [
-            "NEL"
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "NE"
@@ -24656,7 +25181,7 @@
           "resolved_exit_ids": [
             "MRT:1"
           ],
-          "service_verbatim": "67 75 170 178 184 961 961M 973",
+          "service_verbatim": "67 75 170 178 184 873 961 961M 973",
           "source_row": 2,
           "stop_verbatim": "43041 Hume Stn Exit 1 Upp Bt Timah Rd"
         },
@@ -24698,7 +25223,7 @@
           "resolved_exit_ids": [
             "MRT:2"
           ],
-          "service_verbatim": "173 653 973",
+          "service_verbatim": "173 653 873 973",
           "source_row": 4,
           "stop_verbatim": "43821 Bef Hume Stn Exit 2 Hume Ave"
         },
@@ -24814,7 +25339,9 @@
           "match_method": "station_code",
           "name": "Hume",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -24904,8 +25431,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 378,
         "redirects": [],
-        "revision_id": 37672,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=37672",
+        "revision_id": 39989,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39989",
         "title": "Hume station",
         "url": "https://sgwiki.miraheze.org/wiki/Hume_station"
       },
@@ -24962,8 +25489,8 @@
           "lta": {
             "BusStopCode": "07529",
             "Description": "Jln Besar Stn Exit A",
-            "Latitude": 1.30431906266143,
-            "Longitude": 103.85501564257024,
+            "Latitude": 1.304534722,
+            "Longitude": 103.8547894,
             "RoadName": "Jln Besar"
           },
           "resolution": "unique_exit_label",
@@ -24992,7 +25519,9 @@
           "bus_stop_codes": [
             "07529"
           ],
-          "destinations": [],
+          "destinations": [
+            "Jalan Besar"
+          ],
           "id": "MRT:A",
           "inventory_evidence": "complete",
           "label": "A",
@@ -25003,11 +25532,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "A",
+              "label_cell_verbatim": "A Jalan Besar",
               "row": 2,
               "row_verbatim": [
-                "A",
-                "Jalan Besar, Weld Road, Sim Lim Tower"
+                "A Jalan Besar",
+                "Weld Road, Sim Lim Tower"
               ],
               "table": 1
             }
@@ -25022,7 +25551,9 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [],
-          "destinations": [],
+          "destinations": [
+            "Jalan Besar"
+          ],
           "id": "MRT:B",
           "inventory_evidence": "complete",
           "label": "B",
@@ -25033,11 +25564,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "B",
+              "label_cell_verbatim": "B Jalan Besar",
               "row": 3,
               "row_verbatim": [
-                "B",
-                "Jalan Besar, Upper Weld Road, Veerasamy Road"
+                "B Jalan Besar",
+                "Upper Weld Road, Veerasamy Road"
               ],
               "table": 1
             }
@@ -25057,7 +25588,7 @@
           "match_method": "station_code",
           "name": "Jalan Besar",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -25147,8 +25678,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 326,
         "redirects": [],
-        "revision_id": 33878,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33878",
+        "revision_id": 39028,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39028",
         "title": "Jalan Besar station",
         "url": "https://sgwiki.miraheze.org/wiki/Jalan_Besar_station"
       },
@@ -25600,7 +26131,13 @@
           "match_method": "station_code",
           "name": "Joo Koon",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -26039,8 +26576,23 @@
           "match_method": "station_code",
           "name": "Jurong East",
           "route_ids": [
-            "EWL",
-            "NSL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33",
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS1_NS5",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS5_NS1"
           ],
           "route_names": [
             "EW",
@@ -26627,8 +27179,8 @@
           "lta": {
             "BusStopCode": "72049",
             "Description": "Opp Blk 660A CP",
-            "Latitude": 1.33490332816583,
-            "Longitude": 103.90747460787432,
+            "Latitude": 1.334923,
+            "Longitude": 103.907588,
             "RoadName": "Kaki Bt Ave 1"
           },
           "resolution": "unique_exit_label",
@@ -26730,7 +27282,8 @@
           "match_method": "station_code",
           "name": "Kaki Bukit",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "DT"
@@ -27042,7 +27595,13 @@
           "match_method": "station_code",
           "name": "Kallang",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -27396,8 +27955,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 508,
         "redirects": [],
-        "revision_id": 24725,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=24725",
+        "revision_id": 40515,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=40515",
         "title": "Kangkar station",
         "url": "https://sgwiki.miraheze.org/wiki/Kangkar_station"
       },
@@ -27573,7 +28132,15 @@
           "match_method": "station_code",
           "name": "Katong Park",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE22_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -28084,7 +28651,13 @@
           "match_method": "station_code",
           "name": "Kembangan",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -28250,8 +28823,8 @@
           "lta": {
             "BusStopCode": "18339",
             "Description": "Opp Kent Ridge Stn Exit A",
-            "Latitude": 1.29506450651125,
-            "Longitude": 103.78455508578391,
+            "Latitude": 1.294976,
+            "Longitude": 103.7845815,
             "RoadName": "Lower Kent Ridge Rd"
           },
           "resolution": "unique_exit_label",
@@ -28495,13 +29068,26 @@
           "match_method": "station_code",
           "name": "Kent Ridge",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -28591,8 +29177,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 292,
         "redirects": [],
-        "revision_id": 36645,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36645",
+        "revision_id": 41023,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41023",
         "title": "Kent Ridge station",
         "url": "https://sgwiki.miraheze.org/wiki/Kent_Ridge_station"
       },
@@ -28643,7 +29229,7 @@
           ],
           "service_verbatim": "10 30 57 80 97 100 131 145",
           "source_row": 2,
-          "stop_verbatim": "14081 Keppel Stn Exit 3 Keppel Rd"
+          "stop_verbatim": "14081 Keppel Stn Exit 3 1 Keppel Rd"
         },
         {
           "bus_stop_code": "14089",
@@ -28664,15 +29250,15 @@
           ],
           "service_verbatim": "10 30 57 80 97 100 131 145",
           "source_row": 3,
-          "stop_verbatim": "14089 Keppel Stn Exit 2 Keppel Rd"
+          "stop_verbatim": "14089 Keppel Stn Exit 2 1 Keppel Rd"
         }
       ],
-      "catalog_status": "operator_addition_requires_review",
+      "catalog_status": "v1_baseline",
       "codes": [
         "CC30"
       ],
       "excluded_bus_links": [],
-      "exit_inventory_status": "complete_reviewed_override",
+      "exit_inventory_status": "complete",
       "exits": [
         {
           "accessibility": {
@@ -28682,16 +29268,28 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [],
-          "destinations": [],
+          "destinations": [
+            "Keppel Road"
+          ],
           "id": "MRT:1",
-          "inventory_evidence": "complete_reviewed_override",
+          "inventory_evidence": "complete",
           "label": "1",
           "operating_hours": [],
           "operating_status": "not_stated",
           "scopes": [
             "MRT"
           ],
-          "source_rows": [],
+          "source_rows": [
+            {
+              "label_cell_verbatim": "1 Keppel Road",
+              "row": 2,
+              "row_verbatim": [
+                "1 Keppel Road",
+                ""
+              ],
+              "table": 1
+            }
+          ],
           "status_notes": []
         },
         {
@@ -28704,16 +29302,28 @@
           "bus_stop_codes": [
             "14089"
           ],
-          "destinations": [],
+          "destinations": [
+            "Keppel Road"
+          ],
           "id": "MRT:2",
-          "inventory_evidence": "complete_reviewed_override",
+          "inventory_evidence": "complete",
           "label": "2",
           "operating_hours": [],
           "operating_status": "not_stated",
           "scopes": [
             "MRT"
           ],
-          "source_rows": [],
+          "source_rows": [
+            {
+              "label_cell_verbatim": "2 Keppel Road",
+              "row": 3,
+              "row_verbatim": [
+                "2 Keppel Road",
+                "Keppel Distripark"
+              ],
+              "table": 1
+            }
+          ],
           "status_notes": []
         },
         {
@@ -28726,16 +29336,28 @@
           "bus_stop_codes": [
             "14081"
           ],
-          "destinations": [],
+          "destinations": [
+            "Keppel Road"
+          ],
           "id": "MRT:3",
-          "inventory_evidence": "complete_reviewed_override",
+          "inventory_evidence": "complete",
           "label": "3",
           "operating_hours": [],
           "operating_status": "not_stated",
           "scopes": [
             "MRT"
           ],
-          "source_rows": [],
+          "source_rows": [
+            {
+              "label_cell_verbatim": "3 Keppel Road",
+              "row": 4,
+              "row_verbatim": [
+                "3 Keppel Road",
+                ""
+              ],
+              "table": 1
+            }
+          ],
           "status_notes": []
         }
       ],
@@ -28751,11 +29373,20 @@
           "match_method": "station_code",
           "name": "Keppel",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -28779,7 +29410,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Keppel",
       "operational_status": "active",
       "platforms": [
@@ -28841,23 +29477,12 @@
       "reviews": [],
       "source": {
         "api_url": "https://sgwiki.miraheze.org/w/api.php?action=parse&page=Keppel+station&prop=text%7Crevid&format=json&formatversion=2&redirects=1",
-        "contracts_applied": [
-          {
-            "evidence": [
-              "Human-reviewed decision: Keppel has MRT Exits 1-3",
-              "mrt-data-v2 comparison: OneMap and OSM list 1-3; SgWiki bus evidence and the SMRT page list 2-3"
-            ],
-            "kind": "exit_inventory_override",
-            "page_id": 279,
-            "source_inventory_evidence_kind": "bus_connections_only",
-            "source_inventory_status": "partial"
-          }
-        ],
+        "contracts_applied": [],
         "kind": "sgwiki_station_page",
         "page_id": 279,
         "redirects": [],
-        "revision_id": 35864,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=35864",
+        "revision_id": 41852,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41852",
         "title": "Keppel station",
         "url": "https://sgwiki.miraheze.org/wiki/Keppel_station"
       },
@@ -28889,7 +29514,7 @@
           ],
           "lta": {
             "BusStopCode": "59041",
-            "Description": "Bef Khatib Stn",
+            "Description": "Khatib Stn Exit A",
             "Latitude": 1.41625420109094,
             "Longitude": 103.832591612732,
             "RoadName": "Yishun Ave 2"
@@ -28910,7 +29535,7 @@
           ],
           "lta": {
             "BusStopCode": "59049",
-            "Description": "Opp Khatib Stn",
+            "Description": "Opp Khatib Stn Exit A",
             "Latitude": 1.41700998157675,
             "Longitude": 103.83339984073773,
             "RoadName": "Yishun Ave 2"
@@ -29122,7 +29747,20 @@
           "match_method": "station_code",
           "name": "Khatib",
           "route_ids": [
-            "NSL"
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS1",
+            "NSL_NS16_NS13",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -29217,8 +29855,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 94,
         "redirects": [],
-        "revision_id": 34389,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=34389",
+        "revision_id": 39805,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39805",
         "title": "Khatib station",
         "url": "https://sgwiki.miraheze.org/wiki/Khatib_station"
       },
@@ -29389,7 +30027,9 @@
           "match_method": "station_code",
           "name": "King Albert Park",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -29570,7 +30210,9 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [],
-          "destinations": [],
+          "destinations": [
+            "Upper Serangoon Road"
+          ],
           "id": "MRT:A",
           "inventory_evidence": "complete",
           "label": "A",
@@ -29581,11 +30223,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "A",
+              "label_cell_verbatim": "A Upper Serangoon Road",
               "row": 2,
               "row_verbatim": [
-                "A",
-                "Upper Serangoon Road"
+                "A Upper Serangoon Road",
+                ""
               ],
               "table": 1
             }
@@ -29604,7 +30246,9 @@
           "bus_stop_codes": [
             "63031"
           ],
-          "destinations": [],
+          "destinations": [
+            "Upper Serangoon Road"
+          ],
           "id": "MRT:B",
           "inventory_evidence": "complete",
           "label": "B",
@@ -29615,11 +30259,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "B",
+              "label_cell_verbatim": "B Upper Serangoon Road",
               "row": 3,
               "row_verbatim": [
-                "B",
-                "Upper Serangoon Road, Lowland Road"
+                "B Upper Serangoon Road",
+                "Lowland Road"
               ],
               "table": 1
             }
@@ -29636,7 +30280,9 @@
           "bus_stop_codes": [
             "63039"
           ],
-          "destinations": [],
+          "destinations": [
+            "Heartland Mall-Kovan"
+          ],
           "id": "MRT:C",
           "inventory_evidence": "complete",
           "label": "C",
@@ -29647,11 +30293,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "C",
+              "label_cell_verbatim": "C Heartland Mall-Kovan",
               "row": 4,
               "row_verbatim": [
-                "C",
-                "Heartland Mall-Kovan"
+                "C Heartland Mall-Kovan",
+                ""
               ],
               "table": 1
             }
@@ -29671,7 +30317,8 @@
           "match_method": "station_code",
           "name": "Kovan",
           "route_ids": [
-            "NEL"
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "NE"
@@ -29761,8 +30408,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 241,
         "redirects": [],
-        "revision_id": 36700,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36700",
+        "revision_id": 39016,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39016",
         "title": "Kovan station",
         "url": "https://sgwiki.miraheze.org/wiki/Kovan_station"
       },
@@ -29984,7 +30631,16 @@
           "match_method": "station_code",
           "name": "Kranji",
           "route_ids": [
-            "NSL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -30079,8 +30735,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 101,
         "redirects": [],
-        "revision_id": 36241,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36241",
+        "revision_id": 39798,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39798",
         "title": "Kranji station",
         "url": "https://sgwiki.miraheze.org/wiki/Kranji_station"
       },
@@ -30488,12 +31144,23 @@
           "match_method": "station_code",
           "name": "Labrador Park",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -30583,8 +31250,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 283,
         "redirects": [],
-        "revision_id": 33457,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33457",
+        "revision_id": 41032,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41032",
         "title": "Labrador Park station",
         "url": "https://sgwiki.miraheze.org/wiki/Labrador_Park_station"
       },
@@ -30764,7 +31431,13 @@
           "match_method": "station_code",
           "name": "Lakeside",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -30859,8 +31532,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 169,
         "redirects": [],
-        "revision_id": 29014,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=29014",
+        "revision_id": 41203,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41203",
         "title": "Lakeside station",
         "url": "https://sgwiki.miraheze.org/wiki/Lakeside_station"
       },
@@ -31023,7 +31696,13 @@
           "match_method": "station_code",
           "name": "Lavender",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -31726,7 +32405,15 @@
           "match_method": "station_code",
           "name": "Lentor",
           "route_ids": [
-            "TEL"
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE1_TE9",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29"
           ],
           "route_names": [
             "TE"
@@ -32146,8 +32833,10 @@
           "match_method": "station_code",
           "name": "Little India",
           "route_ids": [
-            "DTL",
-            "NEL"
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35",
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "DT",
@@ -32355,8 +33044,8 @@
           "lta": {
             "BusStopCode": "66399",
             "Description": "Opp Lor Chuan Stn Exit B",
-            "Latitude": 1.351539,
-            "Longitude": 103.863131,
+            "Latitude": 1.3515205,
+            "Longitude": 103.8632355,
             "RoadName": "S'goon Ave 3"
           },
           "resolution": "unique_exit_label",
@@ -32500,13 +33189,28 @@
           "match_method": "station_code",
           "name": "Lorong Chuan",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -32530,7 +33234,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Lorong Chuan",
       "operational_status": "active",
       "platforms": [
@@ -32596,8 +33305,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 294,
         "redirects": [],
-        "revision_id": 34397,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=34397",
+        "revision_id": 41912,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41912",
         "title": "Lorong Chuan station",
         "url": "https://sgwiki.miraheze.org/wiki/Lorong_Chuan_station"
       },
@@ -32980,14 +33689,29 @@
           "match_method": "station_code",
           "name": "MacPherson",
           "route_ids": [
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "CCL_TSG_PMN_1ST_TRAIN",
-            "DTL"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC11",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32",
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "CC",
@@ -33012,7 +33736,16 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 4
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        },
+        {
+          "kind": "rail_service_diagram",
+          "table": 3
+        }
+      ],
       "name": "MacPherson",
       "operational_status": "active",
       "platforms": [
@@ -33132,8 +33865,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 295,
         "redirects": [],
-        "revision_id": 33503,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33503",
+        "revision_id": 41843,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41843",
         "title": "MacPherson station",
         "url": "https://sgwiki.miraheze.org/wiki/MacPherson_station"
       },
@@ -33462,12 +34195,38 @@
           "match_method": "station_code",
           "name": "Marina Bay",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "NSL",
-            "TEL"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC31",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS28",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28",
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "CC",
@@ -33493,7 +34252,20 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 6
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        },
+        {
+          "kind": "rail_service_diagram",
+          "table": 3
+        },
+        {
+          "kind": "rail_service_diagram",
+          "table": 4
+        }
+      ],
       "name": "Marina Bay",
       "operational_status": "active",
       "platforms": [
@@ -33667,8 +34439,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 122,
         "redirects": [],
-        "revision_id": 35863,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=35863",
+        "revision_id": 41886,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41886",
         "title": "Marina Bay station",
         "url": "https://sgwiki.miraheze.org/wiki/Marina_Bay_station"
       },
@@ -33837,7 +34609,15 @@
           "match_method": "station_code",
           "name": "Marina South Pier",
           "route_ids": [
-            "NSL"
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS28",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -34270,7 +35050,15 @@
           "match_method": "station_code",
           "name": "Marine Parade",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE22_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -34788,7 +35576,14 @@
           "match_method": "station_code",
           "name": "Marine Terrace",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE22_TE29",
+            "TEL_TE27_TE29",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -34912,8 +35707,8 @@
           "lta": {
             "BusStopCode": "46521",
             "Description": "Marsiling Stn",
-            "Latitude": 1.43237833345523,
-            "Longitude": 103.77429333367095,
+            "Latitude": 1.432412,
+            "Longitude": 103.7744175,
             "RoadName": "Woodlands Ave 3"
           },
           "resolution": "unique_exit_label",
@@ -35099,7 +35894,16 @@
           "match_method": "station_code",
           "name": "Marsiling",
           "route_ids": [
-            "NSL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -35194,8 +35998,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 100,
         "redirects": [],
-        "revision_id": 36253,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36253",
+        "revision_id": 39799,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39799",
         "title": "Marsiling station",
         "url": "https://sgwiki.miraheze.org/wiki/Marsiling_station"
       },
@@ -35288,7 +36092,7 @@
           ],
           "service_verbatim": "410G",
           "source_row": 4,
-          "stop_verbatim": "53311 Opp Bosch Bishan St 21"
+          "stop_verbatim": "53311 Opp Bosch 1 Bishan St 21"
         },
         {
           "bus_stop_code": "53319",
@@ -35309,7 +36113,7 @@
           ],
           "service_verbatim": "410W",
           "source_row": 5,
-          "stop_verbatim": "53319 Bosch Bishan St 21"
+          "stop_verbatim": "53319 Bosch 1 Bishan St 21"
         }
       ],
       "catalog_status": "v1_baseline",
@@ -35404,13 +36208,28 @@
           "match_method": "station_code",
           "name": "Marymount",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -35434,7 +36253,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Marymount",
       "operational_status": "active",
       "platforms": [
@@ -35500,8 +36324,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 269,
         "redirects": [],
-        "revision_id": 33983,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33983",
+        "revision_id": 41917,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41917",
         "title": "Marymount station",
         "url": "https://sgwiki.miraheze.org/wiki/Marymount_station"
       },
@@ -35557,7 +36381,7 @@
           ],
           "lta": {
             "BusStopCode": "70161",
-            "Description": "Opp Mattar Stn Exit A",
+            "Description": "Mattar Stn Exit A",
             "Latitude": 1.327297,
             "Longitude": 103.882484,
             "RoadName": "Merpati Rd"
@@ -35680,7 +36504,8 @@
           "match_method": "station_code",
           "name": "Mattar",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "DT"
@@ -36022,7 +36847,15 @@
           "match_method": "station_code",
           "name": "Maxwell",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -36498,7 +37331,15 @@
           "match_method": "station_code",
           "name": "Mayflower",
           "route_ids": [
-            "TEL"
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE1_TE9",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29"
           ],
           "route_names": [
             "TE"
@@ -36910,8 +37751,8 @@
           "lta": {
             "BusStopCode": "80149",
             "Description": "S.A. Deaf",
-            "Latitude": 1.3074963710946,
-            "Longitude": 103.8798058337351,
+            "Latitude": 1.307552,
+            "Longitude": 103.8796625,
             "RoadName": "Mountbatten Rd"
           },
           "resolution": "unique_exit_label",
@@ -37099,13 +37940,24 @@
           "match_method": "station_code",
           "name": "Mountbatten",
           "route_ids": [
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "CCL_TSG_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC11",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC7_CC32"
           ],
           "route_names": [
             "CC"
@@ -37129,7 +37981,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Mountbatten",
       "operational_status": "active",
       "platforms": [
@@ -37195,8 +38052,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 270,
         "redirects": [],
-        "revision_id": 33785,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33785",
+        "revision_id": 41903,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41903",
         "title": "Mountbatten station",
         "url": "https://sgwiki.miraheze.org/wiki/Mountbatten_station"
       },
@@ -37251,8 +38108,8 @@
           "lta": {
             "BusStopCode": "13019",
             "Description": "Napier Stn Exit 1",
-            "Latitude": 1.3067380217198,
-            "Longitude": 103.82013079894885,
+            "Latitude": 1.306923,
+            "Longitude": 103.819466,
             "RoadName": "Napier Rd"
           },
           "resolution": "unique_exit_label",
@@ -37373,7 +38230,15 @@
           "match_method": "station_code",
           "name": "Napier",
           "route_ids": [
-            "TEL"
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -37743,8 +38608,21 @@
           "match_method": "station_code",
           "name": "Newton",
           "route_ids": [
-            "DTL",
-            "NSL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35",
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "DT",
@@ -38316,13 +39194,25 @@
           "match_method": "station_code",
           "name": "Nicoll Highway",
           "route_ids": [
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_DBG_SDM",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "CCL_TSG_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC1_CC6",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC11",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC6",
+            "CCL_CC6_CC9"
           ],
           "route_names": [
             "CC"
@@ -38346,7 +39236,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Nicoll Highway",
       "operational_status": "active",
       "platforms": [
@@ -38412,8 +39307,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 288,
         "redirects": [],
-        "revision_id": 35030,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=35030",
+        "revision_id": 41876,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41876",
         "title": "Nicoll Highway station",
         "url": "https://sgwiki.miraheze.org/wiki/Nicoll_Highway_station"
       },
@@ -38546,7 +39441,7 @@
           "alternative_exits": [],
           "bus_stop_codes": [],
           "destinations": [
-            "Sinaran Drive"
+            "Square 2"
           ],
           "id": "MRT:A",
           "inventory_evidence": "complete",
@@ -38558,11 +39453,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "A Sinaran Drive",
+              "label_cell_verbatim": "A Square 2",
               "row": 2,
               "row_verbatim": [
-                "A Sinaran Drive",
-                "Tan Tock Seng Hospital, Square 2"
+                "A Square 2",
+                "Tan Tock Seng Hospital"
               ],
               "table": 1
             }
@@ -38583,7 +39478,7 @@
             "50038"
           ],
           "destinations": [
-            "Thomson Road"
+            "Novena Square"
           ],
           "id": "MRT:B",
           "inventory_evidence": "complete",
@@ -38595,11 +39490,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "B Thomson Road",
+              "label_cell_verbatim": "B Novena Square",
               "row": 3,
               "row_verbatim": [
-                "B Thomson Road",
-                "Novena Square"
+                "B Novena Square",
+                ""
               ],
               "table": 1
             }
@@ -38619,7 +39514,18 @@
           "match_method": "station_code",
           "name": "Novena",
           "route_ids": [
-            "NSL"
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -38709,8 +39615,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 115,
         "redirects": [],
-        "revision_id": 37879,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=37879",
+        "revision_id": 39810,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39810",
         "title": "Novena station",
         "url": "https://sgwiki.miraheze.org/wiki/Novena_station"
       },
@@ -38751,8 +39657,8 @@
           "lta": {
             "BusStopCode": "65319",
             "Description": "Oasis Stn Exit A",
-            "Latitude": 1.40257805553795,
-            "Longitude": 103.91244500001986,
+            "Latitude": 1.4028145,
+            "Longitude": 103.912182,
             "RoadName": "Punggol Dr"
           },
           "resolution": "unique_exit_label",
@@ -39034,8 +39940,8 @@
           "lta": {
             "BusStopCode": "18059",
             "Description": "Opp one-north Stn",
-            "Latitude": 1.29849138898115,
-            "Longitude": 103.78720666698497,
+            "Latitude": 1.298505,
+            "Longitude": 103.787282,
             "RoadName": "Ayer Rajah Ave"
           },
           "resolution": "unique_exit_label",
@@ -39247,12 +40153,26 @@
           "match_method": "station_code",
           "name": "one-north",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -39347,8 +40267,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 285,
         "redirects": [],
-        "revision_id": 33845,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33845",
+        "revision_id": 41834,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41834",
         "title": "One-north station",
         "url": "https://sgwiki.miraheze.org/wiki/one-north_station"
       },
@@ -40029,8 +40949,27 @@
           "match_method": "station_code",
           "name": "Orchard",
           "route_ids": [
-            "NSL",
-            "TEL"
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS28",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28",
+            "TEL_TE14_TE29",
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "NS",
@@ -40429,7 +41368,15 @@
           "match_method": "station_code",
           "name": "Orchard Boulevard",
           "route_ids": [
-            "TEL"
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -41025,9 +41972,25 @@
           "match_method": "station_code",
           "name": "Outram Park",
           "route_ids": [
-            "EWL",
-            "NEL",
-            "TEL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33",
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18",
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "EW",
@@ -41431,13 +42394,26 @@
           "match_method": "station_code",
           "name": "Pasir Panjang",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -41527,8 +42503,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 287,
         "redirects": [],
-        "revision_id": 33514,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33514",
+        "revision_id": 41031,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41031",
         "title": "Pasir Panjang station",
         "url": "https://sgwiki.miraheze.org/wiki/Pasir_Panjang_station"
       },
@@ -41793,7 +42769,13 @@
           "match_method": "station_code",
           "name": "Pasir Ris",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW3_EW1",
+            "EWL_EW4_EW1"
           ],
           "route_names": [
             "EW"
@@ -42254,14 +43236,34 @@
           "match_method": "station_code",
           "name": "Paya Lebar",
           "route_ids": [
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "CCL_TSG_PMN_1ST_TRAIN",
-            "EWL"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC11",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32",
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "CC",
@@ -42469,7 +43471,7 @@
           {
             "evidence": [
               "Human-reviewed decision: split source platform group C/D into individual records while preserving source_group_label",
-              "Pinned to SgWiki Paya Lebar station revision 34530"
+              "SgWiki revision 41822 groups C/D on B2 with the heading “No train service at this platform”. Retain that source heading for both faces; do not infer permanent closure."
             ],
             "findings": [
               {
@@ -42479,14 +43481,14 @@
             ],
             "kind": "review_acceptance",
             "page_id": 200,
-            "revision_id": 34530
+            "revision_id": 41822
           }
         ],
         "kind": "sgwiki_station_page",
         "page_id": 200,
         "redirects": [],
-        "revision_id": 34530,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=34530",
+        "revision_id": 41822,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41822",
         "title": "Paya Lebar station",
         "url": "https://sgwiki.miraheze.org/wiki/Paya_Lebar_station"
       },
@@ -43182,8 +44184,8 @@
           "lta": {
             "BusStopCode": "22521",
             "Description": "Pioneer Stn Exit A",
-            "Latitude": 1.33741647896432,
-            "Longitude": 103.69776790191162,
+            "Latitude": 1.3374935,
+            "Longitude": 103.6978415,
             "RoadName": "Jurong West St 63"
           },
           "resolution": "unique_exit_label",
@@ -43304,7 +44306,13 @@
           "match_method": "station_code",
           "name": "Pioneer",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -43620,7 +44628,8 @@
           "match_method": "station_code",
           "name": "Potong Pasir",
           "route_ids": [
-            "NEL"
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "NE"
@@ -43771,10 +44780,31 @@
           "stop_verbatim": "03222 Hub Synergy Pt Anson Rd"
         },
         {
+          "bus_stop_code": "03241",
+          "evidence": [],
+          "exit_labels": [
+            "1"
+          ],
+          "lta": {
+            "BusStopCode": "03241",
+            "Description": "Aft Enggor St",
+            "Latitude": 1.27456,
+            "Longitude": 103.84537,
+            "RoadName": "Anson Rd"
+          },
+          "resolution": "unique_exit_label",
+          "resolved_exit_ids": [
+            "MRT:1"
+          ],
+          "service_verbatim": "651 652 653 654 655 656 657 660 660M 661 663 665 666 667 668 670 671 672 674",
+          "source_row": 3,
+          "stop_verbatim": "03241 Aft Enggor St 1 Anson Rd"
+        },
+        {
           "bus_stop_code": "03223",
           "evidence": [],
           "exit_labels": [
-            "2"
+            "1"
           ],
           "lta": {
             "BusStopCode": "03223",
@@ -43785,11 +44815,32 @@
           },
           "resolution": "unique_exit_label",
           "resolved_exit_ids": [
-            "MRT:2"
+            "MRT:1"
           ],
           "service_verbatim": "57 131 167 186 400 673 675 676 677 678 679 970",
-          "source_row": 3,
+          "source_row": 4,
           "stop_verbatim": "03223 Tanjong Pagar Stn Exit C Anson Rd"
+        },
+        {
+          "bus_stop_code": "03217",
+          "evidence": [],
+          "exit_labels": [
+            "2"
+          ],
+          "lta": {
+            "BusStopCode": "03217",
+            "Description": "Aft Straits Blvd",
+            "Latitude": 1.27552218897645,
+            "Longitude": 103.8479443674916,
+            "RoadName": "Shenton Way"
+          },
+          "resolution": "unique_exit_label",
+          "resolved_exit_ids": [
+            "MRT:2"
+          ],
+          "service_verbatim": "10 10e 70 97 97e 100 131 502 649 673 674 675 676 677 678 679",
+          "source_row": 5,
+          "stop_verbatim": "03217 Aft Straits Blvd Shenton Way"
         },
         {
           "bus_stop_code": "03218",
@@ -43800,8 +44851,8 @@
           "lta": {
             "BusStopCode": "03218",
             "Description": "Prince Edward Rd Stn Exit 2",
-            "Latitude": 1.2740788888387,
-            "Longitude": 103.84687388890413,
+            "Latitude": 1.2742335,
+            "Longitude": 103.846903,
             "RoadName": "Shenton Way"
           },
           "resolution": "unique_exit_label",
@@ -43809,8 +44860,8 @@
             "MRT:2"
           ],
           "service_verbatim": "70 106 107 121 130 133 167 186 196 196e 400 646 648 650 651 652 653 654 655 656 657 660 660M 661 663 665 666 667 668 670 671 672 970",
-          "source_row": 4,
-          "stop_verbatim": "03218 Prince Edward Rd Stn Exit 2 Shenton Way"
+          "source_row": 6,
+          "stop_verbatim": "03218 Prince Edward Rd Stn Exit 2 1 Shenton Way"
         },
         {
           "bus_stop_code": "03239",
@@ -43830,16 +44881,16 @@
             "MRT:2"
           ],
           "service_verbatim": "70 106 107 121 130 133 186 400 970",
-          "source_row": 5,
+          "source_row": 7,
           "stop_verbatim": "03239 Shenton Way Ter Shenton Way"
         }
       ],
-      "catalog_status": "operator_addition_requires_review",
+      "catalog_status": "v1_baseline",
       "codes": [
         "CC32"
       ],
       "excluded_bus_links": [],
-      "exit_inventory_status": "complete_reviewed_override",
+      "exit_inventory_status": "complete",
       "exits": [
         {
           "accessibility": {
@@ -43849,18 +44900,32 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [
-            "03222"
+            "03222",
+            "03241",
+            "03223"
           ],
-          "destinations": [],
+          "destinations": [
+            "Shenton Way"
+          ],
           "id": "MRT:1",
-          "inventory_evidence": "complete_reviewed_override",
+          "inventory_evidence": "complete",
           "label": "1",
           "operating_hours": [],
           "operating_status": "not_stated",
           "scopes": [
             "MRT"
           ],
-          "source_rows": [],
+          "source_rows": [
+            {
+              "label_cell_verbatim": "1 Shenton Way",
+              "row": 2,
+              "row_verbatim": [
+                "1 Shenton Way",
+                ""
+              ],
+              "table": 1
+            }
+          ],
           "status_notes": []
         },
         {
@@ -43871,20 +44936,32 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [
-            "03223",
+            "03217",
             "03218",
             "03239"
           ],
-          "destinations": [],
+          "destinations": [
+            "Hock Teck See Temple"
+          ],
           "id": "MRT:2",
-          "inventory_evidence": "complete_reviewed_override",
+          "inventory_evidence": "complete",
           "label": "2",
           "operating_hours": [],
           "operating_status": "not_stated",
           "scopes": [
             "MRT"
           ],
-          "source_rows": [],
+          "source_rows": [
+            {
+              "label_cell_verbatim": "2 Hock Teck See Temple",
+              "row": 3,
+              "row_verbatim": [
+                "2 Hock Teck See Temple",
+                "Money Authority of Singapore Building, Shenton Way Terminal , Haji Muhammad Saleh Mosque"
+              ],
+              "table": 1
+            }
+          ],
           "status_notes": []
         }
       ],
@@ -43900,11 +44977,24 @@
           "match_method": "station_code",
           "name": "Prince Edward Road",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC31",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -43928,7 +45018,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Prince Edward Road",
       "operational_status": "active",
       "platforms": [
@@ -43990,23 +45085,12 @@
       "reviews": [],
       "source": {
         "api_url": "https://sgwiki.miraheze.org/w/api.php?action=parse&page=Prince+Edward+Road+station&prop=text%7Crevid&format=json&formatversion=2&redirects=1",
-        "contracts_applied": [
-          {
-            "evidence": [
-              "Human-reviewed decision: Prince Edward Road has MRT Exits 1-2",
-              "mrt-data-v2 comparison: SgWiki bus evidence, OneMap, OSM and SMRT agree on Exits 1-2"
-            ],
-            "kind": "exit_inventory_override",
-            "page_id": 277,
-            "source_inventory_evidence_kind": "bus_connections_only",
-            "source_inventory_status": "partial"
-          }
-        ],
+        "contracts_applied": [],
         "kind": "sgwiki_station_page",
         "page_id": 277,
         "redirects": [],
-        "revision_id": 35868,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=35868",
+        "revision_id": 41853,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41853",
         "title": "Prince Edward Road station",
         "url": "https://sgwiki.miraheze.org/wiki/Prince_Edward_Road_station"
       },
@@ -44302,17 +45386,32 @@
           "match_method": "station_code",
           "name": "Promenade",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_DBG_SDM",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "CCL_TSG_PMN_1ST_TRAIN",
-            "DTL"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC1_CC4",
+            "CCL_CC1_CC6",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC11",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC31",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC6",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "CC",
@@ -44337,7 +45436,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 4
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Promenade",
       "operational_status": "active",
       "platforms": [
@@ -44457,8 +45561,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 281,
         "redirects": [],
-        "revision_id": 33891,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33891",
+        "revision_id": 41889,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41889",
         "title": "Promenade station",
         "url": "https://sgwiki.miraheze.org/wiki/Promenade_station"
       },
@@ -44774,7 +45878,9 @@
           "match_method": "station_code",
           "name": "Punggol",
           "route_ids": [
-            "NEL",
+            "NEL_NE16_NE18",
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18",
             "PG"
           ],
           "route_names": [
@@ -45114,7 +46220,9 @@
           "match_method": "station_code",
           "name": "Punggol Coast",
           "route_ids": [
-            "NEL"
+            "NEL_NE16_NE18",
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "NE"
@@ -45709,7 +46817,13 @@
           "match_method": "station_code",
           "name": "Queenstown",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -46379,8 +47493,24 @@
           "match_method": "station_code",
           "name": "Raffles Place",
           "route_ids": [
-            "EWL",
-            "NSL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33",
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS28",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "EW",
@@ -46530,8 +47660,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 121,
         "redirects": [],
-        "revision_id": 36682,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36682",
+        "revision_id": 41884,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41884",
         "title": "Raffles Place station",
         "url": "https://sgwiki.miraheze.org/wiki/Raffles_Place_station"
       },
@@ -46789,8 +47919,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 507,
         "redirects": [],
-        "revision_id": 20979,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=20979",
+        "revision_id": 40516,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=40516",
         "title": "Ranggung station",
         "url": "https://sgwiki.miraheze.org/wiki/Ranggung_station"
       },
@@ -46966,7 +48096,13 @@
           "match_method": "station_code",
           "name": "Redhill",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -47746,7 +48882,8 @@
           "match_method": "station_code",
           "name": "Rochor",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -48095,8 +49232,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 509,
         "redirects": [],
-        "revision_id": 21166,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=21166",
+        "revision_id": 40513,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=40513",
         "title": "Rumbia station",
         "url": "https://sgwiki.miraheze.org/wiki/Rumbia_station"
       },
@@ -49202,7 +50339,16 @@
           "match_method": "station_code",
           "name": "Sembawang",
           "route_ids": [
-            "NSL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -49297,8 +50443,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 97,
         "redirects": [],
-        "revision_id": 35871,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=35871",
+        "revision_id": 39802,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39802",
         "title": "Sembawang station",
         "url": "https://sgwiki.miraheze.org/wiki/Sembawang_station"
       },
@@ -49361,51 +50507,9 @@
           "resolved_exit_ids": [
             "SHARED:B"
           ],
-          "service_verbatim": "83 159 163 371",
+          "service_verbatim": "80 83 86 87 159 163 371 372 374",
           "source_row": 2,
           "stop_verbatim": "67009 Sengkang Int Sengkang Sq"
-        },
-        {
-          "bus_stop_code": "67759",
-          "evidence": [],
-          "exit_labels": [
-            "B"
-          ],
-          "lta": {
-            "BusStopCode": "67759",
-            "Description": "Compassvale Int",
-            "Latitude": 1.3912175,
-            "Longitude": 103.8971153,
-            "RoadName": "Compassvale Rd"
-          },
-          "resolution": "unique_exit_label",
-          "resolved_exit_ids": [
-            "SHARED:B"
-          ],
-          "service_verbatim": "80 86 87 372 374",
-          "source_row": 3,
-          "stop_verbatim": "67759 Compassvale Int Compassvale Rd"
-        },
-        {
-          "bus_stop_code": "67689",
-          "evidence": [],
-          "exit_labels": [
-            "C"
-          ],
-          "lta": {
-            "BusStopCode": "67689",
-            "Description": "Sengkang Stn Exit C",
-            "Latitude": 1.39071,
-            "Longitude": 103.895137,
-            "RoadName": "Sengkang Sq"
-          },
-          "resolution": "unique_exit_label",
-          "resolved_exit_ids": [
-            "SHARED:C"
-          ],
-          "service_verbatim": "372 374",
-          "source_row": 4,
-          "stop_verbatim": "67689 Sengkang Stn Exit C Sengkang Sq"
         },
         {
           "bus_stop_code": "67401",
@@ -49425,7 +50529,7 @@
             "SHARED:D"
           ],
           "service_verbatim": "50 102 119 159 161 458 677 965",
-          "source_row": 5,
+          "source_row": 3,
           "stop_verbatim": "67401 Opp Sengkang Stn/Blk 260A Sengkang East Way"
         },
         {
@@ -49446,7 +50550,7 @@
             "SHARED:D"
           ],
           "service_verbatim": "50 102 119 159 161 372 374 458 677 965",
-          "source_row": 6,
+          "source_row": 4,
           "stop_verbatim": "67409 Sengkang Stn Sengkang East Way"
         }
       ],
@@ -49499,11 +50603,10 @@
           },
           "alternative_exits": [],
           "bus_stop_codes": [
-            "67009",
-            "67759"
+            "67009"
           ],
           "destinations": [
-            "Sengkang Bus Interchange"
+            "Sengkang Interchange"
           ],
           "id": "SHARED:B",
           "inventory_evidence": "complete",
@@ -49516,11 +50619,11 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "B Sengkang Bus Interchange",
+              "label_cell_verbatim": "B Sengkang Interchange",
               "row": 3,
               "row_verbatim": [
-                "B Sengkang Bus Interchange",
-                "Sengkang Interchange Compassvale Interchange"
+                "B Sengkang Interchange",
+                "Sengkang Interchange"
               ],
               "table": 1
             }
@@ -49534,9 +50637,7 @@
             "uninterpreted_source_icon": false
           },
           "alternative_exits": [],
-          "bus_stop_codes": [
-            "67689"
-          ],
+          "bus_stop_codes": [],
           "destinations": [
             "Sengkang Square"
           ],
@@ -49614,7 +50715,9 @@
           "match_method": "station_code",
           "name": "Sengkang",
           "route_ids": [
-            "NEL",
+            "NEL_NE16_NE18",
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18",
             "SK"
           ],
           "route_names": [
@@ -49768,8 +50871,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 236,
         "redirects": [],
-        "revision_id": 30255,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=30255",
+        "revision_id": 40387,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=40387",
         "title": "Sengkang station",
         "url": "https://sgwiki.miraheze.org/wiki/Sengkang_station"
       },
@@ -50487,14 +51590,30 @@
           "match_method": "station_code",
           "name": "Serangoon",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "NEL"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC26",
+            "CCL_CC12_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32",
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "CC",
@@ -50519,7 +51638,16 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 4
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        },
+        {
+          "kind": "rail_service_diagram",
+          "table": 3
+        }
+      ],
       "name": "Serangoon",
       "operational_status": "active",
       "platforms": [
@@ -50639,8 +51767,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 244,
         "redirects": [],
-        "revision_id": 34715,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=34715",
+        "revision_id": 41913,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41913",
         "title": "Serangoon station",
         "url": "https://sgwiki.miraheze.org/wiki/Serangoon_station"
       },
@@ -50953,7 +52081,15 @@
           "match_method": "station_code",
           "name": "Shenton Way",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -51297,7 +52433,13 @@
           "match_method": "station_code",
           "name": "Siglap",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE29",
+            "TEL_TE22_TE29",
+            "TEL_TE27_TE29",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -51562,7 +52704,13 @@
           "match_method": "station_code",
           "name": "Simei",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW3_EW1",
+            "EWL_EW4_EW1"
           ],
           "route_names": [
             "EW"
@@ -51829,7 +52977,9 @@
           "match_method": "station_code",
           "name": "Sixth Avenue",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -52165,7 +53315,17 @@
           "match_method": "station_code",
           "name": "Somerset",
           "route_ids": [
-            "NSL"
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS28",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -52879,7 +54039,15 @@
           "match_method": "station_code",
           "name": "Springleaf",
           "route_ids": [
-            "TEL"
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE1_TE9",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29"
           ],
           "route_names": [
             "TE"
@@ -53132,13 +54300,25 @@
           "match_method": "station_code",
           "name": "Stadium",
           "route_ids": [
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_DBG_SDM",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "CCL_TSG_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC1_CC6",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC11",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC6",
+            "CCL_CC6_CC9"
           ],
           "route_names": [
             "CC"
@@ -53162,7 +54342,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Stadium",
       "operational_status": "active",
       "platforms": [
@@ -53228,8 +54413,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 289,
         "redirects": [],
-        "revision_id": 33573,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33573",
+        "revision_id": 41836,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41836",
         "title": "Stadium station",
         "url": "https://sgwiki.miraheze.org/wiki/Stadium_station"
       },
@@ -53409,8 +54594,8 @@
           "lta": {
             "BusStopCode": "40231",
             "Description": "Raffles Town Club",
-            "Latitude": 1.32230868317131,
-            "Longitude": 103.82577145824762,
+            "Latitude": 1.322112,
+            "Longitude": 103.8256985,
             "RoadName": "Whitley Rd"
           },
           "resolution": "unique_exit_label",
@@ -53666,8 +54851,18 @@
           "match_method": "station_code",
           "name": "Stevens",
           "route_ids": [
-            "DTL",
-            "TEL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35",
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "DT",
@@ -54107,7 +55302,7 @@
           ],
           "lta": {
             "BusStopCode": "70281",
-            "Description": "Aft Tai Seng Stn",
+            "Description": "Tai Seng Stn Exit A/B",
             "Latitude": 1.3354935,
             "Longitude": 103.8879965,
             "RoadName": "Upp Paya Lebar Rd"
@@ -54264,13 +55459,27 @@
           "match_method": "station_code",
           "name": "Tai Seng",
           "route_ids": [
-            "CCL_CDT_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN",
-            "CCL_PPJ_PMN_1ST_TRAIN",
-            "CCL_TSG_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC17_CC32",
+            "CCL_CC1_CC11",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC26_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC11",
+            "CCL_CC4_CC17",
+            "CCL_CC4_CC23",
+            "CCL_CC4_CC26",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -54294,7 +55503,12 @@
         "platforms_without_concourse_candidate": 0,
         "source_platform_record_count": 2
       },
-      "layout_supplements": [],
+      "layout_supplements": [
+        {
+          "kind": "rail_service_diagram",
+          "table": 2
+        }
+      ],
       "name": "Tai Seng",
       "operational_status": "active",
       "platforms": [
@@ -54360,8 +55574,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 272,
         "redirects": [],
-        "revision_id": 34525,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=34525",
+        "revision_id": 41844,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41844",
         "title": "Tai Seng station",
         "url": "https://sgwiki.miraheze.org/wiki/Tai_Seng_station"
       },
@@ -54392,7 +55606,7 @@
           "source_row": 3
         },
         {
-          "area_verbatim": "Underpass",
+          "area_verbatim": "Underpass, Wellness Village",
           "kinds": [
             "underpass"
           ],
@@ -54520,8 +55734,8 @@
           "lta": {
             "BusStopCode": "76141",
             "Description": "Tampines Stn/Int",
-            "Latitude": 1.35366689109025,
-            "Longitude": 103.94609060451609,
+            "Latitude": 1.3535345,
+            "Longitude": 103.946128,
             "RoadName": "Tampines Ave 4"
           },
           "resolution": "unique_exit_label",
@@ -54541,8 +55755,8 @@
           "lta": {
             "BusStopCode": "76149",
             "Description": "Opp Tampines Stn/Int",
-            "Latitude": 1.35370728527221,
-            "Longitude": 103.94636710560508,
+            "Latitude": 1.3537413,
+            "Longitude": 103.9463649,
             "RoadName": "Tampines Ave 4"
           },
           "resolution": "unique_exit_label",
@@ -54829,8 +56043,15 @@
           "match_method": "station_code",
           "name": "Tampines",
           "route_ids": [
-            "DTL",
-            "EWL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35",
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW3_EW1",
+            "EWL_EW4_EW1"
           ],
           "route_names": [
             "DT",
@@ -54984,8 +56205,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 206,
         "redirects": [],
-        "revision_id": 36651,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=36651",
+        "revision_id": 38999,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=38999",
         "title": "Tampines station",
         "url": "https://sgwiki.miraheze.org/wiki/Tampines_station"
       },
@@ -55310,7 +56531,8 @@
           "match_method": "station_code",
           "name": "Tampines East",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "DT"
@@ -55616,7 +56838,8 @@
           "match_method": "station_code",
           "name": "Tampines West",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "DT"
@@ -55878,7 +57101,9 @@
           "match_method": "station_code",
           "name": "Tan Kah Kee",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT11",
+            "DTL_DT1_DT14",
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -56134,12 +57359,20 @@
           "match_method": "station_code",
           "name": "Tanah Merah",
           "route_ids": [
-            "EWL",
-            "EWL_CGL"
+            "EWL_CGL_CG2_CG",
+            "EWL_CGL_CG_CG2",
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
-            "EW",
-            "CG"
+            "CG",
+            "EW"
           ],
           "stop_code": "EW4",
           "stop_id": "EW4"
@@ -56563,7 +57796,15 @@
           "match_method": "station_code",
           "name": "Tanjong Katong",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE22_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -56808,8 +58049,8 @@
           "lta": {
             "BusStopCode": "03218",
             "Description": "Prince Edward Rd Stn Exit 2",
-            "Latitude": 1.2740788888387,
-            "Longitude": 103.84687388890413,
+            "Latitude": 1.2742335,
+            "Longitude": 103.846903,
             "RoadName": "Shenton Way"
           },
           "resolution": "unique_exit_label",
@@ -56947,7 +58188,11 @@
             "03217"
           ],
           "destinations": [
-            "Prince Edward Road"
+            "Prince Edward Road",
+            "Skywaters Residences",
+            "MAS Building",
+            "Shenton Way Terminal",
+            "CC32 Prince Edward Road"
           ],
           "id": "MRT:D",
           "inventory_evidence": "complete",
@@ -56963,7 +58208,7 @@
               "row": 5,
               "row_verbatim": [
                 "D Prince Edward Road",
-                "AXA Tower"
+                "AXA Tower, Money Authority of Singapore Building, Shenton Way Terminal, CC32 Prince Edward Road"
               ],
               "table": 1
             }
@@ -56978,9 +58223,7 @@
             "status": "not_accessible",
             "uninterpreted_source_icon": false
           },
-          "alternative_exits": [
-            "H"
-          ],
+          "alternative_exits": [],
           "bus_stop_codes": [],
           "destinations": [
             "AXA Tower"
@@ -57005,7 +58248,7 @@
             }
           ],
           "status_notes": [
-            "(Closed – use Exit H)"
+            "(Closed)"
           ]
         },
         {
@@ -57191,7 +58434,13 @@
           "match_method": "station_code",
           "name": "Tanjong Pagar",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -57285,8 +58534,8 @@
         "contracts_applied": [
           {
             "evidence": [
-              "Human-reviewed decision: retain the exact source-reported Exit E closure and alternative Exit H",
-              "Pinned to SgWiki Tanjong Pagar station revision 31544"
+              "Retain the source-reported closure of MRT Exit E. Alternative-exit wording is source evidence only, not passenger routing advice.",
+              "Pinned to SgWiki Tanjong Pagar station revision 41616"
             ],
             "findings": [
               {
@@ -57296,14 +58545,14 @@
             ],
             "kind": "review_acceptance",
             "page_id": 215,
-            "revision_id": 31544
+            "revision_id": 41616
           }
         ],
         "kind": "sgwiki_station_page",
         "page_id": 215,
         "redirects": [],
-        "revision_id": 31544,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=31544",
+        "revision_id": 41616,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41616",
         "title": "Tanjong Pagar station",
         "url": "https://sgwiki.miraheze.org/wiki/Tanjong_Pagar_station"
       },
@@ -57466,7 +58715,15 @@
           "match_method": "station_code",
           "name": "Tanjong Rhu",
           "route_ids": [
-            "TEL"
+            "TEL_TE14_TE29",
+            "TEL_TE17_TE29",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE22_TE29",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29",
+            "TEL_TE9_TE29"
           ],
           "route_names": [
             "TE"
@@ -58313,7 +59570,7 @@
           "match_method": "station_code",
           "name": "Telok Ayer",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35"
           ],
           "route_names": [
             "DT"
@@ -58534,12 +59791,23 @@
           "match_method": "station_code",
           "name": "Telok Blangah",
           "route_ids": [
-            "CCL_BLY_PMN_1ST_TRAIN",
-            "CCL_DBG_PER",
-            "CCL_HBF_PMN_1ST_TRAIN",
-            "CCL_KRG_PMN_1ST_TRAIN",
-            "CCL_LOOP",
-            "CCL_MBT_PMN_1ST_TRAIN"
+            "CCL_CC11_CC32",
+            "CCL_CC12_CC32",
+            "CCL_CC1_CC29",
+            "CCL_CC1_CC32",
+            "CCL_CC29_CC32",
+            "CCL_CC32_CC32",
+            "CCL_CC32_CC33",
+            "CCL_CC4_CC12",
+            "CCL_CC4_CC24",
+            "CCL_CC4_CC29",
+            "CCL_CC4_CC32",
+            "CCL_CC4_CC4",
+            "CCL_CC4_CC7",
+            "CCL_CC4_CC9",
+            "CCL_CC6_CC9",
+            "CCL_CC7_CC32",
+            "CCL_CC9_CC32"
           ],
           "route_names": [
             "CC"
@@ -58629,8 +59897,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 284,
         "redirects": [],
-        "revision_id": 33454,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33454",
+        "revision_id": 41033,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=41033",
         "title": "Telok Blangah station",
         "url": "https://sgwiki.miraheze.org/wiki/Telok_Blangah_station"
       },
@@ -59070,7 +60338,13 @@
           "match_method": "station_code",
           "name": "Tiong Bahru",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW29",
+            "EWL_EW1_EW33",
+            "EWL_EW23_EW1",
+            "EWL_EW29_EW1",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW29",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -59350,7 +60624,7 @@
             "52189"
           ],
           "destinations": [
-            "Toa Payoh Central"
+            "Blk 175 (Toa Payoh Central)"
           ],
           "id": "MRT:C",
           "inventory_evidence": "complete",
@@ -59362,10 +60636,10 @@
           ],
           "source_rows": [
             {
-              "label_cell_verbatim": "C Toa Payoh Central",
+              "label_cell_verbatim": "C Blk 175 (Toa Payoh Central)",
               "row": 4,
               "row_verbatim": [
-                "C Toa Payoh Central",
+                "C Blk 175 (Toa Payoh Central)",
                 ""
               ],
               "table": 1
@@ -59420,7 +60694,19 @@
           "match_method": "station_code",
           "name": "Toa Payoh",
           "route_ids": [
-            "NSL"
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS28",
+            "NSL_NS17_NS28",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS16",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -59510,8 +60796,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 114,
         "redirects": [],
-        "revision_id": 33861,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33861",
+        "revision_id": 39811,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39811",
         "title": "Toa Payoh station",
         "url": "https://sgwiki.miraheze.org/wiki/Toa_Payoh_station"
       },
@@ -59933,7 +61219,10 @@
           "match_method": "station_code",
           "name": "Tuas Crescent",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -60192,7 +61481,10 @@
           "match_method": "station_code",
           "name": "Tuas Link",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -60495,7 +61787,10 @@
           "match_method": "station_code",
           "name": "Tuas West Road",
           "route_ids": [
-            "EWL"
+            "EWL_EW1_EW33",
+            "EWL_EW24_EW33",
+            "EWL_EW33_EW1",
+            "EWL_EW4_EW33"
           ],
           "route_names": [
             "EW"
@@ -60762,7 +62057,8 @@
           "match_method": "station_code",
           "name": "Ubi",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "DT"
@@ -61128,7 +62424,8 @@
           "match_method": "station_code",
           "name": "Upper Changi",
           "route_ids": [
-            "DTL"
+            "DTL_DT1_DT35",
+            "DTL_DT24_DT35"
           ],
           "route_names": [
             "DT"
@@ -61524,7 +62821,15 @@
           "match_method": "station_code",
           "name": "Upper Thomson",
           "route_ids": [
-            "TEL"
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE1_TE9",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29"
           ],
           "route_names": [
             "TE"
@@ -62144,8 +63449,24 @@
           "match_method": "station_code",
           "name": "Woodlands",
           "route_ids": [
-            "NSL",
-            "TEL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28",
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE1_TE3",
+            "TEL_TE1_TE9"
           ],
           "route_names": [
             "NS",
@@ -62298,20 +63619,20 @@
         "contracts_applied": [
           {
             "evidence": [
-              "SgWiki Woodlands station revision 37676 lists bus stop 46009 without an exit label",
+              "SgWiki Woodlands station revision 39894 lists bus stop 46009 without an exit label",
               "The same revision's Layout table identifies Woodlands Interchange (WBI) at B1 within the station complex",
               "Human-reviewed decision: retain the interchange connection without inventing an exit"
             ],
             "kind": "station_connection_contract",
             "page_id": 99,
-            "revision_id": 37676
+            "revision_id": 39894
           }
         ],
         "kind": "sgwiki_station_page",
         "page_id": 99,
         "redirects": [],
-        "revision_id": 37676,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=37676",
+        "revision_id": 39894,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39894",
         "title": "Woodlands station",
         "url": "https://sgwiki.miraheze.org/wiki/Woodlands_station"
       },
@@ -62319,7 +63640,7 @@
         {
           "bus_stop_code": "46009",
           "evidence": [
-            "SgWiki Woodlands station revision 37676 lists bus stop 46009 without an exit label",
+            "SgWiki Woodlands station revision 39894 lists bus stop 46009 without an exit label",
             "The same revision's Layout table identifies Woodlands Interchange (WBI) at B1 within the station complex",
             "Human-reviewed decision: retain the interchange connection without inventing an exit"
           ],
@@ -62475,7 +63796,14 @@
           "match_method": "station_code",
           "name": "Woodlands North",
           "route_ids": [
-            "TEL"
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE1_TE3",
+            "TEL_TE1_TE9"
           ],
           "route_names": [
             "TE"
@@ -62570,8 +63898,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 430,
         "redirects": [],
-        "revision_id": 38586,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=38586",
+        "revision_id": 39893,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39893",
         "title": "Woodlands North station",
         "url": "https://sgwiki.miraheze.org/wiki/Woodlands_North_station"
       },
@@ -62899,7 +64227,16 @@
           "match_method": "station_code",
           "name": "Woodlands South",
           "route_ids": [
-            "TEL"
+            "TEL_TE1_TE14",
+            "TEL_TE1_TE17",
+            "TEL_TE1_TE22",
+            "TEL_TE1_TE26",
+            "TEL_TE1_TE27",
+            "TEL_TE1_TE29",
+            "TEL_TE1_TE3",
+            "TEL_TE1_TE9",
+            "TEL_TE3_TE26",
+            "TEL_TE3_TE29"
           ],
           "route_names": [
             "TE"
@@ -63240,7 +64577,8 @@
           "match_method": "station_code",
           "name": "Woodleigh",
           "route_ids": [
-            "NEL"
+            "NEL_NE1_NE18",
+            "NEL_NE3_NE18"
           ],
           "route_names": [
             "NE"
@@ -63549,7 +64887,16 @@
           "match_method": "station_code",
           "name": "Yew Tee",
           "route_ids": [
-            "NSL"
+            "NSL_NS16_NS1",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS1_NS5",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS5_NS1"
           ],
           "route_names": [
             "NS"
@@ -63644,8 +64991,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 102,
         "redirects": [],
-        "revision_id": 33871,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33871",
+        "revision_id": 39796,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39796",
         "title": "Yew Tee station",
         "url": "https://sgwiki.miraheze.org/wiki/Yew_Tee_station"
       },
@@ -63678,8 +65025,8 @@
           "lta": {
             "BusStopCode": "55509",
             "Description": "Yio Chu Kang Int",
-            "Latitude": 1.38113241525166,
-            "Longitude": 103.8455558816965,
+            "Latitude": 1.382624444,
+            "Longitude": 103.8447114,
             "RoadName": "Ang Mo Kio Ave 8"
           },
           "resolution": "unique_exit_label",
@@ -63740,7 +65087,7 @@
           ],
           "lta": {
             "BusStopCode": "55301",
-            "Description": "AMK Police Div HQ",
+            "Description": "Ang Mo Kio Police Div HQ",
             "Latitude": 1.38425166698696,
             "Longitude": 103.84445666701023,
             "RoadName": "Ang Mo Kio Ave 9"
@@ -63761,7 +65108,7 @@
           ],
           "lta": {
             "BusStopCode": "55309",
-            "Description": "Opp AMK Police Div HQ",
+            "Description": "Opp Ang Mo Kio Police Div HQ",
             "Latitude": 1.384084,
             "Longitude": 103.844597,
             "RoadName": "Ang Mo Kio Ave 9"
@@ -63899,7 +65246,20 @@
           "match_method": "station_code",
           "name": "Yio Chu Kang",
           "route_ids": [
-            "NSL"
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS1",
+            "NSL_NS16_NS13",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -63994,8 +65354,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 110,
         "redirects": [],
-        "revision_id": 35571,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=35571",
+        "revision_id": 39806,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39806",
         "title": "Yio Chu Kang station",
         "url": "https://sgwiki.miraheze.org/wiki/Yio_Chu_Kang_station"
       },
@@ -64099,8 +65459,8 @@
           "lta": {
             "BusStopCode": "59091",
             "Description": "Blk 154",
-            "Latitude": 1.43165245434506,
-            "Longitude": 103.83510814544051,
+            "Latitude": 1.431933,
+            "Longitude": 103.8351765,
             "RoadName": "Yishun Ave 2"
           },
           "resolution": "unique_exit_label",
@@ -64368,7 +65728,20 @@
           "match_method": "station_code",
           "name": "Yishun",
           "route_ids": [
-            "NSL"
+            "NSL_NS13_NS26",
+            "NSL_NS13_NS28",
+            "NSL_NS16_NS1",
+            "NSL_NS16_NS13",
+            "NSL_NS17_NS1",
+            "NSL_NS1_NS16",
+            "NSL_NS1_NS19",
+            "NSL_NS1_NS28",
+            "NSL_NS21_NS1",
+            "NSL_NS27_NS1",
+            "NSL_NS28_NS1",
+            "NSL_NS28_NS13",
+            "NSL_NS28_NS7",
+            "NSL_NS7_NS28"
           ],
           "route_names": [
             "NS"
@@ -64463,8 +65836,8 @@
         "kind": "sgwiki_station_page",
         "page_id": 50,
         "redirects": [],
-        "revision_id": 33856,
-        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=33856",
+        "revision_id": 39804,
+        "revision_url": "https://sgwiki.miraheze.org/index.php?oldid=39804",
         "title": "Yishun station",
         "url": "https://sgwiki.miraheze.org/wiki/Yishun_station"
       },
@@ -64486,8 +65859,8 @@
     "not_accessible_exit_identity_count": 88,
     "partial_exit_inventory_count": 0,
     "platform_record_count": 446,
-    "rail_service_diagram_count": 68,
-    "required_lta_bus_stop_count": 601,
+    "rail_service_diagram_count": 95,
+    "required_lta_bus_stop_count": 599,
     "review_group_count": 0,
     "review_item_count": 0,
     "shared_exit_identity_count": 9,

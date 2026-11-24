@@ -6,13 +6,18 @@
   <title>Singapore rail station data review</title>
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stage-switch.css">
 </head>
 <body>
   <header class="topbar">
     <div>
       <p class="eyebrow">Human audit workspace</p>
-      <h1>Exit map review</h1>
+      <h1>Stage 2 · Exit map review</h1>
     </div>
+    <label class="stage-switch" id="stageSwitch" hidden>
+      <span>Stage 2 · Exits</span><span>Stage 3 · Tracks</span>
+      <input type="range" min="2" max="3" step="1" value="2" aria-label="Review stage" aria-valuetext="Stage 2: exit coordinates">
+    </label>
     <div class="run-summary" id="runSummary" aria-live="polite">Loading review data…</div>
   </header>
 
@@ -197,6 +202,7 @@
   </main>
 
   <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="stage-switch.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

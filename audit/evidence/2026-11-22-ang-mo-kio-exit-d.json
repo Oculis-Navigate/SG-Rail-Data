@@ -1,0 +1,28 @@
+{
+  "source_url": "https://sgwiki.miraheze.org/w/index.php?oldid=39808",
+  "page_id": 111,
+  "revision_id": 39808,
+  "locator": "Entrances/Exits table, Exit D row",
+  "response_sha256": "aecfa155e87d323ad30bdb4a4d0664d42db608b8b9fafd934213b7c8503cf24e",
+  "run_id": "20261122T120817898690Z-07356a728076",
+  "parsed_exit_statuses": [
+    {
+      "labels": [
+        "D"
+      ],
+      "scopes": [
+        "MRT"
+      ],
+      "destination_verbatim": "Ang Mo Kio Town Garden",
+      "status": "closed",
+      "alternative_exits": [],
+      "status_verbatim": "(Closed)",
+      "status_markup": "small.d-block.mx-auto.fw-normal.tx-center"
+    }
+  ],
+  "corroboration": {
+    "attribution": "Project owner quoting another source; title and URL not supplied, not independently verified.",
+    "quotation": "Exit D is closed from 5 May 2024 to Jun 2028 for upgrading works as part of the Cross Island Line station."
+  },
+  "authorization": "can we mark exit d as resolved close, add this into our parsere and retry running?"
+}

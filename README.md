@@ -9,8 +9,9 @@ an explicit contract and stops when it finds an unexpected field, invalid value,
 or unsupported layout. Incomplete or ambiguous data is kept visible for human
 review instead of being accepted silently.
 
-The `main` branch represents the latest approved state. Scheduled runs collect
-and compare data, but they do not modify or approve it.
+The `main` branch holds reviewed baselines. Contributors collect and review locally;
+administrators publish versioned datasets through GitHub. See the
+[dataset release runbook](docs/dataset-releases.md).
 
 ## How the data is built
 
@@ -36,7 +37,7 @@ frozen source or replace approved data with a new search result automatically.
 The repository also contains an approved network-geometry comparison baseline
 and an unapproved preview builder. They combine LTA GTFS service topology with
 OSM physical rail ways, but they are not part of the Stage 1/2 release pipeline
-or the scheduled workflow. Baseline approval does not authorize a production
+or the promotion workflow. Baseline approval does not authorize a production
 Stage 3 release.
 
 ## Station-code ordering contract
@@ -169,15 +170,13 @@ uv run python -m http.server 8765 \
 ```
 
 Open `http://127.0.0.1:8765`. The page shows OSM physical rail ways selected
-for lines active in the LTA GTFS service snapshot. Enable **Straight GTFS
-chords** to compare the curved geometry with direct station-to-station lines.
+for lines active in the LTA GTFS service snapshot. Enable **Station-to-station chords** to compare the curved geometry with the station sequence. The November Yishun–Braddell display override draws the four intermediate stations for one pattern without changing its GTFS scheduled stops or the physical continuity evidence.
 
 This command is a source-review prototype, not Stage 3 release production. Its
 manifest always sets `publication_allowed` to `false`. It retains each OSM
 relation response, source hash, version and timestamp, compares the candidate
 with `config/stage3-approved-geometry-baseline.geojson`, and writes
-`changes.json`. It does not yet prove connectivity between every consecutive
-station. The quarterly workflow does not run or publish it. See the
+`changes.json`. `continuity.json` checks consecutive GTFS pairs against physical paths using actual OSM node IDs on a single passenger relation, with relation IDs, stop order and intermediate stops in the evidence. Reverse-order evidence verifies physical track only, not a directional service. In October replay mode the single documented DTL way change is overridden by its D-028 geometry; the raw change is retained in the manifest and hash drift blocks the override. The release workflow never publishes the preview; it separately generates and hash-checks the approved physical-track asset under `config/stage3-release.json`. See the
 [maintenance plan](docs/maintenance-plan.md#network-geometry-preview) for the
 checks required before promotion.
 
@@ -197,6 +196,8 @@ uv run sg-rail-station-data review serve \
   --bundle /tmp/sg-rail-station-review.json \
   --drafts-dir audit/drafts
 ```
+
+To use the same server for both stages, add `--network-preview /tmp/sg-rail-network-preview` to `review serve`. `/` is the editable Stage 2 coordinate map; `/stage3/` is the read-only Stage 3 geometry preview with links to baseline changes and station proximity checks. Use a separate drafts directory for each review bundle. If live OSM collection is unavailable, build a new preview directory with `network build-preview --replay-reviewed-osm` and the usual GTFS/output arguments. This explicitly uses the hash-checked October 2026 OSM responses, **not fresh track data**; the map labels its source mode.
 
 Open `http://127.0.0.1:8000`. The default view shows all approved exits as
 yellow labelled pins. Kartographer, OneMap, OpenStreetMap, LTA, and manual
@@ -223,7 +224,7 @@ commit, approve a decision, or update the approved baseline.
 The normal review flow is:
 
 1. Pull the latest `main` branch.
-2. Download the run artifact from GitHub Actions.
+2. Collect the source evidence locally with an explicit service date.
 3. Create a branch for the review.
 4. Replay the saved sources locally.
 5. Inspect each change and its supporting evidence.
@@ -231,7 +232,7 @@ The normal review flow is:
 7. Add a sign-off event for every approved decision.
 8. Apply each approved coordinate decision.
 9. Replay the pipeline with the proposed changes.
-10. Open a pull request.
+10. Prepare a replayable changeset with reviewed release notes and open a pull request.
 11. Merge after CI and human review are complete.
 
 The pull request should include the data changes, evidence, decision records,
@@ -247,7 +248,7 @@ CI should confirm that:
 - The saved sources produce the proposed output.
 - No blocking error or unresolved exit remains.
 
-A scheduled workflow must never approve or merge its own result. See the
+A validation workflow must never approve or merge its own result. See the
 [maintenance plan](docs/maintenance-plan.md) for the complete proposed system.
 
 ## Change logs and pull requests
@@ -304,6 +305,14 @@ to the reviewed override and its coordinate ledger. Each command validates the
 complete ledger before it writes. See [the audit runbook](audit/README.md) for
 the exact commands.
 
+## Closed exits
+
+Stage 1 keeps `operating_status: source_reported_closed`. For a closed exit,
+`alternative_exits: []` means no diversion is recommended, and `status_notes`
+contains only `(Closed)`. Render these fields, not verbatim source rows or
+review evidence, which can quote unverified routing advice. Landmarks and bus
+links describe individual exits, not a verified accessible route between them.
+
 ## Source guards
 
 Reviewed rules and hardcoded coordinates are tied to the relevant source page,
@@ -318,9 +327,8 @@ pipeline instead of producing a degraded result.
 
 ## Automation
 
-GitHub Actions runs the pipeline at 02:00 UTC on the first day of January, April,
-July, and October. The workflow can also be started manually.
-
-Set the repository secret `LTA_API_KEY` before the first live run. GitHub retains
-the run artifact for 90 days. Evidence for an active decision must also exist in
-a durable location that outlives the workflow artifact.
+Live collection is local. Install tracked hooks with `git config core.hooksPath .githooks`.
+GitHub CI verifies candidate changes offline; the separate admin-dispatched
+`Promote dataset` workflow publishes the tagged assets and reviewed notes.
+Configure branch, environment and tag protections before enabling promotion;
+see [setup and release steps](docs/dataset-releases.md).

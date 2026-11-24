@@ -133,6 +133,22 @@ class SgWikiMapDataTests(unittest.TestCase):
         self.assertEqual(query["revids"], ["2"])
         self.assertEqual(query["mpdgroups"], [OVERLAY_ID])
 
+    def test_missing_preview_revision_still_pins_mapdata_to_page_revision(self):
+        result = discover_embedded_map(
+            MAP_HTML.replace("&amp;revid=2", ""), title="Example station",
+            revision_id=2, endpoint=ENDPOINT,
+        )
+        self.assertNotIn("revid", result["snapshot_url"])
+        self.assertEqual(parse_qs(urlsplit(result["mapdata_url"]).query)["revids"], ["2"])
+
+    def test_present_preview_revision_must_be_unique_nonempty_and_match(self):
+        for value in ("3", "", "2&amp;revid=2"):
+            with self.subTest(value=value), self.assertRaises(SgWikiMapDataError):
+                discover_embedded_map(
+                    MAP_HTML.replace("revid=2", f"revid={value}"), title="Example station",
+                    revision_id=2, endpoint=ENDPOINT,
+                )
+
     def test_absent_map_is_explicit_successful_evidence(self):
         result = discover_embedded_map(
             "<h2>Entrances/Exits</h2><table></table>",
@@ -182,9 +198,14 @@ class SgWikiMapDataTests(unittest.TestCase):
             parse(mapdata_response(overlay=overlay))
 
     def test_conflicting_exit_symbol_and_title_is_ambiguous(self):
-        overlay = feature_collection(symbol="exit-A", title="Exit B")
-        with self.assertRaisesRegex(SgWikiMapDataError, "ambiguous exit label"):
-            parse(mapdata_response(overlay=overlay))
+        for title in ("Exit B", "[Exit-B]Exit A", "[Exit-A]Exit B", "[Exit-A]Exit A extra"):
+            with self.subTest(title=title), self.assertRaisesRegex(SgWikiMapDataError, "ambiguous exit label"):
+                parse(mapdata_response(overlay=feature_collection(symbol="exit-A", title=title)))
+
+    def test_prefixed_exit_marker_keeps_source_title(self):
+        overlay = feature_collection(symbol="exit-A", title="[Exit-A]Exit A")
+        marker, = parse(mapdata_response(overlay=overlay))["exit_markers"]
+        self.assertEqual((marker["label"], marker["title"]), ("A", "[Exit-A]Exit A"))
 
     def test_duplicate_exit_label_fails_loudly(self):
         overlay = feature_collection()

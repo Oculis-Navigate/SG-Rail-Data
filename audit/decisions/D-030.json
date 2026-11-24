@@ -1,0 +1,73 @@
+{
+  "change_type": "semantic_clarification",
+  "evidence": [
+    {
+      "description": "SgWiki row and project-owner corroboration",
+      "path": "audit/evidence/2026-11-22-ang-mo-kio-exit-d.json",
+      "sha256": "72c07d30f5979643a18bf88d3b231e6388739ac552e0bf78eafedb5398f4dfdc"
+    }
+  ],
+  "id": "D-030",
+  "kind": "audit_decision",
+  "limitations": [
+    "No verified reopening date or alternative route. The platform finding remains reviewable."
+  ],
+  "reason": "Review the exact closure annotation at revision 39808 without carrying forward the old direction to Exit B.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Ang Mo Kio station, page 111, revision 39808"
+  ],
+  "targets": [
+    {
+      "after": {
+        "codes": [
+          "NS16",
+          "CR11"
+        ],
+        "evidence": [
+          "Revision 39808 explicitly marks MRT Exit D (Ang Mo Kio Town Garden) closed. No alternative exit is stated.",
+          "Project owner confirmed the closure. The separate platform finding is not accepted by this decision."
+        ],
+        "findings": [
+          {
+            "count": 1,
+            "reason": "exit_status_requires_review"
+          }
+        ],
+        "page_id": 111,
+        "revision_id": 39808,
+        "station": "Ang Mo Kio"
+      },
+      "after_sha256": "aa21d7fe85dcb13b63ab1a05667a35a1f192a5eb147db6c6bc3f728a3bc7537d",
+      "before": {
+        "codes": [
+          "NS16",
+          "CR11"
+        ],
+        "evidence": [
+          "Human-reviewed decision: retain the exact source-reported Exit D closure and its alternative Exit B",
+          "Human-reviewed decision: split source platform group C/D into individual platform records while preserving source_group_label",
+          "Pinned to SgWiki Ang Mo Kio station revision 33858"
+        ],
+        "findings": [
+          {
+            "count": 1,
+            "reason": "exit_status_requires_review"
+          },
+          {
+            "count": 1,
+            "reason": "combined_platform_label"
+          }
+        ],
+        "page_id": 111,
+        "revision_id": 33858,
+        "station": "Ang Mo Kio"
+      },
+      "before_sha256": "c0b0a94f85873ce0a9d13a0ef2093215f59cef1cde6cbb514f26ea6f35c9c5ce",
+      "identity": "Ang Mo Kio:review_acceptance",
+      "path": "config/stage1-reviewed-decisions.json",
+      "pointer": "/review_acceptances/0"
+    }
+  ],
+  "title": "Ang Mo Kio MRT Exit D: retain source-reported closure without an alternative"
+}

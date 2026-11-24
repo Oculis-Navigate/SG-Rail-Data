@@ -15,6 +15,7 @@ from datetime import date
 from hashlib import sha256
 from io import StringIO
 import json
+import re
 import math
 from pathlib import Path
 import shutil
@@ -27,6 +28,7 @@ from typing import Callable, Mapping
 
 from .sources.lta_gtfs import active_inventory
 from .station_catalog import station_codes_for_display
+from .network_continuity import check_continuity
 from .storage import atomic_write_bytes, atomic_write_json, read_json
 
 
@@ -66,6 +68,14 @@ class NetworkPreviewResult:
 
 
 def _line_id(route_id: str) -> str:
+    # Recent MRT feeds encode the two pattern endpoints in the route ID.
+    # Match only known families and endpoint formats; the complete route_id
+    # still keys each service pattern (including the EWL Changi branch).
+    for family, endpoint in (("NSL", r"NS\d+"), ("NEL", r"NE\d+"),
+                             ("DTL", r"DT\d+"), ("TEL", r"TE\d+"),
+                             ("EWL", r"EW\d+"), ("EWL_CGL", r"CG\d*")):
+        if re.fullmatch(fr"{family}_{endpoint}_{endpoint}", route_id):
+            return "EWL" if family == "EWL_CGL" else family
     if route_id == "NSL":
         return "NSL"
     if route_id in {"EWL", "EWL_CGL"}:
@@ -715,12 +725,31 @@ def build_coverage(network: dict[str, object], geometry: dict[str, object]) -> d
         "maximum_distance_metres": max((row["distance_metres"] for row in checks), default=0),
         "checks": checks,
         "limitations": [
-            "This preview checks station proximity but does not yet prove graph connectivity between every consecutive station.",
+            "See continuity.json for physical passenger-track paths. Physical connectivity alone does not verify directional service.",
             "OSM relations are selected by an active LTA line identity; relation stops are not yet matched one-by-one to each GTFS service pattern, so extra same-line segments require review.",
             "OSM may map parallel tracks separately; this preview retains physical member ways and does not derive a surveyed centreline.",
             "Human review and an approved baseline are required before publication.",
         ],
     }
+
+
+def _reviewed_display_paths(network: dict, continuity: dict) -> dict:
+    """Waypoints for drawing tracks only. Never rewrite scheduled stops/times."""
+    if network['gtfs_zip_sha256'] != '7a4f56076869e1c71d4019d34b23cec90fe0137d1a729967c66bfc8c18793d7f':
+        return {}
+    patterns = {p['id']: p for p in network['patterns']}
+    short = patterns.get('36315303a59b4eb2', {})
+    via = ['NS14', 'NS15', 'NS16', 'CC15']  # Bishan's GTFS parent ID is CC15.
+    ids = short.get('station_stop_ids', [])
+    expanded = ids[:1] + via + ids[1:]
+    if (short.get('gtfs_route_id') != 'NSL_NS13_NS28' or ids[:2] != ['NS13', 'NS18']
+            or expanded != patterns.get('126cee7ebdde9e4d', {}).get('station_stop_ids')
+            or not any(short['id'] in row['pattern_ids'] and row['from_stop'] == 'NS13'
+                       and row['to_stop'] == 'NS18' and any(e['direction'] == 'ordered' and e['via'] == via
+                                                            for e in row['evidence'])
+                       for row in continuity['pairs'])):
+        raise NetworkGeometryError('Reviewed Yishun–Braddell physical path evidence changed')
+    return {short['id']: expanded}
 
 
 def _write_preview_assets(output: Path, *, repo_root: Path, payload: dict[str, object]) -> Path:
@@ -729,6 +758,8 @@ def _write_preview_assets(output: Path, *, repo_root: Path, payload: dict[str, o
         raise NetworkGeometryError(f"Network preview assets are missing: {app_source}")
     for filename in ("index.html", "app.js", "styles.css"):
         shutil.copyfile(app_source / filename, output / filename)
+    for filename in ("stage-switch.css", "stage-switch.js"):
+        shutil.copyfile(repo_root / "review_app" / filename, output / filename)
     vendor_source = repo_root / "review_app/vendor/leaflet"
     vendor_output = output / "vendor/leaflet"
     vendor_output.mkdir(parents=True)
@@ -752,6 +783,7 @@ def build_network_preview(
     maximum_backoff_seconds: float,
     minimum_interval_seconds: float,
     approved_baseline_path: Path | None = None,
+    replay_reviewed_osm: bool = False,
     http_get: Callable[..., bytes] = _default_http_get,
 ) -> NetworkPreviewResult:
     """Build immutable preview artifacts and a static local map."""
@@ -767,6 +799,28 @@ def build_network_preview(
     output.mkdir(parents=True, exist_ok=False)
     network, stations = build_gtfs_network(gtfs_zip, inventory_path)
     active_line_ids = {line["id"] for line in network["lines"]}
+    if replay_reviewed_osm:
+        approval = read_json(repo_root / 'audit/evidence/2026-10-25-network-geometry-baseline-approval.json')
+        evidence = approval['retained_evidence']
+        archive_path = repo_root / evidence['path']
+        if sha256(archive_path.read_bytes()).hexdigest() != evidence['sha256']:
+            raise NetworkGeometryError('Reviewed OSM evidence archive hash mismatch')
+
+        def replay_get(url: str, *, timeout: float, max_bytes: int) -> bytes:
+            if url == _overpass_url(overpass_endpoint):
+                member = 'current-osm/discovery.json'
+            else:
+                match = re.fullmatch(re.escape(api_endpoint.rstrip('/')) + r'/relation/(\d+)/full\.json', url)
+                if not match:
+                    raise NetworkGeometryError('Unexpected OSM replay request')
+                member = f'current-osm/relations/{match[1]}.json'
+            with ZipFile(archive_path) as archive:
+                if archive.getinfo(member).file_size > max_bytes:
+                    raise NetworkGeometryError('Retained OSM response exceeds size limit')
+                return archive.read(member)
+
+        http_get = replay_get
+        minimum_interval_seconds = 0
     geometry, source_manifest = collect_osm_geometry(
         active_line_ids=active_line_ids,
         overpass_endpoint=overpass_endpoint,
@@ -779,13 +833,32 @@ def build_network_preview(
         minimum_interval_seconds=minimum_interval_seconds,
         http_get=http_get,
     )
-    coverage = build_coverage(network, geometry)
+    continuity = check_continuity(network, source_manifest, output / 'sources/osm')
     baseline_document = (
         read_json(approved_baseline_path)
         if approved_baseline_path is not None and approved_baseline_path.is_file()
         else None
     )
+    raw_changes = compare_geometry(geometry, baseline_document)
+    override = None
+    if replay_reviewed_osm:
+        # The hash-checked archive contains the response shortly AFTER the
+        # approved October snapshot. Retain the later response for evidence,
+        # but use D-028's reviewed coordinates for its one documented move.
+        if (baseline_document is None or sha256(approved_baseline_path.read_bytes()).hexdigest()
+                != approval['candidate']['file_sha256'] or raw_changes['count'] != 1
+                or raw_changes['items'][0]['way_id'] != 380508287
+                or raw_changes['items'][0]['fields'] != ['geometry']):
+            raise NetworkGeometryError('October fallback no longer matches the reviewed D-028 difference')
+        fid = 'osm-way-380508287'
+        prior = next(f for f in baseline_document['features'] if f['id'] == fid)
+        selected = next(f for f in geometry['features'] if f['id'] == fid)
+        selected['geometry'] = prior['geometry']
+        override = {'decision': 'D-028', 'feature': fid, 'archive_sha256': evidence['sha256'],
+                    'baseline_sha256': approval['candidate']['file_sha256'], 'raw_changes': raw_changes}
     changes = compare_geometry(geometry, baseline_document)
+    coverage = build_coverage(network, geometry)
+    atomic_write_json(output / 'continuity.json', continuity)
     network_path = atomic_write_json(output / "rail-network.json", network)
     geojson_path = atomic_write_json(output / "rail-lines.geojson", geometry)
     atomic_write_json(output / "stations.geojson", stations)
@@ -801,7 +874,11 @@ def build_network_preview(
         "station_count": len(network["stations"]),
         "geometry_feature_count": len(geometry["features"]),
         "osm_relation_count": len(source_manifest["relations"]),
+        "osm_source_mode": "retained October 2026 evidence" if replay_reviewed_osm else "live collection",
         "coverage_review_count": coverage["review_count"],
+        "geometry_override": override,
+        "physical_pair_count": continuity['pair_count'],
+        "physical_pair_review_count": continuity['review_count'],
         "geometry_change_count": changes["count"],
         "approved_geometry_baseline": (
             {
@@ -816,6 +893,7 @@ def build_network_preview(
             "geometry": "rail-lines.geojson",
             "stations": "stations.geojson",
             "coverage": "coverage.json",
+            "continuity": "continuity.json",
             "changes": "changes.json",
             "preview": "index.html",
         },
@@ -828,6 +906,7 @@ def build_network_preview(
         payload={
             "manifest": manifest,
             "network": network,
+            "display_paths": _reviewed_display_paths(network, continuity),
             "geometry": geometry,
             "stations": stations,
             "coverage": coverage,

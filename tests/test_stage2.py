@@ -435,7 +435,7 @@ class Stage2Tests(unittest.TestCase):
             load("config/stage2-trusted-onemap-baseline.geojson"), document,
         )
         self.assertEqual(result.dataset["summary"]["trusted_supplemental_baseline_exit_count"], 40)
-        self.assertEqual(result.dataset["summary"]["resolved_exit_count"], 334)
+        self.assertEqual(result.dataset["summary"]["resolved_exit_count"], 321)
 
     def test_resolution_precedence_unresolved_reviews_and_provenance(self):
         maps = kartographer(
@@ -616,6 +616,15 @@ class Stage2Tests(unittest.TestCase):
         }
         self.assertIn("kartographer_exit_label_missing_from_stage1", reasons)
 
+    def test_native_snapshot_accepts_only_matching_prefixed_title(self):
+        marker = native_marker("A", [103.8, 1.3], 0)
+        marker["title"] = "[Exit-A]Exit A"
+        prepared = prepare_kartographer_exits(stage1(), native_snapshot(marker))
+        self.assertEqual(prepared["overlays"][0]["markers"][0]["exit_id"], "MRT:A")
+        marker["title"] = "[Exit-B]Exit A"
+        with self.assertRaisesRegex(ContractError, "marker title does not agree"):
+            prepare_kartographer_exits(stage1(), native_snapshot(marker))
+
     def test_native_snapshot_retains_ambiguous_label_without_inventing_identity(self):
         current = stage1(exit_ids=("MRT:A", "LRT:A"))
         prepared = prepare_kartographer_exits(
@@ -665,6 +674,18 @@ class Stage2Tests(unittest.TestCase):
         self.assertEqual(reasons, [
             "reviewed_coordinate_source_guard_changed", "exit_coordinate_unresolved",
         ])
+
+    def test_city_hall_marker_exclusion_is_exact(self):
+        from sg_rail_station_data.stage2 import _reviewed_city_hall_non_exit
+        root = Path(__file__).resolve().parents[1]
+        evidence = json.loads((root / 'audit/evidence/2026-11-23-stage2-guards.json').read_bytes())
+        for item in evidence['unmatched_city_hall_features']:
+            marker = dict(item, label=item['exit_label'])
+            self.assertTrue(_reviewed_city_hall_non_exit(marker))
+            for change in ({'station_id': 'esplanade'}, {'label': 'A'}, {'source_feature_index': 0},
+                           {'source_url': item['source_url'].replace('41804', '41805')},
+                           {'coordinates': [103.85, 1.29]}):
+                self.assertFalse(_reviewed_city_hall_non_exit(dict(marker, **change)))
 
     def test_kartographer_contract_fails_loudly(self):
         cases = []
@@ -721,10 +742,11 @@ class Stage2Tests(unittest.TestCase):
             trusted,
         )
         self.assertEqual(
-            result.dataset["summary"]["trusted_onemap_baseline_exit_count"], 266
+            result.dataset["summary"]["trusted_onemap_baseline_exit_count"], 253
         )
-        self.assertEqual(result.dataset["summary"]["reviewed_gap_fill_exit_count"], 28)
-        self.assertEqual(result.dataset["summary"]["resolved_exit_count"], 294)
+        self.assertEqual(result.dataset["summary"]["reviewed_gap_fill_exit_count"], 27)
+        self.assertEqual(result.dataset["summary"]["reviewed_override_exit_count"], 1)
+        self.assertEqual(result.dataset["summary"]["resolved_exit_count"], 281)
 
     def test_reviewed_identity_absent_from_stage1_is_retained_as_error(self):
         reviewed, ledger = review_inputs(("MRT:B", "gap_fill", [103.81, 1.31]))

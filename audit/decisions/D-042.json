@@ -1,0 +1,38 @@
+{
+  "change_type": "revision_revalidation",
+  "evidence": [
+    {
+      "description": "Owner selection, exact position and run",
+      "path": "audit/evidence/2026-11-23-bayfront-kent-ridge-selection.json",
+      "sha256": "fee5fd03eebca7ec2343ddbda862776f23809b52cb6b7143085e96e7111a8348"
+    }
+  ],
+  "id": "D-042",
+  "kind": "audit_decision",
+  "limitations": [
+    "One exit only. No release approval."
+  ],
+  "reason": "Owner selected the exact OneMap A point rather than the LTA alternative.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Bayfront page 274 revision 41890"
+  ],
+  "targets": [
+    {
+      "after": {
+        "sgwiki_page_id": 274,
+        "sgwiki_revision_id": 41890
+      },
+      "after_sha256": "0eba1529a992f86ed8b28568c5d1dd5b61623fa62754a29fbf58dd4cdf2a7cbe",
+      "before": {
+        "sgwiki_page_id": 274,
+        "sgwiki_revision_id": 36652
+      },
+      "before_sha256": "78a0ba34d399126c76787c3872bd6f23e0785eb7ec6ed36c9d06869eafa2673f",
+      "identity": "Bayfront MRT:A OneMap guard",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/0/properties/source_guard"
+    }
+  ],
+  "title": "Renew Bayfront A at its OneMap position"
+}

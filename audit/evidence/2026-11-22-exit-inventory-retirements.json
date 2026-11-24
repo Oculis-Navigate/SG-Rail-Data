@@ -1,0 +1,100 @@
+{
+  "run_id": "20261122T150409Z-live-rerun",
+  "authorization": "reviewed and lgtm. lets retire all 3 overrides",
+  "scope": "Retire the three partial-inventory overrides only. The direct source tables list the same MRT exit identities; this does not approve new coordinates or a release.",
+  "stations": [
+    {
+      "decision": "D-004",
+      "station": "Cantonment",
+      "page_id": 278,
+      "revision_id": 41849,
+      "url": "https://sgwiki.miraheze.org/w/index.php?oldid=41849",
+      "locator": "Entrances/Exits table",
+      "response_file": "runs/20261122T150409Z-live-rerun/sources/sgwiki/responses/029-cantonment.json",
+      "response_sha256": "e890da763ed7666572e22fa67f45f099790a0ed157ba91a098878b1e4d77c65a",
+      "source_status": "complete",
+      "source_exits": [
+        {
+          "label": "1",
+          "scopes": [
+            "MRT"
+          ]
+        },
+        {
+          "label": "2",
+          "scopes": [
+            "MRT"
+          ]
+        },
+        {
+          "label": "3",
+          "scopes": [
+            "MRT"
+          ]
+        },
+        {
+          "label": "4",
+          "scopes": [
+            "MRT"
+          ]
+        }
+      ]
+    },
+    {
+      "decision": "D-005",
+      "station": "Keppel",
+      "page_id": 279,
+      "revision_id": 41852,
+      "url": "https://sgwiki.miraheze.org/w/index.php?oldid=41852",
+      "locator": "Entrances/Exits table",
+      "response_file": "runs/20261122T150409Z-live-rerun/sources/sgwiki/responses/080-keppel.json",
+      "response_sha256": "56403c6fc3d5b5456a327840cba3d7f8f05f36262213d4e4f5cb09a48283a205",
+      "source_status": "complete",
+      "source_exits": [
+        {
+          "label": "1",
+          "scopes": [
+            "MRT"
+          ]
+        },
+        {
+          "label": "2",
+          "scopes": [
+            "MRT"
+          ]
+        },
+        {
+          "label": "3",
+          "scopes": [
+            "MRT"
+          ]
+        }
+      ]
+    },
+    {
+      "decision": "D-006",
+      "station": "Prince Edward Road",
+      "page_id": 277,
+      "revision_id": 41853,
+      "url": "https://sgwiki.miraheze.org/w/index.php?oldid=41853",
+      "locator": "Entrances/Exits table",
+      "response_file": "runs/20261122T150409Z-live-rerun/sources/sgwiki/responses/123-prince-edward-road.json",
+      "response_sha256": "98712053bcd426f94c296efa8f2f619eb2359f8ccec923d3de9267b1410eab5b",
+      "source_status": "complete",
+      "source_exits": [
+        {
+          "label": "1",
+          "scopes": [
+            "MRT"
+          ]
+        },
+        {
+          "label": "2",
+          "scopes": [
+            "MRT"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "change_type": "revision_revalidation",
+  "evidence": [
+    {
+      "description": "Scope, exact unchanged coordinates and source evidence",
+      "path": "audit/evidence/2026-11-24-dhoby-ghaut-onemap-renewal.json",
+      "sha256": "9e29396f3046413e7c4598a294795171efc3f266dcffbf2f69ecc0472f9f4d96"
+    }
+  ],
+  "id": "D-049",
+  "kind": "audit_decision",
+  "limitations": [
+    "No coordinate move, baseline promotion or release approval."
+  ],
+  "reason": "Renew only Dhoby Ghaut A–G OneMap revision guards, keep their approved coordinates and replay the same inputs.",
+  "schema_version": 2,
+  "source_revisions": [
+    "Dhoby Ghaut page 119: 41817 to 41955"
+  ],
+  "targets": [
+    {
+      "after": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41955
+      },
+      "after_sha256": "9b4329757ce972988fdf25c30cbdfe3b5568b7d61057a125d7bb972b877c76e0",
+      "before": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41817
+      },
+      "before_sha256": "76ea47ae4b0c99766deae264d3c74d93f960b62b38af08ecb734680c2e9ccc62",
+      "identity": "dhoby-ghaut:MRT:A",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/59/properties/source_guard"
+    },
+    {
+      "after": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41955
+      },
+      "after_sha256": "9b4329757ce972988fdf25c30cbdfe3b5568b7d61057a125d7bb972b877c76e0",
+      "before": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41817
+      },
+      "before_sha256": "76ea47ae4b0c99766deae264d3c74d93f960b62b38af08ecb734680c2e9ccc62",
+      "identity": "dhoby-ghaut:MRT:B",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/60/properties/source_guard"
+    },
+    {
+      "after": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41955
+      },
+      "after_sha256": "9b4329757ce972988fdf25c30cbdfe3b5568b7d61057a125d7bb972b877c76e0",
+      "before": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41817
+      },
+      "before_sha256": "76ea47ae4b0c99766deae264d3c74d93f960b62b38af08ecb734680c2e9ccc62",
+      "identity": "dhoby-ghaut:MRT:C",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/61/properties/source_guard"
+    },
+    {
+      "after": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41955
+      },
+      "after_sha256": "9b4329757ce972988fdf25c30cbdfe3b5568b7d61057a125d7bb972b877c76e0",
+      "before": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41817
+      },
+      "before_sha256": "76ea47ae4b0c99766deae264d3c74d93f960b62b38af08ecb734680c2e9ccc62",
+      "identity": "dhoby-ghaut:MRT:D",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/62/properties/source_guard"
+    },
+    {
+      "after": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41955
+      },
+      "after_sha256": "9b4329757ce972988fdf25c30cbdfe3b5568b7d61057a125d7bb972b877c76e0",
+      "before": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41817
+      },
+      "before_sha256": "76ea47ae4b0c99766deae264d3c74d93f960b62b38af08ecb734680c2e9ccc62",
+      "identity": "dhoby-ghaut:MRT:E",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/63/properties/source_guard"
+    },
+    {
+      "after": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41955
+      },
+      "after_sha256": "9b4329757ce972988fdf25c30cbdfe3b5568b7d61057a125d7bb972b877c76e0",
+      "before": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41817
+      },
+      "before_sha256": "76ea47ae4b0c99766deae264d3c74d93f960b62b38af08ecb734680c2e9ccc62",
+      "identity": "dhoby-ghaut:MRT:F",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/64/properties/source_guard"
+    },
+    {
+      "after": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41955
+      },
+      "after_sha256": "9b4329757ce972988fdf25c30cbdfe3b5568b7d61057a125d7bb972b877c76e0",
+      "before": {
+        "sgwiki_page_id": 119,
+        "sgwiki_revision_id": 41817
+      },
+      "before_sha256": "76ea47ae4b0c99766deae264d3c74d93f960b62b38af08ecb734680c2e9ccc62",
+      "identity": "dhoby-ghaut:MRT:G",
+      "path": "config/stage2-trusted-onemap-baseline.geojson",
+      "pointer": "/features/65/properties/source_guard"
+    }
+  ],
+  "title": "Renew Dhoby Ghaut A–G OneMap revision guards"
+}

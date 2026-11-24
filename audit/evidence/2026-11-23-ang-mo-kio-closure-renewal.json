@@ -1,0 +1,62 @@
+{
+  "scope": "Renew the MRT Exit D closure only; leave L2 NSL platform group C/D for separate review.",
+  "authorization": "sure renew. whats the separate platform?",
+  "observations": [
+    {
+      "run_id": "20261123T052700Z-dhoby-live",
+      "url": "https://sgwiki.miraheze.org/index.php?oldid=39808",
+      "revision": 39808,
+      "response_sha256": "aecfa155e87d323ad30bdb4a4d0664d42db608b8b9fafd934213b7c8503cf24e",
+      "reviews": [
+        {
+          "alternative_exits": [],
+          "labels": [
+            "D"
+          ],
+          "reason": "exit_status_requires_review",
+          "row": 5,
+          "status": "closed",
+          "status_markup": "small.d-block.mx-auto.fw-normal.tx-center",
+          "status_verbatim": "(Closed)",
+          "table": 1
+        },
+        {
+          "caption": "NSL Platform",
+          "floor": "L2",
+          "label": "C/D",
+          "reason": "combined_platform_label",
+          "row": 1,
+          "section": "layout"
+        }
+      ]
+    },
+    {
+      "run_id": "20261123T102639Z-pl-woodlands-live",
+      "url": "https://sgwiki.miraheze.org/index.php?oldid=41909",
+      "revision": 41909,
+      "response_sha256": "2dfc16e3a07b147ac19d01232cc21775e4063e3c6486ad4bbf34f831474eeac0",
+      "reviews": [
+        {
+          "alternative_exits": [],
+          "labels": [
+            "D"
+          ],
+          "reason": "exit_status_requires_review",
+          "row": 5,
+          "status": "closed",
+          "status_markup": "small.d-block.mx-auto.fw-normal.tx-center",
+          "status_verbatim": "(Closed)",
+          "table": 1
+        },
+        {
+          "caption": "NSL Platform",
+          "floor": "L2",
+          "label": "C/D",
+          "reason": "combined_platform_label",
+          "row": 1,
+          "section": "layout"
+        }
+      ]
+    }
+  ]
+}

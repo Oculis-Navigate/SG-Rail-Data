@@ -1,0 +1,216 @@
+{
+  "authorization": "lets just accept the new 13",
+  "run": "20261123T130023Z-stage2-start",
+  "changes": [
+    {
+      "distance_metres": 367.878,
+      "exit_id": "MRT:A",
+      "from_coordinates": [
+        103.8530215622706,
+        1.293233075934794
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "WARNING",
+      "station_id": "city-hall",
+      "to_coordinates": [
+        103.85633,
+        1.29316
+      ]
+    },
+    {
+      "distance_metres": 472.312,
+      "exit_id": "MRT:B",
+      "from_coordinates": [
+        103.8519511294807,
+        1.293108533088286
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "WARNING",
+      "station_id": "city-hall",
+      "to_coordinates": [
+        103.85619,
+        1.29282
+      ]
+    },
+    {
+      "distance_metres": 335.431,
+      "exit_id": "MRT:C",
+      "from_coordinates": [
+        103.8529853014308,
+        1.293046947638803
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "WARNING",
+      "station_id": "city-hall",
+      "to_coordinates": [
+        103.856,
+        1.29292
+      ]
+    },
+    {
+      "distance_metres": 469.376,
+      "exit_id": "MRT:D",
+      "from_coordinates": [
+        103.8518655458821,
+        1.293503346202729
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "WARNING",
+      "station_id": "city-hall",
+      "to_coordinates": [
+        103.85599,
+        1.2926
+      ]
+    },
+    {
+      "distance_metres": 31.698,
+      "exit_id": "MRT:A",
+      "from_coordinates": [
+        103.8444057912622,
+        1.321103003672807
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "WARNING",
+      "station_id": "novena",
+      "to_coordinates": [
+        103.84444,
+        1.32082
+      ]
+    },
+    {
+      "distance_metres": 32.954,
+      "exit_id": "MRT:A",
+      "from_coordinates": [
+        103.8477238042458,
+        1.332376442166927
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "WARNING",
+      "station_id": "toa-payoh",
+      "to_coordinates": [
+        103.84781,
+        1.33266
+      ]
+    },
+    {
+      "distance_metres": 9.857,
+      "exit_id": "MRT:A",
+      "from_coordinates": [
+        103.8464117628576,
+        1.341078755479382
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "INFO",
+      "station_id": "braddell",
+      "to_coordinates": [
+        103.8465,
+        1.34107
+      ]
+    },
+    {
+      "distance_metres": 9.817,
+      "exit_id": "MRT:B",
+      "from_coordinates": [
+        103.8463932449764,
+        1.340746516111449
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "INFO",
+      "station_id": "braddell",
+      "to_coordinates": [
+        103.84648,
+        1.34073
+      ]
+    },
+    {
+      "distance_metres": 7.309,
+      "exit_id": "MRT:C",
+      "from_coordinates": [
+        103.8474307678529,
+        1.340681574035467
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "INFO",
+      "station_id": "braddell",
+      "to_coordinates": [
+        103.84739,
+        1.34063
+      ]
+    },
+    {
+      "distance_metres": 10.852,
+      "exit_id": "MRT:B",
+      "from_coordinates": [
+        103.8433228666909,
+        1.319884007888243
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "INFO",
+      "station_id": "novena",
+      "to_coordinates": [
+        103.84341,
+        1.31984
+      ]
+    },
+    {
+      "distance_metres": 10.42,
+      "exit_id": "MRT:B",
+      "from_coordinates": [
+        103.8475578006123,
+        1.332297175560529
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "INFO",
+      "station_id": "toa-payoh",
+      "to_coordinates": [
+        103.84747,
+        1.33233
+      ]
+    },
+    {
+      "distance_metres": 1.682,
+      "exit_id": "MRT:C",
+      "from_coordinates": [
+        103.8473184364742,
+        1.333007441851997
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "INFO",
+      "station_id": "toa-payoh",
+      "to_coordinates": [
+        103.84731,
+        1.33302
+      ]
+    },
+    {
+      "distance_metres": 3.626,
+      "exit_id": "MRT:D",
+      "from_coordinates": [
+        103.8465174056438,
+        1.333278745724068
+      ],
+      "reason": "coordinate_moved",
+      "review_threshold_metres": 25.0,
+      "severity": "INFO",
+      "station_id": "toa-payoh",
+      "to_coordinates": [
+        103.84655,
+        1.33328
+      ]
+    }
+  ],
+  "caveat": "Owner accepted all four City Hall points after being informed that they exactly coincide with Esplanade A-D. Attribution remains unverified. This does not accept unmatched E/F/G, renew coordinate guards or promote an incomplete Stage 2 baseline.",
+  "stage2_sha256": "f0b2e6e954a555324cb4232df111b4cad564903b65b1e99dcd4249900dafc650"
+}

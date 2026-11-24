@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+scope=$(sh .githooks/change-scope --cached)
+[ "$scope" != regular ] || exit 0
+base=$(git merge-base HEAD refs/remotes/origin/main 2>/dev/null || git rev-parse HEAD)
+exec uv run --frozen python scripts/dataset.py gate "$base" --staged
